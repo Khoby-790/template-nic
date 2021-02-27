@@ -78,10 +78,10 @@ const Dashboard = (props: Props) => {
                 </ResponsiveContainer>
             </div>
             <div className="bg-white mx-5 mt-5">
-                <div className="flex justify-between my-3">
+                <div className="flex h-11 justify-between my-3">
                     <div className="flex-1"></div>
-                    <div className="flex-1">
-                        <input type="search" className="border-gray-200" />
+                    <div className="flex-1 px-2">
+                        <input placeholder="search" type="search" className="border-gray-200 border h-full w-full" />
                     </div>
                 </div>
                 <div className="flex flex-col">
