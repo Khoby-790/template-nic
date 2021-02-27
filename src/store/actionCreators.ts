@@ -5,6 +5,8 @@ export function openSubMenu() {
     type: actionTypes.OPEN_SUB_MENU,
   };
 
+  console.log("Hello");
+
   return (dispatch: SidebarDispatchType) => {
     dispatch(action);
   };
