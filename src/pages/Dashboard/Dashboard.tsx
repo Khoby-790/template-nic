@@ -55,7 +55,7 @@ const data = [
 const Dashboard = (props: Props) => {
     return (
         <Fragment>
-            <div className="h-72">
+            <div className="h-72 bg-white">
                 <ResponsiveContainer width="100%" height="100%">
                     <AreaChart
                         width={500}
