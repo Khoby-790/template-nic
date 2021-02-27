@@ -138,7 +138,9 @@ const Dashboard = (props: Props) => {
                                                 <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                                                     up
                                                 </span>
-                                                {34683579}
+                                                <span>
+                                                    {(34683579).toLocaleString(undefined, { currency: "USD", signDisplay: "USD" })}
+                                                </span>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                                 Admin
