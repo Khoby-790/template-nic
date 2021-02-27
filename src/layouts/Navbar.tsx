@@ -8,7 +8,6 @@ interface Props {
 
 }
 
-type DivRef = React.RefObject<HTMLDivElement>
 
 const Navbar = (props: Props) => {
     const profileRef = useRef(null);
