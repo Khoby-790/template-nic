@@ -77,8 +77,8 @@ const Dashboard = (props: Props) => {
                     </AreaChart>
                 </ResponsiveContainer>
             </div>
-            <div className="bg-white mx-5 mt-5">
-                <div className="flex h-11 justify-between my-3">
+            <div className="mx-5 mt-5">
+                <div className="flex h-11 justify-between items-center my-3 mb-5">
                     <div className="flex-1 px-2 ">
                         <h2 className="text-2xl font-medium">Current Offers</h2>
                         <p className="font-light">Offers that appear here are realtime</p>
