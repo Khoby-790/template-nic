@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment } from 'react'
+import AppContent from './AppContent'
 import Navbar from './Navbar'
 import Sidebar from './Sidebar'
 interface Props {
@@ -18,10 +19,9 @@ const AppLayout = (props: Props) => {
                     {/* <!-- Narrow sidebar--> */}
                     <Sidebar />
                     {/* <!-- Main area --> */}
-                    
+                    <AppContent />
                 </div>
             </div>
-
         </Fragment>
     )
 }
