@@ -84,7 +84,7 @@ const Dashboard = (props: Props) => {
                         <p className="font-light">Offers that appear here are realtime</p>
                     </div>
                     <div className="flex-1 flex justify-end px-2">
-                        <input placeholder="search" type="search" className="border-gray-200 focus:outline-none px-3 border h-full w-1/2" />
+                        <input placeholder="search" type="search" className="border-gray-200 focus:outline-none px-3 border h-12 w-1/2" />
                     </div>
                 </div>
                 <div className="flex flex-col">
