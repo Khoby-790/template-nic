@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useState, useRef } from 'react'
 import logo from '../assets/nic-logo.png'
 import { Transition } from '../components'
 
@@ -7,7 +7,10 @@ interface Props {
 
 }
 
+type DivRef = React.RefObject<HTMLDivElement>
+
 const Navbar = (props: Props) => {
+    const profileRef = useRef(null)
     const [showProfileMenu, setShowProfileMenu] = useState(false)
     return (
         <Fragment>
@@ -108,7 +111,7 @@ const Navbar = (props: Props) => {
                                     leaveFrom="transform opacity-100 scale-100"
                                     leaveTo="transform opacity-0 scale-95"
                                 >
-                                    <div className="origin-top-right absolute z-30 right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-1">
+                                    <div ref={profileRef} className="origin-top-right absolute z-30 right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-1">
                                         <div className="py-1">
                                             <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:bg-gray-100" role="menuitem">
                                                 Your Profile
