@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment } from 'react'
 import Navbar from './Navbar'
+import Sidebar from './Sidebar'
 interface Props {
 
 }
@@ -15,7 +16,7 @@ const AppLayout = (props: Props) => {
                 {/* <!-- Bottom section --> */}
                 <div className="min-h-0 flex-1 flex overflow-hidden">
                     {/* <!-- Narrow sidebar--> */}
-
+                    <Sidebar />
                     {/* <!-- Main area --> */}
                     <main className="min-w-0 flex-1 border-t border-gray-200 lg:flex">
                         {/* <!-- Primary column --> */}
