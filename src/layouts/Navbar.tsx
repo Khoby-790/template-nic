@@ -84,7 +84,7 @@ const Navbar = (props: Props) => {
                             </span>
 
                             <div className="relative inline-block text-left">
-                                <button type="button" className="bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600" id="menu-1" aria-expanded="false" aria-haspopup="true">
+                                <button onClick={() => setShowProfileMenu(true)} type="button" className="bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600" id="menu-1" aria-expanded="false" aria-haspopup="true">
                                     <span className="sr-only">Open user menu</span>
                                     <img className="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="" />
                                 </button>
