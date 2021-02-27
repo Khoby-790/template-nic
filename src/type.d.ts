@@ -3,4 +3,8 @@ type SidebarAction = {
   route?: any;
 };
 
+type SidebarState = {
+  sidebarOpen: boolean;
+};
+
 type SidebarDispatchType = (args: SidebarAction) => SidebarAction;
