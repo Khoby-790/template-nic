@@ -79,7 +79,9 @@ const Dashboard = (props: Props) => {
             </div>
             <div className="bg-white mx-5 mt-5">
                 <div className="flex h-11 justify-between my-3">
-                    <div className="flex-1"></div>
+                    <div className="flex-1 px-2">
+                        <h2 className="text-2xl font-medium">Current Offers</h2>
+                    </div>
                     <div className="flex-1 flex justify-end px-2">
                         <input placeholder="search" type="search" className="border-gray-200 focus:outline-none px-3 border h-full w-1/2" />
                     </div>
