@@ -74,6 +74,8 @@ const Dashboard = (props: Props) => {
                         <YAxis />
                         <Tooltip />
                         <Area type="monotone" dataKey="uv" stroke="#8884d8" fill="#8884d8" />
+                        <Area type="monotone" dataKey="pv" stroke="#D1FAE5" fill="#D1FAE5" />
+                        <Area type="monotone" dataKey="amt" stroke="#edb7dd" fill="#edb7dd" />
                     </AreaChart>
                 </ResponsiveContainer>
             </div>
