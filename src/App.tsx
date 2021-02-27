@@ -6,7 +6,7 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" render={props => <AppLayout />} />
+        <Route path="/" render={props => <AppLayout {...props} />} />
       </Switch>
       {/* <AppLayout /> */}
     </BrowserRouter>

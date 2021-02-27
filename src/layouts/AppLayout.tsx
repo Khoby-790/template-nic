@@ -4,15 +4,15 @@ import AppContent from './AppContent'
 import Navbar from './Navbar'
 import Sidebar from './Sidebar';
 import { RouteComponentProps, } from 'react-router-dom';
-interface Props {
 
-}
 
 interface StaticContext {
     statusCode?: number;
 }
 
-const AppLayout = (props: RouteComponentProps<any, StaticContext, unknown>) => {
+type Props = RouteComponentProps<any, StaticContext, unknown>
+
+const AppLayout = (props: Props) => {
     return (
         <Fragment>
 
