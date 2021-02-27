@@ -20,3 +20,5 @@ const reducer = (state = initialState, action: SidebarAction): SidebarState => {
       return state;
   }
 };
+
+export default reducer;
