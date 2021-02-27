@@ -1,15 +1,19 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment } from 'react'
+import { useDispatch } from 'react-redux'
 import { openSubMenu } from '../store/actionCreators'
+import { OPEN_SUB_MENU } from '../store/actionTypes'
 
 interface Props {
 
 }
 
 const Sidebar = (props: Props) => {
-
+    const dispatch = useDispatch<SidebarDispatchType>()
     const selectRoute = () => {
-        openSubMenu()
+        dispatch({
+            type: OPEN_SUB_MENU
+        })
     }
 
     return (
