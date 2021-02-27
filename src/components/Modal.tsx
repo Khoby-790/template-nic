@@ -1,5 +1,4 @@
 import React, { useRef, Fragment, ReactNode } from "react";
-import PropTypes from "prop-types";
 import Transition from "./Transition";
 import { useOutsideClick } from "../hooks";
 
@@ -13,7 +12,7 @@ interface Props {
     canClose?: boolean,
 }
 
-const Modal = ({ show, setShow, size = 35, children, canClose, height }: Props) => {
+const Modal = ({ show, setShow, size = 35, children, canClose, height = 50 }: Props) => {
     const ref = useRef(null);
     useOutsideClick(ref, () => {
         if (canClose) setShow(false);
@@ -21,7 +20,7 @@ const Modal = ({ show, setShow, size = 35, children, canClose, height }: Props) 
     return (
         <Fragment>
             <Transition show={show}>
-                <div class="fixed z-20 bottom-0 inset-x-0 px-4 pb-6 sm:inset-0 sm:p-0 sm:flex sm:items-center sm:justify-center">
+                <div className="fixed z-20 bottom-0 inset-x-0 px-4 pb-6 sm:inset-0 sm:p-0 sm:flex sm:items-center sm:justify-center">
                     <Transition
                         enter="ease-out duration-300"
                         enterFrom="opacity-0"
