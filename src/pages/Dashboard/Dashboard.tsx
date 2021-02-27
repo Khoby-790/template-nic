@@ -78,6 +78,10 @@ const Dashboard = (props: Props) => {
                 </ResponsiveContainer>
             </div>
             <div className="bg-white mx-5 mt-5">
+                <div className="flex justify-between">
+                    <div className="flex-1"></div>
+                    <div className="flex-1 bg-gray-800"></div>
+                </div>
                 <div className="flex flex-col">
                     <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                         <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
