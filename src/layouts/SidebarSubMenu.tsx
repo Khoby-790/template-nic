@@ -1,12 +1,20 @@
 import React, { Fragment, useRef } from 'react'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { useOutsideClick } from '../hooks';
+import { CLOSE_SUB_MENU } from '../store/actionTypes';
 
 interface Props {
 
 }
 
 const SidebarSubMenu = (props: Props) => {
+    const dsipatch = useDispatch<SidebarDispatchType>();
     const menuRef = useRef(null);
+    useOutsideClick(menuRef, () => {
+        dsipatch({
+            type: CLOSE_SUB_MENU
+        })
+    });
     const isOpen = useSelector<SidebarState>(state => state.sidebarOpen)
     return !isOpen ? null : (
         <Fragment>
