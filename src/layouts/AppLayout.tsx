@@ -2,12 +2,13 @@
 import React, { Fragment } from 'react'
 import AppContent from './AppContent'
 import Navbar from './Navbar'
-import Sidebar from './Sidebar'
+import Sidebar from './Sidebar';
+import { RouteComponentProps,  } from 'react-router-dom';
 interface Props {
 
 }
 
-const AppLayout = (props: Props) => {
+const AppLayout = (props: RouteComponentProps<any, StaticContext, unknown>) => {
     return (
         <Fragment>
 
