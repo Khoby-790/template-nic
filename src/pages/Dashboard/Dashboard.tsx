@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment } from 'react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import OfferLisitngItem from './components/OfferLisitngItem';
 
 
 interface Props {
@@ -115,7 +116,7 @@ const Dashboard = (props: Props) => {
                                     </thead>
                                     <tbody className="bg-white divide-y divide-gray-200">
 
-                                    
+                                    <OfferLisitngItem />
                                         {/* <!-- More items... --> */}
                                     </tbody>
                                 </table>

@@ -8,7 +8,7 @@ interface Props {
     setShow: (prev) => void,
     size?: number,
     height?: number,
-    children: ReactNode,
+    children?: ReactNode,
     canClose?: boolean,
 }
 

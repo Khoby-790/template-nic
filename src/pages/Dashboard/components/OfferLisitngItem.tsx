@@ -1,10 +1,12 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
+import { Modal } from '../../../components'
 
 interface Props {
 
 }
 
 const OfferLisitngItem = (props: Props) => {
+    const [showOffer, setShowOffer] = useState(false)
     return (
         <Fragment>
             <tr>
@@ -45,6 +47,8 @@ const OfferLisitngItem = (props: Props) => {
                     </svg>
                 </td>
             </tr>
+
+            <Modal show={showOffer} setShow={setShowOffer}></Modal>
         </Fragment>
     )
 }
