@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import SidebarSubMenu from './SidebarSubMenu'
 
 interface Props {
 
@@ -15,11 +16,7 @@ const AppContent = (props: Props) => {
                 </section>
 
                 {/* <!-- Secondary column (hidden on smaller screens) --> */}
-                <aside className="hidden lg:block lg:flex-shrink-0 lg:order-first">
-                    <div className="h-full relative flex flex-col w-64 border-r border-gray-200 bg-gray-200">
-                        {/* <!-- Your content --> */}
-                    </div>
-                </aside>
+                <SidebarSubMenu />
             </main>
         </Fragment>
     )
