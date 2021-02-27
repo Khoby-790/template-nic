@@ -12,7 +12,7 @@ interface StaticContext {
 
 type Props = RouteComponentProps<any, StaticContext, unknown>
 
-const AppLayout = (props: Props) => {
+const AppLayout = ({ history, match }: Props) => {
     return (
         <Fragment>
 
