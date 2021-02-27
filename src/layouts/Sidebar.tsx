@@ -28,7 +28,7 @@ const Sidebar = (props: Props) => {
                         </svg>
                     </a>
 
-                    <a href="#" className="text-gray-400 hover:bg-gray-700 flex-shrink-0 inline-flex items-center justify-center h-14 w-14 rounded-lg">
+                    <a onClick={selectRoute} href="#" className="text-gray-400 hover:bg-gray-700 flex-shrink-0 inline-flex items-center justify-center h-14 w-14 rounded-lg">
                         <span className="sr-only">Archive</span>
                         {/* <!-- Heroicon name: outline/archive --> */}
                         <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -36,7 +36,7 @@ const Sidebar = (props: Props) => {
                         </svg>
                     </a>
 
-                    <a href="#" className="text-gray-400 hover:bg-gray-700 flex-shrink-0 inline-flex items-center justify-center h-14 w-14 rounded-lg">
+                    <a onClick={selectRoute} href="#" className="text-gray-400 hover:bg-gray-700 flex-shrink-0 inline-flex items-center justify-center h-14 w-14 rounded-lg">
                         <span className="sr-only">Customers</span>
                         {/* <!-- Heroicon name: outline/user-circle --> */}
                         <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -44,7 +44,7 @@ const Sidebar = (props: Props) => {
                         </svg>
                     </a>
 
-                    <a href="#" className="text-gray-400 hover:bg-gray-700 flex-shrink-0 inline-flex items-center justify-center h-14 w-14 rounded-lg">
+                    <a onClick={selectRoute} href="#" className="text-gray-400 hover:bg-gray-700 flex-shrink-0 inline-flex items-center justify-center h-14 w-14 rounded-lg">
                         <span className="sr-only">Flagged</span>
                         {/* <!-- Heroicon name: outline/flag --> */}
                         <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
