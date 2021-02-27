@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment } from 'react'
+import { openSubMenu } from '../store/actionCreators'
 
 interface Props {
 
@@ -7,13 +8,15 @@ interface Props {
 
 const Sidebar = (props: Props) => {
 
-    // const
+    const selectRoute = () => {
+        openSubMenu()
+    }
 
     return (
         <Fragment>
             <nav aria-label="Sidebar" className="hidden md:block md:flex-shrink-0 md:bg-gray-800 md:overflow-y-auto">
                 <div className="relative w-20 flex flex-col p-3 space-y-3">
-                    <a href="#" className="bg-gray-900 text-white flex-shrink-0 inline-flex items-center justify-center h-14 w-14 rounded-lg">
+                    <a onClick={selectRoute} href="#" className="bg-gray-900 text-white flex-shrink-0 inline-flex items-center justify-center h-14 w-14 rounded-lg">
                         <span className="sr-only">Open</span>
                         {/* <!-- Heroicon name: outline/inbox --> */}
                         <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
