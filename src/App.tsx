@@ -1,11 +1,14 @@
 import React from 'react';
 import AppLayout from './layouts/AppLayout';
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 function App() {
   return (
     <BrowserRouter>
-      <AppLayout />
+      <Switch>
+        <Route path="/" render={props => <AppLayout />} />
+      </Switch>
+      {/* <AppLayout /> */}
     </BrowserRouter>
   );
 }
