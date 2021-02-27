@@ -2,6 +2,7 @@
 import React, { Fragment, useState, useRef } from 'react'
 import logo from '../assets/nic-logo.png'
 import { Transition } from '../components'
+import { useOutsideClick } from '../hooks'
 
 interface Props {
 
@@ -10,7 +11,8 @@ interface Props {
 type DivRef = React.RefObject<HTMLDivElement>
 
 const Navbar = (props: Props) => {
-    const profileRef = useRef(null)
+    const profileRef = useRef(null);
+    useOutsideClick(profileRef, () => setShowProfileMenu(false));
     const [showProfileMenu, setShowProfileMenu] = useState(false)
     return (
         <Fragment>
