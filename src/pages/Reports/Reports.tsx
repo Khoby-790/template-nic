@@ -10,7 +10,7 @@ const Reports = (props: Props) => {
     return (
         <Fragment>
             <ReportQueryForm />
-            <OffersListing />
+            <OffersListing header="Generated Offers" description="All offers are subject to the query parameters" />
         </Fragment>
     )
 }
