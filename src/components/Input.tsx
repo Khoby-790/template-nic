@@ -5,9 +5,9 @@ interface Props {
 }
 
 
-type InputHtmlProps = HTMLInputElement
+type InputHtmlProps = HTMLInputElement | any
 
-const Input = ({ label }: Props & InputHtmlProps) => {
+const Input = ({ label }: Props) => {
     return (
         <Fragment>
             <div className="flex flex-col">
