@@ -16,9 +16,9 @@ const SidebarSubMenu = (props: Props) => {
             type: CLOSE_SUB_MENU
         })
     });
-    const { sidebarOpen } = useSelector<SidebarState>(state => state)
+    const isOpen = useSelector<SidebarState>(state => state.sidebarOpen)
     return (
-        <Transition show={sidebarOpen}>
+        <Transition show={isOpen ? true : false}>
             <aside ref={menuRef} className="hidden transform transition-all duration-100 lg:block lg:flex-shrink-0 lg:order-first">
                 <div className="h-full relative flex flex-col w-64 border-r border-gray-200 bg-gray-200">
                     {/* <!-- Your content --> */}
