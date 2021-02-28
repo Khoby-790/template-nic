@@ -21,9 +21,9 @@ const ReportQueryForm = (props: Props) => {
                     <Input label="Reinsurer" />
                     <Input label="Business Type" />
                 </div>
-                <div className="flex mx-5 w-full">
-                    <button className="bg-green-600 py-2 flex items-center justify-center">
-                        Hello
+                <div className="flex mx-5 flex-1 mt-4">
+                    <button className="bg-green-600 text-white flex-1 py-2 flex items-center justify-center">
+                        Generate report
                     </button>
                 </div>
             </div>
