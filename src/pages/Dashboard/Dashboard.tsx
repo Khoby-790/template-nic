@@ -92,7 +92,7 @@ const Dashboard = (props: Props) => {
                     <div className="flex-1 px-2 ">
                         <h2 className="text-2xl font-medium">Current Offers</h2>
                         <p className="font-light">Offers that appear here are realtime</p>
-                        <button>Click me</button>
+                        <button onClick={onNotifyClicked}>Click me</button>
                     </div>
                     <div className="flex-1 flex justify-end px-2">
                         <input placeholder="search" type="search" className="border-gray-200 focus:outline-none px-3 border h-12 w-1/2" />
