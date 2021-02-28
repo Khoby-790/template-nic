@@ -56,8 +56,8 @@ const ToastProvider: React.FC = ({ children }) => {
                             enterFrom="translate-y-2 opacity-0 sm:translate-y-0 sm:translate-x-2"
                             enterTo="translate-y-0 opacity-100 sm:translate-x-0"
                             leave="transition ease-in duration-100"
-                            leaveFrom="transform opacity-100 scale-100"
-                            leaveTo="transform opacity-0 scale-95"
+                            leaveFrom="opacity-100"
+                            leaveTo="opacity-0"
                         >
                             <div ref={notificationRef} className="max-w-sm w-full bg-white shadow-lg rounded-lg pointer-events-auto ring-1 ring-black ring-opacity-5 overflow-hidden">
                                 <div className="p-4">
