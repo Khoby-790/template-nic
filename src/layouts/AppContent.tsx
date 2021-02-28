@@ -11,7 +11,7 @@ const AppContent = (props: Props) => {
         <Fragment>
             <main className="min-w-0 flex-1 border-t border-gray-200 lg:flex">
                 {/* <!-- Primary column --> */}
-                <section aria-labelledby="primary-heading" className="min-w-0 flex-1 h-full flex flex-col overflow-y-scroll lg:order-last">
+                <section aria-labelledby="primary-heading" className="min-w-0 transition-all duration-150 flex-1 h-full flex flex-col overflow-y-scroll lg:order-last">
                     <h1 id="primary-heading" className="sr-only">Home</h1>
                     {/* <!-- Your content --> */}
                     <Dashboard />
