@@ -1,14 +1,37 @@
-import React, { Fragment, useState, createContext } from 'react'
+import React, { Fragment, useState, createContext, useContext } from 'react'
 import { Transition } from '../components'
 
+type ToastContextProps = {
+    notify: ({ message, description }: {
+        message: string,
+        description: string
+    }) => void
+}
 
-const ToastContext = createContext(null);
+const ToastContext = createContext<ToastContextProps>({
+    notify: () => { }
+});
+
+export const useToast = () => useContext(ToastContext)
+
+
 
 
 const ToastProvider: React.FC = ({ children }) => {
-    const [showNotif, setShowNotif] = useState(false)
+    const [showNotif, setShowNotif] = useState(false);
+    const [message, setMessage] = useState("");
+    const [description, setDescription] = useState("");
+
+    const notify = ({ message, description }: {
+        message: string,
+        description: string
+    }) => {
+        setMessage(message);
+        setDescription(description)
+    }
+
     return (
-        <Fragment>
+        <ToastContext.Provider value={{ notify }}>
             {children}
             {/* <!-- This example requires Tailwind CSS v2.0+ --> */}
             <div className="fixed inset-0 flex items-end justify-center px-4 py-6 pointer-events-none sm:p-6 sm:items-start sm:justify-end">
@@ -34,11 +57,11 @@ const ToastProvider: React.FC = ({ children }) => {
                                 </div>
                                 <div className="ml-3 w-0 flex-1 pt-0.5">
                                     <p className="text-sm font-medium text-gray-900">
-                                        Successfully saved!
-                                </p>
+                                        {message}
+                                    </p>
                                     <p className="mt-1 text-sm text-gray-500">
-                                        Anyone with a link can now view this file.
-                                </p>
+                                        {description}
+                                    </p>
                                 </div>
                                 <div className="ml-4 flex-shrink-0 flex">
                                     <button className="bg-white rounded-md inline-flex text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
@@ -55,7 +78,7 @@ const ToastProvider: React.FC = ({ children }) => {
                 </Transition>
             </div>
 
-        </Fragment>
+        </ToastContext.Provider>
     )
 }
 
