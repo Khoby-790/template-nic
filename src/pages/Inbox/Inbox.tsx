@@ -87,19 +87,19 @@ const Inbox = (props: Props) => {
                                                     <div className="py-1">
                                                         <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900" role="menuitem">
                                                             Note
-                          </a>
+                                                        </a>
 
                                                         <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900" role="menuitem">
                                                             Assign
-                          </a>
+                                                        </a>
 
                                                         <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900" role="menuitem">
                                                             Archive
-                          </a>
+                                                        </a>
 
                                                         <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900" role="menuitem">
                                                             Move
-                          </a>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </span>
@@ -220,238 +220,237 @@ const Inbox = (props: Props) => {
                                         Nec malesuada sed sit ut aliquet. Cras ac pharetra, sapien purus vitae vestibulum auctor faucibus ullamcorper. Leo quam tincidunt porttitor neque, velit sed. Tortor mauris ornare ut tellus sed aliquet amet venenatis condimentum. Convallis accumsan et nunc eleifend.
                                     </p>
                                     <p>
-                                        <strong style={{ fontWeight: 600 }}>Monica White</strong><br/>
+                                        <strong style={{ fontWeight: 600 }}>Monica White</strong><br />
                                             Customer Service
                                         </p>
-              </div>
-            </li>
+                                </div>
+                            </li>
 
-                                <li className="bg-white px-4 py-6 shadow sm:rounded-lg sm:px-6">
-                                    <div className="sm:flex sm:justify-between sm:items-baseline">
-                                        <h3 className="text-base font-medium">
-                                            <span className="text-gray-900">Joe Armstrong</span>
-                                            <span className="text-gray-600">wrote</span>
-                                        </h3>
-                                        <p className="mt-1 text-sm text-gray-600 whitespace-nowrap sm:mt-0 sm:ml-3">
-                                            <time dateTime="2021-01-27T16:09">Wednesday at 4:09pm</time>
-                                        </p>
+                            <li className="bg-white px-4 py-6 shadow sm:rounded-lg sm:px-6">
+                                <div className="sm:flex sm:justify-between sm:items-baseline">
+                                    <h3 className="text-base font-medium">
+                                        <span className="text-gray-900">Joe Armstrong</span>
+                                        <span className="text-gray-600">wrote</span>
+                                    </h3>
+                                    <p className="mt-1 text-sm text-gray-600 whitespace-nowrap sm:mt-0 sm:ml-3">
+                                        <time dateTime="2021-01-27T16:09">Wednesday at 4:09pm</time>
+                                    </p>
+                                </div>
+                                <div className="mt-4 space-y-6 text-sm text-gray-800">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada at ultricies tincidunt elit et, enim. Habitant nunc, adipiscing non fermentum, sed est a, aliquet. Lorem in vel libero vel augue aliquet dui commodo.
+                </p>
+                                    <p>
+                                        Nec malesuada sed sit ut aliquet. Cras ac pharetra, sapien purus vitae vestibulum auctor faucibus ullamcorper. Leo quam tincidunt porttitor neque, velit sed. Tortor mauris ornare ut tellus sed aliquet amet venenatis condimentum. Convallis accumsan et nunc eleifend.
+                </p>
+                                    <p>
+                                        – Joe
+                </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                {/* <!-- Message list--> */}
+                <aside className="hidden xl:block xl:flex-shrink-0 xl:order-first">
+                    <div className="h-full relative flex flex-col w-96 border-r border-gray-200 bg-gray-100">
+                        <div className="flex-shrink-0">
+                            <div className="h-16 bg-white px-6 flex flex-col justify-center">
+                                <div className="flex items-baseline space-x-3">
+                                    <h2 className="text-ls font-medium text-gray-900">Inbox</h2>
+                                    <p className="text-sm font-medium text-gray-500">12 messages</p>
+                                </div>
+                            </div>
+                            <div className="border-t border-b border-gray-200 bg-gray-50 px-6 py-2 text-sm font-medium text-gray-500">
+                                Sorted by date
+            </div>
+                        </div>
+                        <nav aria-label="Message list" className="min-h-0 flex-1 overflow-y-auto">
+                            <ul className="border-b border-gray-200 divide-y divide-gray-200">
+                                <li className="relative bg-white py-5 px-6 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600">
+                                    <div className="flex justify-between space-x-3">
+                                        <div className="min-w-0 flex-1">
+                                            <a href="#" className="block focus:outline-none">
+                                                <span className="absolute inset-0" aria-hidden="true"></span>
+                                                <p className="text-sm font-medium text-gray-900 truncate">Gloria Roberston</p>
+                                                <p className="text-sm text-gray-500 truncate">Velit placeat sit ducimus non sed</p>
+                                            </a>
+                                        </div>
+                                        <time dateTime="2021-01-27T16:35" className="flex-shrink-0 whitespace-nowrap text-sm text-gray-500">1d ago</time>
                                     </div>
-                                    <div className="mt-4 space-y-6 text-sm text-gray-800">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada at ultricies tincidunt elit et, enim. Habitant nunc, adipiscing non fermentum, sed est a, aliquet. Lorem in vel libero vel augue aliquet dui commodo.
-                </p>
-                                        <p>
-                                            Nec malesuada sed sit ut aliquet. Cras ac pharetra, sapien purus vitae vestibulum auctor faucibus ullamcorper. Leo quam tincidunt porttitor neque, velit sed. Tortor mauris ornare ut tellus sed aliquet amet venenatis condimentum. Convallis accumsan et nunc eleifend.
-                </p>
-                                        <p>
-                                            – Joe
-                </p>
+                                    <div className="mt-1">
+                                        <p className="line-clamp-2 text-sm text-gray-600">
+                                            Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.
+                  </p>
                                     </div>
                                 </li>
-          </ul>
-        </div>
-      </section>
 
-                    {/* <!-- Message list--> */}
-                    <aside className="hidden xl:block xl:flex-shrink-0 xl:order-first">
-                        <div className="h-full relative flex flex-col w-96 border-r border-gray-200 bg-gray-100">
-                            <div className="flex-shrink-0">
-                                <div className="h-16 bg-white px-6 flex flex-col justify-center">
-                                    <div className="flex items-baseline space-x-3">
-                                        <h2 className="text-ls font-medium text-gray-900">Inbox</h2>
-                                        <p className="text-sm font-medium text-gray-500">12 messages</p>
+                                <li className="relative bg-white py-5 px-6 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600">
+                                    <div className="flex justify-between space-x-3">
+                                        <div className="min-w-0 flex-1">
+                                            <a href="#" className="block focus:outline-none">
+                                                <span className="absolute inset-0" aria-hidden="true"></span>
+                                                <p className="text-sm font-medium text-gray-900 truncate">Virginia Abshire</p>
+                                                <p className="text-sm text-gray-500 truncate">Nemo mollitia repudiandae adipisci explicabo optio consequatur tempora ut nihil</p>
+                                            </a>
+                                        </div>
+                                        <time dateTime="2021-01-27T16:35" className="flex-shrink-0 whitespace-nowrap text-sm text-gray-500">1d ago</time>
                                     </div>
-                                </div>
-                                <div className="border-t border-b border-gray-200 bg-gray-50 px-6 py-2 text-sm font-medium text-gray-500">
-                                    Sorted by date
-            </div>
-                            </div>
-                            <nav aria-label="Message list" className="min-h-0 flex-1 overflow-y-auto">
-                                <ul className="border-b border-gray-200 divide-y divide-gray-200">
-                                    <li className="relative bg-white py-5 px-6 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600">
-                                        <div className="flex justify-between space-x-3">
-                                            <div className="min-w-0 flex-1">
-                                                <a href="#" className="block focus:outline-none">
-                                                    <span className="absolute inset-0" aria-hidden="true"></span>
-                                                    <p className="text-sm font-medium text-gray-900 truncate">Gloria Roberston</p>
-                                                    <p className="text-sm text-gray-500 truncate">Velit placeat sit ducimus non sed</p>
-                                                </a>
-                                            </div>
-                                            <time dateTime="2021-01-27T16:35" className="flex-shrink-0 whitespace-nowrap text-sm text-gray-500">1d ago</time>
-                                        </div>
-                                        <div className="mt-1">
-                                            <p className="line-clamp-2 text-sm text-gray-600">
-                                                Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.
+                                    <div className="mt-1">
+                                        <p className="line-clamp-2 text-sm text-gray-600">
+                                            Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.
                   </p>
-                                        </div>
-                                    </li>
+                                    </div>
+                                </li>
 
-                                    <li className="relative bg-white py-5 px-6 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600">
-                                        <div className="flex justify-between space-x-3">
-                                            <div className="min-w-0 flex-1">
-                                                <a href="#" className="block focus:outline-none">
-                                                    <span className="absolute inset-0" aria-hidden="true"></span>
-                                                    <p className="text-sm font-medium text-gray-900 truncate">Virginia Abshire</p>
-                                                    <p className="text-sm text-gray-500 truncate">Nemo mollitia repudiandae adipisci explicabo optio consequatur tempora ut nihil</p>
-                                                </a>
-                                            </div>
-                                            <time dateTime="2021-01-27T16:35" className="flex-shrink-0 whitespace-nowrap text-sm text-gray-500">1d ago</time>
+                                <li className="relative bg-white py-5 px-6 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600">
+                                    <div className="flex justify-between space-x-3">
+                                        <div className="min-w-0 flex-1">
+                                            <a href="#" className="block focus:outline-none">
+                                                <span className="absolute inset-0" aria-hidden="true"></span>
+                                                <p className="text-sm font-medium text-gray-900 truncate">Kyle Gulgowski</p>
+                                                <p className="text-sm text-gray-500 truncate">Doloremque reprehenderit et harum quas explicabo nulla architecto dicta voluptatibus</p>
+                                            </a>
                                         </div>
-                                        <div className="mt-1">
-                                            <p className="line-clamp-2 text-sm text-gray-600">
-                                                Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.
+                                        <time dateTime="2021-01-27T16:35" className="flex-shrink-0 whitespace-nowrap text-sm text-gray-500">1d ago</time>
+                                    </div>
+                                    <div className="mt-1">
+                                        <p className="line-clamp-2 text-sm text-gray-600">
+                                            Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.
                   </p>
-                                        </div>
-                                    </li>
+                                    </div>
+                                </li>
 
-                                    <li className="relative bg-white py-5 px-6 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600">
-                                        <div className="flex justify-between space-x-3">
-                                            <div className="min-w-0 flex-1">
-                                                <a href="#" className="block focus:outline-none">
-                                                    <span className="absolute inset-0" aria-hidden="true"></span>
-                                                    <p className="text-sm font-medium text-gray-900 truncate">Kyle Gulgowski</p>
-                                                    <p className="text-sm text-gray-500 truncate">Doloremque reprehenderit et harum quas explicabo nulla architecto dicta voluptatibus</p>
-                                                </a>
-                                            </div>
-                                            <time dateTime="2021-01-27T16:35" className="flex-shrink-0 whitespace-nowrap text-sm text-gray-500">1d ago</time>
+                                <li className="relative bg-white py-5 px-6 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600">
+                                    <div className="flex justify-between space-x-3">
+                                        <div className="min-w-0 flex-1">
+                                            <a href="#" className="block focus:outline-none">
+                                                <span className="absolute inset-0" aria-hidden="true"></span>
+                                                <p className="text-sm font-medium text-gray-900 truncate">Hattie Haag</p>
+                                                <p className="text-sm text-gray-500 truncate">Eos sequi et aut ex impedit</p>
+                                            </a>
                                         </div>
-                                        <div className="mt-1">
-                                            <p className="line-clamp-2 text-sm text-gray-600">
-                                                Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.
+                                        <time dateTime="2021-01-27T16:35" className="flex-shrink-0 whitespace-nowrap text-sm text-gray-500">1d ago</time>
+                                    </div>
+                                    <div className="mt-1">
+                                        <p className="line-clamp-2 text-sm text-gray-600">
+                                            Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.
                   </p>
-                                        </div>
-                                    </li>
+                                    </div>
+                                </li>
 
-                                    <li className="relative bg-white py-5 px-6 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600">
-                                        <div className="flex justify-between space-x-3">
-                                            <div className="min-w-0 flex-1">
-                                                <a href="#" className="block focus:outline-none">
-                                                    <span className="absolute inset-0" aria-hidden="true"></span>
-                                                    <p className="text-sm font-medium text-gray-900 truncate">Hattie Haag</p>
-                                                    <p className="text-sm text-gray-500 truncate">Eos sequi et aut ex impedit</p>
-                                                </a>
-                                            </div>
-                                            <time dateTime="2021-01-27T16:35" className="flex-shrink-0 whitespace-nowrap text-sm text-gray-500">1d ago</time>
+                                <li className="relative bg-white py-5 px-6 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600">
+                                    <div className="flex justify-between space-x-3">
+                                        <div className="min-w-0 flex-1">
+                                            <a href="#" className="block focus:outline-none">
+                                                <span className="absolute inset-0" aria-hidden="true"></span>
+                                                <p className="text-sm font-medium text-gray-900 truncate">Wilma Glover</p>
+                                                <p className="text-sm text-gray-500 truncate">Quisquam veniam explicabo</p>
+                                            </a>
                                         </div>
-                                        <div className="mt-1">
-                                            <p className="line-clamp-2 text-sm text-gray-600">
-                                                Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.
+                                        <time dateTime="2021-01-27T16:35" className="flex-shrink-0 whitespace-nowrap text-sm text-gray-500">1d ago</time>
+                                    </div>
+                                    <div className="mt-1">
+                                        <p className="line-clamp-2 text-sm text-gray-600">
+                                            Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.
                   </p>
-                                        </div>
-                                    </li>
+                                    </div>
+                                </li>
 
-                                    <li className="relative bg-white py-5 px-6 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600">
-                                        <div className="flex justify-between space-x-3">
-                                            <div className="min-w-0 flex-1">
-                                                <a href="#" className="block focus:outline-none">
-                                                    <span className="absolute inset-0" aria-hidden="true"></span>
-                                                    <p className="text-sm font-medium text-gray-900 truncate">Wilma Glover</p>
-                                                    <p className="text-sm text-gray-500 truncate">Quisquam veniam explicabo</p>
-                                                </a>
-                                            </div>
-                                            <time dateTime="2021-01-27T16:35" className="flex-shrink-0 whitespace-nowrap text-sm text-gray-500">1d ago</time>
+                                <li className="relative bg-white py-5 px-6 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600">
+                                    <div className="flex justify-between space-x-3">
+                                        <div className="min-w-0 flex-1">
+                                            <a href="#" className="block focus:outline-none">
+                                                <span className="absolute inset-0" aria-hidden="true"></span>
+                                                <p className="text-sm font-medium text-gray-900 truncate">Dolores Morissette</p>
+                                                <p className="text-sm text-gray-500 truncate">Est ratione molestiae modi maiores consequatur eligendi et excepturi magni</p>
+                                            </a>
                                         </div>
-                                        <div className="mt-1">
-                                            <p className="line-clamp-2 text-sm text-gray-600">
-                                                Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.
+                                        <time dateTime="2021-01-27T16:35" className="flex-shrink-0 whitespace-nowrap text-sm text-gray-500">1d ago</time>
+                                    </div>
+                                    <div className="mt-1">
+                                        <p className="line-clamp-2 text-sm text-gray-600">
+                                            Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.
                   </p>
-                                        </div>
-                                    </li>
+                                    </div>
+                                </li>
 
-                                    <li className="relative bg-white py-5 px-6 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600">
-                                        <div className="flex justify-between space-x-3">
-                                            <div className="min-w-0 flex-1">
-                                                <a href="#" className="block focus:outline-none">
-                                                    <span className="absolute inset-0" aria-hidden="true"></span>
-                                                    <p className="text-sm font-medium text-gray-900 truncate">Dolores Morissette</p>
-                                                    <p className="text-sm text-gray-500 truncate">Est ratione molestiae modi maiores consequatur eligendi et excepturi magni</p>
-                                                </a>
-                                            </div>
-                                            <time dateTime="2021-01-27T16:35" className="flex-shrink-0 whitespace-nowrap text-sm text-gray-500">1d ago</time>
+                                <li className="relative bg-white py-5 px-6 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600">
+                                    <div className="flex justify-between space-x-3">
+                                        <div className="min-w-0 flex-1">
+                                            <a href="#" className="block focus:outline-none">
+                                                <span className="absolute inset-0" aria-hidden="true"></span>
+                                                <p className="text-sm font-medium text-gray-900 truncate">Guadalupe Walsh</p>
+                                                <p className="text-sm text-gray-500 truncate">Commodi deserunt aut veniam rem ipsam</p>
+                                            </a>
                                         </div>
-                                        <div className="mt-1">
-                                            <p className="line-clamp-2 text-sm text-gray-600">
-                                                Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.
+                                        <time dateTime="2021-01-27T16:35" className="flex-shrink-0 whitespace-nowrap text-sm text-gray-500">1d ago</time>
+                                    </div>
+                                    <div className="mt-1">
+                                        <p className="line-clamp-2 text-sm text-gray-600">
+                                            Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.
                   </p>
-                                        </div>
-                                    </li>
+                                    </div>
+                                </li>
 
-                                    <li className="relative bg-white py-5 px-6 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600">
-                                        <div className="flex justify-between space-x-3">
-                                            <div className="min-w-0 flex-1">
-                                                <a href="#" className="block focus:outline-none">
-                                                    <span className="absolute inset-0" aria-hidden="true"></span>
-                                                    <p className="text-sm font-medium text-gray-900 truncate">Guadalupe Walsh</p>
-                                                    <p className="text-sm text-gray-500 truncate">Commodi deserunt aut veniam rem ipsam</p>
-                                                </a>
-                                            </div>
-                                            <time dateTime="2021-01-27T16:35" className="flex-shrink-0 whitespace-nowrap text-sm text-gray-500">1d ago</time>
+                                <li className="relative bg-white py-5 px-6 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600">
+                                    <div className="flex justify-between space-x-3">
+                                        <div className="min-w-0 flex-1">
+                                            <a href="#" className="block focus:outline-none">
+                                                <span className="absolute inset-0" aria-hidden="true"></span>
+                                                <p className="text-sm font-medium text-gray-900 truncate">Jasmine Hansen</p>
+                                                <p className="text-sm text-gray-500 truncate">Illo illum aut debitis earum</p>
+                                            </a>
                                         </div>
-                                        <div className="mt-1">
-                                            <p className="line-clamp-2 text-sm text-gray-600">
-                                                Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.
+                                        <time dateTime="2021-01-27T16:35" className="flex-shrink-0 whitespace-nowrap text-sm text-gray-500">1d ago</time>
+                                    </div>
+                                    <div className="mt-1">
+                                        <p className="line-clamp-2 text-sm text-gray-600">
+                                            Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.
                   </p>
-                                        </div>
-                                    </li>
+                                    </div>
+                                </li>
 
-                                    <li className="relative bg-white py-5 px-6 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600">
-                                        <div className="flex justify-between space-x-3">
-                                            <div className="min-w-0 flex-1">
-                                                <a href="#" className="block focus:outline-none">
-                                                    <span className="absolute inset-0" aria-hidden="true"></span>
-                                                    <p className="text-sm font-medium text-gray-900 truncate">Jasmine Hansen</p>
-                                                    <p className="text-sm text-gray-500 truncate">Illo illum aut debitis earum</p>
-                                                </a>
-                                            </div>
-                                            <time dateTime="2021-01-27T16:35" className="flex-shrink-0 whitespace-nowrap text-sm text-gray-500">1d ago</time>
+                                <li className="relative bg-white py-5 px-6 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600">
+                                    <div className="flex justify-between space-x-3">
+                                        <div className="min-w-0 flex-1">
+                                            <a href="#" className="block focus:outline-none">
+                                                <span className="absolute inset-0" aria-hidden="true"></span>
+                                                <p className="text-sm font-medium text-gray-900 truncate">Ian Volkman</p>
+                                                <p className="text-sm text-gray-500 truncate">Qui dolore iste ut est cumque sed</p>
+                                            </a>
                                         </div>
-                                        <div className="mt-1">
-                                            <p className="line-clamp-2 text-sm text-gray-600">
-                                                Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.
+                                        <time dateTime="2021-01-27T16:35" className="flex-shrink-0 whitespace-nowrap text-sm text-gray-500">1d ago</time>
+                                    </div>
+                                    <div className="mt-1">
+                                        <p className="line-clamp-2 text-sm text-gray-600">
+                                            Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.
                   </p>
-                                        </div>
-                                    </li>
+                                    </div>
+                                </li>
 
-                                    <li className="relative bg-white py-5 px-6 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600">
-                                        <div className="flex justify-between space-x-3">
-                                            <div className="min-w-0 flex-1">
-                                                <a href="#" className="block focus:outline-none">
-                                                    <span className="absolute inset-0" aria-hidden="true"></span>
-                                                    <p className="text-sm font-medium text-gray-900 truncate">Ian Volkman</p>
-                                                    <p className="text-sm text-gray-500 truncate">Qui dolore iste ut est cumque sed</p>
-                                                </a>
-                                            </div>
-                                            <time dateTime="2021-01-27T16:35" className="flex-shrink-0 whitespace-nowrap text-sm text-gray-500">1d ago</time>
+                                <li className="relative bg-white py-5 px-6 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600">
+                                    <div className="flex justify-between space-x-3">
+                                        <div className="min-w-0 flex-1">
+                                            <a href="#" className="block focus:outline-none">
+                                                <span className="absolute inset-0" aria-hidden="true"></span>
+                                                <p className="text-sm font-medium text-gray-900 truncate">Rafael Klocko</p>
+                                                <p className="text-sm text-gray-500 truncate">Aut sed aut illum delectus maiores laboriosam ex</p>
+                                            </a>
                                         </div>
-                                        <div className="mt-1">
-                                            <p className="line-clamp-2 text-sm text-gray-600">
-                                                Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.
+                                        <time dateTime="2021-01-27T16:35" className="flex-shrink-0 whitespace-nowrap text-sm text-gray-500">1d ago</time>
+                                    </div>
+                                    <div className="mt-1">
+                                        <p className="line-clamp-2 text-sm text-gray-600">
+                                            Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.
                   </p>
-                                        </div>
-                                    </li>
-
-                                    <li className="relative bg-white py-5 px-6 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600">
-                                        <div className="flex justify-between space-x-3">
-                                            <div className="min-w-0 flex-1">
-                                                <a href="#" className="block focus:outline-none">
-                                                    <span className="absolute inset-0" aria-hidden="true"></span>
-                                                    <p className="text-sm font-medium text-gray-900 truncate">Rafael Klocko</p>
-                                                    <p className="text-sm text-gray-500 truncate">Aut sed aut illum delectus maiores laboriosam ex</p>
-                                                </a>
-                                            </div>
-                                            <time dateTime="2021-01-27T16:35" className="flex-shrink-0 whitespace-nowrap text-sm text-gray-500">1d ago</time>
-                                        </div>
-                                        <div className="mt-1">
-                                            <p className="line-clamp-2 text-sm text-gray-600">
-                                                Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.
-                  </p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </aside>
-    </main>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </aside>
+            </main>
         </Fragment>
     )
 }
