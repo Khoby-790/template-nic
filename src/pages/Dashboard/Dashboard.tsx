@@ -124,7 +124,8 @@ const Dashboard = (props: Props) => {
                                     </thead>
                                     <tbody className="bg-white divide-y divide-gray-200">
 
-                                        <OfferLisitngItem />
+                                        {[1, 5, 4, 3, 2].map((_, index) => <OfferLisitngItem key={index} index={index} />)}
+
                                         {/* <!-- More items... --> */}
                                     </tbody>
                                 </table>
