@@ -1,14 +1,14 @@
-import React from 'react'
+import React, { Fragment, ReactNode } from 'react'
 
 interface Props {
-
+    chidren: ReactNode
 }
 
 const ToastProvider = (props: Props) => {
     return (
-        <div>
-
-        </div>
+        <Fragment>
+            {props.chidren}
+        </Fragment>
     )
 }
 
