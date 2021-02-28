@@ -19,12 +19,22 @@ const SidebarSubMenu = (props: Props) => {
     const isOpen = useSelector<SidebarState>(state => state.sidebarOpen)
     return (
         <Transition show={isOpen ? true : false}>
-            <aside ref={menuRef} className="hidden transform transition-all duration-100 lg:block lg:flex-shrink-0 lg:order-first">
-                <div className="h-full relative flex flex-col w-64 border-r border-gray-200 bg-gray-200">
-                    {/* <!-- Your content --> */}
-                    {isOpen ? "Open" : "Close"}
-                </div>
-            </aside>
+            <Transition
+                enter="transform transition ease-in-out duration-500 sm:duration-700"
+                enterFrom="translate-x-0"
+                enterTo="opacity-100 translate-x-0 sm:scale-100"
+                leave="transform transition ease-in-out duration-500 sm:duration-700"
+                leaveFrom="opacity-100 translate-x-0 sm:scale-100"
+                leaveTo="-translate-x-full"
+            >
+                <aside ref={menuRef} className="hidden transform transition-all duration-100 lg:block lg:flex-shrink-0 lg:order-first">
+                    <div className="h-full relative flex flex-col w-64 border-r border-gray-200 bg-gray-200">
+                        {/* <!-- Your content --> */}
+                        {isOpen ? "Open" : "Close"}
+                    </div>
+                </aside>
+            </Transition>
+
         </Transition>
     )
 }
