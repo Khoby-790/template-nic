@@ -7,9 +7,12 @@ interface Props {
 }
 
 const Inbox = (props: Props) => {
-    const detailsRef = useRef(null)
+    const detailsRef = useRef(null);
+    const openRef = useRef(null);
+    const [openOpenMenu, setOpenOpenMenu] = useState(false)
     const [showDetailsMenu, setShowDetailsMenu] = useState(false);
     useOutsideClick(detailsRef, () => setShowDetailsMenu(false))
+    useOutsideClick(openRef, () => setOpenOpenMenu(false))
     return (
         <Fragment>
             <main className="min-w-0 flex-1 overflow-y-scroll border-t border-gray-200 xl:flex">
@@ -164,7 +167,7 @@ const Inbox = (props: Props) => {
                 </span>
                                     <div className="ml-3 relative inline-block text-left">
                                         <div>
-                                            <button type="button" className="-my-2 p-2 rounded-full bg-white flex items-center text-gray-400 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-600" id="menu-4" aria-expanded="false" aria-haspopup="true">
+                                            <button onClick={() => setOpenOpenMenu(true)} type="button" className="-my-2 p-2 rounded-full bg-white flex items-center text-gray-400 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-600" id="menu-4" aria-expanded="false" aria-haspopup="true">
                                                 <span className="sr-only">Open options</span>
                                                 {/* <!-- Heroicon name: solid/dots-vertical --> */}
                                                 <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -183,19 +186,30 @@ const Inbox = (props: Props) => {
                       From: "transform opacity-100 scale-100"
                       To: "transform opacity-0 scale-95"
                   --> */}
-                                        <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-4">
-                                            <div className="py-1">
-                                                <button type="button" className="w-full flex justify-between px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900" role="menuitem">
-                                                    <span>Copy email address</span>
-                                                </button>
-                                                <a href="#" className="flex justify-between px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900" role="menuitem">
-                                                    <span>Previous conversations</span>
-                                                </a>
-                                                <a href="#" className="flex justify-between px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900" role="menuitem">
-                                                    <span>View original</span>
-                                                </a>
+
+                                        <Transition
+                                            show={openOpenMenu}
+                                            enter="transition ease-out duration-100"
+                                            enterFrom="transform opacity-0 scale-95"
+                                            enterTo="transform opacity-100 scale-100"
+                                            leave="transition ease-in duration-75"
+                                            leaveFrom="transform opacity-100 scale-100"
+                                            leaveTo="transform opacity-0 scale-95"
+                                        >
+                                            <div ref={openRef} className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-4">
+                                                <div className="py-1">
+                                                    <button type="button" className="w-full flex justify-between px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900" role="menuitem">
+                                                        <span>Copy email address</span>
+                                                    </button>
+                                                    <a href="#" className="flex justify-between px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900" role="menuitem">
+                                                        <span>Previous conversations</span>
+                                                    </a>
+                                                    <a href="#" className="flex justify-between px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900" role="menuitem">
+                                                        <span>View original</span>
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </Transition>
                                     </div>
                                 </div>
                             </div>
