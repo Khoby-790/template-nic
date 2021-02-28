@@ -1,5 +1,4 @@
-import React, { Fragment, useState, createContext, useContext, useRef } from 'react'
-import { Transition } from '../components'
+import React, { useState, createContext, useContext } from 'react'
 
 
 type ToastContextProps = {
@@ -26,7 +25,6 @@ export const useToast = () => useContext(ToastContext)
 
 
 const ToastProvider: React.FC = ({ children }) => {
-    const notificationRef = useRef(null)
     const [showNotif, setShowNotif] = useState(false);
     const [message, setMessage] = useState("");
     const [description, setDescription] = useState("");
