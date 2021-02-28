@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment } from 'react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { useToast } from '../../providers/ToastProvider';
 import OfferLisitngItem from './components/OfferLisitngItem';
 
 
@@ -55,6 +56,12 @@ const data = [
 ];
 
 const Dashboard = (props: Props) => {
+    const { notify } = useToast();
+
+    const onNotifyClicked = () => {
+        notify({ message: "Hello", description: "It is working" })
+    }
+
     return (
         <Fragment>
             <div className="h-full max-h-96 bg-white mx-5 my-3 py-4 shadow-md rounded-md">
