@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Dashboard from '../pages/Dashboard/Dashboard'
+import Reports from '../pages/Reports/Reports'
 import SidebarSubMenu from './SidebarSubMenu'
 
 interface Props {
@@ -16,8 +17,8 @@ const AppContent = (props: Props) => {
                     <h1 id="primary-heading" className="sr-only">Home</h1>
                     {/* <!-- Your content --> */}
                     <Switch>
-                        <Route path="/" component={Dashboard} />
-                        <Route path="/report" component={Dashboard} />
+                        <Route path="/" exact component={Dashboard} />
+                        <Route path="/reports" component={Reports} />
                     </Switch>
                 </section>
 

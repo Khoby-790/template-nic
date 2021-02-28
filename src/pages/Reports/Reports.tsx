@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import OffersListing from '../Dashboard/components/OffersListing'
 
 interface Props {
-    
+
 }
 
 const Reports = (props: Props) => {
     return (
-        <div>
-            
-        </div>
+        <Fragment>
+            <div className="bg-white"></div>
+            <OffersListing />
+        </Fragment>
     )
 }
 
