@@ -1,20 +1,15 @@
-import React, { Fragment, ReactNode, useState, createContext } from 'react'
+import React, { Fragment, useState, createContext } from 'react'
 import { Transition } from '../components'
 
 
-type ToastContextProps = {}
-
 const ToastContext = createContext(null);
 
-interface Props {
-    chidren: ReactNode
-}
 
-const ToastProvider = (props: Props) => {
+const ToastProvider: React.FC = ({ children }) => {
     const [showNotif, setShowNotif] = useState(false)
     return (
         <Fragment>
-            {props.chidren}
+            {children}
             {/* <!-- This example requires Tailwind CSS v2.0+ --> */}
             <div className="fixed inset-0 flex items-end justify-center px-4 py-6 pointer-events-none sm:p-6 sm:items-start sm:justify-end">
                 {/* <!--
