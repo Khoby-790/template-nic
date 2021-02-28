@@ -9,7 +9,9 @@ interface Props {
 const Taoster = (props: Props) => {
     const notificationRef = useRef(null)
     const { showNotif, description, message, setShowNotif } = useToast()
-    useOutsideClick(notificationRef, () => setShowNotif(false))
+    useOutsideClick(notificationRef, () => {
+        setShowNotif && setShowNotif(false)
+    })
     return (
         <Fragment>
             {/* <Transition > */}
@@ -51,7 +53,7 @@ const Taoster = (props: Props) => {
                                     </p>
                                 </div>
                                 <div className="ml-4 flex-shrink-0 flex">
-                                    <button onClick={() => setShowNotif(false)} className="bg-white rounded-md inline-flex text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                    <button onClick={() => setShowNotif && setShowNotif(false)} className="bg-white rounded-md inline-flex text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                                         <span className="sr-only">Close</span>
                                         {/* <!-- Heroicon name: solid/x --> */}
                                         <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
