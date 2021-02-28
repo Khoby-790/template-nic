@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import { Transition } from '../../components'
 
 interface Props {
 
@@ -83,25 +84,35 @@ const Inbox = (props: Props) => {
                           From: "transform opacity-100 scale-100"
                           To: "transform opacity-0 scale-95"
                       --> */}
-                                                <div className="origin-top-right absolute right-0 mt-2 w-36 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-3">
-                                                    <div className="py-1">
-                                                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900" role="menuitem">
-                                                            Note
+                                                <Transition
+                                                    show={true}
+                                                    enter="transition ease-out duration-100"
+                                                    enterFrom="transform opacity-0 scale-95"
+                                                    enterTo="transform opacity-100 scale-100"
+                                                    leave="transition ease-in duration-75"
+                                                    leaveFrom="transform opacity-100 scale-100"
+                                                    leaveTo="transform opacity-0 scale-95"
+                                                >
+                                                    <div className="origin-top-right absolute right-0 mt-2 w-36 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-3">
+                                                        <div className="py-1">
+                                                            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900" role="menuitem">
+                                                                Note
                                                         </a>
 
-                                                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900" role="menuitem">
-                                                            Assign
+                                                            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900" role="menuitem">
+                                                                Assign
                                                         </a>
 
-                                                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900" role="menuitem">
-                                                            Archive
+                                                            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900" role="menuitem">
+                                                                Archive
                                                         </a>
 
-                                                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900" role="menuitem">
-                                                            Move
+                                                            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900" role="menuitem">
+                                                                Move
                                                         </a>
+                                                        </div>
                                                     </div>
-                                                </div>
+                                                </Transition>
                                             </span>
                                         </span>
                                     </div>
