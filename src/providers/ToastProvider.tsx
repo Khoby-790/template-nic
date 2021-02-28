@@ -38,8 +38,9 @@ const ToastProvider: React.FC = ({ children }) => {
         <ToastContext.Provider value={{ notify }}>
             {children}
             {/* <!-- This example requires Tailwind CSS v2.0+ --> */}
-            <div className="fixed inset-0 flex items-end justify-center px-4 py-6 pointer-events-none sm:p-6 sm:items-start sm:justify-end">
-                {/* <!--
+            <Transition show={showNotif}>
+                <div className="fixed inset-0 flex items-end justify-center px-4 py-6 pointer-events-none sm:p-6 sm:items-start sm:justify-end">
+                    {/* <!--
     Notification panel, show/hide based on alert state.
 
     Entering: "transform ease-out duration-300 transition"
@@ -49,7 +50,6 @@ const ToastProvider: React.FC = ({ children }) => {
       From: "opacity-100"
       To: "opacity-0"
   --> */}
-                <Transition show={showNotif}>
                     <Transition
                         enter="transform ease-out duration-300 transition"
                         enterFrom="translate-y-2 opacity-0 sm:translate-y-0 sm:translate-x-2"
@@ -88,8 +88,8 @@ const ToastProvider: React.FC = ({ children }) => {
                             </div>
                         </div>
                     </Transition>
-                </Transition>
-            </div>
+                </div>
+            </Transition>
 
         </ToastContext.Provider>
     )
