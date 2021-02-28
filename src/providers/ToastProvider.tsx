@@ -1,5 +1,10 @@
-import React, { Fragment, ReactNode, useState } from 'react'
+import React, { Fragment, ReactNode, useState, createContext } from 'react'
 import { Transition } from '../components'
+
+
+type ToastContextProps = {}
+
+const ToastContext = createContext(null);
 
 interface Props {
     chidren: ReactNode
