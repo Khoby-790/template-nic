@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import { Route, Switch } from 'react-router-dom'
 import Dashboard from '../pages/Dashboard/Dashboard'
 import SidebarSubMenu from './SidebarSubMenu'
 
@@ -14,7 +15,10 @@ const AppContent = (props: Props) => {
                 <section aria-labelledby="primary-heading" className="min-w-0 transition duration-500 flex-1 h-full flex flex-col overflow-y-scroll lg:order-last">
                     <h1 id="primary-heading" className="sr-only">Home</h1>
                     {/* <!-- Your content --> */}
-                    <Dashboard />
+                    <Switch>
+                        <Route path="/" component={Dashboard} />
+                        <Route path="/report" component={Dashboard} />
+                    </Switch>
                 </section>
 
                 {/* <!-- Secondary column (hidden on smaller screens) --> */}
