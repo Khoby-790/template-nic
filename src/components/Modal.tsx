@@ -12,7 +12,7 @@ interface Props {
     canClose?: boolean,
 }
 
-const Modal = ({ show, setShow, size = 35, children, canClose, height = 50 }: Props) => {
+const Modal = ({ show, setShow, size = 35, children, canClose = true, height = 50 }: Props) => {
     const ref = useRef(null);
     useOutsideClick(ref, () => {
         if (canClose) setShow(false);
@@ -45,7 +45,7 @@ const Modal = ({ show, setShow, size = 35, children, canClose, height = 50 }: Pr
                         <div className="fixed z-20 bottom-0 inset-x-0   sm:inset-0 sm:p-0 sm:flex sm:items-center sm:justify-center">
                             <div
                                 ref={ref}
-                                style={{ width: `${size}vw`, height: `${height}vh` }}
+                                style={{ width: `${size}vw`, }}
                                 className="bg-white  rounded-none  overflow-hidden shadow-xl transform transition-all"
                                 role="dialog"
                                 aria-modal="true"
