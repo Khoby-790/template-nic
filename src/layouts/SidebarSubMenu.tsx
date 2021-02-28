@@ -21,7 +21,7 @@ const SidebarSubMenu = (props: Props) => {
         <Transition show={isOpen ? true : false}>
             <Transition
                 enter="transform transition ease-in-out duration-500 sm:duration-700"
-                enterFrom="translate-x-full"
+                enterFrom="-translate-x-full"
                 enterTo="opacity-100 translate-x-0 sm:scale-100"
                 leave="transform transition ease-in-out duration-500 sm:duration-700"
                 leaveFrom="opacity-100 translate-x-0 sm:scale-100"
