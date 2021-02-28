@@ -36,7 +36,7 @@ const Modal = ({ show, setShow, size = 35, children, canClose = true, height = 5
 
                     <Transition
                         enter="transform transition ease-in-out duration-500 sm:duration-700"
-                        enterFrom="translate-x-11"
+                        enterFrom="translate-x-32"
                         enterTo="opacity-100 translate-x-0 sm:scale-100"
                         leave="transform transition ease-in-out duration-500 sm:duration-700"
                         leaveFrom="opacity-100 translate-x-0 sm:scale-100"
