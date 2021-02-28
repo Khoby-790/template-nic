@@ -48,7 +48,9 @@ const OfferLisitngItem = (props: Props) => {
                 </td>
             </tr>
 
-            <Modal show={showOffer} setShow={setShowOffer}></Modal>
+            <Modal show={showOffer} size={50} setShow={setShowOffer}>
+                <div className="py-4"></div>
+            </Modal>
         </Fragment>
     )
 }
