@@ -80,7 +80,7 @@ const Dashboard = (props: Props) => {
                     </AreaChart>
                 </ResponsiveContainer>
             </div>
-            <OffersListing />
+            <OffersListing header="Current Offers" description="Offers that appear here are realtime" />
         </Fragment>
     )
 }
