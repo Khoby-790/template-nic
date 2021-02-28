@@ -7,7 +7,7 @@ interface Props {
 const Inbox = (props: Props) => {
     return (
         <Fragment>
-            <main className="min-w-0 flex-1 border-t border-gray-200 xl:flex">
+            <main className="min-w-0 flex-1 overflow-y-scroll border-t border-gray-200 xl:flex">
                 <section aria-labelledby="message-heading" className="min-w-0 flex-1 h-full flex flex-col overflow-hidden xl:order-last">
                     {/* <!-- Top section --> */}
                     <div className="flex-shrink-0 bg-white border-b border-gray-200">
