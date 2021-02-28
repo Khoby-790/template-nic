@@ -57,7 +57,7 @@ const data = [
 const Dashboard = (props: Props) => {
     return (
         <Fragment>
-            <div className="h-94 bg-white mx-5 my-3 py-4 shadow-md rounded-md">
+            <div className="h-full max-h-96 bg-white mx-5 my-3 py-4 shadow-md rounded-md">
                 <ResponsiveContainer width="100%" height="100%">
                     <AreaChart
                         width={500}
@@ -85,6 +85,7 @@ const Dashboard = (props: Props) => {
                     <div className="flex-1 px-2 ">
                         <h2 className="text-2xl font-medium">Current Offers</h2>
                         <p className="font-light">Offers that appear here are realtime</p>
+                        <button>Click me</button>
                     </div>
                     <div className="flex-1 flex justify-end px-2">
                         <input placeholder="search" type="search" className="border-gray-200 focus:outline-none px-3 border h-12 w-1/2" />
