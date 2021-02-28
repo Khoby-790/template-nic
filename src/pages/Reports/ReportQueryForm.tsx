@@ -21,6 +21,11 @@ const ReportQueryForm = (props: Props) => {
                     <Input label="Reinsurer" />
                     <Input label="Business Type" />
                 </div>
+                <div className="flex mx-5 w-full">
+                    <button className="bg-green-600 py-2 flex items-center justify-center">
+                        Hello
+                    </button>
+                </div>
             </div>
         </Fragment>
     )
