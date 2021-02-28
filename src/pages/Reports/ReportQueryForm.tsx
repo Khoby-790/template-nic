@@ -9,8 +9,9 @@ const ReportQueryForm = (props: Props) => {
     return (
         <Fragment>
             <div className="bg-white mx-5 py-3 mt-4 shadow-md rounded-md">
-                <div className="mx-5">
-                    <h1>Report Generator</h1>
+                <div className="mx-5 mb-3">
+                    <h1 className="font-bold text-xl">Report Generator</h1>
+                    <p className="font-light">Provide essential information to generate report based on realtime data</p>
                 </div>
                 <div className="grid mx-5 grid-cols-2 gap-3 sm:grid-cols-1 md:grid-cols-2">
                     <Input label="Reinsurer" />
