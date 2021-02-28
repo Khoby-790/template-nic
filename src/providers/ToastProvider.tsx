@@ -6,7 +6,7 @@ type ToastContextProps = {
     showNotif: boolean;
     message: string;
     description: string;
-    setShowNotif?: (prev: boolean) => void;
+    setShowNotif?: () => void;
     notify: ({ message, description }: {
         message: string,
         description: string
