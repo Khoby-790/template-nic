@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Dashboard from '../pages/Dashboard/Dashboard'
+import Inbox from '../pages/Inbox/Inbox'
 import Reports from '../pages/Reports/Reports'
 import SidebarSubMenu from './SidebarSubMenu'
 
@@ -19,6 +20,7 @@ const AppContent = (props: Props) => {
                     <Switch>
                         <Route path="/" exact component={Dashboard} />
                         <Route path="/reports" component={Reports} />
+                        <Route path="/inbox" component={Inbox} />
                     </Switch>
                 </section>
 

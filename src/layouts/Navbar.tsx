@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment, useState, useRef } from 'react'
+import { Link } from 'react-router-dom'
 import logo from '../assets/nic-logo.png'
 import { Transition } from '../components'
 import { useOutsideClick } from '../hooks'
@@ -72,7 +73,7 @@ const Navbar = (props: Props) => {
                     </div>
                     <div className="ml-10 pr-4 flex-shrink-0 flex items-center space-x-10">
                         <nav aria-label="Global" className="flex space-x-10">
-                            <a href="#" className="text-sm font-medium text-gray-900">Inboxes</a>
+                            <Link to="/inbox" className="text-sm font-medium text-gray-900">Inboxes</Link>
                             <a href="#" className="text-sm font-medium text-gray-900">Reporting</a>
                             <a href="#" className="text-sm font-medium text-gray-900">Settings</a>
                         </nav>
