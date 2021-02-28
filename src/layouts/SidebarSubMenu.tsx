@@ -30,7 +30,7 @@ const SidebarSubMenu = (props: Props) => {
                 <aside ref={menuRef} className="hidden absolute top-16 bottom-0 overflow-hidden lg:block lg:flex-shrink-0 lg:order-first">
                     <div className="h-full relative flex flex-col w-64 border-r border-gray-200 bg-gray-200">
                         {/* <!-- Your content --> */}
-                        {isOpen ? "Open" : "Close"}
+                        
                     </div>
                 </aside>
             </Transition>

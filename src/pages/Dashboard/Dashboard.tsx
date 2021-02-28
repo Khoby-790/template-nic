@@ -55,7 +55,6 @@ const data = [
 ];
 
 const Dashboard = (props: Props) => {
-
     return (
         <Fragment>
             <div className="h-96 max-h-96 bg-white mx-5 my-3 py-4 shadow-md rounded-md">
