@@ -46,7 +46,7 @@ const Modal = ({ show, setShow, size = 35, children, canClose = true, height = 5
                             <div
                                 ref={ref}
                                 style={{ width: `${size}vw`, }}
-                                className="bg-white  rounded-none  overflow-hidden shadow-xl transform transition-all"
+                                className="bg-white  rounded-md  overflow-hidden shadow-xl transform transition-all"
                                 role="dialog"
                                 aria-modal="true"
                                 aria-labelledby="modal-headline"
