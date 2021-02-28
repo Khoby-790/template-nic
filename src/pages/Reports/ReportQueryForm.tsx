@@ -18,8 +18,8 @@ const ReportQueryForm = (props: Props) => {
                     <Select label="Business Type" />
                 </div>
                 <div className="grid mx-5 grid-cols-2 gap-3 sm:grid-cols-1 md:grid-cols-2">
-                    <Input label="Reinsurer" />
-                    <Input label="Business Type" />
+                    <Input type="date" label="From" />
+                    <Input type="date" label="To" />
                 </div>
                 <div className="grid mx-5 grid-cols-2 gap-3 sm:grid-cols-1 md:grid-cols-2">
                     <Input label="Reinsurer" />
