@@ -253,7 +253,7 @@ const Inbox = (props: Props) => {
                 </section>
 
                 {/* <!-- Message list--> */}
-                <aside className="hidden xl:block xl:flex-shrink-0 xl:order-first">
+                <aside className="hidden fixed xl:block xl:flex-shrink-0 xl:order-first">
                     <div className="h-full relative flex flex-col w-96 border-r border-gray-200 bg-gray-100">
                         <div className="flex-shrink-0">
                             <div className="h-16 bg-white px-6 flex flex-col justify-center">
