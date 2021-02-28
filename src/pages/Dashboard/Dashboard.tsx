@@ -24,25 +24,25 @@ const data = [
     },
     {
         name: 'Page C',
-        uv: -1000,
+        uv: 2000,
         pv: 9800,
         amt: 2290,
     },
     {
         name: 'Page D',
-        uv: 500,
+        uv: 2780,
         pv: 3908,
         amt: 2000,
     },
     {
         name: 'Page E',
-        uv: -2000,
+        uv: 1890,
         pv: 4800,
         amt: 2181,
     },
     {
         name: 'Page F',
-        uv: -250,
+        uv: 2390,
         pv: 3800,
         amt: 2500,
     },
@@ -116,7 +116,7 @@ const Dashboard = (props: Props) => {
                                     </thead>
                                     <tbody className="bg-white divide-y divide-gray-200">
 
-                                    <OfferLisitngItem />
+                                        <OfferLisitngItem />
                                         {/* <!-- More items... --> */}
                                     </tbody>
                                 </table>
