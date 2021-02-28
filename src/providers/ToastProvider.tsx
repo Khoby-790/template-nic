@@ -1,11 +1,12 @@
 import React, { Fragment, useState, createContext, useContext, useRef } from 'react'
 import { Transition } from '../components'
-import { useOutsideClick } from '../hooks';
+
 
 type ToastContextProps = {
     showNotif: boolean;
     message: string;
     description: string;
+    setShowNotif?: (prev: boolean) => void;
     notify: ({ message, description }: {
         message: string,
         description: string
@@ -16,7 +17,7 @@ const ToastContext = createContext<ToastContextProps>({
     notify: () => { },
     showNotif: false,
     description: "",
-    message: "Alert"
+    message: "Alert",
 });
 
 export const useToast = () => useContext(ToastContext)
@@ -29,7 +30,7 @@ const ToastProvider: React.FC = ({ children }) => {
     const [showNotif, setShowNotif] = useState(false);
     const [message, setMessage] = useState("");
     const [description, setDescription] = useState("");
-    useOutsideClick(notificationRef, () => setShowNotif(false))
+
 
     const notify = ({ message, description }: {
         message: string,
@@ -41,7 +42,7 @@ const ToastProvider: React.FC = ({ children }) => {
     }
 
     return (
-        <ToastContext.Provider value={{ notify, showNotif, message, description }}>
+        <ToastContext.Provider value={{ notify, showNotif, message, description, setShowNotif }}>
             {children}
         </ToastContext.Provider>
     )
