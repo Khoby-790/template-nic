@@ -1,11 +1,15 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState, useRef } from 'react'
 import { Transition } from '../../components'
+import { useOutsideClick } from '../../hooks'
 
 interface Props {
 
 }
 
 const Inbox = (props: Props) => {
+    const detailsRef = useRef(null)
+    const [showDetailsMenu, setShowDetailsMenu] = useState(false);
+    useOutsideClick(detailsRef, () => setShowDetailsMenu(false))
     return (
         <Fragment>
             <main className="min-w-0 flex-1 overflow-y-scroll border-t border-gray-200 xl:flex">
@@ -85,7 +89,7 @@ const Inbox = (props: Props) => {
                           To: "transform opacity-0 scale-95"
                       --> */}
                                                 <Transition
-                                                    show={true}
+                                                    show={showDetailsMenu}
                                                     enter="transition ease-out duration-100"
                                                     enterFrom="transform opacity-0 scale-95"
                                                     enterTo="transform opacity-100 scale-100"
