@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { Input } from '../../components'
+import { Input, Select } from '../../components'
 
 interface Props {
 
@@ -14,7 +14,7 @@ const ReportQueryForm = (props: Props) => {
                     <p className="font-light">Provide essential information to generate report based on realtime data</p>
                 </div>
                 <div className="grid mx-5 grid-cols-2 gap-3 sm:grid-cols-1 md:grid-cols-2">
-                    <Input label="Reinsurer" />
+                    <Select label="Reinsurer" />
                     <Input label="Business Type" />
                 </div>
                 <div className="grid mx-5 grid-cols-2 gap-3 sm:grid-cols-1 md:grid-cols-2">
