@@ -17,7 +17,7 @@ const Sidebar = (props: Props) => {
 
     return (
         <Fragment>
-            <nav aria-label="Sidebar" className="hidden md:block md:flex-shrink-0 md:bg-gray-800 md:overflow-y-auto">
+            <nav aria-label="Sidebar" className="hidden md:block z-10 md:flex-shrink-0 md:bg-gray-800 md:overflow-y-auto">
                 <div className="relative w-20 flex flex-col p-3 space-y-3">
                     <a onClick={selectRoute} href="#" className="bg-gray-900 text-white flex-shrink-0 inline-flex items-center justify-center h-14 w-14 rounded-lg">
                         <span className="sr-only">Open</span>
