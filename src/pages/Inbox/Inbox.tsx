@@ -8,7 +8,7 @@ const Inbox = (props: Props) => {
     return (
         <Fragment>
             <main className="min-w-0 flex-1 border-t border-gray-200 xl:flex">
-                <section aria-labelledby="message-heading" className="min-w-0 flex-1 h-full flex flex-col overflow-hidden xl:order-last">
+                <section aria-labelledby="message-heading" className="min-w-0 flex-1 h-full flex flex-col overflow-scroll xl:order-last">
                     {/* <!-- Top section --> */}
                     <div className="flex-shrink-0 bg-white border-b border-gray-200">
                         {/* <!-- Toolbar--> */}
@@ -253,8 +253,8 @@ const Inbox = (props: Props) => {
                 </section>
 
                 {/* <!-- Message list--> */}
-                <aside className="hidden fixed xl:block xl:flex-shrink-0 xl:order-first">
-                    <div className="h-full relative flex flex-col w-96 border-r border-gray-200 bg-gray-100">
+                <aside className="hidden relative xl:block xl:flex-shrink-0 xl:order-first">
+                    <div className="h-full absolute flex flex-col w-96 border-r border-gray-200 bg-gray-100">
                         <div className="flex-shrink-0">
                             <div className="h-16 bg-white px-6 flex flex-col justify-center">
                                 <div className="flex items-baseline space-x-3">
