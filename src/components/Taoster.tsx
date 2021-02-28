@@ -11,7 +11,7 @@ const Taoster = (props: Props) => {
     const { showNotif, description, message, setShowNotif } = useToast()
     useOutsideClick(notificationRef, () => {
         setShowNotif && setShowNotif(false)
-    })
+    });
     return (
         <Fragment>
             {/* <Transition > */}
