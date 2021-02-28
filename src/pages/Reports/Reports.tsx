@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import OffersListing from '../Dashboard/components/OffersListing'
+import ReportQueryForm from './ReportQueryForm'
 
 interface Props {
 
@@ -8,9 +9,7 @@ interface Props {
 const Reports = (props: Props) => {
     return (
         <Fragment>
-            <div className="bg-white mx-5 py-3 mt-4 shadow-md rounded-md">
-
-            </div>
+            <ReportQueryForm />
             <OffersListing />
         </Fragment>
     )
