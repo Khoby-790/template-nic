@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment, useRef, useState } from 'react'
 import { Modal, Transition } from '../../../components'
 import { useOutsideClick } from '../../../hooks';

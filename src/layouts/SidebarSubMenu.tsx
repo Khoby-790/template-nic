@@ -1,4 +1,4 @@
-import React, { Fragment, useRef } from 'react'
+import React, { useRef } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Transition } from '../components';
 import { useOutsideClick } from '../hooks';
