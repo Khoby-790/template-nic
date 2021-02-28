@@ -1,5 +1,6 @@
-import React, { Fragment, useState, createContext, useContext } from 'react'
+import React, { Fragment, useState, createContext, useContext, useRef } from 'react'
 import { Transition } from '../components'
+import { useOutsideClick } from '../hooks';
 
 type ToastContextProps = {
     notify: ({ message, description }: {
@@ -18,9 +19,11 @@ export const useToast = () => useContext(ToastContext)
 
 
 const ToastProvider: React.FC = ({ children }) => {
+    const notificationRef = useRef(null)
     const [showNotif, setShowNotif] = useState(false);
     const [message, setMessage] = useState("");
     const [description, setDescription] = useState("");
+    useOutsideClick(notificationRef, () => setShowNotif(false))
 
     const notify = ({ message, description }: {
         message: string,
@@ -46,9 +49,7 @@ const ToastProvider: React.FC = ({ children }) => {
       From: "opacity-100"
       To: "opacity-0"
   --> */}
-                <Transition
-                    show={showNotif}
-                >
+                <Transition show={showNotif}>
                     <Transition
                         enter="transform ease-out duration-300 transition"
                         enterFrom="translate-y-2 opacity-0 sm:translate-y-0 sm:translate-x-2"
@@ -57,7 +58,7 @@ const ToastProvider: React.FC = ({ children }) => {
                         leaveFrom="transform opacity-100 scale-100"
                         leaveTo="transform opacity-0 scale-95"
                     >
-                        <div className="max-w-sm w-full bg-white shadow-lg rounded-lg pointer-events-auto ring-1 ring-black ring-opacity-5 overflow-hidden">
+                        <div ref={notificationRef} className="max-w-sm w-full bg-white shadow-lg rounded-lg pointer-events-auto ring-1 ring-black ring-opacity-5 overflow-hidden">
                             <div className="p-4">
                                 <div className="flex items-start">
                                     <div className="flex-shrink-0">
