@@ -1,8 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment } from 'react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import { useToast } from '../../providers/ToastProvider';
-import OfferLisitngItem from './components/OfferLisitngItem';
+import OffersListing from './components/OffersListing';
 
 
 interface Props {
@@ -56,11 +55,6 @@ const data = [
 ];
 
 const Dashboard = (props: Props) => {
-    const { notify } = useToast();
-
-    const onNotifyClicked = () => {
-        notify({ message: "Hello", description: "It is working" })
-    }
 
     return (
         <Fragment>
@@ -87,9 +81,7 @@ const Dashboard = (props: Props) => {
                     </AreaChart>
                 </ResponsiveContainer>
             </div>
-
-
-
+            <OffersListing />
         </Fragment>
     )
 }
