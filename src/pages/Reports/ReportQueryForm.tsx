@@ -18,7 +18,7 @@ const ReportQueryForm = (props: Props) => {
                         <Calendar selectRange />
                     </div>
                     <div className="flex-1">
-                        <div className="grid mx-5 grid-cols-2 gap-3 sm:grid-cols-1 md:grid-cols-2">
+                        <div className="grid mx-5 grid-cols-2 gap-3 sm:grid-cols-1 md:grid-cols-1">
                             <Select label="Reinsurer" />
                             <Select label="Business Type" />
                         </div>
@@ -26,7 +26,7 @@ const ReportQueryForm = (props: Props) => {
                     <Input label="Reinsurer" />
                     <Input label="Business Type" />
                 </div> */}
-                        <div className="grid mx-5 grid-cols-2 gap-3 sm:grid-cols-1 md:grid-cols-2">
+                        <div className="grid mx-5 grid-cols-2 gap-3 sm:grid-cols-1 md:grid-cols-1">
                             <Input type="date" label="From" />
                             <Input type="date" label="To" />
                         </div>
