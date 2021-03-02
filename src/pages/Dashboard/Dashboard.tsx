@@ -3,6 +3,7 @@ import React, { Fragment } from 'react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import OffersListing from './components/OffersListing';
 import SubGraphsBarchart from './components/SubGraphsBarchart';
+import SubGraphsMixedChart from './components/SubGraphsMixedChart';
 
 
 interface Props {
@@ -81,9 +82,12 @@ const Dashboard = (props: Props) => {
                     </AreaChart>
                 </ResponsiveContainer>
             </div>
-            <div className="grid lg:grid-cols-3">
-                <div className="h-64">
+            <div className="grid h-64 lg:grid-cols-3">
+                <div className="">
                     <SubGraphsBarchart />
+                </div>
+                <div className="">
+                    <SubGraphsMixedChart />
                 </div>
             </div>
             <OffersListing header="Current Offers" description="Offers that appear here are realtime" />
