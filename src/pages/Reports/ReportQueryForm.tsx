@@ -14,7 +14,7 @@ const ReportQueryForm = (props: Props) => {
                     <p className="font-light">Provide essential information to generate report based on realtime data</p>
                 </div>
                 <div className="flex flex-row">
-                    <div className="w-1/3 px-3">
+                    <div className="w-96 px-3">
                         <Calendar />
                     </div>
                     <div className="flex-1">

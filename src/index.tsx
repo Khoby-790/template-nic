@@ -6,6 +6,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 import System from './System';
 import Taoster from './components/Taoster';
+import 'react-calendar/dist/Calendar.css';
 
 ReactDOM.render(
   <Provider store={store}>
