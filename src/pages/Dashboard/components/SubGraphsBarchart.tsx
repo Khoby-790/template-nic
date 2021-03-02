@@ -50,7 +50,7 @@ const data = [
     },
 ];
 
-const SubGraphs = (props: Props) => {
+const SubGraphsBarchart = (props: Props) => {
     return (
         <Fragment>
             <ResponsiveContainer width="100%" height="100%">
@@ -63,4 +63,4 @@ const SubGraphs = (props: Props) => {
     )
 }
 
-export default SubGraphs
+export default SubGraphsBarchart
