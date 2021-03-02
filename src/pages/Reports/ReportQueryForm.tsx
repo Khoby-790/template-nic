@@ -15,7 +15,7 @@ const ReportQueryForm = (props: Props) => {
                 </div>
                 <div className="flex mx-2 flex-row">
                     <div className="w-96 px-3">
-                        <Calendar />
+                        <Calendar selectRange />
                     </div>
                     <div className="flex-1">
                         <div className="grid mx-5 grid-cols-2 gap-3 sm:grid-cols-1 md:grid-cols-2">
