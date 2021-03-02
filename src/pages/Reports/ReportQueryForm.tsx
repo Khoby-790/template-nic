@@ -13,7 +13,7 @@ const ReportQueryForm = (props: Props) => {
                     <h1 className="font-bold text-xl">Report Generator</h1>
                     <p className="font-light">Provide essential information to generate report based on realtime data</p>
                 </div>
-                <div className="flex flex-row">
+                <div className="flex mx-2 flex-row">
                     <div className="w-96 px-3">
                         <Calendar />
                     </div>
