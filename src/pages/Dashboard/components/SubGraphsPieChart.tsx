@@ -17,7 +17,7 @@ interface Props {
 const SubGraphsPieChart = (props: Props) => {
     return (
         <Fragment>
-            <PieChart width={800} height={400} onMouseEnter={() => {}}>
+            <PieChart  height={400} onMouseEnter={() => {}}>
                 <Pie
                     data={data}
                     cx={120}
