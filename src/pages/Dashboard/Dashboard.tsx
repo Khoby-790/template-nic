@@ -83,14 +83,14 @@ const Dashboard = (props: Props) => {
                     </AreaChart>
                 </ResponsiveContainer>
             </div>
-            <div className="grid mx-5 h-64 lg:grid-cols-3">
+            <div className="grid mb-3 gap-2 mx-5 h-64 lg:grid-cols-3">
                 <div className="bg-white py-2 px-2 shadow-md rounded-md">
                     <SubGraphsBarchart />
                 </div>
-                <div>
+                <div className="bg-white py-2 px-2 shadow-md rounded-md">
                     <SubGraphsPieChart />
                 </div>
-                <div className="">
+                <div className="bg-white py-2 px-2 shadow-md rounded-md">
                     <SubGraphsMixedChart />
                 </div>
             </div>
