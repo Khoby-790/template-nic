@@ -4,6 +4,7 @@ import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 import OffersListing from './components/OffersListing';
 import SubGraphsBarchart from './components/SubGraphsBarchart';
 import SubGraphsMixedChart from './components/SubGraphsMixedChart';
+import SubGraphsPieChart from './components/SubGraphsPieChart';
 
 
 interface Props {
@@ -85,6 +86,9 @@ const Dashboard = (props: Props) => {
             <div className="grid h-64 lg:grid-cols-3">
                 <div className="">
                     <SubGraphsBarchart />
+                </div>
+                <div>
+                    <SubGraphsPieChart />
                 </div>
                 <div className="">
                     <SubGraphsMixedChart />
