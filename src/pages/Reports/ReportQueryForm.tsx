@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import { Input, Select } from '../../components'
 import Calendar from 'react-calendar'
+import InsurerReinsurerSelect from './sections/InsurerReinsurerSelect'
 interface Props {
 
 }
@@ -30,6 +31,7 @@ const ReportQueryForm = (props: Props) => {
                             <Input type="date" label="From" />
                             <Input type="date" label="To" />
                         </div>
+                        <InsurerReinsurerSelect />
                         <div className="flex mx-5 flex-1 mt-4">
                             <button className="bg-green-600 text-white outline-none focus:outline-none flex-1 py-2 flex items-center justify-center">
                                 Generate report
