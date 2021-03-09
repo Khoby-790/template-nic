@@ -7,7 +7,10 @@ interface Props {
 const Stats = (props: Props) => {
     return (
         <div className="grid mt-5 mx-5 grid-cols-4 gap-3">
-
+            <StatsPill color="red" />
+            <StatsPill color="green" />
+            <StatsPill color="yellow" />
+            <StatsPill color="blue" />
         </div>
     )
 }
