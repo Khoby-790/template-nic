@@ -101,7 +101,7 @@ const GraphTabs = ({ data = [] }: Props) => {
                                         />
                                     </svg>
 
-                                    <span>Line Chart</span>
+                                    <span>Bar Chart</span>
                                 </button>
                             </nav>
                         </div>
