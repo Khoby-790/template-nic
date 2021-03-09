@@ -68,17 +68,11 @@ const Dashboard = (props: Props) => {
                 </div>
                 <div className="w-1/3">
                     <div className="bg-white px-3 pt-3 h-full">
-                        <div className="flex items-center justify-center flex-row">
-                            <div className="w-20 bg-gray-600 rounded-md text-white h-20 flex items-center justify-center">
-                                <svg className="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                                </svg>
-                            </div>
-                            <div className="flex ml-5 flex-col">
-                                <span>Activity 1</span>
-                                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
-                            </div>
-                        </div>
+                        <Activity />
+                        <Activity />
+                        <Activity />
+                        <Activity />
+                        <Activity />
                     </div>
                 </div>
             </div>
@@ -88,3 +82,20 @@ const Dashboard = (props: Props) => {
 }
 
 export default Dashboard
+
+
+const Activity = () => {
+    return (
+        <div className="flex my-2 items-center justify-center flex-row">
+            <div className="w-20 bg-gray-600 rounded-md text-white h-20 flex items-center justify-center">
+                <svg className="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                </svg>
+            </div>
+            <div className="flex ml-5 flex-col">
+                <span>Activity 1</span>
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
+            </div>
+        </div>
+    )
+}
