@@ -22,7 +22,7 @@ const GraphTabs = ({ data = [] }: Props) => {
                             <nav className="flex -mb-px">
                                 <button
                                     onClick={() => setTab("realtime")}
-                                    className={`ml-8 group inline-flex items-center py-4 px-1 border-b-2 border-transparent font-medium text-sm leading-5 ${tab === "barChart"
+                                    className={`ml-8 group inline-flex items-center py-4 px-1 border-b-2 border-transparent font-medium text-sm leading-5 ${tab === "realtime"
                                         ? "text-blue-600 border-blue-600"
                                         : "text-gray-500 hover:border-gray-300"
                                         }  focus:outline-none focus:text-blue-800 focus:border-blue-700`}
@@ -30,7 +30,7 @@ const GraphTabs = ({ data = [] }: Props) => {
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className={`h-5 w-5 mr-3 ${tab === "barChart" ? "text-blue-600 " : "text-gray-500"
+                                        className={`h-5 w-5 mr-3 ${tab === "realtime" ? "text-blue-600 " : "text-gray-500"
                                             }`}
                                         fill="none"
                                         viewBox="0 0 24 24"
