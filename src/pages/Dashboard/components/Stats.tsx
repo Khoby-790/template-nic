@@ -31,7 +31,7 @@ const StatsPill = ({ color }: StatsPillProps) => {
                 </svg>
             </div>
             <div className="flex ml-5 flex-col">
-                <span>Title</span>
+                <span className="font-thin">Title</span>
                 <span className="font-bold text-xl">Value</span>
             </div>
         </div>
