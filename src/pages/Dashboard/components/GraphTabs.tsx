@@ -19,7 +19,7 @@ const GraphTabs = ({ data = [] }: Props) => {
                         <div className="border-b border-gray-200 bg-white shadow ">
                             <nav className="flex -mb-px">
                                 <button
-                                    onClick={() => setTab("barChart")}
+                                    onClick={() => setTab("realtime")}
                                     className={`ml-8 group inline-flex items-center py-4 px-1 border-b-2 border-transparent font-medium text-sm leading-5 ${tab === "barChart"
                                         ? "text-blue-600 border-blue-600"
                                         : "text-gray-500 hover:border-gray-300"
@@ -42,7 +42,7 @@ const GraphTabs = ({ data = [] }: Props) => {
                                         />
                                     </svg>
 
-                                    <span>Bar Chart</span>
+                                    <span>Realtime Chart</span>
                                 </button>
                                 <button
                                     onClick={() => setTab("pieChart")}
