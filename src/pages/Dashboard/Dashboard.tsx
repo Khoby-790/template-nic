@@ -62,11 +62,12 @@ const Dashboard = (props: Props) => {
     return (
         <Fragment>
             <Stats />
-            <div className="flex mx-5 mt-4 flex-row">
+            <div className="flex mx-5 mt-4 justify-center items-start flex-row">
                 <div className="flex-1 mr-3">
                     <GraphTabs data={data} />
                 </div>
                 <div className="w-1/3 h-full">
+                    <div className=""></div>
                     <div className="bg-white px-3 pt-3 h-full w-full overflow-y-scroll">
                         <Activity />
                         <Activity />
