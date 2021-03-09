@@ -11,15 +11,15 @@ const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 
 
 interface Props {
-    
+  data: any[]
 }
 
-const SubGraphsPieChart = (props: Props) => {
-    return (
-        <Fragment>
-            
-        </Fragment>
-    )
+const SubGraphsPieChart = ({ data = [] }: Props) => {
+  return (
+    <Fragment>
+
+    </Fragment>
+  )
 }
 
 export default SubGraphsPieChart
