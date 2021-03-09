@@ -1,6 +1,7 @@
 import React, { Fragment, Suspense, useState } from 'react'
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import RealtimeGraph from './Graphs/RealtimeGraph';
+import SubGraphsBarchart from './SubGraphsBarchart';
 import SubGraphsPieChart from './SubGraphsPieChart';
 
 interface Props {
@@ -110,7 +111,7 @@ const GraphTabs = ({ data = [] }: Props) => {
                         <Suspense fallback={<h1>loading</h1>}>
                             {tab === "realtime" && <RealtimeGraph data={data} />}
                             {tab === "pieChart" && <SubGraphsPieChart data={data} />}
-                            {tab === "lineChart" && <RealtimeGraph data={data} />}
+                            {tab === "lineChart" && <SubGraphsBarchart data={data} />}
                         </Suspense>
                     </div>
                 </div>

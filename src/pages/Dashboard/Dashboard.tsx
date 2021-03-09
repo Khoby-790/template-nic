@@ -62,22 +62,11 @@ const Dashboard = (props: Props) => {
     return (
         <Fragment>
             <Stats />
-            <div className="flex flex-row">
+            <div className="flex mx-5 mt-4 flex-row">
                 <div className="flex-1">
                     <GraphTabs data={data} />
                 </div>
                 <div className="w-1/3"></div>
-            </div>
-            <div className="grid mb-3 gap-2 mx-5 h-64 lg:grid-cols-3">
-                <div className="bg-white py-2 px-2 shadow-md rounded-md">
-                    <SubGraphsBarchart />
-                </div>
-                <div className="bg-white py-2 px-2 shadow-md rounded-md">
-                    <SubGraphsPieChart />
-                </div>
-                <div className="bg-white py-2 px-2 shadow-md rounded-md">
-                    <SubGraphsMixedChart />
-                </div>
             </div>
             <OffersListing header="Current Offers" description="Offers that appear here are realtime" />
         </Fragment>
