@@ -63,11 +63,11 @@ const Dashboard = (props: Props) => {
         <Fragment>
             <Stats />
             <div className="flex mx-5 mt-4 flex-row">
-                <div className="flex-1">
+                <div className="flex-1 mr-3">
                     <GraphTabs data={data} />
                 </div>
                 <div className="w-1/3">
-                    <div className="bg-white"></div>
+                    <div className="bg-white h-full"></div>
                 </div>
             </div>
             <OffersListing header="Current Offers" description="Offers that appear here are realtime" />
