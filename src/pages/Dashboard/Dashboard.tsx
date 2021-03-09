@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment } from 'react';
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import GraphTabs from './components/GraphTabs';
 import OffersListing from './components/OffersListing';
 import Stats from './components/Stats';
 import SubGraphsBarchart from './components/SubGraphsBarchart';
@@ -64,7 +64,7 @@ const Dashboard = (props: Props) => {
             <Stats />
             <div className="flex flex-row">
                 <div className="flex-1">
-
+                    <GraphTabs data={data} />
                 </div>
                 <div className="w-1/3"></div>
             </div>
