@@ -69,12 +69,15 @@ const Dashboard = (props: Props) => {
                 <div className="w-1/3">
                     <div className="bg-white px-3 pt-3 h-full">
                         <div className="flex flex-row">
-                            <div className="w-20">
+                            <div className="w-20 flex items-center justify-center">
                                 <svg className="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
                                 </svg>
                             </div>
-                            <div className=""></div>
+                            <div className="flex ml-5 flex-col">
+                                <span>Activity 1</span>
+                                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint beatae deleniti accusamus illum vero fuga omnis quam veritatis a provident.</span>
+                            </div>
                         </div>
                     </div>
                 </div>
