@@ -66,8 +66,8 @@ const Dashboard = (props: Props) => {
                 <div className="flex-1 mr-3">
                     <GraphTabs data={data} />
                 </div>
-                <div className="w-1/3">
-                    <div className="bg-white px-3 pt-3 h-full overflow-y-scroll">
+                <div className="w-1/3 h-full">
+                    <div className="bg-white px-3 pt-3 h-full w-full overflow-y-scroll">
                         <Activity />
                         <Activity />
                         <Activity />
