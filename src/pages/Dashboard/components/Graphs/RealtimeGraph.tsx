@@ -8,7 +8,7 @@ interface Props {
 const RealtimeGraph = ({ data = [] }: Props) => {
     return (
         <Fragment>
-            <div className="h-96 max-h-96 bg-white mx-5 my-3 py-4 shadow-md rounded-md">
+            <div className="h-96 max-h-96 bg-white mx-5 my-3 py-4 ">
                 <ResponsiveContainer width="100%" height="100%">
                     <AreaChart
                         width={500}
