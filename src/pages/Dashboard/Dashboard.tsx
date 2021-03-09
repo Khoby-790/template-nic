@@ -2,6 +2,7 @@
 import React, { Fragment } from 'react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import OffersListing from './components/OffersListing';
+import Stats from './components/Stats';
 import SubGraphsBarchart from './components/SubGraphsBarchart';
 import SubGraphsMixedChart from './components/SubGraphsMixedChart';
 import SubGraphsPieChart from './components/SubGraphsPieChart';
@@ -60,6 +61,7 @@ const data = [
 const Dashboard = (props: Props) => {
     return (
         <Fragment>
+            <Stats />
             <div className="h-96 max-h-96 bg-white mx-5 my-3 py-4 shadow-md rounded-md">
                 <ResponsiveContainer width="100%" height="100%">
                     <AreaChart
