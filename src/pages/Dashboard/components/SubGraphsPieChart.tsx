@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
+import { PieChart, Pie, Cell } from 'recharts';
 
 const data_ = [
   { name: 'Group A', value: 400 },
