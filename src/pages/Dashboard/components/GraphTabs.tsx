@@ -79,6 +79,32 @@ const GraphTabs = ({ data = [] }: Props) => {
                                     <span>Pie Chart</span>
                                 </button>
                                 <button
+                                    onClick={() => setTab("bixChart")}
+                                    className={`ml-8 group inline-flex items-center py-4 px-1 border-b-2 border-transparent font-medium text-sm leading-5 ${tab === "bixChart"
+                                        ? "text-blue-600 border-blue-600"
+                                        : "text-gray-500 hover:border-gray-300"
+                                        }  focus:outline-none focus:text-blue-800 focus:border-blue-700`}
+                                    aria-current="page"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        className={`h-5 w-5 mr-3 ${tab === "bixChart" ? "text-blue-600 " : "text-gray-500"
+                                            }`}
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"
+                                        />
+                                    </svg>
+
+                                    <span>Bar Chart</span>
+                                </button>
+                                <button
                                     onClick={() => setTab("lineChart")}
                                     className={`ml-8 group inline-flex items-center py-4 px-1 border-b-2 border-transparent font-medium text-sm leading-5 ${tab === "lineChart"
                                         ? "text-blue-600 border-blue-600"
@@ -102,7 +128,7 @@ const GraphTabs = ({ data = [] }: Props) => {
                                         />
                                     </svg>
 
-                                    <span>Bar Chart</span>
+                                    <span>New Bar Chart</span>
                                 </button>
                             </nav>
                         </div>
@@ -112,6 +138,7 @@ const GraphTabs = ({ data = [] }: Props) => {
                             {tab === "realtime" && <RealtimeGraph data={data} />}
                             {tab === "pieChart" && <SubGraphsPieChart data={data} />}
                             {tab === "lineChart" && <SubGraphsBarchart data={data} />}
+                            {tab === "bixChart" && <SubGraphsBarchart data={data} />}
                         </Suspense>
                     </div>
                 </div>
