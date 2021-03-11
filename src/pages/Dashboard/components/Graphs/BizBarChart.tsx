@@ -9,7 +9,7 @@ import {
     Label,
     Legend,
     Interval,
-    Util
+    Util,
 } from 'bizcharts';
 
 
