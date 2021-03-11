@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { useToast } from '../../../providers/ToastProvider'
+// import { useToast } from '../../../providers/ToastProvider'
 import OfferLisitngItem from './OfferLisitngItem'
 
 interface Props {
@@ -8,10 +8,10 @@ interface Props {
 }
 
 const OffersListing = (props: Props) => {
-    const { notify } = useToast()
-    const onNotifyClicked = () => {
-        notify({ message: "Hello", description: "It is working" })
-    }
+    // const { notify } = useToast()
+    // const onNotifyClicked = () => {
+    //     notify({ message: "Hello", description: "It is working" })
+    // }
 
     return (
         <Fragment>
