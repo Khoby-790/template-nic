@@ -24,11 +24,11 @@ const data = [
         value: 15,
     },
     {
-        type: "分类五",
+        type: "Perfomance",
         value: 10,
     },
     {
-        type: "其它",
+        type: "Perfomance",
         value: 5,
     },
 ];
