@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import OffersListing from '../Dashboard/components/OffersListing'
+import OffersListing from './sections/GeneratedOffersListing'
 import ReportQueryForm from './ReportQueryForm'
 
 interface Props {
