@@ -45,7 +45,7 @@ const BizBarChart = (props: Props) => {
             <div className="h-96">
                 <Chart height={400} data={data} autoFit>
                     <Coordinate />
-                    <Interval position="country*position" />
+                    <Interval position="country*population" />
                 </Chart>
             </div>
         </Fragment>
