@@ -6,7 +6,6 @@ interface Props {
 }
 
 
-type InputHtmlProps = HTMLInputElement | any
 
 const Input = ({ label, type = "text" }: Props) => {
     return (
