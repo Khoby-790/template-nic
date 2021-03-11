@@ -42,7 +42,7 @@ interface Props {
 const BizBarChart = (props: Props) => {
     return (
         <Fragment>
-            <div className="h-96">
+            <div className="h-96 py-3">
                 <Chart height={400} data={data} autoFit>
                     <Coordinate />
                     <Interval position="country*population" />
