@@ -36,24 +36,26 @@ const data = [
 const PieChart = (props: Props) => {
     return (
         <Fragment>
-            <DonutChart
-                data={data || []}
-                title={{
-                    visible: true,
-                    text: "环图",
-                }}
-                autoFit
-                description={{
-                    visible: true,
-                    text: "环图的外半径决定环图的大小，而内半径决定环图的厚度。",
-                }}
-                height={350}
-                radius={0.8}
-                padding="auto"
-                angleField="value"
-                colorField="type"
-                pieStyle={{ stroke: "white", lineWidth: 5 }}
-            />
+            <div className="h-96">
+                <DonutChart
+                    data={data || []}
+                    title={{
+                        visible: true,
+                        text: "Test",
+                    }}
+                    autoFit
+                    description={{
+                        visible: true,
+                        text: "环图的外半径决定环图的大小，而内半径决定环图的厚度。",
+                    }}
+                    height={350}
+                    radius={0.8}
+                    padding="auto"
+                    angleField="value"
+                    colorField="type"
+                    pieStyle={{ stroke: "white", lineWidth: 5 }}
+                />
+            </div>
         </Fragment>
     )
 }
