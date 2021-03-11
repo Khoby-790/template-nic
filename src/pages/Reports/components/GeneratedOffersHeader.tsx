@@ -19,6 +19,9 @@ const GeneratedOffersHeader = (props: GeneratedOffersHeaderProps) => {
                         <input placeholder="search" type="search" className="border-gray-200 focus:outline-none px-3 border h-12 w-1/2" />
                     </div>
                 </div>
+                <div className="w-36">
+                    <div className=""></div>
+                </div>
             </div>
         </Fragment>
     )
