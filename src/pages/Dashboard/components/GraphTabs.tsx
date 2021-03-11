@@ -1,5 +1,6 @@
 import React, { Fragment, Suspense, useState } from 'react'
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import BizBarChart from './Graphs/BizBarChart';
 import RealtimeGraph from './Graphs/RealtimeGraph';
 import SubGraphsBarchart from './SubGraphsBarchart';
 import SubGraphsPieChart from './SubGraphsPieChart';
@@ -138,7 +139,7 @@ const GraphTabs = ({ data = [] }: Props) => {
                             {tab === "realtime" && <RealtimeGraph data={data} />}
                             {tab === "pieChart" && <SubGraphsPieChart data={data} />}
                             {tab === "lineChart" && <SubGraphsBarchart data={data} />}
-                            {tab === "bixChart" && <SubGraphsBarchart data={data} />}
+                            {tab === "bixChart" && <BizBarChart />}
                         </Suspense>
                     </div>
                 </div>
