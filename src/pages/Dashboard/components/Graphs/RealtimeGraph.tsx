@@ -21,7 +21,7 @@ const RealtimeGraph = ({ data = [] }: Props) => {
                             bottom: 0,
                         }}
                     >
-                        <CartesianGrid strokeDasharray="3 3" />
+                        {/* <CartesianGrid strokeDasharray="3 3" /> */}
                         <XAxis dataKey="name" />
                         <YAxis />
                         <Tooltip />
