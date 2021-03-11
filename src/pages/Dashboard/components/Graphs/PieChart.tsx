@@ -8,19 +8,19 @@ interface Props {
 
 const data = [
     {
-        type: "分类一",
+        type: "Bond",
         value: 27,
     },
     {
-        type: "分类二",
+        type: "Motor Comprehensive",
         value: 25,
     },
     {
-        type: "分类三",
+        type: "Property",
         value: 18,
     },
     {
-        type: "分类四",
+        type: "Perfomance",
         value: 15,
     },
     {
@@ -46,7 +46,7 @@ const PieChart = (props: Props) => {
                     autoFit
                     description={{
                         visible: true,
-                        text: "环图的外半径决定环图的大小，而内半径决定环图的厚度。",
+                        text: "Description of the Piechart",
                     }}
                     height={350}
                     radius={0.8}
