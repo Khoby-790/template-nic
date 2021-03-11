@@ -48,6 +48,7 @@ const PieChart = (props: Props) => {
                         visible: true,
                         text: "Description of the Piechart",
                     }}
+                    label="Pie"
                     height={350}
                     radius={0.8}
                     padding="auto"
