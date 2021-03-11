@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import { useToast } from '../../../providers/ToastProvider'
 import OfferLisitngItem from '../../Dashboard/components/OfferLisitngItem'
+import GeneratedOffersHeader from '../components/GeneratedOffersHeader'
 
 interface Props {
     header?: string;
@@ -16,16 +17,7 @@ const OffersListing = (props: Props) => {
     return (
         <Fragment>
             <div className="mx-5 mt-5">
-                <div className="flex h-11 justify-between items-center my-3 mb-5">
-                    <div className="flex-1 px-2 ">
-                        <h2 className="text-2xl font-medium">{props.header}</h2>
-                        <p className="font-light">{props.description}</p>
-                        {/* <button onClick={onNotifyClicked}>Click me</button> */}
-                    </div>
-                    <div className="flex-1 flex justify-end px-2">
-                        <input placeholder="search" type="search" className="border-gray-200 focus:outline-none px-3 border h-12 w-1/2" />
-                    </div>
-                </div>
+                <GeneratedOffersHeader header={props.header} description={props.description} />
                 <div className="flex flex-col">
                     <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                         <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
