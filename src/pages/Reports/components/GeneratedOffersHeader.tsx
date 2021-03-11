@@ -16,7 +16,7 @@ const GeneratedOffersHeader = (props: GeneratedOffersHeaderProps) => {
 
     return (
         <Fragment>
-            <div className="flex h-11 justify-between items-center my-3 mb-5">
+            <div className="flex h-11 justify-between items-center my-3 mr-2 mb-5">
                 <div className="flex-1 flex justify-between items-center">
                     <div className="flex-1 px-2 ">
                         <h2 className="text-2xl font-medium">{props.header}</h2>
@@ -27,7 +27,7 @@ const GeneratedOffersHeader = (props: GeneratedOffersHeaderProps) => {
                         <input placeholder="search" type="search" className="border-gray-200 focus:outline-none px-3 border h-10 w-1/2" />
                     </div>
                 </div>
-                <div className="w-36">
+                <div className="w-20">
                     <div className="relative inline-block text-left">
                         <div>
                             <button type="button" onClick={() => setShowSaveOptions(true)} className="inline-flex justify-center w-full h-full rounded-none border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" id="options-menu" aria-expanded="true" aria-haspopup="true">
