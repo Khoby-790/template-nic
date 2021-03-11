@@ -1,5 +1,6 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useState, useRef } from 'react'
 import { Transition } from '../../../components'
+import { useOutsideClick } from '../../../hooks';
 
 type GeneratedOffersHeaderProps = {
     header?: string;
@@ -7,7 +8,11 @@ type GeneratedOffersHeaderProps = {
 }
 
 const GeneratedOffersHeader = (props: GeneratedOffersHeaderProps) => {
-    const [showSaveOptions, setShowSaveOptions] = useState<boolean>(false)
+    const saveOptionsREf = useRef(null);
+    const [showSaveOptions, setShowSaveOptions] = useState<boolean>(false);
+
+    useOutsideClick(saveOptionsREf, () => setShowSaveOptions(false))
+
     return (
         <Fragment>
             <div className="flex h-11 justify-between items-center my-3 mb-5">
@@ -22,12 +27,10 @@ const GeneratedOffersHeader = (props: GeneratedOffersHeaderProps) => {
                     </div>
                 </div>
                 <div className="w-36">
-                    {/* <!-- This example requires Tailwind CSS v2.0+ --> */}
                     <div className="relative inline-block text-left">
                         <div>
-                            <button type="button" className="inline-flex justify-center w-full h-full rounded-none border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" id="options-menu" aria-expanded="true" aria-haspopup="true">
+                            <button type="button" onClick={() => setShowSaveOptions(true)} className="inline-flex justify-center w-full h-full rounded-none border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" id="options-menu" aria-expanded="true" aria-haspopup="true">
                                 Save
-      {/* <!-- Heroicon name: solid/chevron-down --> */}
                                 <svg className="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                                 </svg>
@@ -43,7 +46,7 @@ const GeneratedOffersHeader = (props: GeneratedOffersHeaderProps) => {
                             leaveFrom="transform opacity-100 scale-100"
                             leaveTo="transform opacity-0 scale-95"
                         >
-                            <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                            <div ref={saveOptionsREf} className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                                 <div className="py-1" role="none">
                                     <a href="#" className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
                                         {/* <!-- Heroicon name: solid/pencil-alt --> */}
