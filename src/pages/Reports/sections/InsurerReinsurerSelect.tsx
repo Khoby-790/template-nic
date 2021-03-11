@@ -29,7 +29,7 @@ const Option = ({ name }: OptionProps) => {
                     </svg>
                 </div>
                 <div className="flex items-center h-full">
-                    <span>{name || "Not Specified"}</span>
+                    <span className="font-semibold text-xl group-hover:text-gray-800 text-gray-400">{name || "Not Specified"}</span>
                 </div>
             </div>
             <div className="w-14 flex flex-row">
