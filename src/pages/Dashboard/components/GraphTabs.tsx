@@ -1,10 +1,9 @@
 import React, { Fragment, Suspense, useState } from 'react'
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import BizBarChart from './Graphs/BizBarChart';
 import PieChart from './Graphs/PieChart';
 import RealtimeGraph from './Graphs/RealtimeGraph';
 import SubGraphsBarchart from './SubGraphsBarchart';
-import SubGraphsPieChart from './SubGraphsPieChart';
+// import SubGraphsPieChart from './SubGraphsPieChart';
 
 interface Props {
     data: any[]

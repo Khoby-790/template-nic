@@ -3,9 +3,6 @@ import React, { Fragment } from 'react';
 import GraphTabs from './components/GraphTabs';
 import OffersListing from './components/OffersListing';
 import Stats from './components/Stats';
-import SubGraphsBarchart from './components/SubGraphsBarchart';
-import SubGraphsMixedChart from './components/SubGraphsMixedChart';
-import SubGraphsPieChart from './components/SubGraphsPieChart';
 
 
 interface Props {

@@ -1,15 +1,15 @@
 import React, { Fragment } from 'react'
 import {
-    G2,
+    // G2,
     Chart,
-    Geom,
-    Axis,
-    Tooltip,
+    // Geom,
+    // Axis,
+    // Tooltip,
     Coordinate,
-    Label,
-    Legend,
+    // Label,
+    // Legend,
     Interval,
-    Util,
+    // Util,
 } from 'bizcharts';
 
 
