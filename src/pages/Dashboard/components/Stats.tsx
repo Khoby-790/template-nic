@@ -32,7 +32,10 @@ const StatsPill = ({ color }: StatsPillProps) => {
             </div>
             <div className="flex ml-5 flex-col">
                 <span className="font-thin">Request for Quota</span>
-                <p><span className="font-bold text-3xl">1400</span> <span className="text-green-300 ml-2">1.2%</span> </p>
+                <p><span className="font-bold text-3xl">1400</span>
+                    <span className="text-green-300 ml-2">1.2%</span>
+                    <span className="text-gray-400 ml-2">than next week</span>
+                </p>
             </div>
         </div>
     )
