@@ -6,11 +6,11 @@ interface Props {
 
 const Stats = (props: Props) => {
     return (
-        <div className="grid mt-5 mx-5 grid-cols-4 gap-3">
+        <div className="grid mt-5 mx-5 grid-cols-3 gap-3">
             <StatsPill title="Today Offers" color="red" />
             <StatsPill title="Claims for the day" color="green" />
             <StatsPill title="Total Reports Generated" color="yellow" />
-            <StatsPill color="blue" />
+            {/* <StatsPill title="" color="blue" /> */}
         </div>
     )
 }
