@@ -9,7 +9,7 @@ interface Props {
 const Reports = (props: Props) => {
     return (
         <Fragment>
-            <div className="flex flex-row">
+            <div className="flex flex-row h-full">
                 <div className="w-96">
                     <ReportQueryForm />
                 </div>
