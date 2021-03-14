@@ -23,12 +23,16 @@ const ReportQueryForm = (props: Props) => {
                         <div className="grid mx-2 grid-cols-2 gap-3 sm:grid-cols-1 md:grid-cols-1">
                             <Select label="Visible Columns" />
                         </div>
+                        <div className="mx-2 mt-2">
+                            <Calendar selectRange />
+                        </div>
                         <div className="flex mx-2 flex-1 mt-5">
                             <button className="bg-green-400 hover:bg-green-600 text-white outline-none focus:outline-none flex-1 py-2 flex items-center justify-center">
                                 Generate report
                             </button>
                         </div>
                     </div>
+
                 </div>
             </div>
         </Fragment>
