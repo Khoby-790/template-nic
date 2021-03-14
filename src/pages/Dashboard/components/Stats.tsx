@@ -20,9 +20,10 @@ export default Stats
 
 type StatsPillProps = {
     color: string;
+    title?: string
 }
 
-const StatsPill = ({ color }: StatsPillProps) => {
+const StatsPill = ({ color, title }: StatsPillProps) => {
     return (
         <div className="bg-white px-4 flex items-center flex-row py-5">
             <div className={`bg-${color}-200 rounded-lg p-4`}>
@@ -31,7 +32,7 @@ const StatsPill = ({ color }: StatsPillProps) => {
                 </svg>
             </div>
             <div className="flex ml-5 flex-col">
-                <span className="font-thin">Request for Quota</span>
+                <span className="font-thin">{title}</span>
                 <p><span className="font-bold text-3xl">1400</span>
                     <span className="text-green-300 ml-2">1.2%</span>
                     <span className="text-gray-400 ml-2">than next week</span>
