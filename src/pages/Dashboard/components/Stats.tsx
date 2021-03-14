@@ -7,8 +7,8 @@ interface Props {
 const Stats = (props: Props) => {
     return (
         <div className="grid mt-5 mx-5 grid-cols-4 gap-3">
-            <StatsPill color="red" />
-            <StatsPill color="green" />
+            <StatsPill title="Today Offers" color="red" />
+            <StatsPill title="Claims for the day" color="green" />
             <StatsPill color="yellow" />
             <StatsPill color="blue" />
         </div>
@@ -33,7 +33,7 @@ const StatsPill = ({ color, title }: StatsPillProps) => {
             </div>
             <div className="flex ml-5 flex-col">
                 <span className="font-thin">{title}</span>
-                <p><span className="font-bold text-3xl">1400</span>
+                <p><span className="font-bold uppercase text-3xl">1400</span>
                     <span className="text-green-300 ml-2">1.2%</span>
                     <span className="text-gray-400 ml-2">than next week</span>
                 </p>
