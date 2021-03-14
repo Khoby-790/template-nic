@@ -21,7 +21,7 @@ type OptionProps = {
 
 const Option = ({ name }: OptionProps) => {
     return (
-        <div className="flex-1 h-11 flex group flex-row hover:bg-gray-500 hover:border-blue-200 hover:shadow-md cursor-pointer hover:-translate-y-1 transform transition bg-gray-50  my-3 rounded-md border border-blue-50">
+        <div className="flex-1 h-11 flex group flex-row hover:bg-gray-500 hover:border-blue-200 hover:shadow-md cursor-pointer hover:-translate-y-1 transform transition bg-gray-100  my-1 rounded-md border border-blue-50">
             <div className="h-full flex flex-row flex-1">
                 <div className="flex w-20 items-center justify-center h-full ">
                     <svg className="text-gray-400 group-hover:text-white h-11" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -34,7 +34,7 @@ const Option = ({ name }: OptionProps) => {
             </div>
             <div className="w-14 flex flex-row">
                 <div className="w-20 flex items-center justify-center">
-                    <div className="h-11 rounded-full border border-blue-50 bg-white  cursor-pointer w-11"></div>
+                    <div className="h-6 rounded-full border border-blue-50 bg-white  cursor-pointer w-6"></div>
                 </div>
             </div>
         </div>
