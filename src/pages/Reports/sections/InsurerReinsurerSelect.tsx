@@ -6,7 +6,7 @@ interface Props {
 
 const InsurerReinsurerSelect = (props: Props) => {
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col mx-2">
             <Option name="Reinsurers" />
             <Option name="Insurers" />
         </div>
