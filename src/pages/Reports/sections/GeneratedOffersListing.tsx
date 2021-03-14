@@ -9,11 +9,6 @@ interface Props {
 }
 
 const OffersListing = (props: Props) => {
-    // const { notify } = useToast()
-    // const onNotifyClicked = () => {
-    //     notify({ message: "Hello", description: "It is working" })
-    // }
-
     return (
         <Fragment>
             <div className="mx-5 mt-5">
