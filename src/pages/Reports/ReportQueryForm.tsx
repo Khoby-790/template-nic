@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import {  Select } from '../../components'
+import { Select } from '../../components'
 import Calendar from 'react-calendar'
 import InsurerReinsurerSelect from './sections/InsurerReinsurerSelect'
 interface Props {
@@ -9,12 +9,12 @@ interface Props {
 const ReportQueryForm = (props: Props) => {
     return (
         <Fragment>
-            <div className="bg-white mx-5 py-3 mt-4 shadow-md rounded-md">
+            <div className="bg-white py-3 mt-4 shadow-md rounded-md">
                 <div className="mx-5 mb-3">
                     <h1 className="font-bold text-xl">Report Generator</h1>
                     <p className="font-light">Provide essential information to generate report based on realtime data</p>
                 </div>
-                <div className="flex mx-2 flex-row">
+                <div className="flex mx-2 flex-col">
                     <div className="w-96 px-3">
                         <Calendar selectRange />
                     </div>
