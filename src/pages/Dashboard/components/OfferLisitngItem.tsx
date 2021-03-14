@@ -5,6 +5,7 @@ import { useOutsideClick } from '../../../hooks';
 
 interface Props {
     index: number
+    report?: boolean
 }
 
 const OfferLisitngItem = (props: Props) => {
