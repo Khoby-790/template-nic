@@ -39,7 +39,7 @@ const OffersListing = (props: Props) => {
                                     </thead>
                                     <tbody className="bg-white divide-y divide-gray-200">
 
-                                        {[1, 5, 4, 3, 2].map((_, index) => <OfferLisitngItem key={index} index={index} />)}
+                                        {[1, 5, 4, 3, 2].map((_, index) => <OfferLisitngItem report key={index} index={index} />)}
 
                                         {/* <!-- More items... --> */}
                                     </tbody>
