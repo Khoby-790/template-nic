@@ -9,7 +9,7 @@ const Stats = (props: Props) => {
         <div className="grid mt-5 mx-5 grid-cols-4 gap-3">
             <StatsPill title="Today Offers" color="red" />
             <StatsPill title="Claims for the day" color="green" />
-            <StatsPill color="yellow" />
+            <StatsPill title="Total Reports Generated" color="yellow" />
             <StatsPill color="blue" />
         </div>
     )
