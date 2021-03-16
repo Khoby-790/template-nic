@@ -58,6 +58,7 @@ const data = [
 const Dashboard = (props: Props) => {
     return (
         <Fragment>
+            <div className="bg-blue-800 w-full h-52"></div>
             <Stats />
             <div className="flex mx-5 mt-4 justify-center items-start flex-row">
                 <div className="flex-1 mr-3">
