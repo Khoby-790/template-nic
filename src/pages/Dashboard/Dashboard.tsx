@@ -124,7 +124,7 @@ const Dashboard = (props: Props) => {
                     <GraphTabs data={data} />
                 </div>
                 <div style={{ height: "54vh" }} className="w-1/3 h-full">
-                    <div className="">
+                    <div className="py-3 bg-white shadow-lg px-4">
                         <span>Recent Activity</span>
                     </div>
                     <div className="bg-white border border-dashed px-3 pt-3 h-full w-full overflow-y-scroll">
