@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { DonutChart } from 'bizcharts';
+import { DonutChart, Annotation } from 'bizcharts';
 
 
 interface Props {
