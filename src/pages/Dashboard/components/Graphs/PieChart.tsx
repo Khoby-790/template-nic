@@ -48,7 +48,9 @@ const PieChart = (props: Props) => {
                         visible: true,
                         text: "Description of the Piechart",
                     }}
-                    label="Dream"
+                    label={{
+                        type: "outter"
+                    }}
                     height={350}
                     radius={0.8}
                     padding="auto"
