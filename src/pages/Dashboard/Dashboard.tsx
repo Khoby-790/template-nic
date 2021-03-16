@@ -123,7 +123,7 @@ const Dashboard = (props: Props) => {
                 <div className="flex-1 mr-3">
                     <GraphTabs data={data} />
                 </div>
-                <div style={{ height: "54vh" }} className="w-1/3 h-full">
+                <div style={{ height: "58.5vh" }} className="w-1/3 h-full">
                     <div className=""></div>
                     <div className="bg-white border border-dashed px-3 pt-3 h-full w-full overflow-y-scroll">
                         <ul className="divide-y divide-gray-200">

@@ -14,7 +14,7 @@ const GraphTabs = ({ data = [] }: Props) => {
     return (
         <Fragment>
             <div
-                style={{ height: "54vh" }}
+                style={{  }}
                 className="bg-white  border border-dashed  col-span-2"
             >
                 <div>
