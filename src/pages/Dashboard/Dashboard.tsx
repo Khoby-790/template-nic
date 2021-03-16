@@ -60,17 +60,9 @@ const Dashboard = (props: Props) => {
         <Fragment>
             <div className="bg-indigo-500 flex max-h-52 w-full h-full">
                 <div className="flex-1 grid grid-cols-3 h-40">
-                    <div className="flex  px-11 bg-indigo-50 h-full flex-col">
-                        <h1 className="text-6xl">12</h1>
-                        <p>Pending offers</p>
-                    </div>
-                    <div className="flex  px-11 bg-indigo-50 h-full flex-col">
-                        <h1 className="text-6xl">12</h1>
-                        <p>Pending offers</p>
-                    </div>
-                    <div className="flex  px-11 bg-indigo-50 h-full flex-col">
-                        <h1 className="text-6xl">12</h1>
-                        <p>Pending offers</p>
+                    <div className="flex justify-end py-10 px-11 h-full flex-col">
+                        <h1 className="text-6xl text-white font-bold font-mono">12</h1>
+                        <p className="font-mono font-thin">Pending offers</p>
                     </div>
                 </div>
                 <div className="w-96"></div>
