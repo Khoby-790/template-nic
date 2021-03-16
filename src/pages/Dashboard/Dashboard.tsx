@@ -60,7 +60,7 @@ const Dashboard = (props: Props) => {
         <Fragment>
             <div className="bg-indigo-500 max-h-52 w-full h-full">
                 <div className="flex-1 grid grid-cols-3 h-40">
-                    <div className="flex items-center h-full">
+                    <div className="flex items-center bg-indigo-50 h-full flex-col">
                         <h1>12</h1>
                         <p>Pending offers</p>
                     </div>
