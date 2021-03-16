@@ -59,7 +59,13 @@ const Dashboard = (props: Props) => {
     return (
         <Fragment>
             <div className="bg-indigo-500 max-h-52 w-full  h-full">
-                
+                <div className="flex-1 grid grid-cols-3">
+                    <div className="flex items-center">
+                        <h1>12</h1>
+                        <p>Pending offers</p>
+                    </div>
+                </div>
+                <div className="w-96"></div>
             </div>
             <Stats />
             <div className="flex mx-5 mt-4 justify-center items-start flex-row">
