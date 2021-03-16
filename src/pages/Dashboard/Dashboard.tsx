@@ -67,31 +67,18 @@ const Dashboard = (props: Props) => {
                     <div className=""></div>
                     <div className="bg-white border border-dashed px-3 pt-3 h-full w-full overflow-y-scroll">
                         <ul className="divide-y divide-gray-200">
-                            <li className="py-4">
-                                <div className="flex space-x-3">
-                                    <img className="h-6 w-6 rounded-full" src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixqx=ah3lxr8uqw&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80" alt="" />
-                                    <div className="flex-1 space-y-1">
-                                        <div className="flex items-center justify-between">
-                                            <h3 className="text-sm font-medium">Whitney Francis</h3>
-                                            <p className="text-sm text-gray-500">1h</p>
-                                        </div>
-                                        <p className="text-sm text-gray-500">Deployed Workcation (2d89f0c8 in master) to production</p>
-                                    </div>
-                                </div>
-                            </li>
-
-
+                            <Activity />
+                            <Activity />
+                            <Activity />
+                            <Activity />
+                            <Activity />
+                            <Activity />
+                            <Activity />
+                            <Activity />
+                            <Activity />
+                            <Activity />
                         </ul>
-                        <Activity />
-                        <Activity />
-                        <Activity />
-                        <Activity />
-                        <Activity />
-                        <Activity />
-                        <Activity />
-                        <Activity />
-                        <Activity />
-                        <Activity />
+
                     </div>
                 </div>
             </div>
@@ -105,16 +92,17 @@ export default Dashboard
 
 const Activity = () => {
     return (
-        <div className="flex my-2 cursor-pointer items-center justify-center flex-row">
-            <div className="w-20 bg-gray-600 hover:bg-gray-400 rounded-md text-white h-20 flex items-center justify-center">
-                <svg className="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                </svg>
+        <li className="py-4">
+            <div className="flex space-x-3">
+                <img className="h-6 w-6 rounded-full" src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixqx=ah3lxr8uqw&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80" alt="" />
+                <div className="flex-1 space-y-1">
+                    <div className="flex items-center justify-between">
+                        <h3 className="text-sm font-medium">Whitney Francis</h3>
+                        <p className="text-sm text-gray-500">1h</p>
+                    </div>
+                    <p className="text-sm text-gray-500">Deployed Workcation (2d89f0c8 in master) to production</p>
+                </div>
             </div>
-            <div className="flex ml-5 flex-col">
-                <span>Activity 1</span>
-                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
-            </div>
-        </div>
+        </li>
     )
 }
