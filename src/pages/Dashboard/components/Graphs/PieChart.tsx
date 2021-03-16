@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { DonutChart, Annotation } from 'bizcharts';
+import { DonutChart } from 'bizcharts';
 
 
 interface Props {
@@ -20,11 +20,11 @@ const data = [
         value: 18,
     },
     {
-        type: "Perfomance",
+        type: "Perfomance 2",
         value: 15,
     },
     {
-        type: "Perfomance",
+        type: "Perfomance 1",
         value: 10,
     },
     {
