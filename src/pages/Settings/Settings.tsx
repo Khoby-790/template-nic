@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment, Suspense, useState } from 'react'
 import General from './General';
 
@@ -41,29 +42,25 @@ const Settings = (props: Props) => {
                                     <div className="border-b border-gray-200">
                                         <nav className="-mb-px flex">
                                             {/* <!-- Current: "border-purple-500 text-purple-600", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" --> */}
-                                            <a href="#" className="border-purple-500 text-purple-600 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
+                                            <a href="#" className={`${tab === "general" ? "border-purple-500" : "border-transparent"} text-purple-600 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm`}>
                                                 General
-                    </a>
+                                            </a>
 
                                             <a href="#" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 whitespace-nowrap ml-8 py-4 px-1 border-b-2 font-medium text-sm">
                                                 Password
-                    </a>
+                                            </a>
 
                                             <a href="#" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 whitespace-nowrap ml-8 py-4 px-1 border-b-2 font-medium text-sm">
                                                 Notifications
-                    </a>
+                                            </a>
 
                                             <a href="#" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 whitespace-nowrap ml-8 py-4 px-1 border-b-2 font-medium text-sm">
                                                 Plan
-                    </a>
+                                            </a>
 
                                             <a href="#" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 whitespace-nowrap ml-8 py-4 px-1 border-b-2 font-medium text-sm">
                                                 Billing
-                    </a>
-
-                                            <a href="#" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 whitespace-nowrap ml-8 py-4 px-1 border-b-2 font-medium text-sm">
-                                                Team Members
-                    </a>
+                                            </a>
                                         </nav>
                                     </div>
                                 </div>
