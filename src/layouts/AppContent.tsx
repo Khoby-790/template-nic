@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom'
 import Dashboard from '../pages/Dashboard/Dashboard'
 import Inbox from '../pages/Inbox/Inbox'
 import Reports from '../pages/Reports/Reports'
+import Settings from '../pages/Settings/Settings'
 import SidebarSubMenu from './SidebarSubMenu'
 
 interface Props {
@@ -21,7 +22,7 @@ const AppContent = (props: Props) => {
                         <Route path="/" exact component={Dashboard} />
                         <Route path="/reports" component={Reports} />
                         <Route path="/inbox" component={Inbox} />
-                        <Route path="/settings" component={Inbox} />
+                        <Route path="/settings" component={Settings} />
                     </Switch>
                 </section>
 
