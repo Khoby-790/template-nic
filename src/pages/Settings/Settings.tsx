@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 interface Props {
     
@@ -6,9 +6,9 @@ interface Props {
 
 const Settings = (props: Props) => {
     return (
-        <div>
+        <Fragment>
             
-        </div>
+        </Fragment>
     )
 }
 
