@@ -46,7 +46,7 @@ const Settings = (props: Props) => {
                                             <NavTab value={tab} name="Password" tab="password" setTab={setTab} />
                                             <NavTab value={tab} name="Notifcations" tab="notifications" setTab={setTab} />
                                             <NavTab value={tab} name="Billing" tab="billing" setTab={setTab} />
-                                            <NavTab value={tab} name="General" tab="general" setTab={setTab} />
+                                            {/* <NavTab value={tab} name="General" tab="general" setTab={setTab} /> */}
                                         </nav>
                                     </div>
                                 </div>
