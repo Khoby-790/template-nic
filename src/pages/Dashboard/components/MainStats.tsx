@@ -12,7 +12,7 @@ const MainStats = (props: Props) => {
 
                     <div className="flex justify-end py-10 px-11 h-full flex-col">
                         <div className="flex items-baseline">
-                            <h1 className="text-6xl text-white font-bold font-mono">12</h1>
+                            <h1 className="text-6xl text-white font-bold font-mono">6.2M</h1>
                             <svg className="h-9 text-green-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7l4-4m0 0l4 4m-4-4v18" />
                             </svg>
@@ -23,7 +23,7 @@ const MainStats = (props: Props) => {
                     </div>
                     <div className="flex justify-end py-10 px-11 h-full flex-col">
                         <div className="flex items-baseline">
-                            <h1 className="text-6xl text-white font-bold font-mono">12</h1>
+                            <h1 className="text-6xl text-white font-bold font-mono">12K</h1>
                             <svg className="h-9 text-green-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7l4-4m0 0l4 4m-4-4v18" />
                             </svg>
