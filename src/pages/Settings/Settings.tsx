@@ -77,7 +77,7 @@ type NavTabProps = {
 
 const NavTab = ({ setTab, tab, first = false, name }: NavTabProps) => {
     return (
-        <a onClick={() => setTab("general")} href="#" className={`${tab === "general" ? "border-purple-500 text-purple-600" : "border-transparent text-gray-500"}  ${first ? "" : "ml-8"} whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm`}>
+        <a onClick={() => setTab(tab)} href="#" className={`${tab === "general" ? "border-purple-500 text-purple-600" : "border-transparent text-gray-500"}  ${first ? "" : "ml-8"} whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm`}>
             {name}
         </a>
     )
