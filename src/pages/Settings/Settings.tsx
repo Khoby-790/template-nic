@@ -1,11 +1,15 @@
 import React, { Fragment, Suspense, useState } from 'react'
+import General from './General';
 
 interface Props {
 
 }
 
+
+type Tab = "general" | "password" | "notifications" | "plan" | "billing";
+
 const Settings = (props: Props) => {
-    const [tab, setTab] = useState<string>("general")
+    const [tab, setTab] = useState<Tab>("general")
     return (
         <Fragment>
             <main className="flex-1 overflow-y-auto focus:outline-none" tabIndex={0}>
@@ -65,7 +69,7 @@ const Settings = (props: Props) => {
                                 </div>
 
                                 <Suspense fallback={<h1>Loading</h1>}>
-                                    { }
+                                    {tab === "general" && <General />}
                                 </Suspense>
 
                             </div>
