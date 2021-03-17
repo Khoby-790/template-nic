@@ -8,7 +8,7 @@ const Settings = (props: Props) => {
     return (
         <Fragment>
             <main className="flex-1 overflow-y-auto focus:outline-none" tabIndex={0}>
-                <div className="relative max-w-4xl mx-10 md:px-8 xl:px-0">
+                <div className="relative max-w-full mx-10 md:px-8 xl:px-0">
                     <div className="pt-10 pb-16">
                         <div className="px-4 sm:px-6 md:px-0">
                             <h1 className="text-3xl font-extrabold text-gray-900">Settings</h1>
