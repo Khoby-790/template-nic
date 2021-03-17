@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment } from 'react';
 import GraphTabs from './components/GraphTabs';
+import MainStats from './components/MainStats';
 import OffersListing from './components/OffersListing';
 import Stats from './components/Stats';
 
@@ -58,7 +59,7 @@ const data = [
 const Dashboard = (props: Props) => {
     return (
         <Fragment>
-            
+            <MainStats />
             <Stats />
             <div className="flex mx-5 mt-4 justify-center items-start flex-row">
                 <div className="flex-1 mr-3">
