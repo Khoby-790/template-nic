@@ -74,7 +74,7 @@ const Navbar = (props: Props) => {
                     <div className="ml-10 pr-4 flex-shrink-0 flex items-center space-x-10">
                         <nav aria-label="Global" className="flex space-x-10">
                             <Link to="/inbox" className="text-sm font-medium text-gray-900">Inboxes</Link>
-                            <Link to="/settings" className="text-sm font-medium text-gray-900">Reporting</Link>
+                            <Link to="/reports" className="text-sm font-medium text-gray-900">Reporting</Link>
                             <Link to="/settings" className="text-sm font-medium text-gray-900">Settings</Link>
                         </nav>
                         <div className="flex items-center space-x-8">
