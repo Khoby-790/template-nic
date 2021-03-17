@@ -46,7 +46,11 @@ const Settings = (props: Props) => {
                                                 General
                                             </a>
 
-                                            <NavTab tab="general" setTab={setTab} />
+                                            <NavTab name="General" tab="general" setTab={setTab} />
+                                            <NavTab name="Password" tab="" setTab={setTab} />
+                                            <NavTab name="Notifcations" tab="general" setTab={setTab} />
+                                            <NavTab name="General" tab="general" setTab={setTab} />
+                                            <NavTab name="General" tab="general" setTab={setTab} />
 
                                             <a onClick={() => setTab("password")} href="#" className={`${tab === "general" ? "border-purple-500 text-purple-600" : "border-transparent"}  whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm`}>
                                                 Password
@@ -85,15 +89,16 @@ export default Settings;
 
 type NavTabProps = {
     setTab: React.Dispatch<SetStateAction<Tab>>;
-    tab: string;
+    tab: Tab;
     first?: boolean;
+    name: string;
 }
 
 
-const NavTab = ({ setTab, tab, first = false }: NavTabProps) => {
+const NavTab = ({ setTab, tab, first = false, name }: NavTabProps) => {
     return (
         <a onClick={() => setTab("general")} href="#" className={`${tab === "general" ? "border-purple-500" : "border-transparent"} text-purple-600 ${first ? "" : "ml-8"} whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm`}>
-            General
+            {name}
         </a>
     )
 }
