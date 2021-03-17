@@ -21,6 +21,7 @@ const AppContent = (props: Props) => {
                         <Route path="/" exact component={Dashboard} />
                         <Route path="/reports" component={Reports} />
                         <Route path="/inbox" component={Inbox} />
+                        <Route path="/settings" component={Inbox} />
                     </Switch>
                 </section>
 
