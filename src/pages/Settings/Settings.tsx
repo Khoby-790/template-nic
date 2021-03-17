@@ -86,12 +86,13 @@ export default Settings;
 type NavTabProps = {
     setTab: React.Dispatch<SetStateAction<Tab>>;
     tab: string;
+    first?: boolean;
 }
 
 
-const NavTab = ({ setTab, tab }: NavTabProps) => {
+const NavTab = ({ setTab, tab, first = false }: NavTabProps) => {
     return (
-        <a onClick={() => setTab("general")} href="#" className={`${tab === "general" ? "border-purple-500" : "border-transparent"} text-purple-600 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm`}>
+        <a onClick={() => setTab("general")} href="#" className={`${tab === "general" ? "border-purple-500" : "border-transparent"} text-purple-600 ${first ? "" : "ml-8"} whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm`}>
             General
         </a>
     )
