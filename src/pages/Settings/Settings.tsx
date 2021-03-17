@@ -1,10 +1,11 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, Suspense, useState } from 'react'
 
 interface Props {
 
 }
 
 const Settings = (props: Props) => {
+    const [tab, setTab] = useState<string>("general")
     return (
         <Fragment>
             <main className="flex-1 overflow-y-auto focus:outline-none" tabIndex={0}>
@@ -62,6 +63,10 @@ const Settings = (props: Props) => {
                                         </nav>
                                     </div>
                                 </div>
+
+                                <Suspense fallback={<h1>Loading</h1>}>
+                                    { }
+                                </Suspense>
 
                             </div>
                         </div>
