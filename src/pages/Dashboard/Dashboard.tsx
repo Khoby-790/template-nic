@@ -140,7 +140,6 @@ const Dashboard = (props: Props) => {
                             <Activity />
                             <Activity />
                         </ul>
-
                     </div>
                 </div>
             </div>
