@@ -26,15 +26,10 @@ const Settings = (props: Props) => {
                                     <label htmlFor="selected-tab" className="sr-only">Select a tab</label>
                                     <select id="selected-tab" name="selected-tab" className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-purple-500 focus:border-purple-500 sm:text-sm rounded-md">
                                         <option selected>General</option>
-
                                         <option>Password</option>
-
                                         <option>Notifications</option>
-
                                         <option>Plan</option>
-
                                         <option>Billing</option>
-
                                         <option>Team Members</option>
                                     </select>
                                 </div>
