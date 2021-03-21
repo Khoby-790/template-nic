@@ -11,7 +11,7 @@ const WelcomeSection = (props: Props) => {
             <section aria-labelledby="profile-overview-title ">
                 <div className="rounded-lg bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 overflow-hidden shadow">
                     <h2 className="sr-only" id="profile-overview-title">Profile Overview</h2>
-                    <div className="bg-white p-6">
+                    <div className="bg-gradient-to-r from-indigo-400 via-indigo-500 to-pink-500 p-6">
                         <div className="sm:flex sm:items-center sm:justify-between">
                             <div className="sm:flex sm:space-x-5">
                                 <div className="flex-shrink-0">
@@ -30,7 +30,7 @@ const WelcomeSection = (props: Props) => {
                             </div>
                         </div>
                     </div>
-                    <div className="border-t border-gray-200 bg-gray-50 grid grid-cols-1 divide-y divide-gray-200 sm:grid-cols-3 sm:divide-y-0 sm:divide-x">
+                    <div className="border-t border-gray-200 bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 grid grid-cols-1 divide-y divide-gray-200 sm:grid-cols-3 sm:divide-y-0 sm:divide-x">
                         <div className="px-6 py-5 text-sm font-medium text-center">
                             <span className="text-gray-900 mr-1">12</span>
                             <span className="text-gray-600">Vacation days left</span>
