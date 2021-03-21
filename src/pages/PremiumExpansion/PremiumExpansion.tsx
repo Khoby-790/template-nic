@@ -188,7 +188,9 @@ const PremiumExpansion = (props: Props) => {
 
                 <Fragment>
                     {tab === "for_all_reinsurers" && <ForEachReinsurerTab />}
+                    {tab === "for_all_brokers" && <ForEachReinsurerTab />}
                     {tab === "for_each_reinsurer" && <FromEachReinsurerTab />}
+                    {tab === "for_each_broker" && <FromEachReinsurerTab />}
                 </Fragment>
 
             </div>
