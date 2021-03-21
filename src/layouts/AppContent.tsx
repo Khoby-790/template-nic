@@ -1,13 +1,12 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, lazy } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Dashboard from '../pages/Dashboard/Dashboard'
-import Inbox from '../pages/Inbox/Inbox'
-import NewDashboard from '../pages/NewDashboard/NewDashboard'
-import NicStatsExpansion from '../pages/NicStatsExpansion/NicStatsExpansion'
-import Reports from '../pages/Reports/Reports'
-import Settings from '../pages/Settings/Settings'
-import SidebarSubMenu from './SidebarSubMenu'
-
+const NewDashboard = lazy(() => import('../pages/NewDashboard/NewDashboard'))
+const NicStatsExpansion = lazy(() => import('../pages/NicStatsExpansion/NicStatsExpansion'))
+const Reports = lazy(() => import('../pages/Reports/Reports'))
+const Settings = lazy(() => import('../pages/Settings/Settings'))
+const SidebarSubMenu = lazy(() => import('./SidebarSubMenu'))
+const Inbox = lazy(() => import('../pages/Inbox/Inbox'))
 interface Props {
 
 }
@@ -22,7 +21,7 @@ const AppContent = (props: Props) => {
                     {/* <!-- Your content --> */}
                     <Switch>
                         <Route path="/" exact component={NewDashboard} />
-                        <Route path="/nic"  component={NicStatsExpansion} />
+                        <Route path="/nic" component={NicStatsExpansion} />
                         <Route path="/reports" component={Reports} />
                         <Route path="/inbox" component={Inbox} />
                         <Route path="/settings" component={Settings} />
