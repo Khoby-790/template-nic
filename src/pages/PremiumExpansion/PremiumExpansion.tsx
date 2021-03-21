@@ -2,6 +2,8 @@
 import React, { Fragment, useState } from 'react'
 import { PageBreadCrum } from '../../components';
 import SubGraphsBarchart from '../Dashboard/components/SubGraphsBarchart';
+import ForEachReinsurerTab from './tabs/ForEachReinsurerTab';
+import FromEachReinsurerTab from './tabs/FromEachReinsurerTab';
 
 interface Props {
 
@@ -180,10 +182,10 @@ const PremiumExpansion = (props: Props) => {
                     </div>
                 </div>
 
-                {/* <Fragment>
+                <Fragment>
                     {tab === "for_all_reinsurers" && <ForEachReinsurerTab />}
                     {tab === "for_each_reinsurer" && <FromEachReinsurerTab />}
-                </Fragment> */}
+                </Fragment>
 
             </div>
         </Fragment>
