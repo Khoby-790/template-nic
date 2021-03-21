@@ -16,7 +16,7 @@ const myData = [
   { type: "待提升", percent: 0.3334 },
 ];
 const myContent = {
-  siteCode: "Hello",
+  siteCode: "Today",
   title: "Offer placed",
   percent: "66.66%",
 };
@@ -25,19 +25,6 @@ const OffersPlaced = () => {
   return (
     <div>
       <Ring data={myData} content={myContent} />
-      {/* <Ring
-        data={myData}
-        content={myContent}
-        intervalConfig={{
-          style: { fillOpacity: 0.6 },
-          size: [
-            "type",
-            (type) => {
-              return type === "已完成" ? 12 : 6;
-            },
-          ],
-        }}
-      /> */}
     </div>
   );
 };
