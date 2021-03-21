@@ -6,6 +6,7 @@ interface Props {
     bars: {
         name: string;
         color: string;
+        title?: string;
     }[]
 }
 
@@ -94,10 +95,10 @@ const SubGraphsBarchart = ({ data = [], bars }: Props) => {
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="name" />
                         <YAxis />
-                        <Tooltip  />
+                        <Tooltip />
                         <Legend />
                         {bars.map((bar, id) => (
-                            <Bar key={id} dataKey={bar.name} name={bar.name} fill={bar.color} />
+                            <Bar key={id} dataKey={bar.name} name={bar.title || bar.name} fill={bar.color} />
                         ))}
                         {/* <Bar dataKey="total"  /> */}
                     </BarChart>
