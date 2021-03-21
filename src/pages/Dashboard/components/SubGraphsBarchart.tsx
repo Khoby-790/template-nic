@@ -97,11 +97,8 @@ const SubGraphsBarchart = ({ data = [], bars }: Props) => {
                         <Tooltip  />
                         <Legend />
                         {bars.map((bar, id) => (
-                            <Bar dataKey={bar.name} fill={bar.color} />
+                            <Bar key={id} dataKey={bar.name} fill={bar.color} />
                         ))}
-                        {/* <Bar dataKey="total" barSize={20} fill="#8884d8" />
-                        <Bar dataKey="paid" barSize={20} fill="#8884d8" />
-                        <Bar dataKey="outstanding" barSize={20} fill="#8884d8" /> */}
                     </BarChart>
                 </ResponsiveContainer>
             </div>
