@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Modal } from '../../../components'
+import DisplayBarChart from '../components/DisplayBarChart'
 
 interface Props {
 
@@ -87,7 +88,7 @@ const FromEachReinsurerTab = (props: Props) => {
 
 
             <Modal size={50} show={showGraph} setShow={setShowGraph}>
-                Hello
+                <DisplayBarChart />
             </Modal>
 
         </div>
