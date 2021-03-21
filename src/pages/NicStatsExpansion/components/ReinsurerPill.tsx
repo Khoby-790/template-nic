@@ -1,11 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
+import React, { useState } from 'react'
 
 interface Props {
     name?: string
 }
 
 const ReinsurerPill = ({ name }: Props) => {
+    const [showGraph, setShowGraph] = useState<boolean>(false)
     return (
         <>
             <div className="relative rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm flex items-center space-x-3 hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
