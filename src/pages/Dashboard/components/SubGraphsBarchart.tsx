@@ -40,7 +40,7 @@ const data_ = [
 
 
 const getIntroOfPage = (label: any) => {
-    if (label === "Users") {
+    if (label === "") {
         return "Users is about number of users";
     }
     if (label === "Orders") {
@@ -79,7 +79,7 @@ const SubGraphsBarchart = ({ data = [] }: Props) => {
                     <BarChart
                         width={650}
                         height={350}
-                        data={data_}
+                        data={data}
                         margin={{
                             top: 5,
                             right: 30,
@@ -90,7 +90,7 @@ const SubGraphsBarchart = ({ data = [] }: Props) => {
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="name" />
                         <YAxis />
-                        <Tooltip content={<CustomTooltip />} />
+                        {/* <Tooltip content={<CustomTooltip />} /> */}
                         <Legend />
                         <Bar dataKey="total" barSize={20} fill="#8884d8" />
                         <Bar dataKey="paid" barSize={20} fill="#8884d8" />
