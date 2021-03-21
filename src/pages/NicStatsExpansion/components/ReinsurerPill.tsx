@@ -27,7 +27,7 @@ const ReinsurerPill = ({ name }: Props) => {
                                     <span>East Legon</span>
                                 </p>
                             </a>
-                            <div className="flex text-gray-500 items-center my-3">
+                            <div className="flex text-gray-500 items-center hover:bg-indigo-600 my-3">
                                 View
                                 <svg className="h-6 ml-3 text-sm text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
