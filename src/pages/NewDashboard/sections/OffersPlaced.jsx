@@ -14,7 +14,7 @@ const myContent = {
 
 const OffersPlaced = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white mx-2 shadow-lg items-start flex">
       <Ringcomponent data={myData} content={myContent} />
     </div>
   );

@@ -13,7 +13,7 @@ import {
 const Ringcomponent = ({ data = [], content = {}, intervalConfig = {} }) => {
   const brandFill = getTheme().colors10[0];
   return (
-    <Chart placeholder={false} height={200} padding="auto" autoFit>
+    <Chart placeholder={false} height={200} autoFit>
       <Legend visible={false} />
       <View
         data={data}
