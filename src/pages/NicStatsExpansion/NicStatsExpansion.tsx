@@ -107,17 +107,17 @@ const NicStatsExpansion = (props: Props) => {
                     <div className="hidden sm:block">
                         <div className="border-b border-gray-200">
                             <nav className="-mb-px flex" aria-label="Tabs">
-                                <a href="#" className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 w-1/4 py-4 px-1 text-center border-b-2 font-medium text-sm">
+                                <a href="#" onClick={() => setTab("for_all_brokers")} className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 w-1/4 py-4 px-1 text-center border-b-2 font-medium text-sm">
                                     For All Brokers
                                 </a>
-                                <a href="#" className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 w-1/4 py-4 px-1 text-center border-b-2 font-medium text-sm">
+                                <a href="#" onClick={() => setTab("for_each_broker")} className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 w-1/4 py-4 px-1 text-center border-b-2 font-medium text-sm">
                                     From Each Broker
                                 </a>
                                 {/* <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" --> */}
-                                <a href="#" className="border-indigo-500 text-indigo-600 w-1/4 py-4 px-1 text-center border-b-2 font-medium text-sm" aria-current="page">
+                                <a href="#" onClick={() => setTab("for_all_reinsurers")} className="border-indigo-500 text-indigo-600 w-1/4 py-4 px-1 text-center border-b-2 font-medium text-sm" aria-current="page">
                                     For Each Reinsured
                                 </a>
-                                <a href="#" className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 w-1/4 py-4 px-1 text-center border-b-2 font-medium text-sm">
+                                <a href="#" onClick={() => setTab("for_each_reinsurer")} className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 w-1/4 py-4 px-1 text-center border-b-2 font-medium text-sm">
                                     From Each Reinsurer
                                 </a>
                             </nav>
@@ -126,7 +126,7 @@ const NicStatsExpansion = (props: Props) => {
                 </div>
 
                 <Fragment>
-                    {tab === "for_each_reinsurer" && <ForEachReinsurerTab />}
+                    {tab === "for_all_reinsurers" && <ForEachReinsurerTab />}
                 </Fragment>
 
             </div>
