@@ -87,11 +87,15 @@ const PremiumSection = (props: Props) => {
                             <span className="font-light text-gray-600">Paid</span>
                         </div>
                     </div>
-                    <div className="flex-1 h-64">
+                    <div className="flex-1 px-5 h-64">
                         <ResponsiveContainer width="100%" height="100%">
                             <LineChart width={300} height={100} data={data}>
                                 <Line type="monotone" dataKey="total" stroke="#8884d8" strokeWidth={2} />
                                 <Line type="monotone" dataKey="paid" stroke="#8884d8" strokeWidth={2} />
+                                <XAxis dataKey="name" />
+                                <YAxis />
+                                <Tooltip />
+                                <Legend />
                             </LineChart>
                         </ResponsiveContainer>
                     </div>
