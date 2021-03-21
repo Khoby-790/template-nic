@@ -20,7 +20,7 @@ const NewDashboard = (props: Props) => {
                                 <div className="mt-4 text-center sm:mt-0 sm:pt-1 sm:text-left">
                                     <p className="text-sm font-medium text-gray-600">Welcome back,</p>
                                     <p className="text-xl font-bold text-gray-900 sm:text-2xl">Rebecca Nicholas</p>
-                                    <p className="text-sm font-medium text-gray-600">Product Designer</p>
+                                    <p className="text-sm font-medium text-gray-600">Managing Director</p>
                                 </div>
                             </div>
                             <div className="mt-5 flex justify-center sm:mt-0">
@@ -32,17 +32,17 @@ const NewDashboard = (props: Props) => {
                     </div>
                     <div className="border-t border-gray-200 bg-gray-50 grid grid-cols-1 divide-y divide-gray-200 sm:grid-cols-3 sm:divide-y-0 sm:divide-x">
                         <div className="px-6 py-5 text-sm font-medium text-center">
-                            <span className="text-gray-900">12</span>
+                            <span className="text-gray-900 mr-1">12</span>
                             <span className="text-gray-600">Vacation days left</span>
                         </div>
 
                         <div className="px-6 py-5 text-sm font-medium text-center">
-                            <span className="text-gray-900">4</span>
+                            <span className="text-gray-900 mr-1">4</span>
                             <span className="text-gray-600">Sick days left</span>
                         </div>
 
                         <div className="px-6 py-5 text-sm font-medium text-center">
-                            <span className="text-gray-900">2</span>
+                            <span className="text-gray-900 mr-1">2</span>
                             <span className="text-gray-600">Personal days left</span>
                         </div>
                     </div>
