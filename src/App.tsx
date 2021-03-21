@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import AppLayout from './layouts/AppLayout';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 function App() {
   return (
     <BrowserRouter>
-      <Switch>
-        <Route path="/" render={props => <AppLayout {...props} />} />
-      </Switch>
+      <Suspense fallback={<h1>Loading...</h1>}>
+        <Switch>
+          <Route path="/" render={props => <AppLayout {...props} />} />
+        </Switch>
+      </Suspense>
+
       {/* <AppLayout /> */}
     </BrowserRouter>
   );
