@@ -84,7 +84,7 @@ const DisplayBarChart = (props: Props) => {
         <Fragment>
             <div className="h-16 px-4 py-3 flex flex-col">
                 <span className="text-xl font-bold">Summary</span>
-                <span className="font-light">Lorem ipsum dolor sit amet.</span>
+                <span className="font-light">GN Reinsurance</span>
             </div>
             <div className="h-96 py-4">
                 <ResponsiveContainer width="100%" height="100%">
