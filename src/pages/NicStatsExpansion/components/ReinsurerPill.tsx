@@ -28,9 +28,9 @@ const ReinsurerPill = ({ name }: Props) => {
                                 </p>
                             </a>
                         </div>
-                        <div className="px-3">
+                        <div className="px-5 grid grid-cols-3 gap-x-5">
                             <div className="flex flex-col">
-                                <span>Total</span>
+                                <span className="font-thin">Total</span>
                                 <span className="font-semibold text-xl">12,022,152</span>
                             </div>
                             <div className="flex flex-col">
