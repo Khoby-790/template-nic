@@ -30,8 +30,8 @@ const Ringcomponent = ({ data = [], content = {}, intervalConfig = {} }) => {
           position="percent"
           adjust="stack"
           // color="type"
-          color={["type", ["rgba(100, 100, 255, 0.6)", "#eee"]]}
-        //   color={["type", [brandFill, "#eee"]]}
+          // color={["type", ["rgba(100, 100, 255, 0.6)", "#eee"]]}
+          color={["type", [brandFill, "#eee"]]}
           size={16}
           // style={{ fillOpacity: 0.6 }}
           // label={['type', {offset: 40}]}
