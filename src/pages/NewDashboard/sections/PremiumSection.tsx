@@ -73,7 +73,7 @@ const PremiumSection = (props: Props) => {
             </div>
             <div className="flex h-64">
                 <div className="flex">
-                    <div className="w-64 grid grid-cols-1 gap-y-3">
+                    <div className="grid px-5 grid-cols-1 gap-y-3">
                         <div className="flex flex-col">
                             <span className="font-bold text-2xl text-gray-600">121,000</span>
                             <span className="font-light text-gray-600">Total</span>
@@ -87,10 +87,11 @@ const PremiumSection = (props: Props) => {
                             <span className="font-light text-gray-600">Paid</span>
                         </div>
                     </div>
-                    <div className="flex-1">
+                    <div className="flex-1 h-64">
                         <ResponsiveContainer width="100%" height="100%">
                             <LineChart width={300} height={100} data={data}>
                                 <Line type="monotone" dataKey="total" stroke="#8884d8" strokeWidth={2} />
+                                <Line type="monotone" dataKey="paid" stroke="#8884d8" strokeWidth={2} />
                             </LineChart>
                         </ResponsiveContainer>
                     </div>
