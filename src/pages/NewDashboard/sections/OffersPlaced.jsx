@@ -3,7 +3,7 @@ import Ringcomponent from "../components/Ringcomponent";
 
 
 const myData = [
-  { type: "已完成", percent: 0.6666 },
+  { type: "Offers", percent: 0.6666 },
   { type: "待提升", percent: 0.3334 },
 ];
 const myContent = {
