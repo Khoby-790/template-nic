@@ -109,21 +109,7 @@ const PremiumExpansion = (props: Props) => {
                     </div>
                     <div className="hidden sm:block">
                         <div className="border-b border-gray-200">
-                            <nav className="-mb-px flex" aria-label="Tabs">
-                                <a href="#" onClick={() => setTab("for_all_brokers")} className={tab === "for_all_brokers" ? active : inActive}>
-                                    For All Brokers
-                                </a>
-                                <a href="#" onClick={() => setTab("for_each_broker")} className={tab === "for_each_broker" ? active : inActive}>
-                                    From Each Broker
-                                </a>F
-                                {/* <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" --> */}
-                                <a href="#" onClick={() => setTab("for_all_reinsurers")} className={tab === "for_all_reinsurers" ? active : inActive} aria-current="page">
-                                    For Each Reinsured
-                                </a>
-                                <a href="#" onClick={() => setTab("for_each_reinsurer")} className={tab === "for_each_reinsurer" ? active : inActive}>
-                                    From Each Reinsurer
-                                </a>
-                            </nav>
+                            
                         </div>
                     </div>
                 </div>
