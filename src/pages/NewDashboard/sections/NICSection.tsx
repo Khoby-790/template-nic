@@ -98,7 +98,7 @@ const NICSection = (props: Props) => {
                             </BarChart>
                         </ResponsiveContainer>
                     </div>
-                    <div className="w-64 grid grid-cols-1 gap-y-3">
+                    <div className="px-5 grid grid-cols-1 gap-y-3">
                         <div className="flex flex-col">
                             <span className="font-bold text-2xl text-gray-600">121,000</span>
                             <span className="font-light text-gray-600">Total</span>
