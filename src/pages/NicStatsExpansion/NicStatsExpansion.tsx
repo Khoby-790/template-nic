@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment, useState } from 'react'
-import { Link } from 'react-router-dom';
+import { PageBreadCrum } from '../../components';
 import ForEachReinsurerTab from './tabs/ForEachReinsurerTab'
 import FromEachReinsurerTab from './tabs/FromEachReinsurerTab';
 
@@ -20,7 +20,7 @@ const NicStatsExpansion = (props: Props) => {
         <Fragment>
             <div className="px-3 py-4">
                 <div>
-
+                    <PageBreadCrum page="NIC Summary" />
 
                     <dl className="mt-5 grid grid-cols-1 rounded-lg bg-white overflow-hidden shadow divide-y divide-gray-200 md:grid-cols-3 md:divide-y-0 md:divide-x">
                         <div className="px-4 py-5 sm:p-6">
