@@ -13,7 +13,7 @@ import {
 const Ringcomponent = ({ data = [], content = {}, intervalConfig = {} }) => {
   const brandFill = getTheme().colors10[0];
   return (
-    <Chart placeholder={false} height={200} autoFit>
+    <Chart placeholder={false} height={200} width={200}>
       <Legend visible={false} />
       <View
         data={data}
@@ -31,7 +31,7 @@ const Ringcomponent = ({ data = [], content = {}, intervalConfig = {} }) => {
           adjust="stack"
           // color="type"
           // color={["type", ["rgba(100, 100, 255, 0.6)", "#eee"]]}
-          color={["type", [brandFill, "#eee"]]}
+          color={["type", [brandFill, "#FE7F2D"]]}
           size={16}
           // style={{ fillOpacity: 0.6 }}
           // label={['type', {offset: 40}]}
