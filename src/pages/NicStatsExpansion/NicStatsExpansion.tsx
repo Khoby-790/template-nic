@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment, useState } from 'react'
 import ForEachReinsurerTab from './tabs/ForEachReinsurerTab'
+import FromEachReinsurerTab from './tabs/FromEachReinsurerTab';
 
 interface Props {
 
@@ -131,6 +132,7 @@ const NicStatsExpansion = (props: Props) => {
 
                 <Fragment>
                     {tab === "for_all_reinsurers" && <ForEachReinsurerTab />}
+                    {tab === "for_each_reinsurer" && <FromEachReinsurerTab />}
                 </Fragment>
 
             </div>
