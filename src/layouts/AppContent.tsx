@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Dashboard from '../pages/Dashboard/Dashboard'
 import Inbox from '../pages/Inbox/Inbox'
+import NewDashboard from '../pages/NewDashboard/NewDashboard'
 import Reports from '../pages/Reports/Reports'
 import Settings from '../pages/Settings/Settings'
 import SidebarSubMenu from './SidebarSubMenu'
@@ -19,7 +20,7 @@ const AppContent = (props: Props) => {
                     <h1 id="primary-heading" className="sr-only">Home</h1>
                     {/* <!-- Your content --> */}
                     <Switch>
-                        <Route path="/" exact component={Dashboard} />
+                        <Route path="/" exact component={NewDashboard} />
                         <Route path="/reports" component={Reports} />
                         <Route path="/inbox" component={Inbox} />
                         <Route path="/settings" component={Settings} />
