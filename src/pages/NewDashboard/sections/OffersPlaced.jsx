@@ -8,7 +8,7 @@ const myData = [
 ];
 const myContent = {
   siteCode: "Today",
-  title: "Offer placed",
+  title: "Offers placed",
   percent: "66.66%",
 };
 
