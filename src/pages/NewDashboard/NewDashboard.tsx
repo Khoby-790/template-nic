@@ -14,7 +14,7 @@ interface Props {
 const NewDashboard = (props: Props) => {
     return (
         <div className="px-3 py-4">
-            <div className="flex">
+            <div className="flex items-baseline justify-end">
                 <div className="flex-1">
                     <WelcomeSection />
                 </div>

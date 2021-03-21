@@ -8,8 +8,8 @@ interface Props {
 const WelcomeSection = (props: Props) => {
     return (
         <>
-            <section aria-labelledby="profile-overview-title ">
-                <div className="rounded-lg bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 overflow-hidden shadow">
+            <section aria-labelledby="profile-overview-title h-full">
+                <div className="rounded-lg bg-gradient-to-r h-full from-yellow-400 via-red-500 to-pink-500 overflow-hidden shadow">
                     <h2 className="sr-only" id="profile-overview-title">Profile Overview</h2>
                     <div className="bg-gradient-to-r from-indigo-700 via-indigo-500 to-purple-500 p-6">
                         <div className="sm:flex sm:items-center sm:justify-between">
