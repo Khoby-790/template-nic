@@ -1,4 +1,4 @@
-import React, { Fragment, lazy } from 'react'
+import React, { Fragment, lazy, Suspense } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Dashboard from '../pages/Dashboard/Dashboard'
 const NewDashboard = lazy(() => import('../pages/NewDashboard/NewDashboard'))
@@ -20,11 +20,13 @@ const AppContent = (props: Props) => {
                     <h1 id="primary-heading" className="sr-only">Home</h1>
                     {/* <!-- Your content --> */}
                     <Switch>
-                        <Route path="/" exact component={NewDashboard} />
-                        <Route path="/nic" component={NicStatsExpansion} />
-                        <Route path="/reports" component={Reports} />
-                        <Route path="/inbox" component={Inbox} />
-                        <Route path="/settings" component={Settings} />
+                        <Suspense fallback={<h1>Loading ...</h1>}>
+                            <Route path="/" exact component={NewDashboard} />
+                            <Route path="/nic" component={NicStatsExpansion} />
+                            <Route path="/reports" component={Reports} />
+                            <Route path="/inbox" component={Inbox} />
+                            <Route path="/settings" component={Settings} />
+                        </Suspense>
                     </Switch>
                 </section>
 
