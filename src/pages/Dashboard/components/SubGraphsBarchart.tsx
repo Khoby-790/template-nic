@@ -99,6 +99,7 @@ const SubGraphsBarchart = ({ data = [], bars }: Props) => {
                         {bars.map((bar, id) => (
                             <Bar key={id} dataKey={bar.name} fill={bar.color} />
                         ))}
+                        <Bar dataKey="total" label={<h1>Total</h1>} />
                     </BarChart>
                 </ResponsiveContainer>
             </div>
