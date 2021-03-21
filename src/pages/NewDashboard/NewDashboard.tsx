@@ -22,7 +22,12 @@ const NewDashboard = (props: Props) => {
                 </div>
                 <div className="flex h-64">
                     <div className="flex-1"></div>
-                    <div className="w-96"></div>
+                    <div className="w-96">
+                        <div className="flex flex-col">
+                            <span className="font-bold text-2xl">12000</span>
+                            <span className="font-light text-gray-600">Total</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
