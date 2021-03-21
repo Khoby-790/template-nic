@@ -19,15 +19,15 @@ const AppContent = (props: Props) => {
                 <section aria-labelledby="primary-heading" className="min-w-0 transition duration-500 flex-1 h-full flex flex-col overflow-y-scroll lg:order-last">
                     <h1 id="primary-heading" className="sr-only">Home</h1>
                     {/* <!-- Your content --> */}
-                    <Switch>
-                        <Suspense fallback={<h1>Loading ...</h1>}>
+                    <Suspense fallback={<h1>Loading ...</h1>}>
+                        <Switch>
                             <Route path="/" exact component={NewDashboard} />
                             <Route path="/nic" component={NicStatsExpansion} />
                             <Route path="/reports" component={Reports} />
                             <Route path="/inbox" component={Inbox} />
                             <Route path="/settings" component={Settings} />
-                        </Suspense>
-                    </Switch>
+                        </Switch>
+                    </Suspense>
                 </section>
 
                 {/* <!-- Secondary column (hidden on smaller screens) --> */}
