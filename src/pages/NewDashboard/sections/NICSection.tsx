@@ -54,7 +54,7 @@ const NICSection = (props: Props) => {
     return (
         <>
             <div className="bg-white shadow-lg my-4">
-                <div className="h-16 flex justify-between bg-gray-400 py-2 px-3">
+                <div className="h-16 flex justify-between py-2 px-3">
                     <div className="flex">
                         <div className=" mr-3">
                             <svg className="h-12 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -67,7 +67,9 @@ const NICSection = (props: Props) => {
                         </div>
                     </div>
                     <div className="">
-
+                        <svg className="h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
                     </div>
                 </div>
                 <div className="flex h-64">
