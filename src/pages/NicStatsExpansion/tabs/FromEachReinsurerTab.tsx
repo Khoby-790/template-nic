@@ -39,7 +39,7 @@ const FromEachReinsurerTab = (props: Props) => {
                                     {/* <!-- Odd row --> */}
                                     <tr className="bg-white">
                                         <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                            Jane Cooper
+                                            Vanguard Reinsurance
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                             <span>GHC</span>
@@ -63,18 +63,18 @@ const FromEachReinsurerTab = (props: Props) => {
                                     {/* <!-- Even row --> */}
                                     <tr className="bg-gray-50">
                                         <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                            Cody Fisher
+                                            Ghana Re
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                            <span>GHC</span>
+                                            <span>USD</span>
                                             <span>12,000</span>
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                            <span>GHC</span>
+                                            <span>USD</span>
                                             <span>12,000</span>
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                            <span>GHC</span>
+                                            <span>USD</span>
                                             <span>12,000</span>
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
@@ -88,15 +88,15 @@ const FromEachReinsurerTab = (props: Props) => {
                                             Jane Cooper
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                            <span>GHC</span>
+                                            <span>EUR</span>
                                             <span>12,000</span>
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                            <span>GHC</span>
+                                            <span>EUR</span>
                                             <span>12,000</span>
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                            <span>GHC</span>
+                                            <span>EUR</span>
                                             <span>12,000</span>
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
@@ -110,15 +110,15 @@ const FromEachReinsurerTab = (props: Props) => {
                                             Cody Fisher
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                            <span>GHC</span>
+                                            <span>LE</span>
                                             <span>12,000</span>
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                            <span>GHC</span>
+                                            <span>LE</span>
                                             <span>12,000</span>
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                            <span>GHC</span>
+                                            <span>LE</span>
                                             <span>12,000</span>
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
