@@ -74,9 +74,9 @@ const DisplayBarChart = (props: Props) => {
                         <YAxis />
                         <Tooltip />
                         <Legend />
-                        <Bar dataKey="paid" fill="#4D8B31" />
-                        <Bar dataKey="outstanding" fill="#FFC800" />
-                        <Bar dataKey="total" fill="#FF8427" />
+                        <Bar dataKey="paid" fill="#73C2BE" />
+                        <Bar dataKey="outstanding" fill="#776885" />
+                        <Bar dataKey="total" fill="#5F1A37" />
                     </BarChart>
                 </ResponsiveContainer>
             </div>
