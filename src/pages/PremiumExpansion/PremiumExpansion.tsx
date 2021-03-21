@@ -54,7 +54,11 @@ const data = [
     },
 ];
 
-const bars = [{ name: "paid", color: "#BA5624" }, { name: "outstanding", color: "#381D2A" }, { name: "total", color: "#FCDE9C" }]
+const bars = [
+    { name: "paid", color: "#BA5624", title: "Total Paid Premium" },
+    { name: "outstanding", color: "#381D2A", title: "Total Outstanding Premium" },
+    { name: "total", color: "#FCDE9C", title: "Total Premium" }
+]
 
 const inActive = "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 w-1/4 py-4 px-1 text-center border-b-2 font-medium text-sm";
 const active = "border-indigo-500 text-indigo-600 w-1/4 py-4 px-1 text-center border-b-2 font-medium text-sm";
