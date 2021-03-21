@@ -86,7 +86,7 @@ const FromEachReinsurerTab = (props: Props) => {
             </div>
 
 
-            <Modal show={showGraph} setShow={setShowGraph}>
+            <Modal size={50} show={showGraph} setShow={setShowGraph}>
                 Hello
             </Modal>
 
