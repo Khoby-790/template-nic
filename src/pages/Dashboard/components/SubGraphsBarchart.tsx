@@ -94,7 +94,7 @@ const SubGraphsBarchart = ({ data = [], bars }: Props) => {
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="name" />
                         <YAxis />
-                        {/* <Tooltip content={<CustomTooltip />} /> */}
+                        <Tooltip  />
                         <Legend />
                         {bars.map((bar, id) => (
                             <Bar dataKey={bar.name} fill={bar.color} />
