@@ -21,8 +21,8 @@ const NewDashboard = (props: Props) => {
                     </div>
                 </div>
                 <div className="flex h-64">
-                    <div></div>
-                    <div className="w-96 bg-gray-400"></div>
+                    <div className="flex-1"></div>
+                    <div className="w-96"></div>
                 </div>
             </div>
         </div>
