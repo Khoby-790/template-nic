@@ -9,48 +9,48 @@ interface Props {
 
 const data = [
     {
-      name: 'Page A',
-      uv: 4000,
-      pv: 2400,
-      amt: 2400,
+        name: 'Jan',
+        paid: 4000,
+        outstanding: 2400,
+        total: 2400,
     },
     {
-      name: 'Page B',
-      uv: 3000,
-      pv: 1398,
-      amt: 2210,
+        name: 'Feb',
+        paid: 3000,
+        outstanding: 1398,
+        total: 2210,
     },
     {
-      name: 'Page C',
-      uv: 2000,
-      pv: 9800,
-      amt: 2290,
+        name: 'Mar',
+        paid: 2000,
+        outstanding: 9800,
+        total: 2290,
     },
     {
-      name: 'Page D',
-      uv: 2780,
-      pv: 3908,
-      amt: 2000,
+        name: 'Apr',
+        paid: 2780,
+        outstanding: 3908,
+        total: 2000,
     },
     {
-      name: 'Page E',
-      uv: 1890,
-      pv: 4800,
-      amt: 2181,
+        name: 'May',
+        paid: 1890,
+        outstanding: 4800,
+        total: 2181,
     },
     {
-      name: 'Page F',
-      uv: 2390,
-      pv: 3800,
-      amt: 2500,
+        name: 'Jun',
+        paid: 2390,
+        outstanding: 3800,
+        total: 2500,
     },
     {
-      name: 'Page G',
-      uv: 3490,
-      pv: 4300,
-      amt: 2100,
+        name: 'Jul',
+        paid: 3490,
+        outstanding: 4300,
+        total: 2100,
     },
-  ];
+];
 
 
 const inActive = "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 w-1/4 py-4 px-1 text-center border-b-2 font-medium text-sm";

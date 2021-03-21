@@ -92,7 +92,9 @@ const SubGraphsBarchart = ({ data = [] }: Props) => {
                         <YAxis />
                         <Tooltip content={<CustomTooltip />} />
                         <Legend />
-                        <Bar dataKey="pv" barSize={20} fill="#8884d8" />
+                        <Bar dataKey="total" barSize={20} fill="#8884d8" />
+                        <Bar dataKey="paid" barSize={20} fill="#8884d8" />
+                        <Bar dataKey="outstanding" barSize={20} fill="#8884d8" />
                     </BarChart>
                 </ResponsiveContainer>
             </div>
