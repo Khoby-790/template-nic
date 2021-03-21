@@ -22,7 +22,7 @@ const AppContent = (props: Props) => {
                     {/* <!-- Your content --> */}
                     <Switch>
                         <Route path="/" exact component={NewDashboard} />
-                        <Route path="/nic" exact component={NicStatsExpansion} />
+                        <Route path="/nic"  component={NicStatsExpansion} />
                         <Route path="/reports" component={Reports} />
                         <Route path="/inbox" component={Inbox} />
                         <Route path="/settings" component={Settings} />
