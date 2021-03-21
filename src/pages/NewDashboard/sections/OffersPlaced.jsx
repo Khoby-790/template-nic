@@ -14,7 +14,7 @@ const myContent = {
 
 const OffersPlaced = () => {
   return (
-    <div>
+    <div className="bg-white">
       <Ringcomponent data={myData} content={myContent} />
     </div>
   );
