@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom'
 import Dashboard from '../pages/Dashboard/Dashboard'
 import Inbox from '../pages/Inbox/Inbox'
 import NewDashboard from '../pages/NewDashboard/NewDashboard'
+import NicStatsExpansion from '../pages/NicStatsExpansion/NicStatsExpansion'
 import Reports from '../pages/Reports/Reports'
 import Settings from '../pages/Settings/Settings'
 import SidebarSubMenu from './SidebarSubMenu'
@@ -21,6 +22,7 @@ const AppContent = (props: Props) => {
                     {/* <!-- Your content --> */}
                     <Switch>
                         <Route path="/" exact component={NewDashboard} />
+                        <Route path="/nic" exact component={NicStatsExpansion} />
                         <Route path="/reports" component={Reports} />
                         <Route path="/inbox" component={Inbox} />
                         <Route path="/settings" component={Settings} />

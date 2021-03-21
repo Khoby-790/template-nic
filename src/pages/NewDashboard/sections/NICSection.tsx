@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const data = [
@@ -66,11 +67,11 @@ const NICSection = (props: Props) => {
                             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>
                         </div>
                     </div>
-                    <div className=" flex justify-center h-full items-center px-4 cursor-pointer hover:bg-gray-400 rounded-full">
+                    <Link to="/nic" className=" flex justify-center h-full items-center px-4 cursor-pointer hover:bg-gray-400 rounded-full">
                         <svg className="h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                         </svg>
-                    </div>
+                    </Link>
                 </div>
                 <div className="flex h-64">
                     <div className="flex-1">
