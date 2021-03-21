@@ -1,11 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 
 interface Props {
 
 }
 
+type Tabs = "for_each_reinsurer" | "for_each_broker" | "for_all_brokers" | "for_all_reinsurers"
+
 const NicStatsExpansion = (props: Props) => {
+    const [tab, setTab] = useState<>("for_each_reinsurer")
     return (
         <Fragment>
             <div className="px-3 py-4">
@@ -121,7 +124,9 @@ const NicStatsExpansion = (props: Props) => {
                     </div>
                 </div>
 
-
+                <Fragment>
+                    { }
+                </Fragment>
 
             </div>
 
