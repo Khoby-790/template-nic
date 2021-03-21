@@ -52,7 +52,7 @@ interface Props {
 
 const PremiumSection = (props: Props) => {
     return (
-        <div>
+        <div className="bg-white shadow-lg my-4">
             <div className="h-16 flex justify-between py-2 px-3">
                 <div className="flex">
                     <div className=" mr-3">
@@ -61,7 +61,7 @@ const PremiumSection = (props: Props) => {
                         </svg>
                     </div>
                     <div className="flex flex-col">
-                        <span className="font-semibold ">NIC</span>
+                        <span className="font-semibold ">Premium</span>
                         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>
                     </div>
                 </div>
@@ -71,7 +71,7 @@ const PremiumSection = (props: Props) => {
                     </svg>
                 </Link>
             </div>
-            <div>
+            <div className="flex h-64">
                 <ResponsiveContainer width="100%" height="100%">
                     <LineChart width={300} height={100} data={data}>
                         <Line type="monotone" dataKey="pv" stroke="#8884d8" strokeWidth={2} />
