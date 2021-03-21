@@ -92,7 +92,10 @@ const PremiumSection = (props: Props) => {
                             <LineChart width={300} height={100} data={data}>
                                 <Line type="monotone" dataKey="total" stroke="#8884d8" strokeWidth={2} />
                                 <Line type="monotone" dataKey="paid" stroke="#8884d8" strokeWidth={2} />
+                                <Line type="monotone" dataKey="outstanding" stroke="#8884d8" strokeWidth={2} />
                                 <XAxis dataKey="name" />
+                                <CartesianGrid strokeDasharray="3 3" />
+
                                 <YAxis />
                                 <Tooltip />
                                 <Legend />
