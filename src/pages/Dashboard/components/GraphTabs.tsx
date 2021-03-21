@@ -138,7 +138,7 @@ const GraphTabs = ({ data = [] }: Props) => {
                         <Suspense fallback={<h1>loading</h1>}>
                             {tab === "realtime" && <RealtimeGraph data={data} />}
                             {tab === "pieChart" && <PieChart />}
-                            {tab === "lineChart" && <SubGraphsBarchart data={data} />}
+                            {tab === "lineChart" && <SubGraphsBarchart bars={[{name: "pv", color:"#BA5624"}]} data={data} />}
                             {tab === "bixChart" && <BizBarChart />}
                         </Suspense>
                     </div>

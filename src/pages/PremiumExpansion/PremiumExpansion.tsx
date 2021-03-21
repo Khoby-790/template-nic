@@ -67,7 +67,7 @@ const PremiumExpansion = (props: Props) => {
                 </div>
 
                 <div className="">
-                    <SubGraphsBarchart data={data} />
+                    <SubGraphsBarchart bars={[{ name: "paid", color: "#BA5624" }]} data={data} />
                 </div>
 
                 <div>
