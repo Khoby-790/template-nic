@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom'
 import Dashboard from '../pages/Dashboard/Dashboard'
 const NewDashboard = lazy(() => import('../pages/NewDashboard/NewDashboard'))
 const NicStatsExpansion = lazy(() => import('../pages/NicStatsExpansion/NicStatsExpansion'))
+const PremiumExpansion = lazy(() => import('../pages/PremiumExpansion/PremiumExpansion'))
 const Reports = lazy(() => import('../pages/Reports/Reports'))
 const Settings = lazy(() => import('../pages/Settings/Settings'))
 const SidebarSubMenu = lazy(() => import('./SidebarSubMenu'))
@@ -21,6 +22,7 @@ const AppContent = (props: Props) => {
                         <Switch>
                             <Route path="/" exact component={NewDashboard} />
                             <Route path="/nic" component={NicStatsExpansion} />
+                            <Route path="/premium" component={PremiumExpansion} />
                             <Route path="/reports" component={Reports} />
                             <Route path="/inbox" component={Inbox} />
                             <Route path="/settings" component={Settings} />

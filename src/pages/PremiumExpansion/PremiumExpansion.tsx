@@ -18,12 +18,12 @@ const PremiumExpansion = (props: Props) => {
         <Fragment>
             <div className="px-3 py-4">
                 <div>
-                    <PageBreadCrum page="NIC Summary" />
+                    <PageBreadCrum page="Premium Summary" />
 
                     <dl className="mt-5 grid grid-cols-1 rounded-lg bg-white overflow-hidden shadow divide-y divide-gray-200 md:grid-cols-3 md:divide-y-0 md:divide-x">
                         <div className="px-4 py-5 sm:p-6">
                             <dt className="text-base font-normal text-gray-900">
-                                Total NIC Levy
+                                Total Premium Levy
       </dt>
                             <dd className="mt-1 flex justify-between items-baseline md:block lg:flex">
                                 <div className="flex items-baseline text-2xl font-semibold text-indigo-600">
@@ -47,7 +47,7 @@ const PremiumExpansion = (props: Props) => {
 
                         <div className="px-4 py-5 sm:p-6">
                             <dt className="text-base font-normal text-gray-900">
-                                Total Outstanding NIC Levy
+                                Total Outstanding Premium Levy
       </dt>
                             <dd className="mt-1 flex justify-between items-baseline md:block lg:flex">
                                 <div className="flex items-baseline text-2xl font-semibold text-indigo-600">
@@ -71,7 +71,7 @@ const PremiumExpansion = (props: Props) => {
 
                         <div className="px-4 py-5 sm:p-6">
                             <dt className="text-base font-normal text-gray-900">
-                                Total Paid NIC Levy
+                                Total Paid Premium Levy
       </dt>
                             <dd className="mt-1 flex justify-between items-baseline md:block lg:flex">
                                 <div className="flex items-baseline text-2xl font-semibold text-indigo-600">
