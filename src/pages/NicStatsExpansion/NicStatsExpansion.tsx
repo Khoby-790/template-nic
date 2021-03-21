@@ -114,7 +114,7 @@ const NicStatsExpansion = (props: Props) => {
                                     For Each Reinsured
                                 </a>
                                 <a href="#" className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 w-1/4 py-4 px-1 text-center border-b-2 font-medium text-sm">
-                                    Billing
+                                    From Each Reinsurer
                                 </a>
                             </nav>
                         </div>
