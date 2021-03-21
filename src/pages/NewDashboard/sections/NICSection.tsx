@@ -45,6 +45,36 @@ const data = [
         outstanding: 4300,
         total: 2100,
     },
+    {
+        name: 'Aug',
+        paid: 4000,
+        outstanding: 2400,
+        total: 2400,
+    },
+    {
+        name: 'Sep',
+        paid: 3000,
+        outstanding: 1398,
+        total: 2210,
+    },
+    {
+        name: 'Oct',
+        paid: 2000,
+        outstanding: 9800,
+        total: 2290,
+    },
+    {
+        name: 'Nov',
+        paid: 2780,
+        outstanding: 3908,
+        total: 2000,
+    },
+    {
+        name: 'Dec',
+        paid: 1890,
+        outstanding: 4800,
+        total: 2181,
+    },
 ];
 
 interface Props {
