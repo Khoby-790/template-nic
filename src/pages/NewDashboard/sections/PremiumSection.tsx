@@ -72,7 +72,7 @@ const PremiumSection = (props: Props) => {
                 </Link>
             </div>
             <div className="flex h-64">
-                <div className="flex">
+                <div className="flex flex-row w-full h-full">
                     <div className="grid px-5 grid-cols-1 gap-y-3">
                         <div className="flex flex-col">
                             <span className="font-bold text-2xl text-gray-600">121,000</span>
