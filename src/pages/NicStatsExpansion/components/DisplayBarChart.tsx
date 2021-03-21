@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const data = [
@@ -51,30 +51,35 @@ interface Props {
 
 const DisplayBarChart = (props: Props) => {
     return (
-        <div>
-            <ResponsiveContainer width="100%" height="100%">
-                <BarChart
-                    width={500}
-                    height={300}
-                    data={data}
-                    margin={{
-                        top: 5,
-                        right: 30,
-                        left: 20,
-                        bottom: 5,
-                    }}
-                >
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="name" />
-                    <YAxis />
-                    <Tooltip />
-                    <Legend />
-                    <Bar dataKey="paid" fill="#4D8B31" />
-                    <Bar dataKey="outstanding" fill="#FFC800" />
-                    <Bar dataKey="total" fill="#FF8427" />
-                </BarChart>
-            </ResponsiveContainer>
-        </div>
+        <Fragment>
+            <div className="h-16">
+                <span>Summary</span>
+            </div>
+            <div className="h-96 py-4">
+                <ResponsiveContainer width="100%" height="100%">
+                    <BarChart
+                        width={500}
+                        height={300}
+                        data={data}
+                        margin={{
+                            top: 5,
+                            right: 30,
+                            left: 20,
+                            bottom: 5,
+                        }}
+                    >
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="name" />
+                        <YAxis />
+                        <Tooltip />
+                        <Legend />
+                        <Bar dataKey="paid" fill="#4D8B31" />
+                        <Bar dataKey="outstanding" fill="#FFC800" />
+                        <Bar dataKey="total" fill="#FF8427" />
+                    </BarChart>
+                </ResponsiveContainer>
+            </div>
+        </Fragment>
     )
 }
 
