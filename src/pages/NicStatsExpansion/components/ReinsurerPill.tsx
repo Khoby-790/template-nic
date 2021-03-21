@@ -1,5 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react'
+import { Modal } from '../../../components'
+import DisplayBarChart from './DisplayBarChart'
 
 interface Props {
     name?: string
@@ -28,7 +30,7 @@ const ReinsurerPill = ({ name }: Props) => {
                                     <span>East Legon</span>
                                 </p>
                             </a>
-                            <div className="flex text-gray-500 items-center hover:bg-indigo-600 my-3">
+                            <div onClick={() => setShowGraph(true)} className="flex text-gray-500 items-center hover:bg-indigo-600 my-3">
                                 View
                                 <svg className="h-6 ml-3 text-sm text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -53,6 +55,10 @@ const ReinsurerPill = ({ name }: Props) => {
                     </div>
                 </div>
             </div>
+
+            <Modal size={80} show={showGraph} setShow={setShowGraph}>
+                <DisplayBarChart />
+            </Modal>
         </>
     )
 }
