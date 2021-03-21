@@ -43,9 +43,9 @@ const NicStatsExpansion = (props: Props) => {
       </dt>
                             <dd className="mt-1 flex justify-between items-baseline md:block lg:flex">
                                 <div className="flex items-baseline text-2xl font-semibold text-indigo-600">
-                                    58.16%
+                                    12,506,588
           <span className="ml-2 text-sm font-medium text-gray-500">
-                                        from 56.14%
+                                        from 14,254,214
           </span>
                                 </div>
 
