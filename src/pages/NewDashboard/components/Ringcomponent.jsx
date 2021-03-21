@@ -15,7 +15,6 @@ const Ringcomponent = ({ data = [], content = {}, intervalConfig = {} }) => {
   return (
     <Chart placeholder={false} height={200} padding="auto" autoFit>
       <Legend visible={false} />
-      {/* 绘制图形 */}
       <View
         data={data}
         scale={{
@@ -26,13 +25,13 @@ const Ringcomponent = ({ data = [], content = {}, intervalConfig = {} }) => {
           },
         }}
       >
-        <Coordinate type="theta" innerRadius={0.75} />
+        <Coordinate type="theta" innerRadius={0.55} />
         <Interval
           position="percent"
           adjust="stack"
           // color="type"
-          // color={["type", ["rgba(100, 100, 255, 0.6)", "#eee"]]}
-          color={["type", [brandFill, "#eee"]]}
+          color={["type", ["rgba(100, 100, 255, 0.6)", "#eee"]]}
+        //   color={["type", [brandFill, "#eee"]]}
           size={16}
           // style={{ fillOpacity: 0.6 }}
           // label={['type', {offset: 40}]}
