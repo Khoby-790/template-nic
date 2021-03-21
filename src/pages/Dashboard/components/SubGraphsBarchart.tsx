@@ -3,6 +3,10 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsive
 
 interface Props {
     data: any[]
+    bars: [{
+        name: string;
+        color: string;
+    }]
 }
 
 const data_ = [
@@ -71,7 +75,7 @@ const CustomTooltip = ({ active, payload, label }: any) => {
     return null;
 };
 
-const SubGraphsBarchart = ({ data = [] }: Props) => {
+const SubGraphsBarchart = ({ data = [], bars }: Props) => {
     return (
         <Fragment>
             <div className="h-96 max-h-96 bg-white mx-5 my-3 py-4 ">
@@ -92,9 +96,12 @@ const SubGraphsBarchart = ({ data = [] }: Props) => {
                         <YAxis />
                         {/* <Tooltip content={<CustomTooltip />} /> */}
                         <Legend />
-                        <Bar dataKey="total" barSize={20} fill="#8884d8" />
+                        {bars.map((bar, id) => (
+                            <Bar dataKey={bar.name} fill={bar.color} />
+                        ))}
+                        {/* <Bar dataKey="total" barSize={20} fill="#8884d8" />
                         <Bar dataKey="paid" barSize={20} fill="#8884d8" />
-                        <Bar dataKey="outstanding" barSize={20} fill="#8884d8" />
+                        <Bar dataKey="outstanding" barSize={20} fill="#8884d8" /> */}
                     </BarChart>
                 </ResponsiveContainer>
             </div>
