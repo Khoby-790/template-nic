@@ -94,12 +94,12 @@ const SubGraphsBarchart = ({ data = [], bars }: Props) => {
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="name" />
                         <YAxis />
-                        <Tooltip  />
+                        <Tooltip />
                         <Legend />
+                        <Bar dataKey="total" label={<h1 className="font-mono">Total</h1>} />
                         {bars.map((bar, id) => (
                             <Bar key={id} dataKey={bar.name} fill={bar.color} />
                         ))}
-                        <Bar dataKey="total" label={<h1>Total</h1>} />
                     </BarChart>
                 </ResponsiveContainer>
             </div>
