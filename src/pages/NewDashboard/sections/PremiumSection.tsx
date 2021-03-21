@@ -90,9 +90,9 @@ const PremiumSection = (props: Props) => {
                     <div className="flex-1 px-5 h-64">
                         <ResponsiveContainer width="100%" height="100%">
                             <LineChart width={300} height={100} data={data}>
-                                <Line type="monotone" dataKey="total" stroke="#8884d8" strokeWidth={2} />
-                                <Line type="monotone" dataKey="paid" stroke="#8884d8" strokeWidth={2} />
-                                <Line type="monotone" dataKey="outstanding" stroke="#8884d8" strokeWidth={2} />
+                                <Line type="monotone" dataKey="total" stroke="#A1C181" strokeWidth={2} />
+                                <Line type="monotone" dataKey="paid" stroke="#FE7F2D" strokeWidth={2} />
+                                <Line type="monotone" dataKey="outstanding" stroke="#619B8A" strokeWidth={2} />
                                 <XAxis dataKey="name" />
                                 <CartesianGrid strokeDasharray="3 3" />
 
