@@ -91,18 +91,18 @@ const NewDashboard = (props: Props) => {
                             </BarChart>
                         </ResponsiveContainer>
                     </div>
-                    <div className="w-64 grid grid-cols-1 gap-y-5">
+                    <div className="w-64 grid grid-cols-1 gap-y-3">
                         <div className="flex flex-col">
                             <span className="font-bold text-2xl text-gray-600">12000</span>
                             <span className="font-light text-gray-600">Total</span>
                         </div>
                         <div className="flex flex-col">
                             <span className="font-bold text-2xl text-gray-600">12000</span>
-                            <span className="font-light text-gray-600">Total</span>
+                            <span className="font-light text-gray-600">Outstanding</span>
                         </div>
                         <div className="flex flex-col">
                             <span className="font-bold text-2xl text-gray-600">12000</span>
-                            <span className="font-light text-gray-600">Total</span>
+                            <span className="font-light text-gray-600">Paid</span>
                         </div>
                     </div>
                 </div>
