@@ -11,8 +11,9 @@ const NewDashboard = (props: Props) => {
         <div className="px-3 py-4">
             <WelcomeSection />
             <div className="bg-white shadow-lg my-4">
-                <div className="h-16 flex items-center px-3">
-                    Hello NIC
+                <div className="h-20 flex justify-center px-3 flex-col">
+                    <span className="font-semibold ">NIC</span>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>
                 </div>
             </div>
         </div>
