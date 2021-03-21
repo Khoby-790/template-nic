@@ -3,10 +3,10 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsive
 
 interface Props {
     data: any[]
-    bars: [{
+    bars: {
         name: string;
         color: string;
-    }]
+    }[]
 }
 
 const data_ = [
