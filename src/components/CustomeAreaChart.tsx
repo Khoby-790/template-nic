@@ -32,6 +32,7 @@ const CustomeAreaChart = ({ data, lines }: Props) => {
                             dataKey={area.dataKey}
                             stroke={area.stroke || "#8884d8"}
                             fill={area.stroke || "#8884d8"}
+                            // {...area}
                         />
                     ))}
                     <Legend />
