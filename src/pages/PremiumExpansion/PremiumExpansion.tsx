@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment, useState } from 'react'
-import { PageBreadCrum } from '../../components';
+import { CustomLineChart, PageBreadCrum } from '../../components';
 import SubGraphsBarchart from '../Dashboard/components/SubGraphsBarchart';
 import ForEachReinsurerTab from './tabs/ForEachReinsurerTab';
 import FromEachReinsurerTab from './tabs/FromEachReinsurerTab';
@@ -104,7 +104,12 @@ const PremiumExpansion = (props: Props) => {
                     <PageBreadCrum page="Premium Summary" />
                 </div>
 
-                <div className="">
+                <div className="h-64">
+                    {/* <CustomLineChart data={data} lines={[
+                        { name: "total", title: "Total Premium", width: 2, color: "#A1C181" },
+                        { name: "paid", title: "Paid Premium", width: 2, color: "#FE7F2D" },
+                        { name: "outstanding", title: "Outstanding Premium", width: 2, color: "#619B8A" },
+                    ]} /> */}
                     <SubGraphsBarchart bars={bars} data={data} />
                 </div>
 
