@@ -24,7 +24,7 @@ const OffersPlaced = () => {
       <Ringcomponent data={myData} content={myContent} />
       <Ringcomponent data={myData} content={content2} />
       <div className="mx-3 py-4 px-5 flex-col flex-1 flex justify-center items-center">
-        <div className="flex justify-end w-full">
+        <div className="flex h-7 justify-end w-full">
           <Link
             to="/claims"
             className=" flex justify-center h-full items-center px-4 cursor-pointer hover:bg-gray-400 rounded-full"
