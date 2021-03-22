@@ -1,12 +1,11 @@
 import React, { Suspense } from 'react';
 import AppLayout from './layouts/AppLayout';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import { Loader } from './components';
 
 function App() {
   return (
     <BrowserRouter>
-      <Suspense fallback={<Loader />}>
+      <Suspense fallback={<h1>Loading...</h1>}>
         <Switch>
           <Route path="/" render={props => <AppLayout {...props} />} />
         </Switch>
