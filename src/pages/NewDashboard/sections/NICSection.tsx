@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import SubGraphsBarchart from '../../Dashboard/components/SubGraphsBarchart';
 
 const data = [
     {
@@ -105,7 +106,8 @@ const NICSection = (props: Props) => {
                 </div>
                 <div className="flex h-64">
                     <div className="flex-1">
-                        <ResponsiveContainer width="100%" height="100%">
+                        <SubGraphsBarchart data={data} bars={[]} />
+                        {/* <ResponsiveContainer width="100%" height="100%">
                             <BarChart
                                 width={500}
                                 height={300}
@@ -126,7 +128,7 @@ const NICSection = (props: Props) => {
                                 <Bar dataKey="outstanding" fill="#FFC800" />
                                 <Bar dataKey="total" fill="#FF8427" />
                             </BarChart>
-                        </ResponsiveContainer>
+                        </ResponsiveContainer> */}
                     </div>
                     <div className="px-5 grid grid-cols-1 gap-y-3">
                         <div className="flex flex-col">
