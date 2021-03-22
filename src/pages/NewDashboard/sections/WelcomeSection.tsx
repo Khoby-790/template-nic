@@ -38,7 +38,7 @@ const WelcomeSection = (props: Props) => {
 
                         <div className="px-6 py-5 text-sm font-medium text-center">
                             <span className="text-gray-900">4</span>
-                            <span className="text-gray-600">Sick days left</span>
+                            <span className="text-gray-600">Activities from last month</span>
                         </div>
 
                         <div className="px-6 py-5 text-sm font-medium text-center">
