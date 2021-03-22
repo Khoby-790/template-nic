@@ -100,7 +100,7 @@ const ClaimsSection = (props: Props) => {
                     </div>
                     <div className="flex flex-col">
                         <span className="font-semibold ">Claims</span>
-                        <span>Brief But detailed description of claims in it's enirety</span>
+                        <span className="text-sm font-light">Brief But detailed description of claims in it's enirety</span>
                     </div>
                 </div>
                 <Link to="/claims" className=" flex justify-center h-full items-center px-4 cursor-pointer hover:bg-gray-400 rounded-full">

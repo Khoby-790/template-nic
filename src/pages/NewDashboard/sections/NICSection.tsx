@@ -94,7 +94,7 @@ const NICSection = (props: Props) => {
                         </div>
                         <div className="flex flex-col">
                             <span className="font-semibold ">NIC Levy</span>
-                            <span className="text-sm font-thin">Line Graph that gives a detailed description of the levies  </span>
+                            <span className="text-sm font-light">Line Graph that gives a detailed description of the levies  </span>
                         </div>
                     </div>
                     <Link to="/nic" className=" flex justify-center h-full items-center px-4 cursor-pointer hover:bg-gray-400 rounded-full">
