@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const data = [
     {
@@ -44,6 +44,36 @@ const data = [
         outstanding: 4300,
         total: 2100,
     },
+    {
+        name: 'Aug',
+        paid: 4000,
+        outstanding: 2400,
+        total: 2400,
+    },
+    {
+        name: 'Sep',
+        paid: 3000,
+        outstanding: 1398,
+        total: 2210,
+    },
+    {
+        name: 'Oct',
+        paid: 2000,
+        outstanding: 9800,
+        total: 2290,
+    },
+    {
+        name: 'Nov',
+        paid: 2780,
+        outstanding: 3908,
+        total: 2000,
+    },
+    {
+        name: 'Dec',
+        paid: 1890,
+        outstanding: 4800,
+        total: 2181,
+    },
 ];
 interface Props {
 
@@ -54,10 +84,10 @@ const DisplayBarChart = (props: Props) => {
         <Fragment>
             <div className="h-16 px-4 py-3 flex flex-col">
                 <span className="text-xl font-bold">Summary</span>
-                <span className="font-light">Lorem ipsum dolor sit amet.</span>
+                <span className="font-light">Mainstream Reinsurance House</span>
             </div>
             <div className="h-96 py-4">
-                <ResponsiveContainer width="100%" height="100%">
+                {/* <ResponsiveContainer width="100%" height="100%">
                     <BarChart
                         width={500}
                         height={300}
@@ -78,7 +108,7 @@ const DisplayBarChart = (props: Props) => {
                         <Bar dataKey="outstanding" fill="#776885" />
                         <Bar dataKey="total" fill="#5F1A37" />
                     </BarChart>
-                </ResponsiveContainer>
+                </ResponsiveContainer> */}
             </div>
         </Fragment>
     )
