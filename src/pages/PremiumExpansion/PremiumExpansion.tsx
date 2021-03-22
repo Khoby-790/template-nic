@@ -104,13 +104,12 @@ const PremiumExpansion = (props: Props) => {
                     <PageBreadCrum page="Premium Summary" />
                 </div>
 
-                <div className="h-64">
-                    {/* <CustomLineChart data={data} lines={[
+                <div className="h-96 mt-3 bg-white py-3">
+                    <CustomLineChart data={data} lines={[
                         { name: "total", title: "Total Premium", width: 2, color: "#A1C181" },
                         { name: "paid", title: "Paid Premium", width: 2, color: "#FE7F2D" },
                         { name: "outstanding", title: "Outstanding Premium", width: 2, color: "#619B8A" },
-                    ]} /> */}
-                    <SubGraphsBarchart bars={bars} data={data} />
+                    ]} />
                 </div>
 
                 <div>
