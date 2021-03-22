@@ -83,9 +83,9 @@ const data = [
 
 
 const lines = [
-    { dataKey: "total", title: "Total Premium", width: 2, stroke: "#A1C181" },
-    { dataKey: "paid", title: "Paid Premium", width: 2, stroke: "#FE7F2D" },
-    { dataKey: "outstanding", title: "Outstanding Premium", width: 2, stroke: "#619B8A" },
+    { dataKey: "total", name: "Total Claims", width: 2, stroke: "#A1C181" },
+    { dataKey: "paid", name: "Paid Claims", width: 2, stroke: "#FE7F2D" },
+    { dataKey: "outstanding", name: "Outstanding Claims", width: 2, stroke: "#619B8A" },
 ]
 
 const ClaimsSection = (props: Props) => {
