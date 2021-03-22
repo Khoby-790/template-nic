@@ -78,6 +78,12 @@ const data = [
     },
 ];
 
+const bars = [
+    { name: "paid", color: "#BA5624", title: "Total Paid Premium" },
+    { name: "outstanding", color: "#381D2A", title: "Total Outstanding Premium" },
+    { name: "total", color: "#FCDE9C", title: "Total Premium" }
+]
+
 interface Props {
 
 }
@@ -106,7 +112,7 @@ const NICSection = (props: Props) => {
                 </div>
                 <div className="flex h-96">
                     <div className="flex-1">
-                        <SubGraphsBarchart data={data} bars={[]} />
+                        <SubGraphsBarchart data={data} bars={bars} />
                         {/* <ResponsiveContainer width="100%" height="100%">
                             <BarChart
                                 width={500}
