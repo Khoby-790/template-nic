@@ -9,15 +9,15 @@ interface Props {
 const data = [
     {
         name: 'Jan',
-        paid: 4000,
-        outstanding: 2400,
-        total: 2400,
+        paid: 2000,
+        outstanding: 2000,
+        total: 4000,
     },
     {
         name: 'Feb',
         paid: 3000,
-        outstanding: 1398,
-        total: 2210,
+        outstanding: 1598,
+        total: 3000 - 1598,
     },
     {
         name: 'Mar',
