@@ -93,8 +93,8 @@ const NICSection = (props: Props) => {
                             </svg>
                         </div>
                         <div className="flex flex-col">
-                            <span className="font-semibold ">NIC</span>
-                            <span>Line </span>
+                            <span className="font-semibold ">NIC Levy</span>
+                            <span>Line Graph that gives a detailed description of the levies  </span>
                         </div>
                     </div>
                     <Link to="/nic" className=" flex justify-center h-full items-center px-4 cursor-pointer hover:bg-gray-400 rounded-full">
