@@ -102,7 +102,7 @@ const OffersPlacedExpansion = (props: Props) => {
         <Fragment>
             <div className="px-3 py-4">
                 <div>
-                    <PageBreadCrum page="NIC Summary" />
+                    <PageBreadCrum page="Placed Offers Summary" />
                     <div />
                     <div className="">
                         <SubGraphsBarchart bars={bars} data={data} />
@@ -226,6 +226,7 @@ const OffersPlacedExpansion = (props: Props) => {
                 </div>
             </div>
         </Fragment>
+    )
 }
 
 export default OffersPlacedExpansion
