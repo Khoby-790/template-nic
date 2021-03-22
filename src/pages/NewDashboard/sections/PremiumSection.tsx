@@ -121,7 +121,11 @@ const PremiumSection = (props: Props) => {
                         </div>
                     </div>
                     <div className="flex-1 px-5 h-64">
-                        <CustomLineChart data={data} lines={[{ name: "total", title: "Total Premium", width: 2 }]} />
+                        <CustomLineChart data={data} lines={[
+                            { name: "total", title: "Total Premium", width: 2 },
+                            { name: "paid", title: "Paid Premium", width: 2 },
+                            { name: "outstanding", title: "Outstanding Premium", width: 2 },
+                        ]} />
                         {/* <ResponsiveContainer width="100%" height="100%">
                             <LineChart width={300} height={100} data={data}>
                                 <Line type="monotone" dataKey="total" stroke="#A1C181" strokeWidth={2} />
