@@ -6,6 +6,88 @@ interface Props {
 
 }
 
+const data = [
+    {
+        name: 'Jan',
+        paid: 4000,
+        outstanding: 2400,
+        total: 2400,
+    },
+    {
+        name: 'Feb',
+        paid: 3000,
+        outstanding: 1398,
+        total: 2210,
+    },
+    {
+        name: 'Mar',
+        paid: 2000,
+        outstanding: 9800,
+        total: 2290,
+    },
+    {
+        name: 'Apr',
+        paid: 2780,
+        outstanding: 3908,
+        total: 2000,
+    },
+    {
+        name: 'May',
+        paid: 1890,
+        outstanding: 4800,
+        total: 2181,
+    },
+    {
+        name: 'Jun',
+        paid: 2390,
+        outstanding: 3800,
+        total: 2500,
+    },
+    {
+        name: 'Jul',
+        paid: 3490,
+        outstanding: 4300,
+        total: 2100,
+    },
+    {
+        name: 'Aug',
+        paid: 4000,
+        outstanding: 2400,
+        total: 2400,
+    },
+    {
+        name: 'Sep',
+        paid: 3000,
+        outstanding: 1398,
+        total: 2210,
+    },
+    {
+        name: 'Oct',
+        paid: 2000,
+        outstanding: 9800,
+        total: 2290,
+    },
+    {
+        name: 'Nov',
+        paid: 2780,
+        outstanding: 3908,
+        total: 2000,
+    },
+    {
+        name: 'Dec',
+        paid: 1890,
+        outstanding: 4800,
+        total: 2181,
+    },
+];
+
+
+const lines = [
+    { dataKey: "total", title: "Total Premium", width: 2, stroke: "#A1C181" },
+    { dataKey: "paid", title: "Paid Premium", width: 2, stroke: "#FE7F2D" },
+    { dataKey: "outstanding", title: "Outstanding Premium", width: 2, stroke: "#619B8A" },
+]
+
 const ClaimsSection = (props: Props) => {
     return (
         <div className="bg-white shadow-lg my-4">
@@ -29,7 +111,7 @@ const ClaimsSection = (props: Props) => {
             </div>
             <div className="flex h-64">
                 <div className="flex-1">
-                    <CustomeAreaChart data={[]} lines={[]} />
+                    <CustomeAreaChart data={data} lines={lines} />
                 </div>
             </div>
         </div>
