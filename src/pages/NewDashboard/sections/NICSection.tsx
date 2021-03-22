@@ -104,7 +104,7 @@ const NICSection = (props: Props) => {
                         </svg>
                     </Link>
                 </div>
-                <div className="flex h-64">
+                <div className="flex h-96">
                     <div className="flex-1">
                         <SubGraphsBarchart data={data} bars={[]} />
                         {/* <ResponsiveContainer width="100%" height="100%">
