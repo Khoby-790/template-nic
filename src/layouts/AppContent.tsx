@@ -5,6 +5,7 @@ const NewDashboard = lazy(() => import('../pages/NewDashboard/NewDashboard'))
 const NicStatsExpansion = lazy(() => import('../pages/NicStatsExpansion/NicStatsExpansion'))
 const PremiumExpansion = lazy(() => import('../pages/PremiumExpansion/PremiumExpansion'))
 const ClaimsExpansion = lazy(() => import('../pages/ClaimsExpansion/ClaimsExpansion'))
+const OffersPlacedExpansion = lazy(() => import('../pages/OffersPlacedExpansion/OffersPlacedExpansion'))
 const Reports = lazy(() => import('../pages/Reports/Reports'))
 const Settings = lazy(() => import('../pages/Settings/Settings'))
 const SidebarSubMenu = lazy(() => import('./SidebarSubMenu'))
@@ -25,6 +26,7 @@ const AppContent = (props: Props) => {
                             <Route path="/nic" component={NicStatsExpansion} />
                             <Route path="/premium" component={PremiumExpansion} />
                             <Route path="/claims" component={ClaimsExpansion} />
+                            <Route path="/_offers" component={OffersPlacedExpansion} />
                             <Route path="/reports" component={Reports} />
                             <Route path="/inbox" component={Inbox} />
                             <Route path="/settings" component={Settings} />

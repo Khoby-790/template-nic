@@ -26,7 +26,7 @@ const OffersPlaced = () => {
       <div className="mx-3 py-4 px-5 flex-col flex-1 flex justify-center items-center">
         <div className="flex h-7 justify-end w-full">
           <Link
-            to="/claims"
+            to="/_offers"
             className=" flex justify-center h-full items-center px-4 cursor-pointer hover:bg-gray-400 rounded-full"
           >
             <svg
