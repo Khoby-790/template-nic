@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
+import ClaimsSection from './sections/ClaimsSection'
 import NICSection from './sections/NICSection'
 import OffersPlaced from './sections/OffersPlaced'
 import PremiumSection from './sections/PremiumSection'
@@ -24,6 +25,7 @@ const NewDashboard = (props: Props) => {
             </div>
             <NICSection />
             <PremiumSection />
+            <ClaimsSection />
         </div>
     )
 }
