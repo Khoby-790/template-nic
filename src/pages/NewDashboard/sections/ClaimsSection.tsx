@@ -9,8 +9,8 @@ interface Props {
 const data = [
     {
         name: 'Jan',
-        paid: 2000,
-        outstanding: 2000,
+        paid: 3000,
+        outstanding: 1000,
         total: 4000,
     },
     {
@@ -21,9 +21,9 @@ const data = [
     },
     {
         name: 'Mar',
-        paid: 2000,
+        paid: 0,
         outstanding: 9800,
-        total: 2290,
+        total: 9800,
     },
     {
         name: 'Apr',
