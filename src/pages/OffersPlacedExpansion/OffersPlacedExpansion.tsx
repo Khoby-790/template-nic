@@ -108,7 +108,7 @@ const OffersPlacedExpansion = (props: Props) => {
                         <SubGraphsBarchart bars={bars} data={data} />
                     </div>
                     <div>
-                        <dl className="mt-5 grid grid-cols-1 rounded-lg bg-white overflow-hidden shadow divide-y divide-gray-200 md:grid-cols-3 md:divide-y-0 md:divide-x">
+                        <dl className="mt-5 grid grid-cols-1 rounded-lg bg-white overflow-hidden shadow divide-y divide-gray-200 md:grid-cols-2 md:divide-y-0 md:divide-x">
                             <div className="px-4 py-5 sm:p-6">
                                 <dt className="text-base font-normal text-gray-900">
                                     Total Offers Placed
