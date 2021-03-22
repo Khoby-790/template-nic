@@ -31,7 +31,25 @@ const WelcomeSection = (props: Props) => {
                         </div>
                     </div>
                 </div>
-            </section>
+
+                <div className="border-t border-gray-200 bg-gray-50 grid grid-cols-1 divide-y divide-gray-200 sm:grid-cols-3 sm:divide-y-0 sm:divide-x">
+                    <div className="px-6 py-5 text-sm font-medium text-center">
+                        <span className="text-gray-900">12</span>
+                        <span className="text-gray-600">Vacation days left</span>
+                    </div>
+
+                    <div className="px-6 py-5 text-sm font-medium text-center">
+                        <span className="text-gray-900">4</span>
+                        <span className="text-gray-600">Sick days left</span>
+                    </div>
+
+                    <div className="px-6 py-5 text-sm font-medium text-center">
+                        <span className="text-gray-900">2</span>
+                        <span className="text-gray-600">Personal days left</span>
+                    </div>
+                </div>
+            </div>
+        </section>
         </>
     )
 }
