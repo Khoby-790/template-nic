@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { LineChart, Line, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { CustomLineChart } from '../../../components';
 
 const data = [
     {
@@ -120,7 +121,8 @@ const PremiumSection = (props: Props) => {
                         </div>
                     </div>
                     <div className="flex-1 px-5 h-64">
-                        <ResponsiveContainer width="100%" height="100%">
+                        <CustomLineChart data={data} lines={[{ name: "total", title: "Total Premium", width: 2 }]} />
+                        {/* <ResponsiveContainer width="100%" height="100%">
                             <LineChart width={300} height={100} data={data}>
                                 <Line type="monotone" dataKey="total" stroke="#A1C181" strokeWidth={2} />
                                 <Line type="monotone" dataKey="paid" stroke="#FE7F2D" strokeWidth={2} />
@@ -132,7 +134,7 @@ const PremiumSection = (props: Props) => {
                                 <Tooltip />
                                 <Legend />
                             </LineChart>
-                        </ResponsiveContainer>
+                        </ResponsiveContainer> */}
                     </div>
                 </div>
 
