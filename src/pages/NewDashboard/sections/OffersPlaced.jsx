@@ -6,13 +6,13 @@ const myData = [
   { type: "Claims", percent: 0.3334 },
 ];
 const myContent = {
-  siteCode: "Today",
+  siteCode: "Current",
   title: "Offers placed",
   percent: "66.66%",
 };
 
 const content2 = {
-  siteCode: "This Week",
+  siteCode: "Total",
   title: "Offers placed",
   percent: "66.66%",
 };
@@ -21,11 +21,11 @@ const OffersPlaced = () => {
   return (
     <div className="bg-white mx-2 shadow-lg items-start flex jus">
       <Ringcomponent data={myData} content={myContent} />
-      <Ringcomponent data={myData} content={myContent} />
+      <Ringcomponent data={myData} content={content2} />
       <div className="mx-3 py-4 px-5 flex-col flex-1 flex justify-center items-center">
         <div className="flex mb-4 flex-col">
           <span className="text-2xl font-semibold">78,564</span>
-          <span>Total</span>
+          <span className="font-thin">Total</span>
         </div>
         <div className="flex flex-col">
           <span className="text-2xl font-semibold">78,564</span>
