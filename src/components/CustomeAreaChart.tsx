@@ -4,10 +4,10 @@ import { CurveType } from 'recharts/types/shape/Curve';
 
 interface Props {
     data: any[];
-    lines: AreaProps[]; 
+    lines: AreaProps[];
 }
 
-const CustomeAreaChart = ({ data }: Props) => {
+const CustomeAreaChart = ({ data, lines }: Props) => {
     return (
         <div>
             <ResponsiveContainer width="100%" height="100%">
@@ -22,13 +22,20 @@ const CustomeAreaChart = ({ data }: Props) => {
                         bottom: 0,
                     }}
                 >
-                    {/* <CartesianGrid strokeDasharray="3 3" /> */}
+                    <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="name" />
                     <YAxis />
                     <Tooltip />
-                    <Area type="monotone" dataKey="uv" stroke="#8884d8" fill="#8884d8" />
-                    <Area type="monotone" dataKey="pv" stroke="#D1FAE5" fill="#D1FAE5" />
-                    <Area type="monotone" dataKey="amt" stroke="#edb7dd" fill="#edb7dd" />
+                    {lines.map((area, id) => (
+                        <Area
+                            type={area.type || "monotone"}
+                            dataKey={area.dataKey}
+                            stroke={area.stroke || "#8884d8"}
+                            fill={area.stroke || "#8884d8"}
+                        />
+                    ))}
+                    {/* <Area type="monotone" dataKey="pv" stroke="#D1FAE5" fill="#D1FAE5" />
+                    <Area type="monotone" dataKey="amt" stroke="#edb7dd" fill="#edb7dd" /> */}
                 </AreaChart>
             </ResponsiveContainer>
         </div>
