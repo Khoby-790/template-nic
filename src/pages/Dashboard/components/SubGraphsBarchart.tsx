@@ -79,7 +79,7 @@ const CustomTooltip = ({ active, payload, label }: any) => {
 const SubGraphsBarchart = ({ data = [], bars }: Props) => {
     return (
         <Fragment>
-            <div className="h-96 max-h-96 bg-white mx-5 my-3 py-4 ">
+            <div className="h-96 max-h-96 bg-white  my-3 py-4 ">
                 <ResponsiveContainer width="100%" height="100%">
                     <BarChart
                         width={650}

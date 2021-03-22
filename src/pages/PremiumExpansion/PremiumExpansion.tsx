@@ -84,10 +84,10 @@ const data = [
     },
 ];
 
-const bars = [
-    { name: "paid", color: "#BA5624", title: "Total Paid Premium" },
-    { name: "outstanding", color: "#381D2A", title: "Total Outstanding Premium" },
-    { name: "total", color: "#FCDE9C", title: "Total Premium" }
+const lines = [
+    { name: "total", title: "Total Premium", width: 2, color: "#A1C181" },
+    { name: "paid", title: "Paid Premium", width: 2, color: "#FE7F2D" },
+    { name: "outstanding", title: "Outstanding Premium", width: 2, color: "#619B8A" },
 ]
 
 const inActive = "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 w-1/4 py-4 px-1 text-center border-b-2 font-medium text-sm";
@@ -105,11 +105,7 @@ const PremiumExpansion = (props: Props) => {
                 </div>
 
                 <div className="h-96 mt-3 bg-white py-3">
-                    <CustomLineChart data={data} lines={[
-                        { name: "total", title: "Total Premium", width: 2, color: "#A1C181" },
-                        { name: "paid", title: "Paid Premium", width: 2, color: "#FE7F2D" },
-                        { name: "outstanding", title: "Outstanding Premium", width: 2, color: "#619B8A" },
-                    ]} />
+                    <CustomLineChart data={data} lines={lines} />
                 </div>
 
                 <div>
