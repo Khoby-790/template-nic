@@ -94,7 +94,7 @@ const NICSection = (props: Props) => {
                         </div>
                         <div className="flex flex-col">
                             <span className="font-semibold ">NIC</span>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>
+                            <span>Line </span>
                         </div>
                     </div>
                     <Link to="/nic" className=" flex justify-center h-full items-center px-4 cursor-pointer hover:bg-gray-400 rounded-full">
