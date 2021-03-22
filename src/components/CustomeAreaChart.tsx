@@ -1,5 +1,5 @@
 import React from 'react'
-import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, AreaProps, CartesianGrid } from 'recharts';
+import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, AreaProps, CartesianGrid, Legend } from 'recharts';
 import { CurveType } from 'recharts/types/shape/Curve';
 
 interface Props {
@@ -34,8 +34,7 @@ const CustomeAreaChart = ({ data, lines }: Props) => {
                             fill={area.stroke || "#8884d8"}
                         />
                     ))}
-                    {/* <Area type="monotone" dataKey="pv" stroke="#D1FAE5" fill="#D1FAE5" />
-                    <Area type="monotone" dataKey="amt" stroke="#edb7dd" fill="#edb7dd" /> */}
+                    <Legend />
                 </AreaChart>
             </ResponsiveContainer>
         </div>
