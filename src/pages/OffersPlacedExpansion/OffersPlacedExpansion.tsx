@@ -111,7 +111,7 @@ const OffersPlacedExpansion = (props: Props) => {
                         <dl className="mt-5 grid grid-cols-1 rounded-lg bg-white overflow-hidden shadow divide-y divide-gray-200 md:grid-cols-3 md:divide-y-0 md:divide-x">
                             <div className="px-4 py-5 sm:p-6">
                                 <dt className="text-base font-normal text-gray-900">
-                                    Total NIC Levy
+                                    Total Offers Placed
       </dt>
                                 <dd className="mt-1 flex justify-between items-baseline md:block lg:flex">
                                     <div className="flex items-baseline text-2xl font-semibold text-indigo-600">
@@ -135,7 +135,7 @@ const OffersPlacedExpansion = (props: Props) => {
 
                             <div className="px-4 py-5 sm:p-6">
                                 <dt className="text-base font-normal text-gray-900">
-                                    Total Outstanding NIC Levy
+                                    Total Outstanding Offers Placed
       </dt>
                                 <dd className="mt-1 flex justify-between items-baseline md:block lg:flex">
                                     <div className="flex items-baseline text-2xl font-semibold text-indigo-600">
@@ -159,7 +159,7 @@ const OffersPlacedExpansion = (props: Props) => {
 
                             <div className="px-4 py-5 sm:p-6">
                                 <dt className="text-base font-normal text-gray-900">
-                                    Total Paid NIC Levy
+                                    Total Paid Offers Placed
       </dt>
                                 <dd className="mt-1 flex justify-between items-baseline md:block lg:flex">
                                     <div className="flex items-baseline text-2xl font-semibold text-indigo-600">
