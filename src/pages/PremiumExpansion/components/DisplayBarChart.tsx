@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { CustomLineChart } from '../../../components';
 
 const data = [
     {
@@ -79,6 +80,12 @@ interface Props {
 
 }
 
+const lines = [
+    { name: "total", title: "Total Premium", width: 2, color: "#A1C181" },
+    { name: "paid", title: "Paid Premium", width: 2, color: "#FE7F2D" },
+    { name: "outstanding", title: "Outstanding Premium", width: 2, color: "#619B8A" },
+]
+
 const DisplayBarChart = (props: Props) => {
     return (
         <Fragment>
@@ -86,7 +93,8 @@ const DisplayBarChart = (props: Props) => {
                 <span className="text-xl font-bold">Summary</span>
                 <span className="font-light">Mainstream Reinsurance House</span>
             </div>
-            <div className="h-96 py-4">
+            <div className="h-96">
+                <CustomLineChart data={data} lines={lines} />
                 {/* <ResponsiveContainer width="100%" height="100%">
                     <BarChart
                         width={500}
