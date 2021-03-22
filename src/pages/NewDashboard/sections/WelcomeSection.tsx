@@ -37,13 +37,13 @@ const WelcomeSection = (props: Props) => {
                         </div>
 
                         <div className="px-6 py-5 text-sm font-medium text-center">
-                            <span className="text-gray-900">4</span>
-                            <span className="text-gray-600">Activities from last month</span>
+                            <span className="text-gray-100 mr-1">4</span>
+                            <span className="text-gray-200">Activities</span>
                         </div>
 
                         <div className="px-6 py-5 text-sm font-medium text-center">
-                            <span className="text-gray-900">2</span>
-                            <span className="text-gray-600">Personal days left</span>
+                            <span className="text-gray-100">{new Date().toLocaleDateString()}</span>
+                            {/* <span className="text-gray-600">Personal days left</span> */}
                         </div>
                     </div>
                 </div>
