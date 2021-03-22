@@ -1,5 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment, useState } from 'react'
-import { PageBreadCrum } from '../../components';
+import { CustomeAreaChart, PageBreadCrum } from '../../components';
 import SubGraphsBarchart from '../Dashboard/components/SubGraphsBarchart';
 import ForAllBrokers from './tabs/ForAllBrokers';
 import ForEachReinsurerTab from './tabs/ForEachReinsurerTab'
@@ -88,6 +89,13 @@ const active = "border-indigo-500 text-indigo-600 w-1/4 py-4 px-1 text-center bo
 
 type Tabs = "for_each_reinsurer" | "for_each_broker" | "for_all_brokers" | "for_all_reinsurers"
 
+
+const lines = [
+    { dataKey: "total", name: "Total Claims", width: 2, stroke: "#A1C181" },
+    { dataKey: "paid", name: "Paid Claims", width: 2, stroke: "#FE7F2D" },
+    { dataKey: "outstanding", name: "Outstanding Claims", width: 2, stroke: "#619B8A" },
+]
+
 const ClaimsExpansion = (props: Props) => {
     const [tab, setTab] = useState<Tabs>("for_each_reinsurer")
     return (
@@ -97,7 +105,7 @@ const ClaimsExpansion = (props: Props) => {
                     <PageBreadCrum page="NIC Summary" />
                     <div />
                     <div className="">
-                        <SubGraphsBarchart bars={bars} data={data} />
+                        <CustomeAreaChart lines={lines} data={data} />
                     </div>
                     <div>
                         <dl className="mt-5 grid grid-cols-1 rounded-lg bg-white overflow-hidden shadow divide-y divide-gray-200 md:grid-cols-3 md:divide-y-0 md:divide-x">
