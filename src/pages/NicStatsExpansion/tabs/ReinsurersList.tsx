@@ -38,7 +38,7 @@ const ReinsurersList = (props: Props) => {
                     </div>
                 </div>
             </div>
-            <div className="flex h-11 justify-between items-center mx-5 my-3 mr-2 mb-5">
+            <div className="flex h-11 justify-between items-center px-5 mx-5 my-3 mr-2 mb-5">
                 <div className="flex-1 flex justify-between items-center">
 
                     <div className="flex-1 flex justify-end px-2">
@@ -70,11 +70,10 @@ const ReinsurersList = (props: Props) => {
 
                                     <a href="#" className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
                                         {/* <!-- Heroicon name: solid/duplicate --> */}
-                                        <svg className="mr-3 h-5 w-5 text-gray-400 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                            <path d="M7 9a2 2 0 012-2h6a2 2 0 012 2v6a2 2 0 01-2 2H9a2 2 0 01-2-2V9z" />
-                                            <path d="M5 3a2 2 0 00-2 2v6a2 2 0 002 2V5h8a2 2 0 00-2-2H5z" />
+                                        <svg className="mr-3 h-5 w-5 text-gray-400 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                                         </svg>
-                                         Duplicate
+                                         PDF
                                     </a>
                                 </div>
                                 <div className="py-1" role="none">
