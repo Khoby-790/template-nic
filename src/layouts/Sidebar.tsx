@@ -15,7 +15,7 @@ const Sidebar = (props: Props) => {
                     {/* <!-- Sidebar component, swap this element with another sidebar if you like --> */}
                     <div className="flex flex-col h-0 flex-1 bg-gray-800">
                         <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
-                            <div className="flex items-center bg-white flex-shrink-0 px-4">
+                            <div className="flex items-center bg-gray-700 flex-shrink-0 px-4">
                                 <img
                                     className=" w-full h-full"
                                     src={logo}
