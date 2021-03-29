@@ -104,17 +104,28 @@ const NICSection = (props: Props) => {
                             <span className="text-sm font-light">Bar Graph that gives a detailed description of the levies  </span>
                         </div>
                     </div>
-                    <Link to="/nic" className=" flex justify-center h-full items-center px-4 cursor-pointer hover:bg-gray-400 rounded-full">
-                        <svg className="h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                        </svg>
-                    </Link>
+                    <div>
+                        <div className="flex border  mr-2 p-2 mb-1 rounded items-baseline">
+                            <label className="mr-3" htmlFor="">Filter by currency</label>
+                            <select name="" id="">
+                                <option value="">GHC</option>
+                                <option value="">GHC</option>
+                                <option value="">GHC</option>
+                            </select>
+                        </div>
+                        <Link to="/nic" className=" flex justify-center h-full items-center px-4 cursor-pointer hover:bg-gray-400 rounded-full">
+                            <svg className="h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </Link>
+                    </div>
                 </div>
                 <div className="flex h-96">
                     <div className="flex-1">
                         <SubGraphsBarchart data={data} bars={bars} />
                     </div>
                     <div className="px-5 grid grid-cols-1 gap-y-3">
+
                         <div className="flex flex-col">
                             <span className="font-bold text-2xl text-gray-600">121,000</span>
                             <span className="font-light text-gray-600">Total</span>
