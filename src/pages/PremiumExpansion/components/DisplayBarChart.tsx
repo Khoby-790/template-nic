@@ -92,7 +92,7 @@ const DisplayBarChart = (props: Props) => {
             <div className="h-16 px-4 py-3 flex justify-between">
                 <div className="flex flex-col">
                     <span className="text-xl font-bold">Summary</span>
-                    <span className="font-light">Mainstream Reinsurance House</span>
+                    <span className="font-light">Visal Reinsurance Brokers</span>
                 </div>
                 <div className="flex items-baseline">
                     <label className="mr-3" htmlFor="">Filter by currency</label>
