@@ -114,7 +114,7 @@ const DisplayBarChart = (props: Props) => {
                     </div>
                 </div>
             </div>
-            <div className="h-96">
+            <div className="h-96 mb-4">
                 <CustomLineChart data={data} lines={lines} />
             </div>
         </Fragment>
