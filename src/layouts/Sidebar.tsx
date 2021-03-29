@@ -17,7 +17,7 @@ const Sidebar = (props: Props) => {
                         <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
                             <div className="flex items-center justify-center  flex-shrink-0 px-4">
                                 <img
-                                    className=" w-25 h-20"
+                                    className=" w-20 h-20"
                                     src={logo}
                                     alt="Workflow"
                                 />
