@@ -89,9 +89,11 @@ const lines = [
 const DisplayBarChart = (props: Props) => {
     return (
         <Fragment>
-            <div className="h-16 px-4 py-3 flex flex-col">
-                <span className="text-xl font-bold">Summary</span>
-                <span className="font-light">Mainstream Reinsurance House</span>
+            <div className="h-16 px-4 py-3 flex">
+                <div className="flex flex-col">
+                    <span className="text-xl font-bold">Summary</span>
+                    <span className="font-light">Mainstream Reinsurance House</span>
+                </div>
             </div>
             <div className="h-96">
                 <CustomLineChart data={data} lines={lines} />
