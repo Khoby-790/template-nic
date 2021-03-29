@@ -42,7 +42,7 @@ const WelcomeSection = (props: Props) => {
                         </div>
 
                         <div className="px-6 py-5 text-sm font-medium text-center">
-                            <span className="text-gray-100">{new Date().toLocaleDateString()}</span>
+                            <span className="text-gray-100">{new Date().toDateString()}</span>
                             {/* <span className="text-gray-600">Personal days left</span> */}
                         </div>
                     </div>
