@@ -218,9 +218,6 @@ const PremiumExpansion = (props: Props) => {
                                 <a href="#" onClick={() => setTab("for_all_reinsurers")} className={tab === "for_all_reinsurers" ? active : inActive} aria-current="page">
                                     For Each Reinsured
                                 </a>
-                                <a href="#" onClick={() => setTab("for_each_reinsurer")} className={tab === "for_each_reinsurer" ? active : inActive}>
-                                    From Each Reinsurer
-                                </a>
                             </nav>
                         </div>
                     </div>

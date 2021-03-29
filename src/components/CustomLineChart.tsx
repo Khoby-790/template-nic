@@ -15,7 +15,7 @@ interface Props {
 
 const CustomLineChart = ({ data, lines }: Props) => {
     return (
-        <div className="h-full">
+        <div className="h-96">
             <ResponsiveContainer width="100%" height="100%">
                 <LineChart width={300} height={100} data={data}>
                     {lines.map((line, id) => (
