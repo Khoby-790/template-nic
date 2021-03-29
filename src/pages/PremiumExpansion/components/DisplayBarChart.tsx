@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { CustomLineChart } from '../../../components';
 
 const data = [
