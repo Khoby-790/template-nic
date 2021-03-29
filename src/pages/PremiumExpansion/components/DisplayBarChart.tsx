@@ -89,10 +89,18 @@ const lines = [
 const DisplayBarChart = (props: Props) => {
     return (
         <Fragment>
-            <div className="h-16 px-4 py-3 flex">
+            <div className="h-16 px-4 py-3 flex justify-between">
                 <div className="flex flex-col">
                     <span className="text-xl font-bold">Summary</span>
                     <span className="font-light">Mainstream Reinsurance House</span>
+                </div>
+                <div className="flex items-baseline">
+                    <label className="mr-3" htmlFor="">Filter by currency</label>
+                    <select name="" id="">
+                        <option value="">GHC</option>
+                        <option value="">EUR</option>
+                        <option value="">USD</option>
+                    </select>
                 </div>
             </div>
             <div className="h-96">
