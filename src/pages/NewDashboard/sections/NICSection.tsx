@@ -79,9 +79,9 @@ const data = [
 ];
 
 const bars = [
-    { name: "paid", color: "#BA5624", title: "Total Paid Premium" },
-    { name: "outstanding", color: "#381D2A", title: "Total Outstanding Premium" },
-    { name: "total", color: "#FCDE9C", title: "Total Premium" }
+    { name: "paid", color: "#BA5624", title: "Paid NIC Levy" },
+    { name: "outstanding", color: "#381D2A", title: "Outstanding NIC Levy" },
+    { name: "total", color: "#FCDE9C", title: "Total NIC Levy" }
 ]
 
 interface Props {
