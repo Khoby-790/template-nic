@@ -95,8 +95,8 @@ const DisplayBarChart = (props: Props) => {
                     <span className="font-light">Visal Reinsurance Brokers</span>
                     <span className="font-light">Total NIC Levies for 2021</span>
                 </div>
-                <div>
-                    <div className="flex items-baseline">
+                <div> 
+                    <div className="flex border p-2 items-baseline">
                         <label className="mr-3" htmlFor="">Filter by currency</label>
                         <select name="" id="">
                             <option value="">GHC</option>
@@ -104,12 +104,12 @@ const DisplayBarChart = (props: Props) => {
                             <option value="">USD</option>
                         </select>
                     </div>
-                    <div className="flex items-baseline">
+                    <div className="flex justify-between items-baseline">
                         <label className="mr-3" htmlFor="">Filter by year</label>
                         <select name="" id="">
-                            <option value="">2019</option>
                             <option value="">2021</option>
-                            <option value="">2022</option>
+                            <option value="">2020</option>
+                            <option value="">2019</option>
                         </select>
                     </div>
                 </div>
