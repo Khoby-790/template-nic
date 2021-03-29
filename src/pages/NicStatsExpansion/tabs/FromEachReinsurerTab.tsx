@@ -10,7 +10,6 @@ const FromEachReinsurerTab = (props: Props) => {
     const [showGraph, setShowGraph] = useState<boolean>(false)
     return (
         <div className="py-4">
-            {/* <!-- This example requires Tailwind CSS v2.0+ --> */}
             <div className="flex flex-col">
                 <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                     <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
@@ -20,16 +19,16 @@ const FromEachReinsurerTab = (props: Props) => {
                                     <tr>
                                         <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                             Reinsurer
-              </th>
+                                        </th>
                                         <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                             Paid
-              </th>
+                                        </th>
                                         <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                             Outstanding
-              </th>
+                                        </th>
                                         <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                             Total
-              </th>
+                                        </th>
                                         <th scope="col" className="relative px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                             Actions
                                         </th>
@@ -39,7 +38,7 @@ const FromEachReinsurerTab = (props: Props) => {
                                     {/* <!-- Odd row --> */}
                                     <tr className="bg-white">
                                         <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                        Aveni Reinsurance Company Limited
+                                            Aveni Reinsurance Company Limited
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                             <span>GHC</span>
@@ -63,7 +62,7 @@ const FromEachReinsurerTab = (props: Props) => {
                                     {/* <!-- Even row --> */}
                                     <tr className="bg-gray-50">
                                         <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                        Ghana Reinsurance Company Limited
+                                            Ghana Reinsurance Company Limited
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                             <span>USD</span>
@@ -85,7 +84,7 @@ const FromEachReinsurerTab = (props: Props) => {
                                     </tr>
                                     <tr className="bg-white">
                                         <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                        GN Reinsurance Company Limited
+                                            GN Reinsurance Company Limited
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                             <span>EUR</span>
@@ -107,7 +106,7 @@ const FromEachReinsurerTab = (props: Props) => {
                                     </tr>
                                     <tr className="bg-gray-50">
                                         <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                        Mainstream Reinsurance Company Limited
+                                            Mainstream Reinsurance Company Limited
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                             <span>LE</span>
