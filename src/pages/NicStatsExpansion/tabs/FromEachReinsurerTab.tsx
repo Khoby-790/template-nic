@@ -20,7 +20,7 @@ const FromEachReinsurerTab = (props: Props) => {
                     {/* <span className="font-light">Visal Reinsurance Brokers</span> */}
                     <span className="font-light">Total NIC Levies for 2021</span>
                 </div>
-                <div>
+                <div className="flex">
                     <div className="flex border p-2 mb-1 rounded items-baseline">
                         <label className="mr-3" htmlFor="">Filter by currency</label>
                         <select name="" id="">
@@ -150,15 +150,15 @@ const FromEachReinsurerTab = (props: Props) => {
                                                 Royal Insurance Company Limited
                                         </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                                <span>USD</span>
+                                                <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                                <span>USD</span>
+                                                <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                                <span>USD</span>
+                                                <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
@@ -172,15 +172,15 @@ const FromEachReinsurerTab = (props: Props) => {
                                                 Vanguard Assurance Company Limited
                                         </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                                <span>EUR</span>
+                                                <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                                <span>EUR</span>
+                                                <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                                <span>EUR</span>
+                                                <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
@@ -194,15 +194,15 @@ const FromEachReinsurerTab = (props: Props) => {
                                                 Enterprise Insurance Company Limited
                                         </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                                <span>LE</span>
+                                                <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                                <span>LE</span>
+                                                <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                                <span>LE</span>
+                                                <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
