@@ -85,7 +85,7 @@ const ReinsurerPill = ({ name }: Props) => {
 
             <Modal size={80} show={showGraph} setShow={setShowGraph}>
                 <Fragment>
-                    <div>
+                    <div className="px-5 mt-4">
                         <div className="sm:hidden">
                             <label htmlFor="tabs" className="sr-only">Select a tab</label>
                             <select id="tabs" name="tabs" className="block w-full focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
@@ -108,7 +108,7 @@ const ReinsurerPill = ({ name }: Props) => {
                             </div>
                         </div>
                     </div>
-                    <DisplayBarChart />
+                    {tabs === "stats" && <DisplayBarChart />}
                 </Fragment>
             </Modal>
         </>
