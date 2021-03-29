@@ -17,9 +17,11 @@ const AppLayout = ({ history, match }: Props) => {
         <Fragment>
             <div className="h-screen flex">
                 <Sidebar />
-                <div className="flex-1 h-full">
+                <div className="flex-1 flex flex-col h-full">
                     <Navbar />
-                    <div className="bg-red-500 flex-1"></div>
+                    <div className="bg-gray-100 flex-1 overflow-y-scroll">
+                        <AppContent />
+                    </div>
                 </div>
             </div>
         </Fragment>
