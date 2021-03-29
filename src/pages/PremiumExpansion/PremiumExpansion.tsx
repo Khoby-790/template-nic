@@ -90,8 +90,8 @@ const lines = [
     { name: "outstanding", title: "Outstanding Premium", width: 2, color: "#619B8A" },
 ]
 
-const inActive = "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 w-1/4 py-4 px-1 text-center border-b-2 font-medium text-sm";
-const active = "border-indigo-500 text-indigo-600 w-1/4 py-4 px-1 text-center border-b-2 font-medium text-sm";
+const inActive = "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 flex-1 py-4 px-1 text-center border-b-2 font-medium text-sm";
+const active = "border-indigo-500 text-indigo-600 flex-1 py-4 px-1 text-center border-b-2 font-medium text-sm";
 
 type Tabs = "for_each_reinsurer" | "for_each_broker" | "for_all_brokers" | "for_all_reinsurers"
 
@@ -212,11 +212,11 @@ const PremiumExpansion = (props: Props) => {
                                     For All Brokers
                                 </a>
                                 <a href="#" onClick={() => setTab("for_each_broker")} className={tab === "for_each_broker" ? active : inActive}>
-                                    From Each Broker
+                                    From Each Reinsured
                                 </a>
-                                {/* <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" --> */}
-                                <a href="#" onClick={() => setTab("for_all_reinsurers")} className={tab === "for_all_reinsurers" ? active : inActive} aria-current="page">
-                                    For Each Reinsured
+
+                                <a href="#" onClick={() => setTab("for_each_reinsurer")} className={tab === "for_each_reinsurer" ? active : inActive}>
+                                    From Each Reinsurer
                                 </a>
                             </nav>
                         </div>
