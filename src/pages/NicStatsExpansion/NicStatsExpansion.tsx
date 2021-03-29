@@ -104,7 +104,7 @@ const NicStatsExpansion = (props: Props) => {
         <Fragment>
             <div className="px-3 py-4">
                 <div>
-                    <PageBreadCrum page="NIC Summary" />
+                    <PageBreadCrum page="NIC Levy Overview" />
                     <div />
                     <div className="">
                         <SubGraphsBarchart bars={bars} data={data} />
