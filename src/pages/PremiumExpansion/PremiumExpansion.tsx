@@ -105,6 +105,16 @@ const PremiumExpansion = (props: Props) => {
                 </div>
 
                 <div className="h-96 mt-3 bg-white py-3">
+                    <div className="flex">
+                        <div className="flex border  mr-2 p-2 mb-1 rounded items-baseline">
+                            <label className="mr-3" htmlFor="">Filter by currency</label>
+                            <select name="" id="">
+                                <option value="">GHC</option>
+                                <option value="">GHC</option>
+                                <option value="">GHC</option>
+                            </select>
+                        </div>
+                    </div>
                     <CustomLineChart data={data} lines={lines} />
                 </div>
 
