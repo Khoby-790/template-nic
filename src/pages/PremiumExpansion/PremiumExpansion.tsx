@@ -104,8 +104,8 @@ const PremiumExpansion = (props: Props) => {
                     <PageBreadCrum page="Premium Summary" />
                 </div>
 
-                <div className="h-96 mt-3 bg-white py-3">
-                    <div className="flex">
+                <div className="h-auto mt-3 bg-white py-3">
+                    <div className="flex justify-end">
                         <div className="flex border  mr-2 p-2 mb-1 rounded items-baseline">
                             <label className="mr-3" htmlFor="">Filter by currency</label>
                             <select name="" id="">
