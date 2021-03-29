@@ -93,9 +93,9 @@ const active = "border-indigo-500 text-indigo-600 w-1/4 py-4 px-1 text-center bo
 type Tabs = "for_each_reinsurer" | "for_each_broker" | "for_all_brokers" | "for_all_reinsurers"
 
 const bars = [
-    { name: "paid", color: "#BA5624", title: "Total Paid Premium" },
-    { name: "outstanding", color: "#381D2A", title: "Total Outstanding Premium" },
-    { name: "total", color: "#FCDE9C", title: "Total Premium" }
+    { name: "paid", color: "#BA5624", title: "Total Paid NIC Levy" },
+    { name: "outstanding", color: "#381D2A", title: "Total Outstanding NIC Levy" },
+    { name: "total", color: "#FCDE9C", title: "Total NIC Levy" }
 ]
 
 const NicStatsExpansion = (props: Props) => {
