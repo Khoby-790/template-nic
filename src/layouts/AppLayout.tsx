@@ -16,20 +16,22 @@ const AppLayout = ({ history, match }: Props) => {
     return (
         <Fragment>
 
-            <div className="h-full">
+            <div className="h-full flex">
                 <Sidebar />
-                
+                <div className="flex-1">
+                    <Navbar />
+
+                    <AppContent />
+                </div>
             </div>
 
             <div className="h-screen overflow-hidden bg-gray-100 flex flex-col">
                 {/* <!-- Top nav--> */}
-                <Navbar />
                 {/* <!-- Bottom section --> */}
                 <div className="min-h-0 flex-1 flex overflow-hidden">
                     {/* <!-- Narrow sidebar--> */}
-                    <Sidebar />
+                    {/* <Sidebar /> */}
                     {/* <!-- Main area --> */}
-                    <AppContent />
                 </div>
             </div>
         </Fragment>
