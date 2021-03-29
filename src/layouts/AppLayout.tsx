@@ -16,6 +16,11 @@ const AppLayout = ({ history, match }: Props) => {
     return (
         <Fragment>
 
+            <div className="h-full">
+                <Sidebar />
+                
+            </div>
+
             <div className="h-screen overflow-hidden bg-gray-100 flex flex-col">
                 {/* <!-- Top nav--> */}
                 <Navbar />
