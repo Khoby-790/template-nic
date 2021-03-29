@@ -17,13 +17,10 @@ const AppLayout = ({ history, match }: Props) => {
         <Fragment>
 
             <div className="h-screen flex">
-                <div className="h-full bg-red-500">
-                    <Sidebar />
-                </div>
-                <div className="flex-1">
+                <Sidebar />
+                <div className="flex-1 h-screen">
                     <Navbar />
-
-                    <AppContent />
+                    <div className="bg-red-500 flex-1"></div>
                 </div>
             </div>
 
