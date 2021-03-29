@@ -113,28 +113,6 @@ const NICSection = (props: Props) => {
                 <div className="flex h-96">
                     <div className="flex-1">
                         <SubGraphsBarchart data={data} bars={bars} />
-                        {/* <ResponsiveContainer width="100%" height="100%">
-                            <BarChart
-                                width={500}
-                                height={300}
-                                data={data}
-                                margin={{
-                                    top: 5,
-                                    right: 30,
-                                    left: 20,
-                                    bottom: 5,
-                                }}
-                            >
-                                <CartesianGrid strokeDasharray="3 3" />
-                                <XAxis dataKey="name" />
-                                <YAxis />
-                                <Tooltip />
-                                <Legend />
-                                <Bar dataKey="paid" fill="#4D8B31" />
-                                <Bar dataKey="outstanding" fill="#FFC800" />
-                                <Bar dataKey="total" fill="#FF8427" />
-                            </BarChart>
-                        </ResponsiveContainer> */}
                     </div>
                     <div className="px-5 grid grid-cols-1 gap-y-3">
                         <div className="flex flex-col">
