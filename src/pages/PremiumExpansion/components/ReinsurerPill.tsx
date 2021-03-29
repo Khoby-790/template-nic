@@ -37,18 +37,21 @@ const ReinsurerPill = ({ name }: Props) => {
                                 </svg>
                             </div>
                         </div>
-                        <div className="px-5 grid grid-cols-3 gap-x-5">
-                            <div className="flex flex-col">
-                                <span className="font-thin">Total</span>
-                                <span className="font-semibold text-xl">12,022,152</span>
-                            </div>
-                            <div className="flex flex-col">
-                                <span className="font-thin">Paid</span>
-                                <span className="font-semibold text-xl">12,022,152</span>
-                            </div>
-                            <div className="flex flex-col">
-                                <span className="font-thin">Outstanding</span>
-                                <span className="font-semibold text-xl">12,022,152</span>
+                        <div>
+                            <div className="py-3"></div>
+                            <div className="px-5 grid grid-cols-3 gap-x-5">
+                                <div className="flex flex-col">
+                                    <span className="font-thin">Total</span>
+                                    <span className="font-semibold text-xl">12,022,152</span>
+                                </div>
+                                <div className="flex flex-col">
+                                    <span className="font-thin">Paid</span>
+                                    <span className="font-semibold text-xl">12,022,152</span>
+                                </div>
+                                <div className="flex flex-col">
+                                    <span className="font-thin">Outstanding</span>
+                                    <span className="font-semibold text-xl">12,022,152</span>
+                                </div>
                             </div>
                         </div>
                     </div>
