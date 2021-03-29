@@ -19,7 +19,7 @@ const ReinsurersList = (props: Props) => {
                         <label className="mr-3" htmlFor="">Filter by currency</label>
                         <select name="" id="">
                             <option value="">GHC</option>
-                            <option value="">EUR</option>
+                            <option value="">GHC</option>
                             <option value="">GHC</option>
                         </select>
                     </div>
@@ -74,7 +74,7 @@ const ReinsurersList = (props: Props) => {
                                                 <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
-                                            
+
                                         </tr>
 
                                         {/* <!-- Even row --> */}
@@ -94,45 +94,44 @@ const ReinsurersList = (props: Props) => {
                                                 <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
-                                            
+
                                         </tr>
                                         <tr className="bg-white">
                                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                                                 GN Reinsurance Company Limited
                                         </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                                <span>EUR</span>
+                                                <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                                <span>EUR</span>
+                                                <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                                <span>EUR</span>
+                                                <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
-                                            
+
                                         </tr>
                                         <tr className="bg-gray-50">
                                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                                                 Mainstream Reinsurance Company Limited
                                         </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                                <span>LE</span>
+                                                <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                                <span>LE</span>
+                                                <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                                <span>LE</span>
+                                                <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
-                                            
-                                        </tr>
 
+                                        </tr>
                                         {/* <!-- More items... --> */}
                                     </tbody>
                                 </table>
