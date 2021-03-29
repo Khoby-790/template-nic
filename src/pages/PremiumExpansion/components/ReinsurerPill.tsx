@@ -38,7 +38,14 @@ const ReinsurerPill = ({ name }: Props) => {
                             </div>
                         </div>
                         <div>
-                            <div className="py-3"></div>
+                            <div className="py-3 flex justify-end">
+                                <label className="font-thin" htmlFor="">Filter by currency</label>
+                                <select name="" id="">
+                                    <option value="">GHC</option>
+                                    <option value="">EUR</option>
+                                    <option value="">USD</option>
+                                </select>
+                            </div>
                             <div className="px-5 grid grid-cols-3 gap-x-5">
                                 <div className="flex flex-col">
                                     <span className="font-thin">Total</span>
