@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
-import { Modal } from '../../../components'
+import React, { useRef, useState } from 'react'
+import { Modal, Transition } from '../../../components'
+import { useOutsideClick } from '../../../hooks';
 import DisplayBarChart from '../components/DisplayBarChart'
 
 interface Props {
@@ -7,7 +8,10 @@ interface Props {
 }
 
 const FromEachReinsurerTab = (props: Props) => {
+    const saveOptionsREf = useRef(null);
     const [showGraph, setShowGraph] = useState<boolean>(false)
+    const [showSaveOptions, setShowSaveOptions] = useState<boolean>(false);
+    useOutsideClick(saveOptionsREf, () => setShowSaveOptions(false))
     return (
         <div className="">
             <div className="h-auto px-4 py-3 flex justify-between">
