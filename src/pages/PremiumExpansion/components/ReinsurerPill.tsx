@@ -11,7 +11,7 @@ interface Props {
 const inActive = "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 w-1/4 py-4 px-1 text-center border-b-2 font-medium text-sm";
 const active = "border-indigo-500 text-indigo-600 w-1/4 py-4 px-1 text-center border-b-2 font-medium text-sm";
 
-type Tabs = "stats" | "reinsurers"
+type Tabs = "stats" | "reinsurers" | "insurers"
 
 const ReinsurerPill = ({ name }: Props) => {
     const [showGraph, setShowGraph] = useState<boolean>(false);
@@ -105,12 +105,16 @@ const ReinsurerPill = ({ name }: Props) => {
                                     <a href="#" onClick={() => setTabs("reinsurers")} className={tabs === "reinsurers" ? active : inActive}>
                                         Reinsurers
                                     </a>
+                                    <a href="#" onClick={() => setTabs("insurers")} className={tabs === "insurers" ? active : inActive}>
+                                        Insurers
+                                    </a>
                                 </nav>
                             </div>
                         </div>
                     </div>
                     {tabs === "stats" && <DisplayBarChart />}
                     {tabs === "reinsurers" && <ReinsurersList />}
+                    {tabs === "insurers" && <ReinsurersList />}
                 </Fragment>
             </Modal>
         </>
