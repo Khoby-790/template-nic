@@ -38,7 +38,7 @@ const ReinsurersList = (props: Props) => {
                     </div>
                 </div>
             </div>
-            <div className="flex h-11 justify-between items-center my-3 mr-2 mb-5">
+            <div className="flex h-11 justify-between items-center mx-5 my-3 mr-2 mb-5">
                 <div className="flex-1 flex justify-between items-center">
 
                     <div className="flex-1 flex justify-end px-2">
