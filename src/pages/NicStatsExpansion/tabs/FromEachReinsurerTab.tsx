@@ -123,8 +123,8 @@ const FromEachReinsurerTab = (props: Props) => {
                                         {/* <!-- Odd row --> */}
                                         <tr className="bg-white">
                                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                                Aveni Reinsurance Company Limited
-                                        </td>
+                                                National Insurance Company Limited
+                                                  </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                                 <span>GHC</span>
                                                 <span>12,000</span>
@@ -147,7 +147,7 @@ const FromEachReinsurerTab = (props: Props) => {
                                         {/* <!-- Even row --> */}
                                         <tr className="bg-gray-50">
                                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                                Ghana Reinsurance Company Limited
+                                                Royal Insurance Company Limited
                                         </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                                 <span>USD</span>
@@ -169,7 +169,7 @@ const FromEachReinsurerTab = (props: Props) => {
                                         </tr>
                                         <tr className="bg-white">
                                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                                GN Reinsurance Company Limited
+                                                Vanguard Assurance Company Limited
                                         </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                                 <span>EUR</span>
@@ -191,7 +191,7 @@ const FromEachReinsurerTab = (props: Props) => {
                                         </tr>
                                         <tr className="bg-gray-50">
                                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                                Mainstream Reinsurance Company Limited
+                                                Enterprise Insurance Company Limited
                                         </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                                 <span>LE</span>
