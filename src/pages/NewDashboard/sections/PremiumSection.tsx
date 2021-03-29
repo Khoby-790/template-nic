@@ -104,7 +104,7 @@ const PremiumSection = (props: Props) => {
                     </svg>
                 </Link>
             </div>
-            <div className="flex h-64">
+            <div className="flex h-96">
                 <div className="flex flex-row w-full h-full">
                     <div className="grid px-5 grid-cols-1 gap-y-3">
                         <div className="flex flex-col">
@@ -120,7 +120,7 @@ const PremiumSection = (props: Props) => {
                             <span className="font-light text-gray-600">Paid</span>
                         </div>
                     </div>
-                    <div className="flex-1 px-5 h-64 mb-5">
+                    <div className="flex-1 px-5 mb-5">
                         <CustomLineChart data={data} lines={[
                             { name: "total", title: "Total Premium", width: 2, color: "#A1C181" },
                             { name: "paid", title: "Paid Premium", width: 2, color: "#FE7F2D" },
