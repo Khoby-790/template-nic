@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from 'react'
+import React, { Fragment, useState } from 'react'
 import { Modal } from '../../../components'
 import DisplayBarChart from './DisplayBarChart'
 
@@ -7,8 +7,14 @@ interface Props {
     name?: string
 }
 
+const inActive = "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 w-1/4 py-4 px-1 text-center border-b-2 font-medium text-sm";
+const active = "border-indigo-500 text-indigo-600 w-1/4 py-4 px-1 text-center border-b-2 font-medium text-sm";
+
+type Tabs = "stats" | "reinsurers"
+
 const ReinsurerPill = ({ name }: Props) => {
-    const [showGraph, setShowGraph] = useState<boolean>(false)
+    const [showGraph, setShowGraph] = useState<boolean>(false);
+    const [tabs, setTabs] = useState<Tabs>("stats");
     return (
         <>
             <div className="relative rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm flex items-start space-x-3 hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
@@ -78,7 +84,32 @@ const ReinsurerPill = ({ name }: Props) => {
             </div>
 
             <Modal size={80} show={showGraph} setShow={setShowGraph}>
-                <DisplayBarChart />
+                <Fragment>
+                    <div>
+                        <div className="sm:hidden">
+                            <label htmlFor="tabs" className="sr-only">Select a tab</label>
+                            <select id="tabs" name="tabs" className="block w-full focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
+                                <option>My Account</option>
+                                <option>Company</option>
+                                <option selected>Team Members</option>
+                                <option>Billing</option>
+                            </select>
+                        </div>
+                        <div className="hidden sm:block">
+                            <div className="border-b border-gray-200">
+                                <nav className="-mb-px flex" aria-label="Tabs">
+                                    <a href="#" onClick={() => setTabs("stats")} className={tabs === "stats" ? active : inActive}>
+                                        NIC levy summary
+                                    </a>
+                                    <a href="#" onClick={() => setTabs("reinsurers")} className={tabs === "reinsurers" ? active : inActive}>
+                                        Reinsurers
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <DisplayBarChart />
+                </Fragment>
             </Modal>
         </>
     )
