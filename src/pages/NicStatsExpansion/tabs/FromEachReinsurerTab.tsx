@@ -107,7 +107,7 @@ const FromEachReinsurerTab = (props: Props) => {
                                     </tr>
                                     <tr className="bg-gray-50">
                                         <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                            Mainstream Reinsurance House
+                                        Mainstream Reinsurance Company Limited
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                             <span>LE</span>
