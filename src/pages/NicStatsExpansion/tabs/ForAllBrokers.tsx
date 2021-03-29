@@ -1,5 +1,5 @@
 import React from 'react'
-import ReinsurerPill from '../../PremiumExpansion/components/ReinsurerPill'
+import ReinsurerPill from '../components/ReinsurerPill'
 
 interface Props {
 
