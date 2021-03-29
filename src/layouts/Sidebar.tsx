@@ -1,19 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment } from 'react'
-import { useDispatch } from 'react-redux'
-import { OPEN_SUB_MENU } from '../store/actionTypes'
+import logo from '../assets/nic-logo.png'
 
 interface Props {
 
 }
 
 const Sidebar = (props: Props) => {
-    const dispatch = useDispatch<SidebarDispatchType>()
-    const selectRoute = () => {
-        dispatch({
-            type: OPEN_SUB_MENU
-        })
-    }
 
     return (
         <Fragment>
@@ -25,7 +18,7 @@ const Sidebar = (props: Props) => {
                             <div className="flex items-center flex-shrink-0 px-4">
                                 <img
                                     className="h-8 w-auto"
-                                    src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
+                                    src={logo}
                                     alt="Workflow"
                                 />
                             </div>
