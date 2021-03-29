@@ -39,7 +39,7 @@ const FromEachReinsurerTab = (props: Props) => {
                                     {/* <!-- Odd row --> */}
                                     <tr className="bg-white">
                                         <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                            Vanguard Reinsurance
+                                        Aveni Reinsurance Company Limited
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                             <span>GHC</span>
@@ -63,7 +63,7 @@ const FromEachReinsurerTab = (props: Props) => {
                                     {/* <!-- Even row --> */}
                                     <tr className="bg-gray-50">
                                         <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                            Ghana Re
+                                        Ghana Reinsurance Company Limited
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                             <span>USD</span>
@@ -85,7 +85,7 @@ const FromEachReinsurerTab = (props: Props) => {
                                     </tr>
                                     <tr className="bg-white">
                                         <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                        GN Reinsurance
+                                        GN Reinsurance Company Limited
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                             <span>EUR</span>
