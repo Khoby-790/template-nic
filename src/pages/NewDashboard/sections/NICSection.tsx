@@ -104,7 +104,7 @@ const NICSection = (props: Props) => {
                             <span className="text-sm font-light">Bar Graph that gives a detailed description of the levies  </span>
                         </div>
                     </div>
-                    <div>
+                    <div className="flex">
                         <div className="flex border  mr-2 p-2 mb-1 rounded items-baseline">
                             <label className="mr-3" htmlFor="">Filter by currency</label>
                             <select name="" id="">
