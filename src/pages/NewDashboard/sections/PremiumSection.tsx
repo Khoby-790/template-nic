@@ -95,7 +95,7 @@ const PremiumSection = (props: Props) => {
                     </div>
                     <div className="flex flex-col">
                         <span className="font-semibold ">Premium</span>
-                        <span className="text-sm font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>
+                        <span className="text-sm font-light">Line Graph that gives a detailed description of the levies . </span>
                     </div>
                 </div>
                 <Link to="/premium" className=" flex justify-center h-full items-center px-4 cursor-pointer hover:bg-gray-400 rounded-full">
