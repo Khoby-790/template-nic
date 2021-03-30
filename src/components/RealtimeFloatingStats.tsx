@@ -27,15 +27,15 @@ const RealtimeFloatingStats = (props: Props) => {
 
     return (
         <Fragment>
-            <div className="absolute bottom-10 w-6/12 right-6 shadow-xl rounded-lg bg-gray-100">
+            <div className="absolute bottom-10 w-6/12 right-6 shadow-xl rounded-lg bg-gray-800">
                 <div className="h-9 border-b px-5 flex items-center justify-between">
                     <span className="text-lg">Realtime Data on placed offers</span>
-                    <svg className="h-6 text-gray-700 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="h-6 text-gray-200 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
                     </svg>
                 </div>
                 <div className="flex px-5">
-                    <div className="flex flex-col">
+                    <div className="flex text-gray-200 flex-col">
                         <span>{currentDate}</span>
                         <span>{time}</span>
                     </div>
@@ -79,7 +79,7 @@ const RealtimeFloatingStats = (props: Props) => {
                                                 <span>VACL</span>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-500">
-                                                <span>VR</span>
+                                                <span>{"5 mins ago"}</span>
                                             </td>
                                         </tr>
                                     ))}
