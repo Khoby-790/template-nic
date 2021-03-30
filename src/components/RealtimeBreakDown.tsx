@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect } from 'react'
 
 interface Props {
 
@@ -12,6 +12,12 @@ const colors = ["green", "red", "yellow", "indigo"]
 const companies = ["VRB", "KRB", "ARB", "VRBb"]
 
 const RealtimeBreakDown = (props: Props) => {
+    useEffect(() => {
+        const _i = setInterval(() => { }, 3000)
+        return () => {
+            clearInterval(_i)
+        }
+    }, [])
     return (
         <Fragment>
             <div className="bg-gray-300 max-h-64 h-full px-4 pb-5 overflow-y-scroll">
