@@ -41,12 +41,16 @@ const RealtimeBreakDown = (props: Props) => {
                         </svg>
                         View more
                     </div>
-                    <svg onClick={() => { }} className="text-gray-600 cursor-pointer h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg onClick={() => { /** */ }} className="text-gray-600 cursor-pointer h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                 </div>
                 <Fragment>
                     <div>
+                        <div className="my-2 flex justify-between">
+                            <span className={` rounded`}>Brokers</span>
+                            <span>{getRandomArbitrary(6, 25).toFixed()}</span>
+                        </div>
                         {items.sort().map((item, id) => (
                             <div className="my-2 flex justify-between" key={id}>
                                 <span className={`bg-${item.color}-300 px-2 rounded text-${item.color}-700`}>{item.company}</span>
