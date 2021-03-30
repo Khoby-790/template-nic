@@ -101,7 +101,7 @@ const ReinsurerPill = ({ name }: Props) => {
                             <div className="border-b border-gray-200">
                                 <nav className="-mb-px flex" aria-label="Tabs">
                                     <a href="#" onClick={() => setTabs("stats")} className={tabs === "stats" ? active : inActive}>
-                                        NIC levy summary
+                                        Premium summary
                                     </a>
                                     <a href="#" onClick={() => setTabs("reinsurers")} className={tabs === "reinsurers" ? active : inActive}>
                                         Reinsurers
