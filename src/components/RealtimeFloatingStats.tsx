@@ -1,10 +1,14 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 
 interface Props {
 
 }
 
 const RealtimeFloatingStats = (props: Props) => {
+    const [time, setTime] = useState<string>(new Date().toTimeString())
+    useEffect(() => {
+
+    }, [])
     return (
         <Fragment>
             <div className="absolute bottom-10 w-6/12 right-0 shadow-xl rounded-lg px-5 bg-white">
@@ -14,7 +18,11 @@ const RealtimeFloatingStats = (props: Props) => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
                     </svg>
                 </div>
-                <div className="flex"></div>
+                <div className="flex">
+                    <div className="flex flex-col">
+                        <span>{time}</span>
+                    </div>
+                </div>
             </div>
         </Fragment>
     )
