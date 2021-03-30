@@ -28,32 +28,32 @@ const RealtimeFloatingStats = (props: Props) => {
                     </div>
                 </div>
                 <div className="w-full">
-                    <div className="py-2 inline-block sm:px-2">
-                        <div className="shadow  border-b border-gray-200 sm:rounded-lg">
-                            <table className=" divide-y divide-gray-200" >
+                    <div className="py-2 align-middle inline-block sm:px-2">
+                        <div className="shadow border-b border-gray-200 sm:rounded-lg">
+                            <table className="divide-y divide-gray-200" >
                                 <thead>
                                     <tr>
                                         <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                             Brokers
                                         </th>
                                         <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            Paid
+                                            Plicy
                                         </th>
                                         <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            Outstanding
+                                            Premium
                                         </th>
                                         <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            Total
+                                            Timestamp
                                         </th>
                                         <th scope="col" className="relative px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            Actions
+                                            Reinsurer
                                         </th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr className="bg-white">
                                         <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                            National Insurance Company Limited
+                                            VRB
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                             <span>GHC</span>
