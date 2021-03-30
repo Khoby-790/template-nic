@@ -24,7 +24,9 @@ const AppLayout = ({ history, match }: Props) => {
                     </div>
                 </div>
             </div>
-            <div className="absolute bottom-10 w-9/12 bg-white py-28"></div>
+            <div className="absolute bottom-10 w-9/12 right-0 shadow-xl rounded-lg px-5 bg-white">
+                Hello
+            </div>
         </Fragment>
     )
 }
