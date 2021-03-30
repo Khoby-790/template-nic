@@ -13,7 +13,7 @@ const RealtimeBreakDown = (props: Props) => {
             <div className="bg-gray-300 max-h-64 h-full px-4 py-5 overflow-y-scroll">
                 <div>
                     {colors.map((color, id) => (
-                        <div key={id}>
+                        <div className="my-2" key={id}>
                             <span className={`bg-${color}-300 px-2 rounded text-${color}-700`}>{companies[id]}</span>
                         </div>
                     ))}
