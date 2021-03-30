@@ -29,7 +29,7 @@ const RealtimeBreakDown = (props: Props) => {
     }, [])
     return (
         <Fragment>
-            <div className="bg-gray-300 max-h-64 h-full px-4 pb-5 overflow-y-scroll">
+            <div className="bg-gray-300 max-h-60 h-full px-4 pb-5 overflow-y-scroll">
                 <div className="flex mb-3 p-3 justify-between">
                     <div className="flex cursor-pointer">
                         <svg className="text-gray-600 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
