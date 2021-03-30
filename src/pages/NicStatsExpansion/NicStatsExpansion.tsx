@@ -214,11 +214,11 @@ const NicStatsExpansion = (props: Props) => {
                                     <a href="#" onClick={() => setTab("for_all_brokers")} className={tab === "for_all_brokers" ? active : inActive}>
                                         For All Brokers
                                 </a>
-                                    <a href="#" onClick={() => setTab("for_each_broker")} className={tab === "for_each_broker" ? active : inActive}>
+                                    <a href="#" onClick={() => setTab("for_each_reinsurer")} className={tab === "for_each_reinsurer" ? active : inActive}>
                                         From Each Reinsured
                                 </a>
 
-                                    <a href="#" onClick={() => setTab("for_each_reinsurer")} className={tab === "for_each_reinsurer" ? active : inActive}>
+                                    <a href="#" onClick={() => setTab("for_each_broker")} className={tab === "for_each_broker" ? active : inActive}>
                                         From Each Reinsurer
                                 </a>
                                 </nav>
