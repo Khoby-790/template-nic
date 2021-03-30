@@ -25,7 +25,10 @@ const AppLayout = ({ history, match }: Props) => {
                 </div>
             </div>
             <div className="absolute bottom-10 w-9/12 right-0 shadow-xl rounded-lg px-5 bg-white">
-                Hello
+                <div className="">
+                    <span className="text-lg">Realtime Data on placed offers</span>
+                </div>
+
             </div>
         </Fragment>
     )
