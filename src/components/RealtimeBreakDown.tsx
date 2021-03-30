@@ -1,4 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react'
+import ClipLoader from "react-spinners/GridLoader";
 
 interface Props {
 
@@ -22,12 +23,19 @@ const RealtimeBreakDown = (props: Props) => {
         const _i = setInterval(() => {
             const newItems: Item[] = colors.map((el, id) => ({ color: el, company: companies[id] }))
             setItems(newItems)
-        }, 3000)
+        }, 10000)
         return () => {
             clearInterval(_i)
         }
     }, [])
 
+    if (items.length < 1) {
+        return (
+            <div className="w-full flex justify-center items-center">
+                <ClipLoader color={"#3DA5D9"} margin={6} loading={true} size={10} />
+            </div>
+        )
+    }
 
 
     return (
