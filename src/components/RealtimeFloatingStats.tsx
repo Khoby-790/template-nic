@@ -65,7 +65,7 @@ const RealtimeFloatingStats = (props: Props) => {
                                 </thead>
                                 <tbody>
                                     {colors.map((color, colorID) => (
-                                        <tr className="">
+                                        <tr key={colorID} className="">
                                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                                                 <span className={`bg-${color}-300 px-2 rounded text-${color}-700`}>VRB</span>
                                             </td>
