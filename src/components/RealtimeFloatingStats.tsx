@@ -14,7 +14,7 @@ const RealtimeFloatingStats = (props: Props) => {
     }, [])
     return (
         <Fragment>
-            <div className="absolute bottom-10 w-6/12 right-0 shadow-xl rounded-lg bg-gray-100">
+            <div className="absolute bottom-10 w-6/12 right-6 shadow-xl rounded-lg bg-gray-100">
                 <div className="h-9 border-b px-5 flex items-center justify-between">
                     <span className="text-lg">Realtime Data on placed offers</span>
                     <svg className="h-6 text-gray-700 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -103,6 +103,40 @@ const RealtimeFloatingStats = (props: Props) => {
                                         </td>
                                     </tr>
                                     <tr className="bg-red-300">
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                                            VRB
+                                        </td>
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <span>GHC</span>
+                                        </td>
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <span>GHC</span>
+                                        </td>
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <span>GHC</span>
+                                        </td>
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-500">
+                                            <span>VR</span>
+                                        </td>
+                                    </tr>
+                                    <tr className="bg-green-300">
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                                            VRB
+                                        </td>
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <span>GHC</span>
+                                        </td>
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <span>GHC</span>
+                                        </td>
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <span>GHC</span>
+                                        </td>
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-500">
+                                            <span>VR</span>
+                                        </td>
+                                    </tr>
+                                    <tr className="bg-green-300">
                                         <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                                             VRB
                                         </td>
