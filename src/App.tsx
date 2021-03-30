@@ -10,8 +10,7 @@ function App() {
           <Route path="/" render={props => <AppLayout {...props} />} />
         </Switch>
       </Suspense>
-
-      {/* <AppLayout /> */}
+      
     </BrowserRouter>
   );
 }
