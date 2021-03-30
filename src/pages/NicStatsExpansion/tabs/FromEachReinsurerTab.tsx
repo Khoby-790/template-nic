@@ -123,8 +123,8 @@ const FromEachReinsurerTab = (props: Props) => {
                                         {/* <!-- Odd row --> */}
                                         <tr className="bg-white">
                                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                                National Insurance Company Limited
-                                                  </td>
+                                                Aveni Reinsurance Company Limited
+                                        </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                                 <span>GHC</span>
                                                 <span>12,000</span>
