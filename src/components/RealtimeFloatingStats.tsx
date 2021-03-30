@@ -28,7 +28,7 @@ const RealtimeFloatingStats = (props: Props) => {
                     </div>
                 </div>
                 <div className="w-full">
-                    <div className="py-2 align-middle inline-block">
+                    <div className="py-2 inline-block sm:px-2">
                         <div className="shadow  border-b border-gray-200 sm:rounded-lg">
                             <table className=" divide-y divide-gray-200" >
                                 <thead>
