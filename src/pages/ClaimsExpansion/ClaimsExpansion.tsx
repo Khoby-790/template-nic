@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment, useState } from 'react'
 import { CustomeAreaChart, PageBreadCrum } from '../../components';
-import SubGraphsBarchart from '../Dashboard/components/SubGraphsBarchart';
 import ForAllBrokers from './tabs/ForAllBrokers';
 import ForEachReinsurerTab from './tabs/ForEachReinsurerTab'
 import FromEachReinsurerTab from './tabs/FromEachReinsurerTab';
