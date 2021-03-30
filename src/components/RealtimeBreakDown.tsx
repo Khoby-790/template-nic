@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react'
-import ClipLoader from "react-spinners/GridLoader";
+import ClipLoader from "react-spinners/PulseLoader";
 
 interface Props {
 
@@ -23,7 +23,7 @@ const RealtimeBreakDown = (props: Props) => {
         const _i = setInterval(() => {
             const newItems: Item[] = colors.map((el, id) => ({ color: el, company: companies[id] }))
             setItems(newItems)
-        }, 10000)
+        }, 5000)
         return () => {
             clearInterval(_i)
         }
