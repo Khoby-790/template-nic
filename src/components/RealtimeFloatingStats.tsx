@@ -27,10 +27,10 @@ const RealtimeFloatingStats = (props: Props) => {
                         <span>{time}</span>
                     </div>
                 </div>
-                <div className="">
-                    <div className="py-2 align-middle inline-block min-w-full sm:px-6">
-                        <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
-                            <table className="min-w-full divide-y divide-gray-200" >
+                <div className="w-full">
+                    <div className="py-2 align-middle inline-block">
+                        <div className="shadow  border-b border-gray-200 sm:rounded-lg">
+                            <table className=" divide-y divide-gray-200" >
                                 <thead>
                                     <tr>
                                         <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
