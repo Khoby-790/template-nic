@@ -5,7 +5,7 @@ interface Props {
 }
 
 const RealtimeFloatingStats = (props: Props) => {
-    const [showDetails, setShowDetails] = useState<boolean>(false)
+    const [showDetails, setShowDetails] = useState<boolean>(true)
     const [time, setTime] = useState<string>(new Date().toTimeString())
     const [currentDate] = useState<string>(new Date().toDateString())
     useEffect(() => {
@@ -53,12 +53,13 @@ const RealtimeFloatingStats = (props: Props) => {
                                         <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                             Premium
                                         </th>
-                                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            Timestamp
-                                        </th>
                                         <th scope="col" className="relative px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                             Reinsurer
                                         </th>
+                                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                            Timestamp
+                                        </th>
+
                                     </tr>
                                 </thead>
                                 <tbody>
