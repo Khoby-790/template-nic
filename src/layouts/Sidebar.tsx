@@ -2,6 +2,7 @@
 import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../assets/nic-logo.png'
+import avatar from '../assets/23511370.jpg'
 import RealtimeBreakDown from '../components/RealtimeBreakDown'
 
 interface Props {
@@ -143,7 +144,7 @@ const Sidebar = (props: Props) => {
                                     <div>
                                         <img
                                             className="inline-block h-9 w-9 rounded-full"
-                                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixqx=ah3lxr8uqw&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                            src={avatar}
                                             alt=""
                                         />
                                     </div>
