@@ -226,10 +226,10 @@ const NicStatsExpansion = (props: Props) => {
                     </div>
 
                     <Fragment>
-                        {tab === "for_all_reinsurers" && <ForEachReinsurerTab />}
+                        {/* {tab === "for_all_reinsurers" && <ForEachReinsurerTab />} */}
                         {tab === "for_all_brokers" && <ForAllBrokers />}
-                        {tab === "for_each_reinsurer" && <FromEachReinsurerTab />}
                         {tab === "for_each_broker" && <FromEachReinsurerTab />}
+                        {tab === "for_each_reinsurer" && <FromEachReinsurerTab />}
                     </Fragment>
 
                 </div>
