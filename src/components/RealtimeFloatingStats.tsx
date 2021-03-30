@@ -51,7 +51,7 @@ const RealtimeFloatingStats = (props: Props) => {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr className="bg-white">
+                                    <tr className="bg-green-300">
                                         <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                                             VRB
                                         </td>
@@ -64,8 +64,59 @@ const RealtimeFloatingStats = (props: Props) => {
                                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                             <span>GHC</span>
                                         </td>
-                                        <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                            <span></span>
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-500">
+                                            <span>VR</span>
+                                        </td>
+                                    </tr>
+                                    <tr className="bg-red-300">
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                                            VRB
+                                        </td>
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <span>GHC</span>
+                                        </td>
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <span>GHC</span>
+                                        </td>
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <span>GHC</span>
+                                        </td>
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-500">
+                                            <span>VR</span>
+                                        </td>
+                                    </tr>
+                                    <tr className="bg-red-300">
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                                            VRB
+                                        </td>
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <span>GHC</span>
+                                        </td>
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <span>GHC</span>
+                                        </td>
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <span>GHC</span>
+                                        </td>
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-500">
+                                            <span>VR</span>
+                                        </td>
+                                    </tr>
+                                    <tr className="bg-red-300">
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                                            VRB
+                                        </td>
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <span>GHC</span>
+                                        </td>
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <span>GHC</span>
+                                        </td>
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <span>GHC</span>
+                                        </td>
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-500">
+                                            <span>VR</span>
                                         </td>
                                     </tr>
                                 </tbody>
