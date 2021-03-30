@@ -4,6 +4,7 @@ import { PageBreadCrum } from '../../components';
 import SubGraphsBarchart from '../Dashboard/components/SubGraphsBarchart';
 import ForAllBrokers from './tabs/ForAllBrokers';
 import ForEachReinsurerTab from './tabs/ForEachReinsurerTab'
+import FromEachReinsuredTab from './tabs/FromEachReinsuredTab';
 import FromEachReinsurerTab from './tabs/FromEachReinsurerTab';
 
 interface Props {
@@ -226,10 +227,9 @@ const NicStatsExpansion = (props: Props) => {
                     </div>
 
                     <Fragment>
-                        {/* {tab === "for_all_reinsurers" && <ForEachReinsurerTab />} */}
                         {tab === "for_all_brokers" && <ForAllBrokers />}
                         {tab === "for_each_broker" && <FromEachReinsurerTab />}
-                        {tab === "for_each_reinsurer" && <FromEachReinsurerTab />}
+                        {tab === "for_each_reinsurer" && <FromEachReinsuredTab />}
                     </Fragment>
 
                 </div>
