@@ -135,6 +135,9 @@ const Sidebar = (props: Props) => {
                                 </Link>
                             </nav>
                         </div>
+                        <div className="bg-gray-300 max-h-64 h-full">
+                            Hello
+                        </div>
                         <div className="flex-shrink-0 flex bg-gray-700 p-4">
                             <a href="#" className="flex-shrink-0 w-full group block">
                                 <div className="flex items-center">
