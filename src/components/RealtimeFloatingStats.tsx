@@ -62,7 +62,7 @@ const RealtimeFloatingStats = (props: Props) => {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr className="bg-green-300">
+                                    <tr className="">
                                         <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                                             VRB
                                         </td>
@@ -79,7 +79,7 @@ const RealtimeFloatingStats = (props: Props) => {
                                             <span>VR</span>
                                         </td>
                                     </tr>
-                                    <tr className="bg-red-300">
+                                    <tr className="">
                                         <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                                             VRB
                                         </td>
@@ -96,7 +96,7 @@ const RealtimeFloatingStats = (props: Props) => {
                                             <span>VR</span>
                                         </td>
                                     </tr>
-                                    <tr className="bg-red-300">
+                                    <tr className="">
                                         <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                                             VRB
                                         </td>
@@ -113,7 +113,7 @@ const RealtimeFloatingStats = (props: Props) => {
                                             <span>VR</span>
                                         </td>
                                     </tr>
-                                    <tr className="bg-red-300">
+                                    <tr className="">
                                         <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                                             VRB
                                         </td>
@@ -130,7 +130,7 @@ const RealtimeFloatingStats = (props: Props) => {
                                             <span>VR</span>
                                         </td>
                                     </tr>
-                                    <tr className="bg-green-300">
+                                    <tr className="">
                                         <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                                             VRB
                                         </td>
@@ -147,7 +147,7 @@ const RealtimeFloatingStats = (props: Props) => {
                                             <span>VR</span>
                                         </td>
                                     </tr>
-                                    <tr className="bg-green-300">
+                                    <tr className="">
                                         <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                                             VRB
                                         </td>
