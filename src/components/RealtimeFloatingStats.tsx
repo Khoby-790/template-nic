@@ -19,7 +19,7 @@ const RealtimeFloatingStats = (props: Props) => {
 
     if (!showDetails) {
         return (
-            <div className="absolute bottom-10 w-auto right-6 shadow-xl rounded-lg bg-white-100">
+            <div className="absolute bottom-10 w-auto right-6 shadow-xl rounded-lg p-4 bg-indigo-600">
                 Hello
             </div>
         )
