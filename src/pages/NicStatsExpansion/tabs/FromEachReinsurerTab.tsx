@@ -147,7 +147,7 @@ const FromEachReinsurerTab = (props: Props) => {
                                         {/* <!-- Even row --> */}
                                         <tr className="bg-gray-50">
                                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                                Royal Insurance Company Limited
+                                                Ghana Reinsurance Company Limited
                                         </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                                 <span>GHC</span>
@@ -169,7 +169,7 @@ const FromEachReinsurerTab = (props: Props) => {
                                         </tr>
                                         <tr className="bg-white">
                                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                                Vanguard Assurance Company Limited
+                                                GN Reinsurance Company Limited
                                         </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                                 <span>GHC</span>
@@ -191,7 +191,7 @@ const FromEachReinsurerTab = (props: Props) => {
                                         </tr>
                                         <tr className="bg-gray-50">
                                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                                Enterprise Insurance Company Limited
+                                                Mainstream Reinsurance Company Limited
                                         </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                                 <span>GHC</span>
