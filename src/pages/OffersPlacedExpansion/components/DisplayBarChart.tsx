@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { CustomLineChart } from '../../../components';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const data = [
     {
@@ -79,42 +79,36 @@ interface Props {
 
 }
 
-const lines = [
-    { name: "total", title: "Total Premium", width: 2, color: "#A1C181" },
-    { name: "paid", title: "Paid Premium", width: 2, color: "#FE7F2D" },
-    { name: "outstanding", title: "Outstanding Premium", width: 2, color: "#619B8A" },
-]
-
 const DisplayBarChart = (props: Props) => {
     return (
         <Fragment>
-            <div className="h-auto px-4 py-3 flex justify-between">
-                <div className="flex flex-col">
-                    <span className="text-xl font-bold">Summary</span>
-                    <span className="font-light">Visal Reinsurance Brokers</span>
-                    <span className="font-light">Total NIC Levies for 2021</span>
-                </div>
-                <div>
-                    <div className="flex border p-2 mb-1 rounded items-baseline">
-                        <label className="mr-3" htmlFor="">Filter by currency</label>
-                        <select name="" id="">
-                            <option value="">GHC</option>
-                            <option value="">EUR</option>
-                            <option value="">USD</option>
-                        </select>
-                    </div>
-                    <div className="flex border p-2 rounded justify-between items-baseline">
-                        <label className="mr-3" htmlFor="">Filter by year</label>
-                        <select name="" id="">
-                            <option value="">2021</option>
-                            <option value="">2020</option>
-                            <option value="">2019</option>
-                        </select>
-                    </div>
-                </div>
+            <div className="h-16 px-4 py-3 flex flex-col">
+                <span className="text-xl font-bold">Summary</span>
+                <span className="font-light">GN Reinsurance</span>
             </div>
-            <div className="h-96 mb-4">
-                <CustomLineChart data={data} lines={lines} />
+            <div className="h-96 py-4">
+                <ResponsiveContainer width="100%" height="100%">
+                    <BarChart
+                        width={500}
+                        height={300}
+                        data={data}
+                        margin={{
+                            top: 5,
+                            right: 30,
+                            left: 20,
+                            bottom: 5,
+                        }}
+                    >
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="name" />
+                        <YAxis />
+                        <Tooltip />
+                        <Legend />
+                        <Bar dataKey="paid" fill="#4D8B31" />
+                        <Bar dataKey="outstanding" fill="#FFC800" />
+                        <Bar dataKey="total" fill="#FF8427" />
+                    </BarChart>
+                </ResponsiveContainer>
             </div>
         </Fragment>
     )
