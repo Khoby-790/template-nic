@@ -94,8 +94,8 @@ type Tabs = "for_each_reinsurer" | "for_each_broker" | "for_all_brokers" | "for_
 
 const bars = [
     // { dataKey: "paid", color: "#BA5624", title: "Total Paid Premium" },
-    { dataKey: "outstanding", stroke: "#381D2A", title: "Current Offers Placed" },
-    { dataKey: "total", stroke: "#FCDE9C", title: "Total Offers Placed" }
+    { dataKey: "outstanding", stroke: "#381D2A", name: "Current Offers Placed" },
+    { dataKey: "total", stroke: "#FCDE9C", name: "Total Offers Placed" }
 ]
 const OffersPlacedExpansion = (props: Props) => {
     const [tab, setTab] = useState<Tabs>("for_each_reinsurer")
