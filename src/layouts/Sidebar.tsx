@@ -68,7 +68,7 @@ const Sidebar = (props: Props) => {
                                         />
                                     </svg>
                                     NIC Levy
-                </a>
+                </Link>
 
                                 <Link to="/premium"
                                     className="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md"
@@ -90,7 +90,7 @@ const Sidebar = (props: Props) => {
                                         />
                                     </svg>
                                     Premium
-                </a>
+                </Link>
 
                                 <Link to="/"
                                     className="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md"
@@ -112,7 +112,7 @@ const Sidebar = (props: Props) => {
                                         />
                                     </svg>
                                     Claims
-                </a>
+                </Link>
 
                                 <Link to="/"
                                     className="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md"
