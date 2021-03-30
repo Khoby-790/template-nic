@@ -42,23 +42,23 @@ const RealtimeFloatingStats = (props: Props) => {
                 </div>
                 <div className="w-full max-h-96 overflow-y-scroll">
                     <div className="py-2 min-w-full align-middle inline-block sm:px-2">
-                        <div className="shadow align-middle border-b min-w-full border-gray-200 sm:rounded-lg">
+                        <div className="shadow align-middle border-b min-w-full border-gray-700 sm:rounded-lg">
                             <table className="min-w-full divide-y divide-gray-200" >
                                 <thead>
                                     <tr>
-                                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-200 uppercase tracking-wider">
                                             Brokers
                                         </th>
-                                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-200 uppercase tracking-wider">
                                             Policy Type
                                         </th>
-                                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-200 uppercase tracking-wider">
                                             Premium
                                         </th>
-                                        <th scope="col" className="relative px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        <th scope="col" className="relative px-6 py-3 text-left text-xs font-medium text-gray-200 uppercase tracking-wider">
                                             Reinsured
                                         </th>
-                                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-200 uppercase tracking-wider">
                                             Timestamp
                                         </th>
                                     </tr>
@@ -69,16 +69,16 @@ const RealtimeFloatingStats = (props: Props) => {
                                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                                                 <span className={`bg-${color}-300 px-2 rounded text-${color}-700`}>VRB</span>
                                             </td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-200">
                                                 <span>MC</span>
                                             </td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-200">
                                                 <span>GHC 45,000</span>
                                             </td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-200">
                                                 <span>VACL</span>
                                             </td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-500">
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-200">
                                                 <span>{"5 mins ago"}</span>
                                             </td>
                                         </tr>
