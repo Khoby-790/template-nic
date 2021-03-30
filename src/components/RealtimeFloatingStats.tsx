@@ -27,6 +27,19 @@ const RealtimeFloatingStats = (props: Props) => {
                         <span>{time}</span>
                     </div>
                 </div>
+                <div className="">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Brokers</th>
+                                <th>Policy</th>
+                                <th>Premium</th>
+                                <th>Timestamp</th>
+                                <th>Reinsurer</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
             </div>
         </Fragment>
     )
