@@ -135,7 +135,7 @@ const Sidebar = (props: Props) => {
                                 </Link>
                             </nav>
                         </div>
-                        <div className="bg-gray-300 max-h-64 h-full">
+                        <div className="bg-gray-300 max-h-64 h-full overflow-y-scroll">
                             Hello
                         </div>
                         <div className="flex-shrink-0 flex bg-gray-700 p-4">
