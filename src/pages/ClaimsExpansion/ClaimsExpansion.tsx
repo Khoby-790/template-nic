@@ -3,6 +3,7 @@ import React, { Fragment, useState } from 'react'
 import { CustomeAreaChart, PageBreadCrum } from '../../components';
 import ForAllBrokers from './tabs/ForAllBrokers';
 import ForEachReinsurerTab from './tabs/ForEachReinsurerTab'
+import FromEachReinsuredTab from './tabs/FromEachReinsuredTab';
 import FromEachReinsurerTab from './tabs/FromEachReinsurerTab';
 interface Props {
 
@@ -210,11 +211,11 @@ const ClaimsExpansion = (props: Props) => {
                                     <a href="#" onClick={() => setTab("for_all_brokers")} className={tab === "for_all_brokers" ? active : inActive}>
                                         For All Brokers
                                 </a>
-                                    <a href="#" onClick={() => setTab("for_each_broker")} className={tab === "for_each_broker" ? active : inActive}>
+                                    <a href="#" onClick={() => setTab("for_each_reinsurer")} className={tab === "for_each_reinsurer" ? active : inActive}>
                                         From Each Reinsured
                                 </a>
 
-                                    <a href="#" onClick={() => setTab("for_each_reinsurer")} className={tab === "for_each_reinsurer" ? active : inActive}>
+                                    <a href="#" onClick={() => setTab("for_each_broker")} className={tab === "for_each_broker" ? active : inActive}>
                                         From Each Reinsurer
                                 </a>
                                 </nav>
@@ -223,10 +224,9 @@ const ClaimsExpansion = (props: Props) => {
                     </div>
 
                     <Fragment>
-                        {tab === "for_all_reinsurers" && <ForEachReinsurerTab />}
                         {tab === "for_all_brokers" && <ForAllBrokers />}
-                        {tab === "for_each_reinsurer" && <FromEachReinsurerTab />}
                         {tab === "for_each_broker" && <FromEachReinsurerTab />}
+                        {tab === "for_each_reinsurer" && <FromEachReinsuredTab />}
                     </Fragment>
 
                 </div>

@@ -4,6 +4,7 @@ import { CustomLineChart, PageBreadCrum } from '../../components';
 import SubGraphsBarchart from '../Dashboard/components/SubGraphsBarchart';
 import ForAllBrokers from './tabs/ForAllBrokers';
 import ForEachReinsurerTab from './tabs/ForEachReinsurerTab';
+import FromEachReinsuredTab from './tabs/FromEachReinsuredTab';
 import FromEachReinsurerTab from './tabs/FromEachReinsurerTab';
 
 interface Props {
@@ -197,39 +198,38 @@ const PremiumExpansion = (props: Props) => {
                 </div>
 
                 <div>
-                    <div className="sm:hidden">
-                        <label htmlFor="tabs" className="sr-only">Select a tab</label>
-                        <select id="tabs" name="tabs" className="block w-full focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
-                            <option>My Account</option>
-                            <option>Company</option>
-                            <option selected>Team Members</option>
-                            <option>Billing</option>
-                        </select>
-                    </div>
-                    <div className="hidden sm:block">
-                        <div className="border-b border-gray-200">
-                            <nav className="-mb-px flex" aria-label="Tabs">
-                                <a href="#" onClick={() => setTab("for_all_brokers")} className={tab === "for_all_brokers" ? active : inActive}>
-                                    For All Brokers
+                        <div className="sm:hidden">
+                            <label htmlFor="tabs" className="sr-only">Select a tab</label>
+                            <select id="tabs" name="tabs" className="block w-full focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
+                                <option>My Account</option>
+                                <option>Company</option>
+                                <option selected>Team Members</option>
+                                <option>Billing</option>
+                            </select>
+                        </div>
+                        <div className="hidden sm:block">
+                            <div className="border-b border-gray-200">
+                                <nav className="-mb-px flex" aria-label="Tabs">
+                                    <a href="#" onClick={() => setTab("for_all_brokers")} className={tab === "for_all_brokers" ? active : inActive}>
+                                        For All Brokers
                                 </a>
-                                <a href="#" onClick={() => setTab("for_each_broker")} className={tab === "for_each_broker" ? active : inActive}>
-                                    From Each Reinsured
+                                    <a href="#" onClick={() => setTab("for_each_reinsurer")} className={tab === "for_each_reinsurer" ? active : inActive}>
+                                        From Each Reinsured
                                 </a>
 
-                                <a href="#" onClick={() => setTab("for_each_reinsurer")} className={tab === "for_each_reinsurer" ? active : inActive}>
-                                    From Each Reinsurer
+                                    <a href="#" onClick={() => setTab("for_each_broker")} className={tab === "for_each_broker" ? active : inActive}>
+                                        From Each Reinsurer
                                 </a>
-                            </nav>
+                                </nav>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <Fragment>
-                    {tab === "for_all_reinsurers" && <ForEachReinsurerTab />}
-                    {tab === "for_all_brokers" && <ForAllBrokers />}
-                    {tab === "for_each_reinsurer" && <FromEachReinsurerTab />}
-                    {tab === "for_each_broker" && <FromEachReinsurerTab />}
-                </Fragment>
+                    <Fragment>
+                        {tab === "for_all_brokers" && <ForAllBrokers />}
+                        {tab === "for_each_broker" && <FromEachReinsurerTab />}
+                        {tab === "for_each_reinsurer" && <FromEachReinsuredTab />}
+                    </Fragment>
 
             </div>
         </Fragment>
