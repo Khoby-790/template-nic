@@ -70,13 +70,13 @@ const RealtimeFloatingStats = (props: Props) => {
                                                 <span className={`bg-${color}-300 px-2 rounded text-${color}-700`}>VRB</span>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                                <span>GHC</span>
+                                                <span>MC</span>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                                <span>GHC</span>
+                                                <span>GHC 45,000</span>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                                <span>GHC</span>
+                                                <span>VACL</span>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-500">
                                                 <span>VR</span>
