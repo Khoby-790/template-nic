@@ -104,6 +104,16 @@ const ClaimsExpansion = (props: Props) => {
                     <PageBreadCrum page="Claims Summary" />
                     <div />
                     <div className="h-auto bg-white mt-3 py-3">
+                        <div className="flex justify-end">
+                            <div className="flex border  mr-2 p-2 mb-1 rounded items-baseline">
+                                <label className="mr-3" htmlFor="">Filter by currency</label>
+                                <select name="" id="">
+                                    <option value="">GHC</option>
+                                    <option value="">GHC</option>
+                                    <option value="">GHC</option>
+                                </select>
+                            </div>
+                        </div>
                         <CustomeAreaChart lines={lines} data={data} />
                     </div>
                     <div>
