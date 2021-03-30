@@ -9,7 +9,7 @@ interface Props {
 
 const CustomeAreaChart = ({ data, lines }: Props) => {
     return (
-        <div className="h-full">
+        <div className="h-96">
             <ResponsiveContainer width="100%" height="100%">
                 <AreaChart
                     width={500}

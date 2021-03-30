@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment, useState } from 'react'
-import { PageBreadCrum } from '../../components';
+import { CustomeAreaChart, PageBreadCrum } from '../../components';
 import SubGraphsBarchart from '../Dashboard/components/SubGraphsBarchart';
 import ForAllBrokers from './tabs/ForAllBrokers';
 import ForEachReinsurerTab from './tabs/ForEachReinsurerTab'
@@ -93,9 +93,9 @@ const active = "border-indigo-500 text-indigo-600 flex-1 py-4 px-1 text-center b
 type Tabs = "for_each_reinsurer" | "for_each_broker" | "for_all_brokers" | "for_all_reinsurers"
 
 const bars = [
-    { name: "paid", color: "#BA5624", title: "Total Paid Premium" },
-    { name: "outstanding", color: "#381D2A", title: "Total Outstanding Premium" },
-    { name: "total", color: "#FCDE9C", title: "Total Premium" }
+    { dataKey: "paid", color: "#BA5624", title: "Total Paid Premium" },
+    { dataKey: "outstanding", color: "#381D2A", title: "Total Outstanding Premium" },
+    { dataKey: "total", color: "#FCDE9C", title: "Total Premium" }
 ]
 const OffersPlacedExpansion = (props: Props) => {
     const [tab, setTab] = useState<Tabs>("for_each_reinsurer")
@@ -106,7 +106,7 @@ const OffersPlacedExpansion = (props: Props) => {
                     <PageBreadCrum page="Placed Offers Summary" />
                     <div />
                     <div className="">
-                        <SubGraphsBarchart bars={bars} data={data} />
+                        <CustomeAreaChart lines={bars} data={data} />
                     </div>
                     <div>
                         <dl className="mt-5 grid grid-cols-1 rounded-lg bg-white overflow-hidden shadow divide-y divide-gray-200 md:grid-cols-2 md:divide-y-0 md:divide-x">
