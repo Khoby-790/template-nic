@@ -7,7 +7,9 @@ interface Props {
 const RealtimeFloatingStats = (props: Props) => {
     const [time, setTime] = useState<string>(new Date().toTimeString())
     useEffect(() => {
-
+        setInterval(() => {
+            setTime(new Date().toTimeString())
+        }, 1000)
     }, [])
     return (
         <Fragment>
