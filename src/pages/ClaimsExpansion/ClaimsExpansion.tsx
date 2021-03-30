@@ -103,7 +103,7 @@ const ClaimsExpansion = (props: Props) => {
                 <div>
                     <PageBreadCrum page="Claims Summary" />
                     <div />
-                    <div className="h-96 bg-white mt-3 py-3">
+                    <div className="h-auto bg-white mt-3 py-3">
                         <CustomeAreaChart lines={lines} data={data} />
                     </div>
                     <div>
