@@ -5,13 +5,24 @@ interface Props {
 }
 
 const RealtimeFloatingStats = (props: Props) => {
+    const [showDetails, setShowDetails] = useState<boolean>(false)
     const [time, setTime] = useState<string>(new Date().toTimeString())
     const [currentDate] = useState<string>(new Date().toDateString())
     useEffect(() => {
         setInterval(() => {
             setTime(new Date().toTimeString())
         }, 1000)
-    }, [])
+    }, []);
+
+
+    if (!showDetails) {
+        return (
+            <div className="absolute bottom-10 w-auto right-6 shadow-xl rounded-lg bg-white-100">
+                Hello
+            </div>
+        )
+    }
+
     return (
         <Fragment>
             <div className="absolute bottom-10 w-6/12 right-6 shadow-xl rounded-lg bg-gray-100">
