@@ -28,9 +28,9 @@ const RealtimeFloatingStats = (props: Props) => {
                     </div>
                 </div>
                 <div className="w-full">
-                    <div className="py-2 align-middle inline-block sm:px-2">
-                        <div className="shadow border-b border-gray-200 sm:rounded-lg">
-                            <table className="divide-y divide-gray-200" >
+                    <div className="py-2 min-w-full align-middle inline-block sm:px-2">
+                        <div className="shadow align-middle border-b min-w-full border-gray-200 sm:rounded-lg">
+                            <table className="min-w-full divide-y divide-gray-200" >
                                 <thead>
                                     <tr>
                                         <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
@@ -57,7 +57,6 @@ const RealtimeFloatingStats = (props: Props) => {
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                             <span>GHC</span>
-                                            <span>12,000</span>
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                             <span>GHC</span>
