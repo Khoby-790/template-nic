@@ -18,7 +18,7 @@ const FromEachReinsurerTab = (props: Props) => {
                 <div className="flex flex-col">
                     <span className="text-xl font-bold">Summary</span>
                     {/* <span className="font-light">Visal Reinsurance Brokers</span> */}
-                    <span className="font-light">Total NIC Levies for 2021</span>
+                    <span className="font-light">Total Premium for 2021</span>
                 </div>
                 <div className="flex">
                     <div className="flex border  mr-2 p-2 mb-1 rounded items-baseline">
