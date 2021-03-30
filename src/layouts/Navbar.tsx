@@ -142,9 +142,12 @@ const Navbar = (props: Props) => {
           From: "opacity-100"
           To: "opacity-0"
       --> */}
-                    <div className="hidden sm:block sm:fixed sm:inset-0 md:hidden" aria-hidden="true">
-                        <div className="absolute inset-0 bg-gray-600 opacity-75"></div>
-                    </div>
+                    <Transition show={false}>
+                        <div className="hidden sm:block sm:fixed sm:inset-0 md:hidden" aria-hidden="true">
+                            <div className="absolute inset-0 bg-gray-600 opacity-75"></div>
+                        </div>
+                    </Transition>
+
 
                     {/* <!--
         Mobile menu, toggle classes based on menu state.
