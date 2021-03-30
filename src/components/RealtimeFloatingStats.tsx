@@ -48,18 +48,17 @@ const RealtimeFloatingStats = (props: Props) => {
                                             Brokers
                                         </th>
                                         <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            Plicy
+                                            Policy Type
                                         </th>
                                         <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                             Premium
                                         </th>
                                         <th scope="col" className="relative px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            Reinsurer
+                                            Reinsured
                                         </th>
                                         <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                             Timestamp
                                         </th>
-
                                     </tr>
                                 </thead>
                                 <tbody>
