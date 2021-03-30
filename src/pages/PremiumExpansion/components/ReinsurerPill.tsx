@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment, useState } from 'react'
 import { Modal } from '../../../components'
+import InsurersList from '../tabs/InsurersList';
 import ReinsurersList from '../tabs/ReinsurersList';
 import DisplayBarChart from './DisplayBarChart'
 
@@ -114,7 +115,7 @@ const ReinsurerPill = ({ name }: Props) => {
                     </div>
                     {tabs === "stats" && <DisplayBarChart />}
                     {tabs === "reinsurers" && <ReinsurersList />}
-                    {tabs === "insurers" && <ReinsurersList />}
+                    {tabs === "insurers" && <InsurersList />}
                 </Fragment>
             </Modal>
         </>
