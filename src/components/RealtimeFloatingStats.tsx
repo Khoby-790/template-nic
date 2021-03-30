@@ -7,7 +7,7 @@ interface Props {
 const colors = ["green", "red", "yellow", "indigo"]
 
 const RealtimeFloatingStats = (props: Props) => {
-    const [showDetails, setShowDetails] = useState<boolean>(true)
+    const [showDetails, setShowDetails] = useState<boolean>(false)
     const [time, setTime] = useState<string>(new Date().toTimeString())
     const [currentDate] = useState<string>(new Date().toDateString())
     useEffect(() => {
