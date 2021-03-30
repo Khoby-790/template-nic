@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 
 interface Props {
 
@@ -11,9 +11,18 @@ function getRandomArbitrary(min, max) {
 const colors = ["green", "red", "yellow", "indigo"]
 const companies = ["VRB", "KRB", "ARB", "VRBb"]
 
+type Item = {
+    color: string;
+    company: string;
+}
+
 const RealtimeBreakDown = (props: Props) => {
+    const [items, setItems] = useState<Item[]>([])
     useEffect(() => {
-        const _i = setInterval(() => { }, 3000)
+        const _i = setInterval(() => {
+            const newItems: Item[] = colors.map((el, id) => ({ color: el, company: companies[id] }))
+            setItems(newItems)
+        }, 3000)
         return () => {
             clearInterval(_i)
         }
@@ -35,9 +44,9 @@ const RealtimeBreakDown = (props: Props) => {
                 </div>
                 <Fragment>
                     <div>
-                        {colors.map((color, id) => (
+                        {items.map((item, id) => (
                             <div className="my-2 flex justify-between" key={id}>
-                                <span className={`bg-${color}-300 px-2 rounded text-${color}-700`}>{companies[id]}</span>
+                                <span className={`bg-${item.color}-300 px-2 rounded text-${item.color}-700`}>{item.company}</span>
                                 <span>{getRandomArbitrary(6, 25).toFixed()}</span>
                             </div>
                         ))}
