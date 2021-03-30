@@ -2,6 +2,7 @@
 import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../assets/nic-logo.png'
+import RealtimeBreakDown from '../components/RealtimeBreakDown'
 
 interface Props {
 
@@ -135,7 +136,7 @@ const Sidebar = (props: Props) => {
                                 </Link>
                             </nav>
                         </div>
-                        
+                        <RealtimeBreakDown />
                         <div className="flex-shrink-0 flex bg-gray-700 p-4">
                             <a href="#" className="flex-shrink-0 w-full group block">
                                 <div className="flex items-center">
