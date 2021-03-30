@@ -118,7 +118,7 @@ const InsurersList = (props: Props) => {
                                         {/* <!-- Odd row --> */}
                                         <tr className="bg-white">
                                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                                Aveni Reinsurance Company Limited
+                                                Waica Reinsurance Corporation Plc
                                         </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                                 <span>GHC</span>
@@ -138,7 +138,7 @@ const InsurersList = (props: Props) => {
                                         {/* <!-- Even row --> */}
                                         <tr className="bg-gray-50">
                                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                                Ghana Reinsurance Company Limited
+                                                Star Assurance Company Limited
                                         </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                                 <span>GHC</span>
@@ -156,7 +156,7 @@ const InsurersList = (props: Props) => {
                                         </tr>
                                         <tr className="bg-white">
                                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                                GN Reinsurance Company Limited
+                                                Glico General Insurance Company Limited
                                         </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                                 <span>GHC</span>
@@ -174,7 +174,7 @@ const InsurersList = (props: Props) => {
                                         </tr>
                                         <tr className="bg-gray-50">
                                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                                Mainstream Reinsurance Company Limited
+                                                SIC Insurance Company Limited
                                         </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                                 <span>GHC</span>
