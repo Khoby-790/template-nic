@@ -1,7 +1,6 @@
 import React, { Fragment, lazy, Suspense } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import { Loader } from '../components'
-import Dashboard from '../pages/Dashboard/Dashboard'
 const NewDashboard = lazy(() => import('../pages/NewDashboard/NewDashboard'))
 const NicStatsExpansion = lazy(() => import('../pages/NicStatsExpansion/NicStatsExpansion'))
 const PremiumExpansion = lazy(() => import('../pages/PremiumExpansion/PremiumExpansion'))
