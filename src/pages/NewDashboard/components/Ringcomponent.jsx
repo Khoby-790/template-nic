@@ -2,8 +2,6 @@ import React from "react";
 import {
   Chart,
   Interval,
-  Axis,
-  Tooltip,
   Coordinate,
   Legend,
   View,
