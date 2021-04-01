@@ -20,9 +20,11 @@ const content2 = {
 
 const OffersPlaced = () => {
   return (
-    <div className="bg-white mx-2 shadow-lg items-start flex flex-col lg:flex-row">
+    <div className="bg-white mx-2 sm:my-4 shadow-lg items-start flex flex-col lg:flex-row">
       <div className="flex flex-1 w-full items-center justify-center">
         <Ringcomponent data={myData} content={myContent} />
+      </div>
+      <div className="flex flex-1 w-full items-center justify-center">
         <Ringcomponent data={myData} content={content2} />
       </div>
       <div className="mx-3 py-4 px-5 flex-col flex-1 flex justify-center items-center">
