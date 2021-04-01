@@ -21,6 +21,9 @@ const content2 = {
 const OffersPlaced = () => {
   return (
     <div className="bg-white mx-2 shadow-lg items-start flex flex-col lg:flex-row">
+      <div className="flex items-center justify-center">
+
+      </div>
       <Ringcomponent data={myData} content={myContent} />
       <Ringcomponent data={myData} content={content2} />
       <div className="mx-3 py-4 px-5 flex-col flex-1 flex justify-center items-center">
