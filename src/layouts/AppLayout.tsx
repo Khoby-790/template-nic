@@ -20,7 +20,7 @@ const AppLayout = ({ history, match }: Props) => {
                 <Sidebar />
                 <div className="flex-1 flex flex-col h-full">
                     <Navbar />
-                    <div className="bg-gray-100 flex-1 max-h-full h-full overflow-y-scroll">
+                    <div className="bg-gray-100 lg:flex-1 sm:mx-5 max-h-full h-full overflow-y-scroll">
                         <AppContent />
                     </div>
                 </div>
