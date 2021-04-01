@@ -28,8 +28,8 @@ const OffersPlaced = () => {
         <Ringcomponent data={myData} content={content2} />
       </div>
       <div className="mx-3 py-4 px-5 flex-col flex-1 flex justify-center items-center">
-        <div className="flex h-auto justify-end w-full">
-          <div className="flex">
+        <div className="flex sm:flex-1 h-auto justify-end w-full">
+          <div className="flex sm:justify-between w-full flex-1 bg-red-400">
             <div className="flex border  mr-2 p-2 mb-1 rounded items-baseline">
               <label className="mr-3" htmlFor="">
                 currency
