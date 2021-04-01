@@ -2,7 +2,6 @@
 import React, { Fragment, useState } from 'react'
 import { CustomeAreaChart, PageBreadCrum } from '../../components';
 import ForAllBrokers from './tabs/ForAllBrokers';
-import ForEachReinsurerTab from './tabs/ForEachReinsurerTab'
 import FromEachReinsuredTab from './tabs/FromEachReinsuredTab';
 import FromEachReinsurerTab from './tabs/FromEachReinsurerTab';
 interface Props {
