@@ -19,7 +19,7 @@ const AppContent = (props: Props) => {
     return (
         <Fragment>
             <main className="min-w-0 flex-1 border-t border-gray-200 lg:flex">
-                <section aria-labelledby="primary-heading" className="min-w-0 transition duration-500 flex-1 h-full flex bg-red-500 flex-col overflow-y-scroll lg:order-last">
+                <section aria-labelledby="primary-heading" className="min-w-0 transition duration-500 flex-1 h-full flex bg-red-500 flex-col lg:order-last">
                     <h1 id="primary-heading" className="sr-only">Home</h1>
                     <Suspense fallback={<Loader />}>
                         <Switch>
