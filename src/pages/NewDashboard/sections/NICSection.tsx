@@ -91,8 +91,8 @@ const NICSection = (props: Props) => {
     return (
         <>
             <div className="bg-white shadow-lg my-4">
-                <div className="h-16 flex lg:flex-row flex-col justify-between py-2 px-3">
-                    <div className="flex sm:w-full">
+                <div className="lg:h-16 h-auto flex lg:flex-row flex-col justify-between py-2 px-3">
+                    <div className="flex">
                         <div className=" mr-3">
                             <svg className="h-12 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
@@ -103,7 +103,7 @@ const NICSection = (props: Props) => {
                             <span className="text-sm font-light">Bar Graph that gives a detailed description of the levies  </span>
                         </div>
                     </div>
-                    <div className="flex">
+                    <div className="flex justify-between">
                         <div className="flex border  mr-2 p-2 mb-1 rounded items-baseline">
                             <label className="mr-3" htmlFor="">Filter by currency</label>
                             <select name="" id="">
