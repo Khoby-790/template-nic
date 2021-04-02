@@ -90,7 +90,7 @@ const lines = [
 
 const ClaimsSection = (props: Props) => {
     return (
-        <div className="bg-white shadow-lg my-4">
+        <div className="bg-white shadow-lg my-4 mb-4">
             <div className="lg:h-16 h-auto flex flex-col lg:flex-row justify-between py-2 px-3">
                 <div className="flex">
                     <div className=" mr-3">
