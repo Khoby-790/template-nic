@@ -3,7 +3,6 @@ import React, { Fragment, useState } from 'react'
 import { PageBreadCrum } from '../../components';
 import SubGraphsBarchart from '../Dashboard/components/SubGraphsBarchart';
 import ForAllBrokers from './tabs/ForAllBrokers';
-import ForEachReinsurerTab from './tabs/ForEachReinsurerTab'
 import FromEachReinsuredTab from './tabs/FromEachReinsuredTab';
 import FromEachReinsurerTab from './tabs/FromEachReinsurerTab';
 
@@ -201,11 +200,10 @@ const NicStatsExpansion = (props: Props) => {
                     <div>
                         <div className="sm:hidden my-3">
                             <label htmlFor="tabs" className="sr-only">Select a tab</label>
-                            <select id="tabs" name="tabs" className="block w-full p-2 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
-                                <option>My Account</option>
-                                <option>Company</option>
-                                <option selected>Team Members</option>
-                                <option>Billing</option>
+                            <select onChange={e => setTab(e.target.value)} id="tabs" name="tabs" className="block w-full p-2 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
+                                <option value="for_all_brokers">For All Brokers</option>
+                                <option value="for_all_brokers">From Each Reinsured</option>
+                                <option value="for_all_brokers">From Each Reinsurer</option>
                             </select>
                         </div>
                         <div className="hidden sm:block">
