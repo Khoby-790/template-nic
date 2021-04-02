@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment, useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
+import logo from '../assets/nic-logo.png'
 import avatar from '../assets/23511370.jpg'
 import { Transition } from '../components'
 import { useOutsideClick } from '../hooks'
@@ -18,12 +19,13 @@ const Navbar = (props: Props) => {
         <Fragment>
             <header className="flex-shrink-0 relative h-16 bg-white flex items-center">
                 {/* <!-- Logo area --> */}
-                {/* <div className="absolute inset-y-0 z-10 left-0 md:static md:flex-shrink-0">
+                <div className="absolute inset-y-0 z-10 left-0 md:static md:flex-shrink-0">
                     <a href="#" className="flex items-center z-10 justify-center h-16 w-16 bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600 md:w-20">
                         <img className="h-11 w-auto" src={logo} alt="Workflow" />
                     </a>
-                </div> */}
+                </div>
 
+               
 
                 {/* <!-- Menu button area --> */}
                 <div className="absolute inset-y-0 right-0 pr-4 flex items-center sm:pr-6 md:hidden">
@@ -121,7 +123,7 @@ const Navbar = (props: Props) => {
           From: "opacity-100"
           To: "opacity-0"
       --> */}
-                    <Transition show={false}>
+                    <Transition show={true}>
                         <div className="hidden sm:block sm:fixed sm:inset-0 md:hidden" aria-hidden="true">
                             <div className="absolute inset-0 bg-gray-600 opacity-75"></div>
                         </div>
