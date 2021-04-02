@@ -114,7 +114,7 @@ const PremiumSection = (props: Props) => {
                 </div>
 
             </div>
-            <div className="flex h-96">
+            <div className="flex flex-col lg:flex-row lg:h-96 h-auto">
                 <div className="flex flex-row w-full h-full">
                     <div className="grid px-5 grid-cols-1 gap-y-3">
                         <div className="flex flex-col">
