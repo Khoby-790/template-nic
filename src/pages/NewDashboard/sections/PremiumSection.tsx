@@ -114,14 +114,14 @@ const PremiumSection = (props: Props) => {
                 </div>
 
             </div>
-            <div className="flex flex-col lg:flex-row lg:h-96 h-auto">
-                <div className="flex flex-row w-full h-full">
+            <div className="flex lg:h-96 h-auto">
+                <div className="flex lg:flex-row flex-col w-full h-full">
                     <div className="grid px-5 grid-cols-1 gap-y-3">
-                        <div className="flex flex-col">
+                        <div className="flex items-center lg:items-start flex-col">
                             <span className="font-bold text-2xl text-gray-600">121,000</span>
                             <span className="font-light text-gray-600">Total</span>
                         </div>
-                        <div className="flex flex-col">
+                        <div className="flex items-center lg:items-start flex-col">
                             <span className="font-bold text-2xl text-gray-600">672,000</span>
                             <span className="font-light text-gray-600">Outstanding</span>
                         </div>
