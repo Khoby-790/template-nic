@@ -14,7 +14,8 @@ interface Props {
 const Navbar = (props: Props) => {
     const profileRef = useRef(null);
     useOutsideClick(profileRef, () => setShowProfileMenu(false));
-    const [showProfileMenu, setShowProfileMenu] = useState(false)
+    const [showProfileMenu, setShowProfileMenu] = useState<boolean>(false);
+    const [showSideBar, setShowSideBar] = useState<boolean>(true)
     return (
         <Fragment>
             <header className="flex-shrink-0 relative h-16 bg-white flex items-center">
@@ -112,7 +113,15 @@ const Navbar = (props: Props) => {
                 </div>
 
                 {/* <!-- Mobile menu, show/hide this `div` based on menu open/closed state --> */}
-                <Transition show={false}>
+                <Transition
+                    show={showSideBar}
+                    enter="transition-opacity ease-linear duration-300"
+                    enterFrom="opacity-0"
+                    enterTo="opacity-100"
+                    leave="transition-opacity ease-linear duration-300"
+                    leaveFrom="opacity-100"
+                    leaveTo="opacity-0"
+                >
                     <div className="fixed inset-0 z-40 md:hidden">
                         {/* <!--
         Off-canvas menu overlay, show/hide based on off-canvas menu state.
@@ -140,7 +149,14 @@ const Navbar = (props: Props) => {
           From: "transform opacity-100 scale-100 sm:translate-x-0 sm:scale-100 sm:opacity-100"
           To: "transform opacity-0 scale-110  sm:translate-x-full sm:scale-100 sm:opacity-100"
       --> */}
-                        <Transition show={false}>
+                        <Transition
+                            enter="ransition ease-out duration-150 sm:ease-in-out sm:duration-300"
+                            enterFrom="transform opacity-0 scale-110 sm:translate-x-full sm:scale-100 sm:opacity-100"
+                            enterTo="transform opacity-100 scale-100  sm:translate-x-0 sm:scale-100 sm:opacity-100"
+                            leave="transition ease-in duration-150 sm:ease-in-out sm:duration-300"
+                            leaveFrom="transform opacity-100 scale-100 sm:translate-x-0 sm:scale-100 sm:opacity-100"
+                            leaveTo="transform opacity-0 scale-110  sm:translate-x-full sm:scale-100 sm:opacity-100"
+                        >
                             <nav className="fixed z-40 inset-0 h-full w-full bg-white sm:inset-y-0 sm:left-auto sm:right-0 sm:max-w-sm sm:w-full sm:shadow-lg md:hidden" aria-label="Global">
                                 <div className="h-16 flex items-center justify-between px-4 sm:px-6">
                                     <a href="#">
