@@ -20,7 +20,7 @@ const Navbar = (props: Props) => {
         <Fragment>
             <header className="flex-shrink-0 relative h-16 bg-white flex items-center">
                 {/* <!-- Logo area --> */}
-                <div className="absolute inset-y-0 z-10 left-0 md:static md:flex-shrink-0">
+                <div className="absolute lg:hidden inset-y-0 z-10 left-0 md:static md:flex-shrink-0">
                     <a href="#" className="flex items-center z-10 justify-center h-16 w-16 bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600 md:w-20">
                         <img className="h-11 w-auto" src={logo} alt="Workflow" />
                     </a>
@@ -45,7 +45,7 @@ const Navbar = (props: Props) => {
                     <div className="min-w-0 flex-1">
                         <div className="max-w-2xl relative text-gray-400 focus-within:text-gray-500">
                             <label htmlFor="search" className="sr-only">Search</label>
-                            <input id="search" type="search" placeholder="Search" className="block w-full border-transparent pl-12 placeholder-gray-500 focus:border-transparent sm:text-sm focus:ring-0" />
+                            <input id="search" type="search" placeholder="Search" className="hidden w-full border-transparent pl-12 placeholder-gray-500 focus:border-transparent sm:text-sm focus:ring-0" />
                             <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center justify-center pl-4">
                                 {/* <!-- Heroicon name: solid/search --> */}
                                 <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
