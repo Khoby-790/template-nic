@@ -202,8 +202,8 @@ const NicStatsExpansion = (props: Props) => {
                             <label htmlFor="tabs" className="sr-only">Select a tab</label>
                             <select onChange={e => setTab(e.target.value)} id="tabs" name="tabs" className="block w-full p-2 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
                                 <option value="for_all_brokers">For All Brokers</option>
-                                <option value="for_all_brokers">From Each Reinsured</option>
-                                <option value="for_all_brokers">From Each Reinsurer</option>
+                                <option value="for_each_reinsurer">From Each Reinsured</option>
+                                <option value="for_each_broker">From Each Reinsurer</option>
                             </select>
                         </div>
                         <div className="hidden sm:block">
