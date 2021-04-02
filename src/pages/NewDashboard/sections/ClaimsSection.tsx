@@ -119,7 +119,7 @@ const ClaimsSection = (props: Props) => {
                     </Link>
                 </div>
             </div>
-            <div className="flex lg:h-64 h-auto">
+            <div className="flex h-auto">
                 <div className="flex-1">
                     <CustomeAreaChart data={data} lines={lines} />
                 </div>
