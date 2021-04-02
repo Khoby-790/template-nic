@@ -15,7 +15,7 @@ const Navbar = (props: Props) => {
     const profileRef = useRef(null);
     useOutsideClick(profileRef, () => setShowProfileMenu(false));
     const [showProfileMenu, setShowProfileMenu] = useState<boolean>(false);
-    const [showSideBar, setShowSideBar] = useState<boolean>(true)
+    const [showSideBar, setShowSideBar] = useState<boolean>(false)
     return (
         <Fragment>
             <header className="flex-shrink-0 relative h-16 bg-white flex items-center">
