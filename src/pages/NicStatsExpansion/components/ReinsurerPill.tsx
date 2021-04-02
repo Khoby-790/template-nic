@@ -23,7 +23,7 @@ const ReinsurerPill = ({ name }: Props) => {
                     <img className="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixqx=ah3lxr8uqw&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
                 </div>
                 <div className="flex-1 min-w-0">
-                    <div className="flex">
+                    <div className="flex flex-col lg:flex-row">
                         <div className="">
                             <a href="#" className="focus:outline-none">
                                 {/* <span className="absolute inset-0" aria-hidden="true"></span> */}
