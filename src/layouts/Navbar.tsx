@@ -187,10 +187,10 @@ const Navbar = (props: Props) => {
 
                                     <Link to="/nic" className="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-100">NIC Levy</Link>
 
-                                    <Link to="/nic" className="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-100">Premium</Link>
-                                    <Link to="/nic" className="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-100">Claims</Link>
-                                    <Link to="/nic" className="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-100">Offers placed</Link>
-                                    <Link to="/nic" className="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-100">Reports</Link>
+                                    <Link to="/premium" className="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-100">Premium</Link>
+                                    <Link to="/claims" className="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-100">Claims</Link>
+                                    <Link to="/_offers" className="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-100">Offers placed</Link>
+                                    <Link to="/reports" className="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-100">Reports</Link>
                                 </div>
                                 <div className="border-t border-gray-200 pt-4 pb-3">
                                     <div className="max-w-8xl mx-auto px-4 flex items-center sm:px-6">
