@@ -199,7 +199,7 @@ const NicStatsExpansion = (props: Props) => {
 
 
                     <div>
-                        <div className="sm:hidden">
+                        <div className="sm:hidden my-3">
                             <label htmlFor="tabs" className="sr-only">Select a tab</label>
                             <select id="tabs" name="tabs" className="block w-full focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
                                 <option>My Account</option>
