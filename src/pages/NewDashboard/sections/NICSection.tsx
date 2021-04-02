@@ -91,7 +91,7 @@ const NICSection = (props: Props) => {
     return (
         <>
             <div className="bg-white shadow-lg my-4">
-                <div className="h-16 flex justify-between py-2 px-3">
+                <div className="h-16 flex flex-row sm:flex-col justify-between py-2 px-3">
                     <div className="flex">
                         <div className=" mr-3">
                             <svg className="h-12 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
