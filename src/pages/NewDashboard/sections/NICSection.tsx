@@ -103,7 +103,7 @@ const NICSection = (props: Props) => {
                             <span className="text-sm font-light">Bar Graph that gives a detailed description of the levies  </span>
                         </div>
                     </div>
-                    <div className="flex justify-between">
+                    <div className="flex justify-between my-3 lg:my-0">
                         <div className="flex border  mr-2 p-2 mb-1 rounded items-baseline">
                             <label className="mr-3" htmlFor="">Filter by currency</label>
                             <select name="" id="">
@@ -119,7 +119,7 @@ const NICSection = (props: Props) => {
                         </Link>
                     </div>
                 </div>
-                <div className="flex h-96">
+                <div className="flex flex-col lg:flex-row lg:h-96 h-auto">
                     <div className="flex-1">
                         <SubGraphsBarchart data={data} bars={bars} />
                     </div>
