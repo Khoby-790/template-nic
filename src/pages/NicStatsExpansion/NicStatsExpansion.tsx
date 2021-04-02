@@ -99,7 +99,7 @@ const bars = [
 ]
 
 const NicStatsExpansion = (props: Props) => {
-    const [tab, setTab] = useState<Tabs>("for_each_reinsurer")
+    const [tab, setTab] = useState<string>("for_each_reinsurer")
     return (
         <Fragment>
             <div className="px-3 py-4">
