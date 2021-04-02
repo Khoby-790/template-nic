@@ -40,9 +40,8 @@ const FromEachReinsurerTab = (props: Props) => {
                     </div>
                 </div>
             </div>
-            <div className="flex h-11 justify-between items-center px-5 mx-5 my-3 mr-2 mb-5">
+            <div className="flex h-11 justify-between items-center px-5 lg:mx-5 mx-0 my-3 lg:mr-2 mr-0 mb-5">
                 <div className="flex-1 flex justify-between items-center">
-
                     <div className="flex-1 flex justify-start lg:justify-end px-2">
                         <input placeholder="search" type="search" className="border-gray-200 focus:outline-none px-3 border h-10 lg:w-1/2 w-full" />
                     </div>
