@@ -183,17 +183,17 @@ const Navbar = (props: Props) => {
                                     </div>
                                 </div>
                                 <div className="max-w-8xl mx-auto py-3 px-2 sm:px-4">
-                                    <a href="#" className="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-100">Inboxes</a>
+                                    <Link to="/" className="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-100">Inboxes</Link>
 
-                                    <a href="#" className="block rounded-md py-2 pl-5 pr-3 text-base font-medium text-gray-500 hover:bg-gray-100">Technical Support</a>
+                                    <Link to="/nic" className="block rounded-md py-2 pl-5 pr-3 text-base font-medium text-gray-500 hover:bg-gray-100">Technical Support</Link>
 
-                                    <a href="#" className="block rounded-md py-2 pl-5 pr-3 text-base font-medium text-gray-500 hover:bg-gray-100">Sales</a>
+                                    <Link to="/nic" className="block rounded-md py-2 pl-5 pr-3 text-base font-medium text-gray-500 hover:bg-gray-100">Sales</Link>
 
-                                    <a href="#" className="block rounded-md py-2 pl-5 pr-3 text-base font-medium text-gray-500 hover:bg-gray-100">General</a>
+                                    <Link to="/nic" className="block rounded-md py-2 pl-5 pr-3 text-base font-medium text-gray-500 hover:bg-gray-100">General</Link>
 
-                                    <a href="#" className="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-100">Reporting</a>
+                                    <Link to="/nic" className="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-100">Reporting</Link>
 
-                                    <a href="#" className="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-100">Settings</a>
+                                    <Link to="/nic" className="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-100">Settings</Link>
                                 </div>
                                 <div className="border-t border-gray-200 pt-4 pb-3">
                                     <div className="max-w-8xl mx-auto px-4 flex items-center sm:px-6">
