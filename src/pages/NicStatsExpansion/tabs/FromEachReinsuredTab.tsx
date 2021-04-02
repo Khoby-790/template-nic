@@ -15,13 +15,14 @@ const FromEachReinsuredTab = (props: Props) => {
     useOutsideClick(saveOptionsREf, () => setShowSaveOptions(false))
     return (
         <div className="">
-            <div className="h-auto px-4 py-3 flex justify-between">
+            <div className="h-auto px-4 py-3 flex flex-col lg:flex-row justify-between">
                 <div className="flex flex-col">
                     <span className="text-xl font-bold">Summary</span>
+                    {/* <span className="font-light">Visal Reinsurance Brokers</span> */}
                     <span className="font-light">Total NIC Levies for 2021</span>
                 </div>
-                <div className="flex">
-                    <div className="flex border  mr-2 p-2 mb-1 rounded items-baseline">
+                <div className="flex flex-col lg:flex-row">
+                    <div className="flex border  lg:mr-2 sm:mr-0 p-2 mb-1 justify-between rounded items-baseline">
                         <label className="mr-3" htmlFor="">Filter by currency</label>
                         <select name="" id="">
                             <option value="">GHC</option>
@@ -39,11 +40,10 @@ const FromEachReinsuredTab = (props: Props) => {
                     </div>
                 </div>
             </div>
-            <div className="flex h-11 justify-between items-center px-5 mx-5 my-3 mr-2 mb-5">
+            <div className="flex h-11 justify-between items-center px-5 lg:mx-5 mx-0 my-3 lg:mr-2 mr-0 mb-5">
                 <div className="flex-1 flex justify-between items-center">
-
-                    <div className="flex-1 flex justify-end px-2">
-                        <input placeholder="search" type="search" className="border-gray-200 focus:outline-none px-3 border h-10 w-1/2" />
+                    <div className="flex-1 flex justify-start lg:justify-end px-2">
+                        <input placeholder="search" type="search" className="border-gray-200 focus:outline-none px-3 border h-10 lg:w-1/2 w-full" />
                     </div>
                 </div>
                 <div className="w-auto">
