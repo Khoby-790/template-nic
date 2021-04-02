@@ -125,15 +125,15 @@ const NICSection = (props: Props) => {
                     </div>
                     <div className="px-5 grid grid-cols-1 gap-y-3">
 
-                        <div className="flex flex-col">
+                        <div className="flex items-center lg:items-start flex-col">
                             <span className="font-bold text-2xl text-gray-600">121,000</span>
                             <span className="font-light text-gray-600">Total</span>
                         </div>
-                        <div className="flex flex-col">
+                        <div className="flex items-center lg:items-start flex-col">
                             <span className="font-bold text-2xl text-gray-600">672,000</span>
                             <span className="font-light text-gray-600">Outstanding</span>
                         </div>
-                        <div className="flex flex-col">
+                        <div className="flex items-center lg:items-start flex-col">
                             <span className="font-bold text-2xl text-gray-600">4,506,000</span>
                             <span className="font-light text-gray-600">Paid</span>
                         </div>
