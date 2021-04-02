@@ -160,7 +160,7 @@ const Navbar = (props: Props) => {
                             <nav className="fixed z-40 inset-0 h-full w-full bg-white sm:inset-y-0 sm:left-auto sm:right-0 sm:max-w-sm sm:w-full sm:shadow-lg md:hidden" aria-label="Global">
                                 <div className="h-16 flex items-center justify-between px-4 sm:px-6">
                                     <a href="#">
-                                        <img className="block h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=500" alt="Workflow" />
+                                        <img className="block h-8 w-auto" src={logo} alt="Workflow" />
                                     </a>
                                     <button onClick={() => setShowSideBar(false)} type="button" className="-mr-2 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600" aria-expanded="false">
                                         <span className="sr-only">Open main menu</span>
@@ -170,7 +170,7 @@ const Navbar = (props: Props) => {
                                         </svg>
                                     </button>
                                 </div>
-                                <div className="mt-2 max-w-8xl mx-auto px-4 sm:px-6">
+                                <div className="mt-2 hidden max-w-8xl mx-auto px-4 sm:px-6">
                                     <div className="relative text-gray-400 focus-within:text-gray-500">
                                         <label htmlFor="search" className="sr-only">Search all inboxes</label>
                                         <input id="search" type="search" placeholder="Search all inboxes" className="block w-full border-gray-300 rounded-md pl-10 placeholder-gray-500 focus:border-indigo-600 focus:ring-indigo-600" />
