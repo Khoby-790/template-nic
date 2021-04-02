@@ -91,7 +91,7 @@ const lines = [
 const ClaimsSection = (props: Props) => {
     return (
         <div className="bg-white shadow-lg my-4">
-            <div className="lg:h-16 h-auto flex justify-between py-2 px-3">
+            <div className="lg:h-16 h-auto flex flex-col lg:flex-row justify-between py-2 px-3">
                 <div className="flex">
                     <div className=" mr-3">
                         <svg className="h-12 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -103,7 +103,7 @@ const ClaimsSection = (props: Props) => {
                         <span className="text-sm font-light">Brief But detailed description of claims in it's enirety</span>
                     </div>
                 </div>
-                <div className="flex">
+                <div className="flex justify-between my-3 lg:my-0">
                     <div className="flex border  mr-2 p-2 mb-1 rounded items-baseline">
                         <label className="mr-3" htmlFor="">Filter by currency</label>
                         <select name="" id="">
@@ -119,7 +119,7 @@ const ClaimsSection = (props: Props) => {
                     </Link>
                 </div>
             </div>
-            <div className="flex h-64">
+            <div className="flex lg:h-64 h-auto">
                 <div className="flex-1">
                     <CustomeAreaChart data={data} lines={lines} />
                 </div>
