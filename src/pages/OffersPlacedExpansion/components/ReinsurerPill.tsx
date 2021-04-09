@@ -56,7 +56,7 @@ const ReinsurerPill = ({ name }: Props) => {
             </div>
 
             <Modal size={80} show={showGraph} setShow={setShowGraph}>
-                <DisplayBarChart />
+                <DisplayBarChart name={name} />
             </Modal>
         </>
     )
