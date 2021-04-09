@@ -17,7 +17,7 @@ interface Props {
 
 
 
-type Tabs = "for_each_reinsurer" | "for_each_broker" | "for_all_brokers" | "for_all_reinsurers"
+
 
 
 
@@ -31,7 +31,6 @@ const NicStatsExpansion = (props: Props) => {
                     {/* <div /> */}
                     <GraphSection />
                     <StatsSection />
-
                     <TabsSection />
 
                     <Fragment>
