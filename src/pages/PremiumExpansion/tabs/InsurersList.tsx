@@ -4,10 +4,10 @@ import { Transition } from '../../../components';
 import { useOutsideClick } from '../../../hooks';
 
 interface Props {
-
+    name?: string
 }
 
-const InsurersList = (props: Props) => {
+const InsurersList = ({ name }: Props) => {
     const saveOptionsREf = useRef(null);
     const [showSaveOptions, setShowSaveOptions] = useState<boolean>(false);
     useOutsideClick(saveOptionsREf, () => setShowSaveOptions(false));
@@ -16,7 +16,7 @@ const InsurersList = (props: Props) => {
             <div className="h-auto px-4 py-3 flex justify-between">
                 <div className="flex flex-col">
                     <span className="text-xl font-bold">Summary</span>
-                    <span className="font-light">Visal Reinsurance Brokers</span>
+                    <span className="font-light">{name || "Visal Reinsurance Brokers"}</span>
                     <span className="font-light">Total NIC Levies for 2021</span>
                 </div>
                 <div>
