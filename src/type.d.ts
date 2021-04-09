@@ -10,7 +10,7 @@ type SidebarState = {
 type SidebarDispatchType = (args: SidebarAction) => SidebarAction;
 
 type Broker = {
-  id: string;
+  id: string | number;
   name: string;
   address: string;
   contact: string;
