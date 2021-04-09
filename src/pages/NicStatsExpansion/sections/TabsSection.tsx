@@ -1,11 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment, useState } from 'react'
+import ForAllBrokers from '../tabs/ForAllBrokers';
+import FromEachReinsuredTab from '../tabs/FromEachReinsuredTab';
+import FromEachReinsurerTab from '../tabs/FromEachReinsurerTab';
 
 interface Props {
 
 }
 
-type Tabs = "for_each_reinsurer" | "for_each_broker" | "for_all_brokers" | "for_all_reinsurers"
+// type Tabs = "for_each_reinsurer" | "for_each_broker" | "for_all_brokers" | "for_all_reinsurers"
 
 const inActive = "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 flex-1 py-4 px-1 text-center border-b-2 font-medium text-sm";
 const active = "border-indigo-500 text-indigo-600 flex-1 py-4 px-1 text-center border-b-2 font-medium text-sm";
@@ -40,6 +43,13 @@ const TabsSection = (props: Props) => {
                     </div>
                 </div>
             </div>
+
+            <Fragment>
+                {tab === "for_all_brokers" && <ForAllBrokers />}
+                {tab === "for_each_broker" && <FromEachReinsurerTab />}
+                {tab === "for_each_reinsurer" && <FromEachReinsuredTab />}
+            </Fragment>
+
         </Fragment>
     )
 }
