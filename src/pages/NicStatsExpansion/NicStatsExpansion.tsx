@@ -105,20 +105,8 @@ const NicStatsExpansion = (props: Props) => {
             <div className="px-3 py-4">
                 <div>
                     <PageBreadCrum page="NIC Levy Overview" />
-                    <div />
-                    <div className="bg-white mt-4 pt-3">
-                        <div className="flex justify-end">
-                            <div className="flex border  mr-2 p-2 mb-1 rounded items-baseline">
-                                <label className="mr-3" htmlFor="">Filter by currency</label>
-                                <select name="" id="">
-                                    <option value="">GHC</option>
-                                    <option value="">GHC</option>
-                                    <option value="">GHC</option>
-                                </select>
-                            </div>
-                        </div>
-                        <SubGraphsBarchart bars={bars} data={data} />
-                    </div>
+                    {/* <div /> */}
+                    
                     <div>
                         <dl className="mt-5 grid grid-cols-1 rounded-lg bg-white overflow-hidden shadow divide-y divide-gray-200 md:grid-cols-3 md:divide-y-0 md:divide-x">
                             <div className="px-4 py-5 sm:p-6">
