@@ -14,7 +14,7 @@ export const brokers: Broker[] = [
   {
     id: 3,
     name: "Kek Reinsurance Brokers",
-    address: "4862 Columbus Crossing",
+    address: "4862 Columbus",
     contact: "+7 (753) 334-9191",
   },
   {
