@@ -37,7 +37,7 @@ const ReinsurerPill = ({ broker }: Props) => {
                                     </svg>
                                     <div className="flex flex-col">
                                         <span className="text-truncate">{broker.address} </span>
-                                        <span>Contact Details</span>
+                                        <span>{broker.contact}</span>
                                     </div>
                                 </p>
                             </a>
