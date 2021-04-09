@@ -110,7 +110,7 @@ const ReinsurerPill = ({ broker }: Props) => {
                             </div>
                         </div>
                     </div>
-                    {tabs === "stats" && <DisplayBarChart />}
+                    {tabs === "stats" && <DisplayBarChart name={broker.name} />}
                     {tabs === "reinsurers" && <ReinsurersList />}
                 </Fragment>
             </Modal>

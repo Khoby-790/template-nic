@@ -85,13 +85,13 @@ const lines = [
     { name: "outstanding", title: "Outstanding Premium", width: 2, color: "#619B8A" },
 ]
 
-const DisplayBarChart = (props: Props) => {
+const DisplayBarChart = ({ name }: Props) => {
     return (
         <Fragment>
             <div className="h-auto px-4 py-3 flex justify-between">
                 <div className="flex flex-col">
                     <span className="text-xl font-bold">Summary</span>
-                    <span className="font-light">Visal Reinsurance Brokers</span>
+                    <span className="font-light">{name || "Visal Reinsurance Brokers"}</span>
                     <span className="font-light">Total NIC Levies for 2021</span>
                 </div>
                 <div>
