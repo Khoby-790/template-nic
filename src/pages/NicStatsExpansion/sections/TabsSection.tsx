@@ -11,10 +11,7 @@ const inActive = "border-transparent text-gray-500 hover:text-gray-700 hover:bor
 const active = "border-indigo-500 text-indigo-600 flex-1 py-4 px-1 text-center border-b-2 font-medium text-sm";
 
 const TabsSection = (props: Props) => {
-    const [tab, setTab] = useState<Tabs>("for_each_reinsurer");
-
-    const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => { }
-
+    const [tab, setTab] = useState<string>("for_each_reinsurer")
     return (
         <Fragment>
             <div>
