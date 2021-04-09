@@ -76,7 +76,7 @@ const data = [
     },
 ];
 interface Props {
-
+    name?: string
 }
 
 const lines = [
