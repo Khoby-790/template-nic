@@ -25,6 +25,6 @@ export const brokers: Broker[] = [
   },
 ];
 
-export const insurers = [];
+export const insurers: Insurer[]= [];
 
 export const reinsurers = [];
