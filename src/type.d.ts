@@ -15,3 +15,10 @@ type Broker = {
   address: string;
   contact: string;
 };
+
+type Insurer = {
+  id: string | number;
+  name: string;
+  address: string;
+  contact: string;
+};
