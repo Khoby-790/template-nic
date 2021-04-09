@@ -3,6 +3,7 @@ import React, { Fragment, useState } from 'react'
 import { PageBreadCrum } from '../../components';
 import SubGraphsBarchart from '../Dashboard/components/SubGraphsBarchart';
 import GraphSection from './sections/GraphSection';
+import StatsSection from './sections/StatsSection';
 import ForAllBrokers from './tabs/ForAllBrokers';
 import FromEachReinsuredTab from './tabs/FromEachReinsuredTab';
 import FromEachReinsurerTab from './tabs/FromEachReinsurerTab';
@@ -30,7 +31,7 @@ const NicStatsExpansion = (props: Props) => {
                     <PageBreadCrum page="NIC Levy Overview" />
                     {/* <div /> */}
                     <GraphSection />
-
+                    <StatsSection />
 
                     <div>
                         <div className="sm:hidden my-3">
