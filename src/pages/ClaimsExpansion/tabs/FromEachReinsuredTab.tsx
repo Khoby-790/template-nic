@@ -12,7 +12,11 @@ const FromEachReinsuredTab = (props: Props) => {
     const saveOptionsREf = useRef(null);
     const [showGraph, setShowGraph] = useState<boolean>(false)
     const [showSaveOptions, setShowSaveOptions] = useState<boolean>(false);
-    useOutsideClick(saveOptionsREf, () => setShowSaveOptions(false))
+    useOutsideClick(saveOptionsREf, () => setShowSaveOptions(false));
+
+    const openModal = () => {}
+
+
     return (
         <div className="">
             <div className="h-auto px-4 py-3 flex justify-between">
