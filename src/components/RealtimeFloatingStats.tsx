@@ -30,7 +30,7 @@ const RealtimeFloatingStats = (props: Props) => {
 
     return (
         <Fragment>
-            <div className="fixed lg:bottom-0 bottom-0 lg:w-6/12 w-full h-screen lg:right-0 shadow-xl rounded-none bg-gray-800">
+            <div className="fixed lg:bottom-0 bottom-0 lg:w-6/12 w-full z-10 h-screen lg:right-0 shadow-xl rounded-none bg-gray-800">
                 <div className="h-9 border-b px-5 flex items-center justify-between">
                     <span className="text-lg text-gray-200">Realtime Data on placed offers</span>
                     <svg onClick={() => setShowDetails(false)} className="h-6 text-gray-200 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
