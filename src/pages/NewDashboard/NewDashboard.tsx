@@ -16,7 +16,7 @@ const NewDashboard = (props: Props) => {
     return (
         <div className="lg:px-3 sm:px-1 py-4">
             <div className="lg:flex flex-col lg:items-baseline lg:justify-end lg:flex-row">
-                <div className="lg:flex-1 sm:w-full sm:mx-2 sm:my-4">
+                <div className="lg:flex-1 sm:w-full lg:mx-2 mx-3 sm:my-4">
                     <WelcomeSection />
                 </div>
                 <div className="lg:flex-1">
