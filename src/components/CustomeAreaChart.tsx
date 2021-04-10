@@ -1,6 +1,5 @@
 import React from 'react'
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, AreaProps, CartesianGrid, Legend } from 'recharts';
-import { CurveType } from 'recharts/types/shape/Curve';
 
 interface Props {
     data: any[];

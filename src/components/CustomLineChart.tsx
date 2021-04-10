@@ -1,5 +1,5 @@
 import React from 'react'
-import { LineChart, Line, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { CurveType } from 'recharts/types/shape/Curve';
 
 interface Props {
