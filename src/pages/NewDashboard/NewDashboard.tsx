@@ -19,7 +19,7 @@ const NewDashboard = (props: Props) => {
                 <div className="lg:flex-1 sm:w-full lg:mx-2 mx-3 sm:my-4">
                     <WelcomeSection />
                 </div>
-                <div className="lg:flex-1">
+                <div className="lg:flex-1 lg:mx-0">
                     <OffersPlaced />
                 </div>
             </div>
