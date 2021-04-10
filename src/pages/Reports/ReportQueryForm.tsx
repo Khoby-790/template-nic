@@ -9,7 +9,7 @@ interface Props {
 const ReportQueryForm = (props: Props) => {
     return (
         <Fragment>
-            <div className="bg-white py-3 overflow-x-scroll h-full max-h-full  shadow-md rounded-md">
+            <div className="bg-white py-3 overflow-y-scroll h-full max-h-full  shadow-md rounded-md">
                 <div className="mx-5 mb-3">
                     <h1 className="font-bold text-xl">Report Generator</h1>
                     <p className="font-light">Provide essential information to generate report based on realtime data</p>
