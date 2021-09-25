@@ -24,4 +24,4 @@ jobs:
           server: ftp://visalinsurance.com
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: /home/u432692730/domains/comfybroker.com/nic
+          local-dir: /home/u432692730/domains/comfybroker.com/nic/
