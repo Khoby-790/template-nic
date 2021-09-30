@@ -2,6 +2,7 @@
 import React, { Fragment } from "react";
 import { PageBreadCrum } from "../../components";
 import GraphSection from "./sections/GraphSection";
+import PaymentApprovalRequests from "./sections/PaymentApprovalRequests";
 import PlacementRequests from "./sections/PlacementRequests";
 import StatsSection from "./sections/StatsSection";
 import TabsSection from "./sections/TabsSection";
@@ -18,6 +19,7 @@ const NicStatsExpansion = (props: Props) => {
           <StatsSection />
           <TabsSection />
           <PlacementRequests />
+          <PaymentApprovalRequests />
         </div>
       </div>
     </Fragment>

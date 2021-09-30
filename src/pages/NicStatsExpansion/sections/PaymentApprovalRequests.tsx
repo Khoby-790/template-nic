@@ -3,11 +3,11 @@ import PlacementItem from "../components/PlacementItem";
 
 interface Props {}
 
-const PlacementRequests = (props: Props) => {
+const PaymentApprovalRequests = (props: Props) => {
   return (
     <div className="rounded my-10 overflow-hidden">
-      <div className="bg-gray-200 mt-6 px-5 p-3 text-gray-500 uppercase">
-        Placement requests
+      <div className="bg-gray-200 mt-6 px-5 p-3 text-gray-500 uppercase ">
+        Payment Approval Requests
       </div>
       <div className="flex flex-col">
         <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -68,4 +68,4 @@ const PlacementRequests = (props: Props) => {
   );
 };
 
-export default PlacementRequests;
+export default PaymentApprovalRequests;
