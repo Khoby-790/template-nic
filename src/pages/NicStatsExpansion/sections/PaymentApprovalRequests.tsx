@@ -1,4 +1,5 @@
 import React from "react";
+import PaymentItem from "../components/PaymentItem";
 import PlacementItem from "../components/PlacementItem";
 
 interface Props {}
@@ -56,7 +57,7 @@ const PaymentApprovalRequests = (props: Props) => {
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
                   {[1, 2, 3, 4, 5].map((item) => (
-                    <PlacementItem />
+                    <PaymentItem />
                   ))}
                 </tbody>
               </table>

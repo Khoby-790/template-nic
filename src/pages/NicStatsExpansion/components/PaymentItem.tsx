@@ -1,11 +1,13 @@
 import React, { Fragment, useState } from "react";
 import { Modal } from "../../../components";
+import PaymentRejectionForm from "./PaymentRejectionForm";
 import PlacementAcceptanceForm from "./PlacementAcceptanceForm";
 import PlacementRejectionForm from "./PlacementRejectionForm";
+import PyamentAcceptanceForm from "./PyamentAcceptanceForm";
 
 interface Props { }
 
-const PlacementItem = (props: Props) => {
+const PaymentItem = (props: Props) => {
   const [showAcceptModal, setShowAcceptModal] = useState<boolean>(false);
   const [showRejectModal, setShowRejectModal] = useState<boolean>(false);
   return (
@@ -63,14 +65,14 @@ const PlacementItem = (props: Props) => {
       </tr>
 
       <Modal show={showAcceptModal} setShow={setShowAcceptModal}>
-        <PlacementAcceptanceForm />
+        <PyamentAcceptanceForm />
       </Modal>
 
       <Modal show={showRejectModal} setShow={setShowRejectModal}>
-        <PlacementRejectionForm />
+        <PaymentRejectionForm />
       </Modal>
     </Fragment>
   );
 };
 
-export default PlacementItem;
+export default PaymentItem;
