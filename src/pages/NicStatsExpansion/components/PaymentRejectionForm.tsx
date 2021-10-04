@@ -17,7 +17,7 @@ const PaymentRejectionForm = (props: Props) => {
             </div>
             <div className="p-2 flex justify-end">
                 <Button title="Cancel" />
-                <Button title="Reject" color="red" />
+                <Button title="Decline" color="red" />
             </div>
         </div>
     )

@@ -1,7 +1,7 @@
 import React from "react";
 import PlacementItem from "../components/PlacementItem";
 
-interface Props {}
+interface Props { }
 
 const PlacementRequests = (props: Props) => {
   return (

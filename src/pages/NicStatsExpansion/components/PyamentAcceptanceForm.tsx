@@ -63,7 +63,7 @@ const PyamentAcceptanceForm = (props: Props) => {
             </div>
             <div className="p-2 flex justify-end">
                 <Button title="Cancel" />
-                <Button title="Reject" color="green" />
+                <Button title="Approve" color="green" />
             </div>
         </div>
     )

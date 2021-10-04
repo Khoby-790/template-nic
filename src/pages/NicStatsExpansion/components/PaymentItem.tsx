@@ -53,13 +53,13 @@ const PaymentItem = (props: Props) => {
             onClick={() => setShowAcceptModal(true)}
             className="p-2 border bg-green-200 text-green-700 cursor-pointer rounded mx-1"
           >
-            Accept
+            Approve
           </span>
           <span
             onClick={() => setShowRejectModal(true)}
             className="p-2 border bg-red-200 text-red-700 rounded"
           >
-            Reject
+            Decline
           </span>
         </td>
       </tr>

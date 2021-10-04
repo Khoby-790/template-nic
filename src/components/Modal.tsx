@@ -42,11 +42,11 @@ const Modal = ({ show, setShow, size = 35, children, canClose = true, height = 5
                         leaveFrom="opacity-100 translate-x-0 sm:scale-100"
                         leaveTo="-translate-x-full"
                     >
-                        <div className="fixed z-20 bottom-0 inset-x-0   sm:inset-0 sm:p-0 sm:flex sm:items-center sm:justify-center">
+                        <div className="fixed z-20 bottom-0 inset-x-0 px-4 pb-6 sm:inset-0 sm:p-0 sm:flex sm:items-center sm:justify-center">
                             <div
                                 ref={ref}
                                 style={{ width: `${size}vw`, }}
-                                className="bg-white  rounded-md  overflow-hidden shadow-xl transform transition-all"
+                                className="bg-white  rounded-md  overflow-scroll shadow-xl max-h-screen shadow-xl transform transition-all"
                                 role="dialog"
                                 aria-modal="true"
                                 aria-labelledby="modal-headline"
