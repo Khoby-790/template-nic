@@ -18,7 +18,9 @@ const Reports = lazy(() => import("../pages/Reports/Reports"));
 const Settings = lazy(() => import("../pages/Settings/Settings"));
 const SidebarSubMenu = lazy(() => import("./SidebarSubMenu"));
 const Inbox = lazy(() => import("../pages/Inbox/Inbox"));
-interface Props {}
+const PlacementRequests = lazy(() => import("../pages/PlacementRequests"));
+const PaymentRequests = lazy(() => import("../pages/PaymentRequests"));
+interface Props { }
 
 const AppContent = (props: Props) => {
   return (
@@ -37,7 +39,8 @@ const AppContent = (props: Props) => {
               <Route path="/nic" component={NicStatsExpansion} />
               <Route path="/premium" component={PremiumExpansion} />
               <Route path="/claims" component={ClaimsExpansion} />
-              <Route path="/_offers" component={OffersPlacedExpansion} />
+              <Route path="/placements" component={PlacementRequests} />
+              <Route path="/payments" component={PaymentRequests} />
               <Route path="/reports" component={Reports} />
               <Route path="/inbox" component={Inbox} />
               <Route path="/settings" component={Settings} />

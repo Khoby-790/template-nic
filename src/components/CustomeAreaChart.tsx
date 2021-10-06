@@ -8,8 +8,8 @@ interface Props {
 
 const CustomeAreaChart = ({ data, lines }: Props) => {
     return (
-        <div className="h-96">
-            <ResponsiveContainer width="100%" height="100%">
+        <div className="h-96 max-h-96 bg-white  my-3 py-4 ">
+            <ResponsiveContainer width="99%" height="100%">
                 <AreaChart
                     width={500}
                     height={400}

@@ -1,6 +1,5 @@
 import React from "react";
 import PaymentItem from "../components/PaymentItem";
-import PlacementItem from "../components/PlacementItem";
 
 interface Props {}
 

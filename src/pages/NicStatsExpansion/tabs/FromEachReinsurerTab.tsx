@@ -82,7 +82,7 @@ const FromEachReinsurerTab = (props: Props) => {
                                         <svg className="mr-3 h-5 w-5 text-gray-400 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                                         </svg>
-                                         PDF
+                                        PDF
                                     </a>
                                 </div>
                                 <div className="py-1" role="none">
@@ -112,19 +112,19 @@ const FromEachReinsurerTab = (props: Props) => {
                                         <tr>
                                             <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                                 Reinsurer
-              </th>
+                                            </th>
                                             <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                                 Paid
-              </th>
+                                            </th>
                                             <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                                 Outstanding
-              </th>
+                                            </th>
                                             <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                                 Total
-              </th>
+                                            </th>
                                             <th scope="col" className="relative px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                                 Actions
-                                        </th>
+                                            </th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -132,7 +132,7 @@ const FromEachReinsurerTab = (props: Props) => {
                                         <tr className="bg-white">
                                             <td className="px-6 py-4 whitespace-nowrap text-md font-medium text-gray-900">
                                                 Vanguard Reinsurance
-                                        </td>
+                                            </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-md text-gray-500">
                                                 <span>GHC</span>
                                                 <span>12,000</span>
@@ -156,7 +156,7 @@ const FromEachReinsurerTab = (props: Props) => {
                                         <tr className="bg-gray-50">
                                             <td className="px-6 py-4 whitespace-nowrap text-md font-medium text-gray-900">
                                                 Ghana Re
-                                        </td>
+                                            </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-md text-gray-500">
                                                 <span>USD</span>
                                                 <span>12,000</span>
@@ -178,7 +178,7 @@ const FromEachReinsurerTab = (props: Props) => {
                                         <tr className="bg-white">
                                             <td className="px-6 py-4 whitespace-nowrap text-md font-medium text-gray-900">
                                                 GN Reinsurance
-                                        </td>
+                                            </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-md text-gray-500">
                                                 <span>EUR</span>
                                                 <span>12,000</span>
@@ -200,7 +200,7 @@ const FromEachReinsurerTab = (props: Props) => {
                                         <tr className="bg-gray-50">
                                             <td className="px-6 py-4 whitespace-nowrap text-md font-medium text-gray-900">
                                                 Mainstream Reinsurance House
-                                        </td>
+                                            </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-md text-gray-500">
                                                 <span>LE</span>
                                                 <span>12,000</span>
@@ -235,37 +235,37 @@ const FromEachReinsurerTab = (props: Props) => {
                             <svg className="mr-3 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                 <path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd" />
                             </svg>
-      Previous
-    </a>
+                            Previous
+                        </a>
                     </div>
                     <div className="hidden md:-mt-px md:flex">
                         <a href="#" className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 border-t-2 pt-4 px-4 inline-flex items-center text-md font-medium">
                             1
-    </a>
+                        </a>
                         {/* <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" --> */}
                         <a href="#" className="border-indigo-500 text-indigo-600 border-t-2 pt-4 px-4 inline-flex items-center text-md font-medium" aria-current="page">
                             2
-    </a>
+                        </a>
                         <a href="#" className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 border-t-2 pt-4 px-4 inline-flex items-center text-md font-medium">
                             3
-    </a>
+                        </a>
                         <span className="border-transparent text-gray-500 border-t-2 pt-4 px-4 inline-flex items-center text-md font-medium">
                             ...
-    </span>
+                        </span>
                         <a href="#" className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 border-t-2 pt-4 px-4 inline-flex items-center text-md font-medium">
                             8
-    </a>
+                        </a>
                         <a href="#" className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 border-t-2 pt-4 px-4 inline-flex items-center text-md font-medium">
                             9
-    </a>
+                        </a>
                         <a href="#" className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 border-t-2 pt-4 px-4 inline-flex items-center text-md font-medium">
                             10
-    </a>
+                        </a>
                     </div>
                     <div className="-mt-px w-0 flex-1 flex justify-end">
                         <a href="#" className="border-t-2 border-transparent pt-4 pl-1 inline-flex items-center text-md font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">
                             Next
-      {/* <!-- Heroicon name: solid/arrow-narrow-right --> */}
+                            {/* <!-- Heroicon name: solid/arrow-narrow-right --> */}
                             <svg className="ml-3 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                 <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
                             </svg>

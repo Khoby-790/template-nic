@@ -7,3 +7,4 @@ export { default as CustomLineChart } from "./CustomLineChart";
 export { default as CustomeAreaChart } from "./CustomeAreaChart";
 export { default as Loader } from "./Loader";
 export { default as RealtimeFloatingStats } from "./RealtimeFloatingStats";
+export { default as DropDownSelect } from "./DropDownSelect";

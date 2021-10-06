@@ -15,8 +15,8 @@ interface Props {
 
 const CustomLineChart = ({ data, lines }: Props) => {
     return (
-        <div className="h-96">
-            <ResponsiveContainer width="100%" height="100%">
+        <div className="h-96  max-h-96 bg-white  my-3 py-4 ">
+            <ResponsiveContainer width="99%" height="100%">
                 <LineChart width={300} height={100} data={data}>
                     {lines.map((line, id) => (
                         <Line type={line.type || "monotone"} name={line.title || line.name} dataKey={line.name} stroke={line.color || '#A1C181'} strokeWidth={line.width || 2} />

@@ -80,7 +80,7 @@ const SubGraphsBarchart = ({ data = [], bars }: Props) => {
     return (
         <Fragment>
             <div className="h-80 max-h-80 bg-white  my-3 py-4 ">
-                <ResponsiveContainer width="100%" height="100%">
+                <ResponsiveContainer width="99%" height="100%">
                     <BarChart
                         width={650}
                         height={350}

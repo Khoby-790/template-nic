@@ -4,7 +4,7 @@ import ForAllBrokers from "../tabs/ForAllBrokers";
 import FromEachReinsuredTab from "../tabs/FromEachReinsuredTab";
 import FromEachReinsurerTab from "../tabs/FromEachReinsurerTab";
 
-interface Props {}
+interface Props { }
 
 // type Tabs = "for_all_insurers" | "for_each_broker" | "for_all_brokers" | "for_all_reinsurers"
 

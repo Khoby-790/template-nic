@@ -5,7 +5,7 @@ import logo from "../assets/nic-logo.png";
 import avatar from "../assets/23511370.jpg";
 import RealtimeBreakDown from "../components/RealtimeBreakDown";
 
-interface Props {}
+interface Props { }
 
 const Sidebar = (props: Props) => {
   return (
@@ -64,6 +64,25 @@ const Sidebar = (props: Props) => {
                     />
                   </svg>
                   NIC Levy
+                </Link>
+                <Link
+                  to="/placements"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-md font-medium rounded-md"
+                >
+
+                  <svg xmlns="http://www.w3.org/2000/svg" className="text-gray-400 group-hover:text-gray-300 mr-3 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z" />
+                  </svg>
+                  Placement Requests
+                </Link>
+                <Link
+                  to="/payments"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-md font-medium rounded-md"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="text-gray-400 group-hover:text-gray-300 mr-3 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                  Payment Requests
                 </Link>
 
                 <Link

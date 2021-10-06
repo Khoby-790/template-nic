@@ -76,11 +76,11 @@ const data = [
     total: 2181,
   },
 ];
-interface Props {}
+interface Props { }
 
 const PremiumSection = (props: Props) => {
   return (
-    <div className="bg-white shadow-lg my-4">
+    <div className="bg-white shadow-lg my-4 mx-2">
       <div className="lg:h-16 h-auto flex flex-col lg:flex-row  justify-between py-2 px-3">
         <div className="flex">
           <div className=" mr-3">
@@ -138,24 +138,9 @@ const PremiumSection = (props: Props) => {
           </Link>
         </div>
       </div>
-      <div className="flex lg:h-96 h-auto">
+      <div className="flex h-auto">
         <div className="flex lg:flex-row flex-col w-full h-full">
-          <div className="grid px-5 grid-cols-1 my-5 lg:my-0 gap-y-3">
-            <div className="flex items-center lg:items-start flex-col">
-              <span className="font-medium text-md text-gray-600">121,000</span>
-              <span className="font-light text-gray-600">Total</span>
-            </div>
-            <div className="flex items-center lg:items-start flex-col">
-              <span className="font-medium text-md text-gray-600">672,000</span>
-              <span className="font-light text-gray-600">Outstanding</span>
-            </div>
-            <div className="flex items-center lg:items-start flex-col">
-              <span className="font-medium text-md text-gray-600">
-                4,506,000
-              </span>
-              <span className="font-light text-gray-600">Paid</span>
-            </div>
-          </div>
+
           <div className="flex-1 px-5 mb-5">
             <CustomLineChart
               data={data}

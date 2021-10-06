@@ -1,22 +1,31 @@
 import React, { useRef, Fragment, ReactNode } from "react";
 import Transition from "./Transition";
 import { useOutsideClick } from "../hooks";
+import { useMediaQuery } from "react-responsive";
 
 
-interface Props {
-    show: boolean,
-    setShow: (prev) => void,
-    size?: number,
-    height?: number,
-    children?: ReactNode,
-    canClose?: boolean,
-}
 
-const Modal = ({ show, setShow, size = 35, children, canClose = true, height = 50 }: Props) => {
+
+const Modal = ({ show, setShow, size = 35, children, canClose = true, height = 50 }) => {
     const ref = useRef(null);
     useOutsideClick(ref, () => {
         if (canClose) setShow(false);
     });
+    const isTabletOrMobile = useMediaQuery({ maxWidth: 1224 });
+
+    const allChildren = React.Children.map(children, (child) => {
+        // console.log(child);
+        if (child) {
+            if (typeof child.type !== "function") return child;
+            const clone = React.cloneElement(child, {
+                setShow: setShow,
+            });
+
+            return clone;
+        }
+        return null;
+    });
+
     return (
         <Fragment>
             <Transition show={show}>
@@ -42,16 +51,16 @@ const Modal = ({ show, setShow, size = 35, children, canClose = true, height = 5
                         leaveFrom="opacity-100 translate-x-0 sm:scale-100"
                         leaveTo="-translate-x-full"
                     >
-                        <div className="fixed z-20 bottom-0 inset-x-0 px-4 pb-6 sm:inset-0 sm:p-0 sm:flex sm:items-center sm:justify-center">
+                        <div className="fixed z-20 bottom-0  inset-x-0 px-4 pb-6 sm:inset-0 sm:p-0 sm:flex sm:items-center sm:justify-center">
                             <div
                                 ref={ref}
-                                style={{ width: `${size}vw`, }}
-                                className="bg-white  rounded-md  overflow-scroll shadow-xl max-h-screen shadow-xl transform transition-all"
+                                style={{ width: `${isTabletOrMobile ? 90 : size}vw`, }}
+                                className="bg-white  rounded-md w-full  overflow-scroll shadow-xl max-h-screen shadow-xl transform transition-all"
                                 role="dialog"
                                 aria-modal="true"
                                 aria-labelledby="modal-headline"
                             >
-                                {children}
+                                {allChildren}
                             </div>
                         </div>
                     </Transition>

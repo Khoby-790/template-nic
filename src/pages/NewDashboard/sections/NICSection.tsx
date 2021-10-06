@@ -83,12 +83,12 @@ const bars = [
   { name: "total", color: "#FCDE9C", title: "Total NIC Levy" },
 ];
 
-interface Props {}
+interface Props { }
 
 const NICSection = (props: Props) => {
   return (
     <>
-      <div className="bg-white shadow-lg my-4">
+      <div className="bg-white shadow-lg my-4 mx-2">
         <div className="lg:h-16 h-auto flex lg:flex-row flex-col justify-between py-2 px-3">
           <div className="flex">
             <div className=" mr-3">
@@ -150,22 +150,7 @@ const NICSection = (props: Props) => {
           <div className="flex-1">
             <SubGraphsBarchart data={data} bars={bars} />
           </div>
-          <div className="px-5 grid grid-cols-1 gap-y-3">
-            <div className="flex items-center lg:items-start flex-col">
-              <span className="font-medium text-md text-gray-600">121,000</span>
-              <span className="font-light text-gray-600">Total</span>
-            </div>
-            <div className="flex items-center lg:items-start flex-col">
-              <span className="font-medium text-md text-gray-600">672,000</span>
-              <span className="font-light text-gray-600">Outstanding</span>
-            </div>
-            <div className="flex items-center lg:items-start flex-col">
-              <span className="font-medium text-md text-gray-600">
-                4,506,000
-              </span>
-              <span className="font-light text-gray-600">Paid</span>
-            </div>
-          </div>
+
         </div>
       </div>
     </>
