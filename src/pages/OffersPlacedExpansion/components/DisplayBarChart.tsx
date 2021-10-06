@@ -83,7 +83,7 @@ const DisplayBarChart = ({ name }: Props) => {
     return (
         <Fragment>
             <div className="h-16 px-4 py-3 flex flex-col">
-                <span className="text-xl font-bold">Summary</span>
+                <span className="text-md font-bold">Summary</span>
                 <span className="font-light">{name || "GN Reinsurance"}</span>
             </div>
             <div className="h-96 py-4">

@@ -17,14 +17,14 @@ const Settings = (props: Props) => {
                 <div className="relative max-w-full mx-10 md:px-8 xl:px-0">
                     <div className="pt-10 pb-16">
                         <div className="px-4 sm:px-6 md:px-0">
-                            <h1 className="text-3xl font-extrabold text-gray-900">Settings</h1>
+                            <h1 className="text-md font-extrabold text-gray-900">Settings</h1>
                         </div>
                         <div className="px-4 sm:px-6 md:px-0">
                             <div className="py-6">
                                 {/* <!-- Tabs --> */}
                                 <div className="lg:hidden">
                                     <label htmlFor="selected-tab" className="sr-only">Select a tab</label>
-                                    <select id="selected-tab" name="selected-tab" className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-purple-500 focus:border-purple-500 sm:text-sm rounded-md">
+                                    <select id="selected-tab" name="selected-tab" className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-purple-500 focus:border-purple-500 sm:text-md rounded-md">
                                         <option selected>General</option>
                                         <option>Password</option>
                                         <option>Notifications</option>
@@ -76,7 +76,7 @@ const NavTab = ({ setTab, tab, first = false, name, value }: NavTabProps) => {
         <a
             onClick={() => setTab(tab)}
             href="#"
-            className={`${tab === value ? "border-purple-500 text-purple-600" : "border-transparent text-gray-500"}  ${first ? "" : "ml-8"} whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm`}>
+            className={`${tab === value ? "border-purple-500 text-purple-600" : "border-transparent text-gray-500"}  ${first ? "" : "ml-8"} whitespace-nowrap py-4 px-1 border-b-2 font-medium text-md`}>
             {name}
         </a>
     )

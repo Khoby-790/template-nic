@@ -9,9 +9,9 @@ interface Props {}
 // type Tabs = "for_all_insurers" | "for_each_broker" | "for_all_brokers" | "for_all_reinsurers"
 
 const inActive =
-  "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 flex-1 py-4 px-1 text-center border-b-2 font-medium text-sm";
+  "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 flex-1 py-4 px-1 text-center border-b-2 font-medium text-md";
 const active =
-  "border-indigo-500 text-indigo-600 flex-1 py-4 px-1 text-center border-b-2 font-medium text-sm";
+  "border-indigo-500 text-indigo-600 flex-1 py-4 px-1 text-center border-b-2 font-medium text-md";
 
 const TabsSection = (props: Props) => {
   const [tab, setTab] = useState<string>("for_all_insurers");

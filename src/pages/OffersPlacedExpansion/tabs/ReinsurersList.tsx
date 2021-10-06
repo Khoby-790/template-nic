@@ -15,7 +15,7 @@ const ReinsurersList = (props: Props) => {
         <div>
             <div className="h-auto px-4 py-3 flex justify-between">
                 <div className="flex flex-col">
-                    <span className="text-xl font-bold">Summary</span>
+                    <span className="text-md font-bold">Summary</span>
                     <span className="font-light">Visal Reinsurance Brokers</span>
                     <span className="font-light">Total NIC Levies for 2021</span>
                 </div>
@@ -48,7 +48,7 @@ const ReinsurersList = (props: Props) => {
                 <div className="w-auto">
                     <div className="relative inline-block text-left">
                         <div>
-                            <button type="button" onClick={() => setShowSaveOptions(true)} className="inline-flex justify-center w-full h-full rounded-none border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" id="options-menu" aria-expanded="true" aria-haspopup="true">
+                            <button type="button" onClick={() => setShowSaveOptions(true)} className="inline-flex justify-center w-full h-full rounded-none border border-gray-300 shadow-sm px-4 py-2 bg-white text-md font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" id="options-menu" aria-expanded="true" aria-haspopup="true">
                                 Save as
                                 <svg className="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -68,7 +68,7 @@ const ReinsurersList = (props: Props) => {
                             <div ref={saveOptionsREf} className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                                 <div className="py-1" role="none">
 
-                                    <a href="#" className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
+                                    <a href="#" className="group flex items-center px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
                                         {/* <!-- Heroicon name: solid/duplicate --> */}
                                         <svg className="mr-3 h-5 w-5 text-gray-400 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
@@ -77,7 +77,7 @@ const ReinsurersList = (props: Props) => {
                                     </a>
                                 </div>
                                 <div className="py-1" role="none">
-                                    <a href="#" className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
+                                    <a href="#" className="group flex items-center px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
                                         {/* <!-- Heroicon name: solid/archive --> */}
                                         <svg className="mr-3 h-5 w-5 text-gray-400 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
@@ -117,18 +117,18 @@ const ReinsurersList = (props: Props) => {
                                     <tbody>
                                         {/* <!-- Odd row --> */}
                                         <tr className="bg-white">
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                                            <td className="px-6 py-4 whitespace-nowrap text-md font-medium text-gray-900">
                                                 Aveni Reinsurance Company Limited
                                         </td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <td className="px-6 py-4 whitespace-nowrap text-md text-gray-500">
                                                 <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <td className="px-6 py-4 whitespace-nowrap text-md text-gray-500">
                                                 <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <td className="px-6 py-4 whitespace-nowrap text-md text-gray-500">
                                                 <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
@@ -137,54 +137,54 @@ const ReinsurersList = (props: Props) => {
 
                                         {/* <!-- Even row --> */}
                                         <tr className="bg-gray-50">
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                                            <td className="px-6 py-4 whitespace-nowrap text-md font-medium text-gray-900">
                                                 Ghana Reinsurance Company Limited
                                         </td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <td className="px-6 py-4 whitespace-nowrap text-md text-gray-500">
                                                 <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <td className="px-6 py-4 whitespace-nowrap text-md text-gray-500">
                                                 <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <td className="px-6 py-4 whitespace-nowrap text-md text-gray-500">
                                                 <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
 
                                         </tr>
                                         <tr className="bg-white">
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                                            <td className="px-6 py-4 whitespace-nowrap text-md font-medium text-gray-900">
                                                 GN Reinsurance Company Limited
                                         </td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <td className="px-6 py-4 whitespace-nowrap text-md text-gray-500">
                                                 <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <td className="px-6 py-4 whitespace-nowrap text-md text-gray-500">
                                                 <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <td className="px-6 py-4 whitespace-nowrap text-md text-gray-500">
                                                 <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
 
                                         </tr>
                                         <tr className="bg-gray-50">
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                                            <td className="px-6 py-4 whitespace-nowrap text-md font-medium text-gray-900">
                                                 Mainstream Reinsurance Company Limited
                                         </td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <td className="px-6 py-4 whitespace-nowrap text-md text-gray-500">
                                                 <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <td className="px-6 py-4 whitespace-nowrap text-md text-gray-500">
                                                 <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            <td className="px-6 py-4 whitespace-nowrap text-md text-gray-500">
                                                 <span>GHC</span>
                                                 <span>12,000</span>
                                             </td>
@@ -200,7 +200,7 @@ const ReinsurersList = (props: Props) => {
             </div>
             <nav className="border-t mt-3 mb-5 mx-5 border-gray-200 px-4 flex items-center justify-between sm:px-0">
                 <div className="-mt-px w-0 flex-1 flex">
-                    <a href="#" className="border-t-2 border-transparent pt-4 pr-1 inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                    <a href="#" className="border-t-2 border-transparent pt-4 pr-1 inline-flex items-center text-md font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">
                         {/* <!-- Heroicon name: solid/arrow-narrow-left --> */}
                         <svg className="mr-3 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                             <path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd" />
@@ -209,31 +209,31 @@ const ReinsurersList = (props: Props) => {
     </a>
                 </div>
                 <div className="hidden md:-mt-px md:flex">
-                    <a href="#" className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium">
+                    <a href="#" className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 border-t-2 pt-4 px-4 inline-flex items-center text-md font-medium">
                         1
     </a>
                     {/* <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" --> */}
-                    <a href="#" className="border-indigo-500 text-indigo-600 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium" aria-current="page">
+                    <a href="#" className="border-indigo-500 text-indigo-600 border-t-2 pt-4 px-4 inline-flex items-center text-md font-medium" aria-current="page">
                         2
     </a>
-                    <a href="#" className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium">
+                    <a href="#" className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 border-t-2 pt-4 px-4 inline-flex items-center text-md font-medium">
                         3
     </a>
-                    <span className="border-transparent text-gray-500 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium">
+                    <span className="border-transparent text-gray-500 border-t-2 pt-4 px-4 inline-flex items-center text-md font-medium">
                         ...
     </span>
-                    <a href="#" className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium">
+                    <a href="#" className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 border-t-2 pt-4 px-4 inline-flex items-center text-md font-medium">
                         8
     </a>
-                    <a href="#" className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium">
+                    <a href="#" className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 border-t-2 pt-4 px-4 inline-flex items-center text-md font-medium">
                         9
     </a>
-                    <a href="#" className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium">
+                    <a href="#" className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 border-t-2 pt-4 px-4 inline-flex items-center text-md font-medium">
                         10
     </a>
                 </div>
                 <div className="-mt-px w-0 flex-1 flex justify-end">
-                    <a href="#" className="border-t-2 border-transparent pt-4 pl-1 inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                    <a href="#" className="border-t-2 border-transparent pt-4 pl-1 inline-flex items-center text-md font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">
                         Next
       {/* <!-- Heroicon name: solid/arrow-narrow-right --> */}
                         <svg className="ml-3 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">

@@ -11,7 +11,7 @@ const ReportQueryForm = (props: Props) => {
         <Fragment>
             <div className="bg-white py-3 overflow-y-scroll h-full max-h-full  shadow-md rounded-md">
                 <div className="mx-5 mb-3">
-                    <h1 className="font-bold text-xl">Report Generator</h1>
+                    <h1 className="font-bold text-md">Report Generator</h1>
                     <p className="font-light">Provide essential information to generate report based on realtime data</p>
                 </div>
                 <div className="flex mx-2 flex-col">

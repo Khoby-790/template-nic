@@ -18,7 +18,7 @@ const OffersListing = (props: Props) => {
             <div className="mx-5 mt-5">
                 <div className="flex h-11 justify-between items-center my-3 mb-5">
                     <div className="flex-1 px-2 ">
-                        <h2 className="text-2xl font-medium">{props.header}</h2>
+                        <h2 className="text-md font-medium">{props.header}</h2>
                         <p className="font-light">{props.description}</p>
                         {/* <button onClick={onNotifyClicked}>Click me</button> */}
                     </div>

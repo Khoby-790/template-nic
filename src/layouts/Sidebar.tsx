@@ -22,7 +22,7 @@ const Sidebar = (props: Props) => {
                 {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
                 <Link
                   to="/"
-                  className="bg-gray-900 text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md"
+                  className="bg-gray-900 text-white group flex items-center px-2 py-2 text-md font-medium rounded-md"
                 >
                   {/* <!-- Current: "text-gray-300", Default: "text-gray-400 group-hover:text-gray-300" -->
               <!-- Heroicon name: outline/home --> */}
@@ -46,7 +46,7 @@ const Sidebar = (props: Props) => {
 
                 <Link
                   to="/nic"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-md font-medium rounded-md"
                 >
                   {/* <!-- Heroicon name: outline/users --> */}
                   <svg
@@ -68,7 +68,7 @@ const Sidebar = (props: Props) => {
 
                 <Link
                   to="/premium"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-md font-medium rounded-md"
                 >
                   {/* <!-- Heroicon name: outline/folder --> */}
                   <svg
@@ -90,7 +90,7 @@ const Sidebar = (props: Props) => {
 
                 <Link
                   to="/claims"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-md font-medium rounded-md"
                 >
                   {/* <!-- Heroicon name: outline/calendar --> */}
                   <svg
@@ -113,7 +113,7 @@ const Sidebar = (props: Props) => {
 
                 {/* <Link
                   to="/_offers"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-md font-medium rounded-md"
                 >
                   <svg
                     className="text-gray-400 group-hover:text-gray-300 mr-3 h-6 w-6"
@@ -135,7 +135,7 @@ const Sidebar = (props: Props) => {
 
                 <Link
                   to="/reports"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-md font-medium rounded-md"
                 >
                   {/* <!-- Heroicon name: outline/chart-bar --> */}
                   <svg
@@ -169,7 +169,7 @@ const Sidebar = (props: Props) => {
                     />
                   </div>
                   <div className="ml-3">
-                    <p className="text-sm font-medium text-white">
+                    <p className="text-md font-medium text-white">
                       Rebecca Nicholas
                     </p>
                     <p className="text-xs font-medium text-gray-300 group-hover:text-gray-200">

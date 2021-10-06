@@ -22,13 +22,13 @@ const WelcomeSection = (props: Props) => {
                   />
                 </div>
                 <div className="mt-4 text-center sm:mt-0 sm:pt-1 sm:text-left">
-                  <p className="text-sm font-medium text-gray-100">
+                  <p className="lg font-medium text-gray-100">
                     Welcome back,
                   </p>
-                  <p className="text-xl font-bold text-gray-900 sm:text-2xl">
+                  <p className="text-md font-bold text-gray-900 sm:text-md">
                     Rebecca Nicholas
                   </p>
-                  <p className="text-sm font-medium text-gray-300">
+                  <p className="text-md font-medium text-gray-300">
                     Managing Director
                   </p>
                 </div>
@@ -36,7 +36,7 @@ const WelcomeSection = (props: Props) => {
               <div className="mt-5 flex justify-center sm:mt-0">
                 <a
                   href="#"
-                  className="flex justify-center items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
+                  className="flex justify-center items-center px-4 py-2 border border-gray-300 shadow-sm lg font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
                 >
                   View profile
                 </a>
@@ -44,17 +44,17 @@ const WelcomeSection = (props: Props) => {
             </div>
           </div>
           <div className=" bg-gradient-to-r from-indigo-700 via-indigo-500 to-purple-500 grid grid-cols-1 divide-y divide-purple-200 sm:grid-cols-3 sm:divide-y-0 sm:divide-x">
-            <div className="px-6 py-5 text-sm font-medium text-center">
+            <div className="px-6 py-5 lg font-medium text-center">
               <span className="text-gray-100 mr-1">12</span>
               <span className="text-gray-100">Placement Requests</span>
             </div>
 
-            <div className="px-6 py-5 text-sm font-medium text-center">
+            <div className="px-6 py-5 lg font-medium text-center">
               <span className="text-gray-100 mr-1">4</span>
               <span className="text-gray-200">Payment Approval Requests</span>
             </div>
 
-            <div className="px-6 py-5 text-sm font-medium text-center">
+            <div className="px-6 py-5 font-medium text-center">
               <span className="text-gray-100">{new Date().toDateString()}</span>
               {/* <span className="text-gray-600">Personal days left</span> */}
             </div>

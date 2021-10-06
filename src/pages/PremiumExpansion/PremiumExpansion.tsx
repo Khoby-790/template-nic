@@ -94,9 +94,9 @@ const lines = [
 ];
 
 const inActive =
-  "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 flex-1 py-4 px-1 text-center border-b-2 font-medium text-sm";
+  "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 flex-1 py-4 px-1 text-center border-b-2 font-medium text-md";
 const active =
-  "border-indigo-500 text-indigo-600 flex-1 py-4 px-1 text-center border-b-2 font-medium text-sm";
+  "border-indigo-500 text-indigo-600 flex-1 py-4 px-1 text-center border-b-2 font-medium text-md";
 
 type Tabs =
   | "for_each_reinsurer"
@@ -136,14 +136,14 @@ const PremiumExpansion = (props: Props) => {
                 Total Premium
               </dt>
               <dd className="mt-1 flex justify-between items-baseline md:block lg:flex">
-                <div className="flex items-baseline text-2xl font-semibold text-indigo-600">
+                <div className="flex items-baseline text-md font-semibold text-indigo-600">
                   71,897
-                  <span className="ml-2 text-sm font-medium text-gray-500">
+                  <span className="ml-2 text-md font-medium text-gray-500">
                     from 70,946
                   </span>
                 </div>
 
-                <div className="inline-flex items-baseline px-2.5 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800 md:mt-2 lg:mt-0">
+                <div className="inline-flex items-baseline px-2.5 py-0.5 rounded-full text-md font-medium bg-green-100 text-green-800 md:mt-2 lg:mt-0">
                   <svg
                     className="-ml-1 mr-0.5 flex-shrink-0 self-center h-5 w-5 text-green-500"
                     fill="currentColor"
@@ -167,14 +167,14 @@ const PremiumExpansion = (props: Props) => {
                 Total Outstanding Premium
               </dt>
               <dd className="mt-1 flex justify-between items-baseline md:block lg:flex">
-                <div className="flex items-baseline text-2xl font-semibold text-indigo-600">
+                <div className="flex items-baseline text-md font-semibold text-indigo-600">
                   12,506,588
-                  <span className="ml-2 text-sm font-medium text-gray-500">
+                  <span className="ml-2 text-md font-medium text-gray-500">
                     from 14,254,214
                   </span>
                 </div>
 
-                <div className="inline-flex items-baseline px-2.5 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800 md:mt-2 lg:mt-0">
+                <div className="inline-flex items-baseline px-2.5 py-0.5 rounded-full text-md font-medium bg-green-100 text-green-800 md:mt-2 lg:mt-0">
                   <svg
                     className="-ml-1 mr-0.5 flex-shrink-0 self-center h-5 w-5 text-green-500"
                     fill="currentColor"
@@ -198,14 +198,14 @@ const PremiumExpansion = (props: Props) => {
                 Total Paid Premium
               </dt>
               <dd className="mt-1 flex justify-between items-baseline md:block lg:flex">
-                <div className="flex items-baseline text-2xl font-semibold text-indigo-600">
+                <div className="flex items-baseline text-md font-semibold text-indigo-600">
                   6,555,636
-                  <span className="ml-2 text-sm font-medium text-gray-500">
+                  <span className="ml-2 text-md font-medium text-gray-500">
                     from 5,635,785
                   </span>
                 </div>
 
-                <div className="inline-flex items-baseline px-2.5 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800 md:mt-2 lg:mt-0">
+                <div className="inline-flex items-baseline px-2.5 py-0.5 rounded-full text-md font-medium bg-red-100 text-red-800 md:mt-2 lg:mt-0">
                   <svg
                     className="-ml-1 mr-0.5 flex-shrink-0 self-center h-5 w-5 text-red-500"
                     fill="currentColor"

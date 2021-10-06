@@ -23,7 +23,7 @@ const GraphTabs = ({ data = [] }: Props) => {
                             <nav className="flex -mb-px">
                                 <button
                                     onClick={() => setTab("realtime")}
-                                    className={`ml-8 group inline-flex items-center py-4 px-1 border-b-2 border-transparent font-medium text-sm leading-5 ${tab === "realtime"
+                                    className={`ml-8 group inline-flex items-center py-4 px-1 border-b-2 border-transparent font-medium text-md leading-5 ${tab === "realtime"
                                         ? "text-blue-600 border-blue-600"
                                         : "text-gray-500 hover:border-gray-300"
                                         }  focus:outline-none focus:text-blue-800 focus:border-blue-700`}
@@ -49,7 +49,7 @@ const GraphTabs = ({ data = [] }: Props) => {
                                 </button>
                                 <button
                                     onClick={() => setTab("pieChart")}
-                                    className={`ml-8 group inline-flex items-center py-4 px-1 border-b-2 border-transparent font-medium text-sm leading-5 ${tab === "pieChart"
+                                    className={`ml-8 group inline-flex items-center py-4 px-1 border-b-2 border-transparent font-medium text-md leading-5 ${tab === "pieChart"
                                         ? "text-blue-600 border-blue-600"
                                         : "text-gray-500 hover:border-gray-300"
                                         }  focus:outline-none focus:text-blue-800 focus:border-blue-700`}
@@ -81,7 +81,7 @@ const GraphTabs = ({ data = [] }: Props) => {
                                 </button>
                                 <button
                                     onClick={() => setTab("bixChart")}
-                                    className={`ml-8 group inline-flex items-center py-4 px-1 border-b-2 border-transparent font-medium text-sm leading-5 ${tab === "bixChart"
+                                    className={`ml-8 group inline-flex items-center py-4 px-1 border-b-2 border-transparent font-medium text-md leading-5 ${tab === "bixChart"
                                         ? "text-blue-600 border-blue-600"
                                         : "text-gray-500 hover:border-gray-300"
                                         }  focus:outline-none focus:text-blue-800 focus:border-blue-700`}
@@ -107,7 +107,7 @@ const GraphTabs = ({ data = [] }: Props) => {
                                 </button>
                                 <button
                                     onClick={() => setTab("lineChart")}
-                                    className={`ml-8 group inline-flex items-center py-4 px-1 border-b-2 border-transparent font-medium text-sm leading-5 ${tab === "lineChart"
+                                    className={`ml-8 group inline-flex items-center py-4 px-1 border-b-2 border-transparent font-medium text-md leading-5 ${tab === "lineChart"
                                         ? "text-blue-600 border-blue-600"
                                         : "text-gray-500 hover:border-gray-300"
                                         }  focus:outline-none focus:text-blue-800 focus:border-blue-700`}

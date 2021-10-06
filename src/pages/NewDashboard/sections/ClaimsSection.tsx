@@ -113,17 +113,17 @@ const ClaimsSection = (props: Props) => {
           </div>
           <div className="flex flex-col">
             <span className="font-semibold ">Claims</span>
-            <span className="text-sm font-light">
+            <span className="text-md font-light">
               Brief But detailed description of claims in it's enirety
             </span>
           </div>
         </div>
         <div className="flex justify-between my-3 lg:my-0">
-          <div className="flex border  mr-2 p-2 mb-1 rounded items-baseline">
-            <label className="mr-3" htmlFor="">
+          <div className="flex border text-md mr-2 p-2 mb-1 rounded items-baseline">
+            <label className="mr-3 text-md" htmlFor="">
               Filter by currency
             </label>
-            <select name="" id="">
+            <select className="text-md" name="" id="">
               <option value="">GHC</option>
               <option value="">GHC</option>
               <option value="">GHC</option>

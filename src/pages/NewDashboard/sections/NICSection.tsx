@@ -109,7 +109,7 @@ const NICSection = (props: Props) => {
             </div>
             <div className="flex flex-col">
               <span className="font-semibold ">NIC Levy</span>
-              <span className="text-sm font-light">
+              <span className="text-md font-light">
                 Bar Graph that gives a detailed description of the levies{" "}
               </span>
             </div>
@@ -152,15 +152,15 @@ const NICSection = (props: Props) => {
           </div>
           <div className="px-5 grid grid-cols-1 gap-y-3">
             <div className="flex items-center lg:items-start flex-col">
-              <span className="font-medium text-xl text-gray-600">121,000</span>
+              <span className="font-medium text-md text-gray-600">121,000</span>
               <span className="font-light text-gray-600">Total</span>
             </div>
             <div className="flex items-center lg:items-start flex-col">
-              <span className="font-medium text-xl text-gray-600">672,000</span>
+              <span className="font-medium text-md text-gray-600">672,000</span>
               <span className="font-light text-gray-600">Outstanding</span>
             </div>
             <div className="flex items-center lg:items-start flex-col">
-              <span className="font-medium text-xl text-gray-600">
+              <span className="font-medium text-md text-gray-600">
                 4,506,000
               </span>
               <span className="font-light text-gray-600">Paid</span>

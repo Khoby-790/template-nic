@@ -62,11 +62,11 @@ const OffersPlaced = () => {
           </div>
         </div>
         <div className="flex mb-4 flex-col">
-          <span className="text-2xl font-semibold">78,564</span>
+          <span className="text-md font-semibold">78,564</span>
           <span className="font-light text-gray-400">Current</span>
         </div>
         <div className="flex flex-col">
-          <span className="text-2xl font-semibold">78,564</span>
+          <span className="text-md font-semibold">78,564</span>
           <span className="font-light text-gray-400">Total</span>
         </div>
       </div>

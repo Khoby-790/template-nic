@@ -36,16 +36,16 @@ const OfferLisitngItem = ({ index, report = false }: Props) => {
               </svg>
             </div>
             <div className="ml-4">
-              <div className="text-sm font-medium text-gray-900">
+              <div className="text-md font-medium text-gray-900">
                 Vanguard Reinsurance
               </div>
-              <div className="text-sm text-gray-500">info@example.com</div>
+              <div className="text-md text-gray-500">info@example.com</div>
             </div>
           </div>
         </td>
         <td className="px-6 py-4 whitespace-nowrap">
-          <div className="text-sm text-gray-900">Visal Insurance Company</div>
-          <div className="text-sm text-gray-500">Yaw Bossman</div>
+          <div className="text-md text-gray-900">Visal Insurance Company</div>
+          <div className="text-md text-gray-500">Yaw Bossman</div>
         </td>
         <td className="px-6 py-4 flex items-center whitespace-nowrap">
           {index % 2 === 0 ? (
@@ -86,11 +86,11 @@ const OfferLisitngItem = ({ index, report = false }: Props) => {
             })}
           </span>
         </td>
-        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+        <td className="px-6 py-4 whitespace-nowrap text-md text-gray-500">
           Admin
         </td>
         {!report && (
-          <td className="px-6 py-4 flex justify-end whitespace-nowrap text-right text-sm font-medium">
+          <td className="px-6 py-4 flex justify-end whitespace-nowrap text-right text-md font-medium">
             <svg
               onClick={() => setShowOffer(true)}
               className="h-6 cursor-pointer"
@@ -158,21 +158,21 @@ const OfferLisitngItem = ({ index, report = false }: Props) => {
                     >
                       <a
                         href="#"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                        className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                         role="menuitem"
                       >
                         Account settings
                       </a>
                       <a
                         href="#"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                        className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                         role="menuitem"
                       >
                         Support
                       </a>
                       <a
                         href="#"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                        className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                         role="menuitem"
                       >
                         License
@@ -180,7 +180,7 @@ const OfferLisitngItem = ({ index, report = false }: Props) => {
                       <form method="POST" action="#">
                         <button
                           type="submit"
-                          className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
+                          className="block w-full text-left px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
                           role="menuitem"
                         >
                           Sign out

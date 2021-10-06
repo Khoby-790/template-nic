@@ -34,10 +34,10 @@ const Taoster = (props: Props) => {
                                     </svg>
                                 </div>
                                 <div className="ml-3 w-0 flex-1 pt-0.5">
-                                    <p className="text-sm font-medium text-gray-900">
+                                    <p className="text-md font-medium text-gray-900">
                                         {message}
                                     </p>
-                                    <p className="mt-1 text-sm text-gray-500">
+                                    <p className="mt-1 text-md text-gray-500">
                                         {description}
                                     </p>
                                 </div>

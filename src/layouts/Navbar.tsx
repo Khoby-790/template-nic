@@ -66,7 +66,7 @@ const Navbar = (props: Props) => {
                 id="search"
                 type="search"
                 placeholder="Search"
-                className="hidden w-full border-transparent pl-12 placeholder-gray-500 focus:border-transparent sm:text-sm focus:ring-0"
+                className="hidden w-full border-transparent pl-12 placeholder-gray-500 focus:border-transparent sm:text-md focus:ring-0"
               />
               <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center justify-center pl-4">
                 {/* <!-- Heroicon name: solid/search --> */}
@@ -88,13 +88,13 @@ const Navbar = (props: Props) => {
           </div>
           <div className="ml-10 pr-4 flex-shrink-0 flex items-center space-x-10">
             <nav aria-label="Global" className="flex space-x-10">
-              {/* <Link to="/inbox" className="text-sm font-medium text-gray-900">Inboxes</Link> */}
-              <Link to="/reports" className="text-sm font-medium text-gray-900">
+              {/* <Link to="/inbox" className="text-md font-medium text-gray-900">Inboxes</Link> */}
+              <Link to="/reports" className="text-md font-medium text-gray-900">
                 Reporting
               </Link>
               <Link
                 to="/settings"
-                className="text-sm font-medium text-gray-900"
+                className="text-md font-medium text-gray-900"
               >
                 Settings
               </Link>
@@ -129,7 +129,7 @@ const Navbar = (props: Props) => {
                 <button
                   onClick={() => setShowProfileMenu(true)}
                   type="button"
-                  className="bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600"
+                  className="bg-white rounded-full flex text-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600"
                   id="menu-1"
                   aria-expanded="false"
                   aria-haspopup="true"
@@ -167,14 +167,14 @@ const Navbar = (props: Props) => {
                     <div className="py-1">
                       <a
                         href="#"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:bg-gray-100"
+                        className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 focus:bg-gray-100"
                         role="menuitem"
                       >
                         Your Profile
                       </a>
                       <a
                         href="#"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:bg-gray-100"
+                        className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 focus:bg-gray-100"
                         role="menuitem"
                       >
                         Sign Out
@@ -352,7 +352,7 @@ const Navbar = (props: Props) => {
                       <div className="text-base font-medium text-gray-800 truncate">
                         Whitney Francis
                       </div>
-                      <div className="text-sm font-medium text-gray-500 truncate">
+                      <div className="text-md font-medium text-gray-500 truncate">
                         whitneyfrancis@example.com
                       </div>
                     </div>
