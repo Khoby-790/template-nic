@@ -18,8 +18,6 @@ const NicStatsExpansion = (props: Props) => {
           <GraphSection />
           <StatsSection />
           <TabsSection />
-          <PlacementRequests />
-          <PaymentApprovalRequests />
         </div>
       </div>
     </Fragment>

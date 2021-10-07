@@ -25,7 +25,7 @@ interface Props { }
 const AppContent = (props: Props) => {
   return (
     <Fragment>
-      <main className="min-w-0 flex-1 border-t border-gray-200 lg:flex">
+      <main className="min-w-0 flex-1 h-full border-t border-gray-200 lg:flex">
         <section
           aria-labelledby="primary-heading"
           className="min-w-0 transition duration-500 flex-1 h-full flex  flex-col lg:order-last"

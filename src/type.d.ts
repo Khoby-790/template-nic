@@ -14,6 +14,7 @@ type Broker = {
   name: string;
   address: string;
   contact: string;
+  logo?: string;
 };
 
 type Insurer = {

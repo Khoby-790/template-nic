@@ -13,7 +13,7 @@ const Reports = (props: Props) => {
                 <div className="flex-1 overflow-x-scroll">
                     <OffersListing header="Generated Offers" description="All offers are subject to the query parameters" />
                 </div>
-                <div className="w-96">
+                <div className="w-96 h-full">
                     <ReportQueryForm />
                 </div>
             </div>

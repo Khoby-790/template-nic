@@ -175,7 +175,7 @@ const FromEachReinsuredTab = (props: Props) => {
                                         </tr>
                                         <tr className="bg-white">
                                             <td className="px-6 py-4 whitespace-nowrap text-md font-medium text-gray-900">
-                                                Vanguard Assurance Company Limited
+                                                Distro Assurance Company Limited
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-md text-gray-500">
                                                 <span>GHC</span>
@@ -195,7 +195,7 @@ const FromEachReinsuredTab = (props: Props) => {
                                         </tr>
                                         <tr className="bg-gray-50">
                                             <td className="px-6 py-4 whitespace-nowrap text-md font-medium text-gray-900">
-                                                Enterprise Insurance Company Limited
+                                                Helpers Insurance Company Limited
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-md text-gray-500">
                                                 <span>GHC</span>
