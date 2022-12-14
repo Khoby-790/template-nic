@@ -16,7 +16,7 @@ const PlacementAcceptanceForm = (props: Props) => {
     <div className="bg-white shadow overflow-hidden sm:rounded-lg">
       <div className="px-4 py-5 bg-green-200 sm:px-6">
         <h3 className="text-md leading-6 font-medium text-green-800">
-          Placement Acceptance
+          Payment Acceptance
         </h3>
         <p className="mt-1 max-w-2xl text-md text-green-500">
           Swipe button below to approve.
@@ -25,7 +25,7 @@ const PlacementAcceptanceForm = (props: Props) => {
       <div className="px-6 py-11 flex justify-end">
 
         <ReactSwipeButton
-          text='SWIPE TO ACCEPT'
+          text='SWIPE TO APPROVE'
           color='#076046'
           noSuccess={onSucces}
         />

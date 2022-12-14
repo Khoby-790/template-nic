@@ -35,15 +35,15 @@ const AppContent = (props: Props) => {
           </h1>
           <Suspense fallback={<Loader />}>
             <Switch>
-              <Route path="/" exact component={NewDashboard} />
-              <Route path="/nic" component={NicStatsExpansion} />
-              <Route path="/premium" component={PremiumExpansion} />
-              <Route path="/claims" component={ClaimsExpansion} />
-              <Route path="/placements" component={PlacementRequests} />
-              <Route path="/payments" component={PaymentRequests} />
-              <Route path="/reports" component={Reports} />
-              <Route path="/inbox" component={Inbox} />
-              <Route path="/settings" component={Settings} />
+              <Route path="/app" exact component={NewDashboard} />
+              <Route path="/app/nic" component={NicStatsExpansion} />
+              <Route path="/app/premium" component={PremiumExpansion} />
+              <Route path="/app/claims" component={ClaimsExpansion} />
+              <Route path="/app/placements" component={PlacementRequests} />
+              <Route path="/app/payments" component={PaymentRequests} />
+              <Route path="/app/reports" component={Reports} />
+              <Route path="/app/inbox" component={Inbox} />
+              <Route path="/app/settings" component={Settings} />
             </Switch>
           </Suspense>
         </section>

@@ -21,7 +21,7 @@ const Sidebar = (props: Props) => {
               <nav className="mt-5 flex-1 px-2 bg-gray-800 space-y-1">
                 {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
                 <Link
-                  to="/"
+                  to="/app/"
                   className="bg-gray-900 text-white group flex items-center px-2 py-2 text-md font-medium rounded-md"
                 >
                   {/* <!-- Current: "text-gray-300", Default: "text-gray-400 group-hover:text-gray-300" -->
@@ -45,7 +45,7 @@ const Sidebar = (props: Props) => {
                 </Link>
 
                 <Link
-                  to="/nic"
+                  to="/app/nic"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-md font-medium rounded-md"
                 >
                   {/* <!-- Heroicon name: outline/users --> */}
@@ -66,7 +66,7 @@ const Sidebar = (props: Props) => {
                   NIC Levy
                 </Link>
                 <Link
-                  to="/placements"
+                  to="/app/placements"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-md font-medium rounded-md"
                 >
 
@@ -76,7 +76,7 @@ const Sidebar = (props: Props) => {
                   Placement Requests
                 </Link>
                 <Link
-                  to="/payments"
+                  to="/app/payments"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-md font-medium rounded-md"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" className="text-gray-400 group-hover:text-gray-300 mr-3 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -86,7 +86,7 @@ const Sidebar = (props: Props) => {
                 </Link>
 
                 <Link
-                  to="/premium"
+                  to="/app/premium"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-md font-medium rounded-md"
                 >
                   {/* <!-- Heroicon name: outline/folder --> */}
@@ -108,7 +108,7 @@ const Sidebar = (props: Props) => {
                 </Link>
 
                 <Link
-                  to="/claims"
+                  to="/app/claims"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-md font-medium rounded-md"
                 >
                   {/* <!-- Heroicon name: outline/calendar --> */}
@@ -131,7 +131,7 @@ const Sidebar = (props: Props) => {
                 </Link>
 
                 {/* <Link
-                  to="/_offers"
+                  to="/app/_offers"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-md font-medium rounded-md"
                 >
                   <svg
@@ -153,7 +153,7 @@ const Sidebar = (props: Props) => {
                 </Link> */}
 
                 <Link
-                  to="/reports"
+                  to="/app/reports"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-md font-medium rounded-md"
                 >
                   {/* <!-- Heroicon name: outline/chart-bar --> */}

@@ -172,13 +172,13 @@ const Navbar = (props: Props) => {
                       >
                         Your Profile
                       </a>
-                      <a
-                        href="#"
+                      <Link
+                        to="/"
                         className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 focus:bg-gray-100"
                         role="menuitem"
                       >
                         Sign Out
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </Transition>
@@ -301,27 +301,39 @@ const Navbar = (props: Props) => {
                 </div>
                 <div className="max-w-8xl mx-auto py-3 px-2 sm:px-4">
                   <Link
-                    to="/"
+                    to="/app/"
                     className="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-100"
                   >
                     Dashboard
                   </Link>
 
                   <Link
-                    to="/nic"
+                    to="/app/nic"
                     className="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-100"
                   >
                     NIC Levy
                   </Link>
+                  <Link
+                    to="/app/placements"
+                    className="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-100"
+                  >
+                    Placement Request
+                  </Link>
+                  <Link
+                    to="/app/payments"
+                    className="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-100"
+                  >
+                    Payment Request
+                  </Link>
 
                   <Link
-                    to="/premium"
+                    to="/app/premium"
                     className="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-100"
                   >
                     Premium
                   </Link>
                   <Link
-                    to="/claims"
+                    to="/app/claims"
                     className="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-100"
                   >
                     Claims
@@ -333,7 +345,7 @@ const Navbar = (props: Props) => {
                     Offers placed
                   </Link> */}
                   <Link
-                    to="/reports"
+                    to="/app/reports"
                     className="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-100"
                   >
                     Reports
@@ -387,12 +399,12 @@ const Navbar = (props: Props) => {
                       Your Profile
                     </a>
 
-                    <a
-                      href="#"
+                    <Link
+                      to="/auth"
                       className="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-50"
                     >
                       Sign out
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </nav>

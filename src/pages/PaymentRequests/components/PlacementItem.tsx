@@ -50,7 +50,7 @@ const PlacementItem = ({ data }: Props) => {
           </span>
         </td>
         <td className="px-6 py-4 flex whitespace-nowrap text-right text-md">
-          <Button disabled={data?.status === "Approved"} title="Accept" color="green" onClick={() => setShowAcceptModal(true)} />
+          <Button disabled={data?.status === "Approved"} title="Approve" color="green" onClick={() => setShowAcceptModal(true)} />
           <Button disabled={data?.status === "Rejected"} title="Reject" color="red" onClick={() => setShowRejectModal(true)} />
         </td>
       </tr>

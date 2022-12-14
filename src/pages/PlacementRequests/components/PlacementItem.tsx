@@ -46,7 +46,7 @@ const PlacementItem = ({ data }: Props) => {
 
         <td className="px-6 py-4 whitespace-nowrap text-md text-gray-500">
           <span className={`text-${Colors[data?.status]}-400 font-bold`}>
-            {data?.status}
+            {data?.status === "Approved" ? "Accepted" : data?.status}
           </span>
         </td>
         <td className="px-6 py-4 flex whitespace-nowrap text-right text-md">

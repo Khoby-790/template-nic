@@ -6,9 +6,10 @@ import { useOutsideClick } from "../../../hooks";
 interface Props {
   index: number;
   report?: boolean;
+  offer?: any
 }
 
-const OfferLisitngItem = ({ index, report = false }: Props) => {
+const OfferLisitngItem = ({ index, report = false, offer }: Props) => {
   const ref = useRef(null);
   const [showOffer, setShowOffer] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
@@ -37,14 +38,14 @@ const OfferLisitngItem = ({ index, report = false }: Props) => {
             </div>
             <div className="ml-4">
               <div className="text-md font-medium text-gray-900">
-                Vanguard Reinsurance
+                {offer.insurer?.name}
               </div>
               <div className="text-md text-gray-500">info@example.com</div>
             </div>
           </div>
         </td>
         <td className="px-6 py-4 whitespace-nowrap">
-          <div className="text-md text-gray-900">Visal Insurance Company</div>
+          <div className="text-md text-gray-900">{offer?.reinsurers[index % 3]}</div>
           <div className="text-md text-gray-500">Yaw Bossman</div>
         </td>
         <td className="px-6 py-4 flex items-center whitespace-nowrap">

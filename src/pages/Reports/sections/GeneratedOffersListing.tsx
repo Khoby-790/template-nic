@@ -8,6 +8,46 @@ interface Props {
   description?: string;
 }
 
+
+const data = [
+  {
+    insurer: {
+      "name": "Donovan Clemons",
+      "email": "undefined",
+    },
+    reinsurers: ["Alexis Galloway", "Mari Bradley", "Camille Baldwin"],
+    approval_request: "Camille Baldwin",
+    status: "Approved",
+  },
+  {
+    insurer: {
+      "name": "Donovan Clemons",
+      "email": "undefined",
+    },
+    reinsurers: ["Alexis Galloway", "Mari Bradley", "Camille Baldwin"],
+    approval_request: "Camille Baldwin",
+    status: "Pending",
+  },
+  {
+    insurer: {
+      "name": "Donovan Clemons",
+      "email": "undefined",
+    },
+    reinsurers: ["Alexis Galloway", "Mari Bradley", "Camille Baldwin"],
+    approval_request: "Camille Baldwin",
+    status: "Rejected",
+  },
+  {
+    insurer: {
+      "name": "Donovan Clemons",
+      "email": "undefined",
+    },
+    reinsurers: ["Alexis Galloway", "Mari Bradley", "Camille Baldwin"],
+    approval_request: "Camille Baldwin",
+    status: "Pending",
+  }
+]
+
 const OffersListing = (props: Props) => {
   return (
     <Fragment>
@@ -50,8 +90,8 @@ const OffersListing = (props: Props) => {
                     </tr>
                   </thead>
                   <tbody className="bg-white divide-y divide-gray-200">
-                    {[1, 5, 4, 3, 2].map((_, index) => (
-                      <OfferLisitngItem report key={index} index={index} />
+                    {data.map((_, index) => (
+                      <OfferLisitngItem offer={_} report key={index} index={index} />
                     ))}
 
                     {/* <!-- More items... --> */}

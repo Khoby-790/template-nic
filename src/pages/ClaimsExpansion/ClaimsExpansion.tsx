@@ -119,8 +119,8 @@ const ClaimsExpansion = (props: Props) => {
                 </label>
                 <select name="" id="">
                   <option value="">GHC</option>
-                  <option value="">GHC</option>
-                  <option value="">GHC</option>
+                  <option value="">USD</option>
+                  <option value="">EUR</option>
                 </select>
               </div>
             </div>

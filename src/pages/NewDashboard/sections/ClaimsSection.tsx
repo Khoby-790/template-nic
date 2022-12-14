@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { CustomeAreaChart } from "../../../components";
 
-interface Props {}
+interface Props { }
 
 const data = [
   {
@@ -125,12 +125,12 @@ const ClaimsSection = (props: Props) => {
             </label>
             <select className="text-md" name="" id="">
               <option value="">GHC</option>
-              <option value="">GHC</option>
-              <option value="">GHC</option>
+              <option value="">USD</option>
+              <option value="">EUR</option>
             </select>
           </div>
           <Link
-            to="/claims"
+            to="/app/claims"
             className=" flex justify-center h-full items-center px-4 cursor-pointer hover:bg-gray-400 rounded-full"
           >
             <svg

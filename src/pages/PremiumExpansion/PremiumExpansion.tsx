@@ -5,7 +5,7 @@ import ForAllBrokers from "./tabs/ForAllBrokers";
 import FromEachReinsuredTab from "./tabs/FromEachReinsuredTab";
 import FromEachReinsurerTab from "./tabs/FromEachReinsurerTab";
 
-interface Props {}
+interface Props { }
 
 const data = [
   {
@@ -121,8 +121,8 @@ const PremiumExpansion = (props: Props) => {
               </label>
               <select name="" id="">
                 <option value="">GHC</option>
-                <option value="">GHC</option>
-                <option value="">GHC</option>
+                <option value="">USD</option>
+                <option value="">EUR</option>
               </select>
             </div>
           </div>

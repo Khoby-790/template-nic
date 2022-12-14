@@ -113,12 +113,12 @@ const PremiumSection = (props: Props) => {
             </label>
             <select name="" id="">
               <option value="">GHC</option>
-              <option value="">GHC</option>
-              <option value="">GHC</option>
+              <option value="">USD</option>
+              <option value="">EUR</option>
             </select>
           </div>
           <Link
-            to="/premium"
+            to="/app/premium"
             className=" flex justify-center h-full items-center px-4 cursor-pointer hover:bg-gray-400 rounded-full"
           >
             <svg

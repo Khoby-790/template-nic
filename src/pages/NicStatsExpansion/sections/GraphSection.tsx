@@ -20,8 +20,8 @@ const GraphSection = (props: Props) => {
                         <label className="mr-3" htmlFor="">Filter by currency</label>
                         <select name="" id="">
                             <option value="">GHC</option>
-                            <option value="">GHC</option>
-                            <option value="">GHC</option>
+                            <option value="">USD</option>
+                            <option value="">EUR</option>
                         </select>
                     </div>
                 </div>
